@@ -1,0 +1,24 @@
+# dvc.yaml — Pipeline de données reproductible
+
+stages:
+  build_master:
+    cmd: python -m atlas.data.cleaners build_master
+    deps:
+      - src/atlas/data/cleaners.py
+      - src/atlas/data/validators.py
+      - params.yaml
+    outs:
+      - data/processed/master_dataset.parquet
+      - data/processed/master_dataset.csv
+    metrics:
+      - data/processed/build_report.json:
+          cache: false
+
+  compute_indices:
+    cmd: python -m atlas.features.indices compute_all
+    deps:
+      - src/atlas/features/indices.py
+      - data/processed/master_dataset.parquet
+      - params.yaml
+    outs:
+      - data/processed/indices_dataset.parquet

@@ -1,0 +1,28 @@
+site_name: "Atlas des Dynamiques Scolaires"
+site_author: "Noël Ching"
+site_url: "https://nolll77.github.io/atlas-dynamiques-scolaires"
+repo_url: "https://github.com/nolll77/atlas-dynamiques-scolaires"
+repo_name: "nolll77/atlas-dynamiques-scolaires"
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+  features:
+    - navigation.tabs
+    - search.suggest
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+
+nav:
+  - Accueil: index.md
+  - Documentation:
+    - Sources: DATA_SOURCES.md
+    - Limites causales: CAUSALITY_LIMITS.md

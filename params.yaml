@@ -1,0 +1,48 @@
+# params.yaml — Hyperparamètres centralisés
+# NE JAMAIS hardcoder ces valeurs dans le code
+
+data:
+  corpus_size: 100
+  ips_year_range: [2019, 2024]
+  min_ips_threshold: 140
+
+clustering:
+  n_clusters_range: [3, 8]
+  optimal_k: 5
+  linkage_method: "ward"
+  distance_metric: "euclidean"
+  bootstrap_n: 1000
+
+network:
+  similarity_threshold_percentile: 75
+  louvain_resolution: 1.0
+  louvain_resolution_range: [0.5, 1.0, 1.5, 2.0]
+  similarity_threshold_range: [60, 65, 70, 75, 80]
+
+spatial:
+  spatial_weights_k: 6
+  moran_permutations: 999
+  bonferroni_alpha: 0.05
+
+changepoints:
+  pelt_penalty: "bic"
+  pelt_min_size: 2
+  pelt_model: "rbf"
+
+markov:
+  transition_method: "simulated"
+  n_simulations: 10000
+
+reproducibility:
+  random_seed: 42
+  numpy_seed: 42
+
+figures:
+  dpi: 300
+  format: ["png", "pdf"]
+  figsize_single: [12, 8]
+  figsize_double: [18, 10]
+  colormap_public: "#1565C0"
+  colormap_private: "#C62828"
+  colormap_international: "#2E7D32"
+  font_family: "DejaVu Sans"
