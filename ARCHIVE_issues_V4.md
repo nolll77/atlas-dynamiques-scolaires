@@ -585,7 +585,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes transparentes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Tableau complet lycées (IPS, σ, secteur, ville, score entre-soi, revenus IRIS, résultats bac)
 
 - **Artefacts générés** : Annexe A1.
@@ -598,7 +598,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Traçabilité des sources.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Sources de données complètes (data.gouv.fr, INSEE, DVF Etalab, IDF Mobilités, IGN) + licences
 
 - **Artefacts générés** : Annexe A2.
@@ -611,7 +611,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mathématiques appliquées.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Méthode de calcul de tous les indices (Gini, Theil, Duncan, IFC, score d'entre-soi)
 
 - **Artefacts générés** : Annexe A3.
@@ -624,7 +624,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Cadre légal.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Note sur les licences Open Data (Etalab, Open Data Commons, conditions réutilisation)
 
 - **Artefacts générés** : Annexe A4.
@@ -637,7 +637,7 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité absolue.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Code Python reproductible + lien GitHub
 
 - **Artefacts générés** : Annexe A5.
@@ -650,7 +650,7 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation étendue.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Cartographie complète
 
 - **Artefacts générés** : Annexe A6.
@@ -663,7 +663,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Pédagogie conceptuelle.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Glossaire des termes statistiques et sociologiques
 
 - **Artefacts générés** : Annexe A7.
@@ -676,7 +676,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Ancrage académique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Bibliographie sélective (sociologie éducation, géographie sociale, ségrégation urbaine)
 
 - **Artefacts générés** : Annexe A8.
@@ -689,7 +689,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mise en perspective.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité géographique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Comparaison internationale courte (tableau synthétique, 5–6 métropoles)
 
 - **Artefacts générés** : Annexe A9.
@@ -1276,7 +1276,7 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Code Python complet (CAH, Louvain, réseau, SAR, GAM, toutes les figures) + lien GitHub
 
 - **Artefacts générés** : Annexe A1.
@@ -1289,7 +1289,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes réseau.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Matrices de distance, similarité, flux simulés et flux observés (Affelnet partiels)
 
 - **Artefacts générés** : Annexe A2.
@@ -1302,7 +1302,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix algorithmiques.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Tableau comparatif méthodes de clustering sur le dataset enrichi
 
 - **Artefacts générés** : Annexe A3.
@@ -1315,7 +1315,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Inférence.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Résultats complets des modèles statistiques
 
 - **Artefacts générés** : Annexe A4.
@@ -1328,7 +1328,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèles alternatifs.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Note sur les méthodes dans `/exploratory/` avec justification du choix de non-inclusion
 
 - **Artefacts générés** : Annexe A5.
@@ -1341,7 +1341,7 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Cartes supplémentaires (PSL, centralité, communautés multi-couches)
 
 - **Artefacts générés** : Annexe A6.
@@ -1354,7 +1354,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Bibliographie.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Bibliographie méthodes (network science, spatial econometrics, sociologie computationnelle)
 
 - **Artefacts générés** : Annexe A7.
@@ -1977,7 +1977,7 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité du Tome 3.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Code Python complet + lien GitHub
 
 - **Artefacts générés** : Annexe A1.
@@ -1990,7 +1990,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix avancés.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Note sur les méthodes `/exploratory/` avec justification
 
 - **Artefacts générés** : Annexe A2.
@@ -2003,7 +2003,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Résultats bruts.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Paramètres estimés des modèles dynamiques
 
 - **Artefacts générés** : Annexe A3.
@@ -2016,7 +2016,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Scénarios.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Résultats des simulations (tableaux complets)
 
 - **Artefacts générés** : Annexe A4.
@@ -2029,7 +2029,7 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Sources longitudinales, méthode de construction dataset temporel
 
 - **Artefacts générés** : Annexe A5.
@@ -2042,7 +2042,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Données temporelles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Index général de la trilogie
 
 - **Artefacts générés** : Annexe A6.
@@ -2055,7 +2055,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Navigation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
-- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+- **Synopsis de l'Annexe (Réflexions de l'Auteur) :**
   - Bibliographie complète (3 tomes)
 
 - **Artefacts générés** : Annexe A7.
