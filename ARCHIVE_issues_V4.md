@@ -512,7 +512,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes transparentes.
 - **Périmètre Technique (Ouvert aux contributions)** : Export CSV.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence totale.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
@@ -1115,7 +1115,7 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité.
 - **Périmètre Technique (Ouvert aux contributions)** : Scripts de clustering et graphes.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
@@ -1126,7 +1126,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes réseau.
 - **Périmètre Technique (Ouvert aux contributions)** : Exports JSON/CSV.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
@@ -1148,7 +1148,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Inférence.
 - **Périmètre Technique (Ouvert aux contributions)** : OLS, SAR, SEM outputs.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
@@ -1159,7 +1159,7 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèles alternatifs.
 - **Périmètre Technique (Ouvert aux contributions)** : Random Forest, etc.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
@@ -1753,7 +1753,7 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité du Tome 3.
 - **Périmètre Technique (Ouvert aux contributions)** : Scripts dynamiques.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
@@ -1775,7 +1775,7 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Résultats bruts.
 - **Périmètre Technique (Ouvert aux contributions)** : HMM, PELT.
-- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
+- **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
