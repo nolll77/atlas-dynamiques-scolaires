@@ -9,7 +9,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Architecture transparente et documentée.
 - **Artefacts générés** : Dépôt structuré, `README.md` bilingue, `MANIFESTO.md`, `DATA_SOURCES.md`, `LICENSE`.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Créer la structure de dossiers complète (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`)
 - [ ] Initialiser `README.md` bilingue FR/EN
 - [ ] Créer `LICENSE` (MIT)
@@ -28,7 +28,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement factuel des sources publiques, sourçage rigoureux.
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Collecter IPS historiques par année (data.gouv.fr)
 - [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
 - [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
@@ -49,7 +49,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Affirmation de la doctrine descriptive vs normative (aucun jugement moral).
 - **Artefacts générés** : `docs/CAUSALITY_LIMITS.md`, `docs/NETWORK_INTERPRETATION.md`, `docs/SOCLE_MATHEMATIQUE.md`, `docs/SOCLE_DYNAMIQUE.md`, `docs/GLOSSAIRE.md`.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Créer `docs/CAUSALITY_LIMITS.md` (template validé dans info_github.md)
 - [ ] Créer `docs/NETWORK_INTERPRETATION.md` (template validé dans info_github.md)
 - [ ] Intégrer `docs/SOCLE_MATHEMATIQUE.md` (Formules statistiques et indices de ségrégation)
@@ -66,7 +66,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Garantie de la rigueur algorithmique de la recherche.
 - **Artefacts générés** : Suite de tests `tests/` opérationnelle.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] `tests/test_theil_decomposition.py` — Theil_total = Theil_between + Theil_within
 - [ ] `tests/test_graph_construction.py` — symétrie, pas de self-loops
 - [ ] `tests/test_closeness_weights.py` — poids inversés avant calcul closeness
@@ -82,7 +82,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité totale et transparence des essais.
 - **Artefacts générés** : Système de logging opérationnel dans le dossier `runs/`.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Définir le format JSON des runs (git_hash, timestamp, config, metrics)
 - [ ] Script d'enregistrement automatique des runs
 
@@ -101,7 +101,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On décrit des structures spatiales, on ne juge pas les politiques d'établissement. Focus sur les données cartographiques.
 - **Artefacts générés** : Note éthique T1, Préface générale de la trilogie (8-12 pages), Avant-propos Tome I.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger note éthique spécifique au Tome I (focus : données cartographiques et statistiques descriptives)
 - [ ] Rédiger préface générale de la trilogie (8–12 pages, version narrative du manifeste)
 - [ ] Rédiger avant-propos du Tome I (passage "classement → structure spatiale", guide de lecture)
@@ -115,7 +115,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présentation factuelle du corpus enrichi, de la méthode Ministère (IPS), justification des ajouts (σ, DVF).
 - **Artefacts générés** : Texte de l'Introduction Générale.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Formaliser le paradoxe central (égalité de droit / inégalité de fait comme objet d'analyse)
 - [ ] Présenter le corpus et toutes les couches du dataset enrichi
 - [ ] Expliquer la construction de l'IPS (méthode Ministère)
@@ -137,15 +137,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : IPS vs capital culturel. Distinction entre statistiques et utilisation politique ou médiatique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1, Code Python (annexe A5).
 
-- **Pistes d'exploration suggérées :**
-- [ ] Construction statistique de l'IPS (méthode Ministère)
-- [ ] Ce que l'IPS capture et ce qu'il efface
-- [ ] IPS et capital culturel : distinction bourdieusienne revisitée
-- [ ] Comparaison IPS vs revenus médians IRIS (corrélation forte mais imparfaite → effets institutionnels propres)
-- [ ] **Nouveauté** : encadré "peut-on corriger l'IPS ?" — indice composite IPS + σ + revenus IRIS
-- [ ] Code Python pour reproduire le calcul composite (annexe A5)
-- [ ] Encadré : "L'IPS peut-il être interprété abusivement ?institutionnellement ?" (formulation analytique stricte)
-- [ ] Encadré : différence IPS / taux de boursiers / PCS
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Construction statistique de l'IPS (méthode Ministère)
+  - Ce que l'IPS capture et ce qu'il efface
+  - IPS et capital culturel : distinction bourdieusienne revisitée
+  - Comparaison IPS vs revenus médians IRIS (corrélation forte mais imparfaite → effets institutionnels propres)
+  - **Nouveauté** : encadré "peut-on corriger l'IPS ?" — indice composite IPS + σ + revenus IRIS
+  - Code Python pour reproduire le calcul composite (annexe A5)
+  - Encadré : "L'IPS peut-il être interprété abusivement ?institutionnellement ?" (formulation analytique stricte)
+  - Encadré : différence IPS / taux de boursiers / PCS
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la matrice de corrélation statistique entre l'IPS et les revenus médians par IRIS.
+- [ ] Coder la fonction mathématique de l'indice composite (IPS + σ + revenus IRIS) et exporter les scores des lycées.
 
 
 
@@ -156,15 +160,20 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Homogénéité" est un fait statistique, pas un jugement moral sur la valeur des élèves ou le projet pédagogique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2, Tableaux du Top 20.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition statistique et interprétation sociologique de σ
-- [ ] Deux lycées même IPS, structures sociales opposées
-- [ ] σ comme mesure de diversité interne
-- [ ] Cas emblématiques : Saint-Jean de Passy (σ=15,7) vs Henri-IV (σ=32,4)
-- [ ] **Nouveauté** : corrélation σ × données DVF immobilières (test exploratoire)
-- [ ] Encadré : l'écart-type et la théorie de la ségrégation résidentielle
-- [ ] Tableau : top 20 lycées les plus homogènes / les plus hétérogènes
-- [ ] Cas emblématiques décrits comme "appartenant à des clusters de forte homogénéité" (note éthique)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition statistique et interprétation sociologique de σ
+  - Deux lycées même IPS, structures sociales opposées
+  - σ comme mesure de diversité interne
+  - Cas emblématiques : Saint-Jean de Passy (σ=15,7) vs Henri-IV (σ=32,4)
+  - **Nouveauté** : corrélation σ × données DVF immobilières (test exploratoire)
+  - Encadré : l'écart-type et la théorie de la ségrégation résidentielle
+  - Tableau : top 20 lycées les plus homogènes / les plus hétérogènes
+  - Cas emblématiques décrits comme "appartenant à des clusters de forte homogénéité" (note éthique)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer l'écart-type de l'IPS pour chaque lycée afin d'estimer la mixité sociale interne.
+- [ ] Générer le tableau récapitulatif du Top 20 des lycées les plus homogènes et les plus hétérogènes.
+- [ ] Exécuter un test de corrélation exploratoire entre l'écart-type et les données immobilières DVF.
 
 
 
@@ -175,13 +184,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mention des "absents du classement" (biais de sélection). Standard Nature/Science pour la Figure 2.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3, Figure Signature 2.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Distribution statistique : IPS, σ, répartition public/privé, géographie
-- [ ] Répartition par type (général, technologique, polyvalent, international)
-- [ ] Premières corrélations IPS / σ / statut / revenus IRIS / résultats bac
-- [ ] **Figure signature 2** : scatter IPS vs σ, couleurs public/privé, densité KDE, annotations, sous-panel DVF
-- [ ] Encadré "les absents du classement" (lycées populaires hors corpus, biais de sélection)
-- [ ] Script `figures/fig2_scatter_ips_sigma.py`
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Distribution statistique : IPS, σ, répartition public/privé, géographie
+  - Répartition par type (général, technologique, polyvalent, international)
+  - Premières corrélations IPS / σ / statut / revenus IRIS / résultats bac
+  - **Figure signature 2** : scatter IPS vs σ, couleurs public/privé, densité KDE, annotations, sous-panel DVF
+  - Encadré "les absents du classement" (lycées populaires hors corpus, biais de sélection)
+  - Script `figures/fig2_scatter_ips_sigma.py`
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire la distribution statistique de l'IPS, de l'écart-type et de la répartition par secteur (public/privé).
+- [ ] Générer le "scatter plot" (Figure Signature 2) croisant IPS et écart-type, avec colorisation par statut et courbes de densité KDE.
 
 
 ---
@@ -196,15 +209,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat du "croissant de l'ouest" et des "déserts scolaires favorisés". Purement descriptif géographique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4, Figure Signature 1.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Villes surreprésentées : Paris, Neuilly, Versailles, Saint-Germain-en-Laye
-- [ ] Histoire du "croissant de l'ouest" (géographie et histoire)
-- [ ] Carte choroplèthe des IPS moyens par commune
-- [ ] **Nouveauté majeure** : corrélation IPS scolaire × prix DVF (€/m²)
-- [ ] Scatter plot IPS communal vs prix médian m²
-- [ ] Script `figures/fig1_map.py`
-- [ ] Encadré : les arrondissements parisiens (du 6e au 20e, gradient saisissant)
-- [ ] Les "déserts scolaires favorisés" : communes aisées sans lycée élite (analyse spécifique)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Villes surreprésentées : Paris, Neuilly, Versailles, Saint-Germain-en-Laye
+  - Histoire du "croissant de l'ouest" (géographie et histoire)
+  - Carte choroplèthe des IPS moyens par commune
+  - **Nouveauté majeure** : corrélation IPS scolaire × prix DVF (€/m²)
+  - Scatter plot IPS communal vs prix médian m²
+  - Script `figures/fig1_map.py`
+  - Encadré : les arrondissements parisiens (du 6e au 20e, gradient saisissant)
+  - Les "déserts scolaires favorisés" : communes aisées sans lycée élite (analyse spécifique)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la corrélation spatiale entre l'IPS moyen par commune et le prix médian au m² (DVF).
+- [ ] Générer la carte choroplèthe des IPS moyens par commune et le scatter plot correspondant.
 
 
 
@@ -215,14 +232,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les trois couronnes sont-elles trois systèmes distincts ? La géographie explique-t-elle plus que le statut institutionnel ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5, Résultats ANOVA.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Profil analytique de Paris (hétérogénéité maximale)
-- [ ] Profil de la petite couronne (compétition et polarisation)
-- [ ] Profil de la grande couronne (homogénéité relative)
-- [ ] **Nouveauté** : ANOVA spatiale (zone × statut × revenus IRIS)
-- [ ] Décomposition de variance : "géographie explique X%, statut Y%, revenus IRIS Z%"
-- [ ] Indice de dissimilarité de Duncan par commune
-- [ ] Tableau comparatif des trois zones avec toutes les variables
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Profil analytique de Paris (hétérogénéité maximale)
+  - Profil de la petite couronne (compétition et polarisation)
+  - Profil de la grande couronne (homogénéité relative)
+  - **Nouveauté** : ANOVA spatiale (zone × statut × revenus IRIS)
+  - Décomposition de variance : "géographie explique X%, statut Y%, revenus IRIS Z%"
+  - Indice de dissimilarité de Duncan par commune
+  - Tableau comparatif des trois zones avec toutes les variables
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Réaliser une ANOVA spatiale pour décomposer la variance selon 3 facteurs (zone géographique, statut public/privé, revenus IRIS).
+- [ ] Extraire les pourcentages de variance expliquée et dresser le tableau comparatif complet des trois couronnes.
+- [ ] Calculer l'indice de dissimilarité de Duncan pour chaque commune.
 
 
 
@@ -233,11 +255,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Fausse mixité" est un écart statistique, pas une accusation de volonté politique locale.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6, Topologie des communes paradoxales.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Le paradoxe de la mixité apparente
-- [ ] Mécanismes : carte scolaire, dérogations, filières sélectives, réputation
-- [ ] **Nouveauté** : indice de "fausse mixité" formalisé `F_c = M_global - M_interne`
-- [ ] Test exploratoire : accessibilité transport × niveau de ségrégation (données IDF Mobilités)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Le paradoxe de la mixité apparente
+  - Mécanismes : carte scolaire, dérogations, filières sélectives, réputation
+  - **Nouveauté** : indice de "fausse mixité" formalisé `F_c = M_global - M_interne`
+  - Test exploratoire : accessibilité transport × niveau de ségrégation (données IDF Mobilités)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la formule de l'indice de "fausse mixité" (F_c = M_global - M_interne) et générer les scores communaux.
+- [ ] Tester la corrélation statistique entre l'accessibilité aux transports (IDF Mobilités) et le niveau de ségrégation.
 
 
 
@@ -248,12 +274,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyse neutre de la répartition. Encadré sur le hors contrat comme terra incognita.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Répartition spatiale public/privé
-- [ ] Histoire du réseau catholique en Île-de-France
-- [ ] Polarisation Δ IPS public/privé par zone
-- [ ] **Nouveauté** : corrélation densité privé × prix DVF
-- [ ] Encadré : lycées hors contrat (terra incognita statistique)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Répartition spatiale public/privé
+  - Histoire du réseau catholique en Île-de-France
+  - Polarisation Δ IPS public/privé par zone
+  - **Nouveauté** : corrélation densité privé × prix DVF
+  - Encadré : lycées hors contrat (terra incognita statistique)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la polarisation de l'IPS (delta public/privé) ventilée par zone géographique.
+- [ ] Tester statistiquement la corrélation entre la densité locale d'établissements privés et le prix immobilier (DVF).
 
 
 ---
@@ -268,7 +298,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un cluster statistique est un groupe mathématique, non une volonté délibérée d'exclusion. Les termes ("Aristocratie", etc.) sont des étiquettes typologiques.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la note d'ouverture de la Partie III (résultats d'une analyse statistique, aucun jugement sur pratiques internes)
 - [ ] Intégrer la note dans le texte principal
 
@@ -281,17 +311,21 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Indicateur de concentration sociale" jamais "ce lycée s'organise pour exclure". Effet systémique, pas intention.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition structurelle : IPS > 158, σ < 20, privé catholique
-- [ ] Profil sociologique : bourgeoisie patrimoniale, réseaux familiaux anciens
-- [ ] Établissements emblématiques : Saint-Jean de Passy, Saint-Dominique, Massillon, Saint-Louis de Gonzague
-- [ ] Score d'entre-soi composite (IPS/σ) : calcul et interprétation formelle
-- [ ] Logique de reproduction : de l'école au réseau des grandes écoles
-- [ ] Formulation éthique : "indicateur de concentration sociale" jamais "ce lycée s'organise pour exclure"
-- [ ] Logique de reproduction comme effet systémique (pas intention individuelle)
-- [ ] Encadré : les alumni et les réseaux professionnels
-- [ ] Encadré : le rôle des associations de parents d'élèves
-- [ ] Enrichissement résultats bac et valeur ajoutée → "paradoxe analytique" si applicable
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition structurelle : IPS > 158, σ < 20, privé catholique
+  - Profil sociologique : bourgeoisie patrimoniale, réseaux familiaux anciens
+  - Établissements emblématiques : Saint-Jean de Passy, Saint-Dominique, Massillon, Saint-Louis de Gonzague
+  - Score d'entre-soi composite (IPS/σ) : calcul et interprétation formelle
+  - Logique de reproduction : de l'école au réseau des grandes écoles
+  - Formulation éthique : "indicateur de concentration sociale" jamais "ce lycée s'organise pour exclure"
+  - Logique de reproduction comme effet systémique (pas intention individuelle)
+  - Encadré : les alumni et les réseaux professionnels
+  - Encadré : le rôle des associations de parents d'élèves
+  - Enrichissement résultats bac et valeur ajoutée → "paradoxe analytique" si applicable
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Isoler statistiquement le Cluster 1 (IPS > 158, écart-type < 20).
+- [ ] Calculer le score composite d'entre-soi pour ces établissements et exporter les statistiques descriptives.
 
 
 
@@ -302,14 +336,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation statistique systématique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Profil : IPS 153-158, écart-type 20-25
-- [ ] Établissements : Sainte-Marie Neuilly, Notre-Dame du Grandchamp, Blanche de Castille, Madeleine Daniélou
-- [ ] Capital scolaire familial : professions libérales, cadres dirigeants
-- [ ] Le projet éducatif catholique : entre confessionnalité et excellence académique
-- [ ] Différences internes : établissements «vieille bourgeoisie» vs «nouvelle bourgeoisie»
-- [ ] Formulation éthique systématique : structures statistiques, pas intentions institutionnelles
-- [ ] Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Profil : IPS 153-158, écart-type 20-25
+  - Établissements : Sainte-Marie Neuilly, Notre-Dame du Grandchamp, Blanche de Castille, Madeleine Daniélou
+  - Capital scolaire familial : professions libérales, cadres dirigeants
+  - Le projet éducatif catholique : entre confessionnalité et excellence académique
+  - Différences internes : établissements «vieille bourgeoisie» vs «nouvelle bourgeoisie»
+  - Formulation éthique systématique : structures statistiques, pas intentions institutionnelles
+  - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire les statistiques descriptives du Cluster 2 sur l'ensemble du vecteur de variables (IPS, écart-type, DVF, IRIS, bac).
+- [ ] Générer la liste brute des lycées constituant ce cluster.
 
 
 
@@ -320,16 +358,20 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La méritocratie républicaine en acte et le rôle des classes préparatoires (filtre secondaire).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Profil paradoxal : IPS élevé (145-153), mais mixité forte (σ > 30)
-- [ ] Établissements : Henri-IV, Louis-le-Grand, Hoche, Lakanal, Fénelon, Blaise-Pascal
-- [ ] La méritocratie républicaine en acte
-- [ ] Présence de boursiers, recrutement académique national
-- [ ] L'effet réseau : concours d'entrée implicites, classes préparatoires
-- [ ] Écart-type comme indicateur de diversité réelle : qui sont les élèves ?
-- [ ] Encadré : les classes préparatoires comme filtre social secondaire
-- [ ] Enrichissement : valeur ajoutée IVAL — paradoxe analytique si applicable
-- [ ] Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Profil paradoxal : IPS élevé (145-153), mais mixité forte (σ > 30)
+  - Établissements : Henri-IV, Louis-le-Grand, Hoche, Lakanal, Fénelon, Blaise-Pascal
+  - La méritocratie républicaine en acte
+  - Présence de boursiers, recrutement académique national
+  - L'effet réseau : concours d'entrée implicites, classes préparatoires
+  - Écart-type comme indicateur de diversité réelle : qui sont les élèves ?
+  - Encadré : les classes préparatoires comme filtre social secondaire
+  - Enrichissement : valeur ajoutée IVAL — paradoxe analytique si applicable
+  - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire les statistiques descriptives complètes du Cluster 3 (IPS élevé, mixité forte).
+- [ ] Extraire la valeur ajoutée IVAL pour tester statistiquement la corrélation avec l'hétérogénéité sociale.
 
 
 
@@ -340,13 +382,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat d'ouverture relative.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Profil : IPS 145-152, écart-type 28-32
-- [ ] Établissements : Charles Péguy, Notre-Dame de la Providence, Rambam, Montalembert
-- [ ] Des établissements privés qui recrutent dans des milieux plus variés
-- [ ] Proximité avec les publics parisiens : un positionnement hybride
-- [ ] Hypothèses : localisation, tradition, offre pédagogique
-- [ ] Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Profil : IPS 145-152, écart-type 28-32
+  - Établissements : Charles Péguy, Notre-Dame de la Providence, Rambam, Montalembert
+  - Des établissements privés qui recrutent dans des milieux plus variés
+  - Proximité avec les publics parisiens : un positionnement hybride
+  - Hypothèses : localisation, tradition, offre pédagogique
+  - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire les statistiques descriptives complètes du Cluster 4 (IPS, σ, DVF, IRIS, résultats bac).
+- [ ] Générer la liste brute des établissements appartenant à ce cluster pour validation.
 
 
 
@@ -357,13 +403,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position hors logique nationale classique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Établissements : École Jeannine Manuel, Lycée international de Saint-Germain-en-Laye, Lycée franco-allemand, Blaise-Pascal, Vallée de Chevreuse
-- [ ] Capital culturel mondialisé vs capital technoscientifique
-- [ ] Recrutement : expatriés, ingénieurs, chercheurs, hauts fonctionnaires internationaux
-- [ ] Position atypique dans le système : hors logique nationale classique
-- [ ] Encadré : le bassin de Paris-Saclay — une écologie scolaire singulière
-- [ ] Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Établissements : École Jeannine Manuel, Lycée international de Saint-Germain-en-Laye, Lycée franco-allemand, Blaise-Pascal, Vallée de Chevreuse
+  - Capital culturel mondialisé vs capital technoscientifique
+  - Recrutement : expatriés, ingénieurs, chercheurs, hauts fonctionnaires internationaux
+  - Position atypique dans le système : hors logique nationale classique
+  - Encadré : le bassin de Paris-Saclay — une écologie scolaire singulière
+  - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Isoler les établissements internationaux et scientifiques (Cluster 5) et extraire leurs caractéristiques statistiques.
+- [ ] Produire le tableau récapitulatif des variables descriptives (IPS, σ, DVF, IRIS, résultats bac).
 
 
 
@@ -374,14 +424,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Synthèse neutre des 5 mondes scolaires.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13, Carte spatiale IDF des 5 mondes.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Établissements : Lycée Alain, Louis de Broglie, La Bruyère, Louis Pasteur Neuilly
-- [ ] Profil : bons bassins résidentiels, public local favorisé
-- [ ] Mixité modérée, stabilité sociale
-- [ ] Rôle dans la hiérarchie locale : entre «lycée de quartier aisé» et «lycée d'excellence»
-- [ ] Comparaison avec Cluster 3 (public académique) et Cluster 1 (privé fermé)
-- [ ] Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
-- [ ] Carte spatiale des 5 clusters sur l'IDF + formulation éthique transversale
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Établissements : Lycée Alain, Louis de Broglie, La Bruyère, Louis Pasteur Neuilly
+  - Profil : bons bassins résidentiels, public local favorisé
+  - Mixité modérée, stabilité sociale
+  - Rôle dans la hiérarchie locale : entre «lycée de quartier aisé» et «lycée d'excellence»
+  - Comparaison avec Cluster 3 (public académique) et Cluster 1 (privé fermé)
+  - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
+  - Carte spatiale des 5 clusters sur l'IDF + formulation éthique transversale
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire les statistiques descriptives des lycées publics favorisés résidentiels.
+- [ ] Générer la carte spatiale positionnant les 5 clusters sur la région Île-de-France.
 
 
 ---
@@ -396,7 +450,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites de l'indice brut précisées.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Calculer les z-scores spatiaux (entre-soi) et générer la carte d'Île-de-France.
 - [ ] Exporter le script ainsi que le Top 20.
 
@@ -407,7 +461,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Application d'un standard mathématique universel.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Courbe de Lorenz.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Décomposer mathématiquement la variance (secteur, géographie) et tracer la Courbe de Lorenz.
 - [ ] Livrer les graphiques formatés pour le Chapitre 15.
 
@@ -418,7 +472,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Objectivation rigoureuse des parts de variance.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16, Tableau de décomposition de variance.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Calculer l'indice de Theil aux trois niveaux géographiques et institutionnels.
 - [ ] Dresser le tableau complet de décomposition de la variance pour le Chapitre 16.
 
@@ -429,7 +483,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mise en évidence des paradoxes locaux.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte choroplèthe de $D$.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Calculer l'indice de dissimilarité de Duncan (D) et tester la corrélation avec les transports/revenus.
 - [ ] Produire la carte choroplèthe finale pour le Chapitre 17.
 
@@ -444,7 +498,7 @@
 
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Établir la formule de l'indice composite de fragmentation scolaire et pondérer ses composantes.
 - [ ] Consolider les résultats statistiques pour le Chapitre 18.
 
@@ -455,12 +509,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation prudente (Associations fortes $\neq$ mécanismes causaux).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Modèle ANOVA unidimensionnel : IPS ~ secteur (public/privé)
-- [ ] Résultat V1 : 35-45% de variance expliquée par le statut
-- [ ] Ce que le résidu nous dit (V1)
-- [ ] Limites de l'ANOVA simple appliquée à des données scolaires
-- [ ] Formulation prudente systématique : associations fortes ≠ mécanismes causaux
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Modèle ANOVA unidimensionnel : IPS ~ secteur (public/privé)
+  - Résultat V1 : 35-45% de variance expliquée par le statut
+  - Ce que le résidu nous dit (V1)
+  - Limites de l'ANOVA simple appliquée à des données scolaires
+  - Formulation prudente systématique : associations fortes ≠ mécanismes causaux
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Modéliser une ANOVA unidimensionnelle (IPS en fonction du statut public/privé).
+- [ ] Extraire le pourcentage de variance expliquée (R²) et générer le tableau des résidus statistiques.
 
 
 
@@ -471,7 +529,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontrer que la géographie domine et le statut amplifie.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20, Tableau de décomposition complet.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Exécuter les régressions OLS multi-facteurs (interactions privé/géographie) et tester les variables DVF/transports.
 - [ ] Exporter le tableau de décomposition complet pour le Chapitre 20.
 
@@ -482,7 +540,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Postulat validé analytiquement : "La géographie structure, l'institution filtre".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Sorties du modèle.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Estimer les ICC (Intraclass Correlation Coefficients) et comparer les R² marginaux et conditionnels.
 - [ ] Extraire les sorties du modèle multiniveau pour le Chapitre 21.
 
@@ -493,7 +551,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le DAG est une hypothèse formelle, pas une vérité révélée infaillible.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22, Schéma du DAG.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Construire formellement le réseau causal (DAG) et simuler l'effet d'une intervention par "do-calculus".
 - [ ] Exporter le schéma du DAG pour le Chapitre 22.
 
@@ -504,7 +562,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Invitation à réfléchir aux politiques.
 - **Artefacts générés** : Conclusion du Tome 1.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Synthétiser les découvertes majeures et les limites de la première partie.
 - [ ] Rédiger le texte de la Conclusion du Tome 1.
 
@@ -515,7 +573,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Exporter les données nettoyées des lycées au format CSV.
 - [ ] Intégrer cet export pour constituer le Tableau complet de l'Annexe A1.
 
@@ -526,7 +584,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A2.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Dresser l'inventaire exhaustif des jeux de données mobilisés.
 - [ ] Présenter ces métadonnées proprement dans l'Annexe A2.
 
@@ -537,7 +595,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Convertir la documentation mathématique au format LaTeX.
 - [ ] Compiler ces équations pour constituer l'Annexe A3.
 
@@ -548,7 +606,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
 - **Artefacts générés** : Annexe A4.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Recenser les contraintes légales et licences Open Data des jeux de données.
 - [ ] Rédiger la note juridique correspondante pour l'Annexe A4.
 
@@ -559,7 +617,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A5.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts de nettoyage et de modélisation du Tome 1.
 - [ ] Structurer ce dépôt de code pour l'Annexe A5.
 
@@ -570,7 +628,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Regrouper les cartes exploratoires non incluses dans les chapitres principaux.
 - [ ] Exporter l'atlas cartographique additionnel pour l'Annexe A6.
 
@@ -581,7 +639,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A7.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Compiler les définitions des termes sociologiques et statistiques utilisés.
 - [ ] Rédiger le glossaire complet pour l'Annexe A7.
 
@@ -592,7 +650,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
 - **Artefacts générés** : Annexe A8.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Vérifier la mise en forme des références académiques citées dans le texte.
 - [ ] Exporter la bibliographie sélective pour l'Annexe A8.
 
@@ -607,7 +665,7 @@
 
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Réaliser une courte synthèse des travaux comparables à l'étranger.
 - [ ] Rédiger cette note de mise en perspective pour l'Annexe A9.
 
@@ -618,7 +676,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La position dans le réseau est une propriété émergente, pas une caractéristique intrinsèque (anti-essentialisme).
 - **Artefacts générés** : Avant-propos du Tome II et Note éthique d'ouverture.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Note éthique Tome II (position dans le réseau = propriété émergente, pas caractéristique intrinsèque)
 - [ ] Avant-propos : "du territoire au réseau" — formulation obligatoire sur les liens de similarité vs flux réels
 - [ ] Introduction : nœuds, liens, poids — justification de la fonction de similarité choisie vs alternatives (Jaccard, cosinus)
@@ -636,15 +694,20 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La CAH est un algorithme, pas une vérité absolue.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Rappel : Classification Ascendante Hiérarchique (méthode de Ward)
-- [ ] Distance euclidienne vs distance de Mahalanobis
-- [ ] Normalisation des variables : pourquoi les z-scores sont essentiels
-- [ ] Choix du nombre de clusters : silhouette, gap statistic, critère de Mojena
-- [ ] Résultats V1 : structure en 4-6 clusters stables pour les lycées franciliens
-- [ ] Comparaison CAH / k-means / GMM : convergences et divergences
-- [ ] **V2** : clustering sur vecteur enrichi (IPS + σ + revenus IRIS + résultats bac + statut)
-- [ ] **V2** : comparaison IPS seul vs vecteur enrichi
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Rappel : Classification Ascendante Hiérarchique (méthode de Ward)
+  - Distance euclidienne vs distance de Mahalanobis
+  - Normalisation des variables : pourquoi les z-scores sont essentiels
+  - Choix du nombre de clusters : silhouette, gap statistic, critère de Mojena
+  - Résultats V1 : structure en 4-6 clusters stables pour les lycées franciliens
+  - Comparaison CAH / k-means / GMM : convergences et divergences
+  - **V2** : clustering sur vecteur enrichi (IPS + σ + revenus IRIS + résultats bac + statut)
+  - **V2** : comparaison IPS seul vs vecteur enrichi
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Implémenter la Classification Ascendante Hiérarchique (CAH) avec la méthode de Ward et normalisation en z-scores.
+- [ ] Comparer statistiquement les résultats de la CAH avec l'algorithme k-means et un modèle GMM.
+- [ ] Exécuter le clustering (V2) sur le vecteur enrichi (IPS, écart-type, revenus IRIS, résultats bac, statut).
 
 
 
@@ -655,14 +718,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le dendrogramme n'est pas une hiérarchie de valeur, c'est une mesure de distance.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2, Figure du Dendrogramme.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Lecture sociologique du dendrogramme
-- [ ] Premier split V1 : homogénéité vs hétérogénéité comme séparation fondamentale
-- [ ] Lecture des branches V1 : privé élitiste / public académique / internationaux / scientifiques
-- [ ] Hauteurs de fusion comme «ruptures de mondes scolaires» (V1)
-- [ ] Le critère de Mojena : détecter les sauts naturels
-- [ ] Profondeur ultramétrique V1 : un indice de hiérarchisation sociale
-- [ ] **V2** : revenus IRIS ou résultats bac créent-ils une nouvelle dimension de séparation ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Lecture sociologique du dendrogramme
+  - Premier split V1 : homogénéité vs hétérogénéité comme séparation fondamentale
+  - Lecture des branches V1 : privé élitiste / public académique / internationaux / scientifiques
+  - Hauteurs de fusion comme «ruptures de mondes scolaires» (V1)
+  - Le critère de Mojena : détecter les sauts naturels
+  - Profondeur ultramétrique V1 : un indice de hiérarchisation sociale
+  - **V2** : revenus IRIS ou résultats bac créent-ils une nouvelle dimension de séparation ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Générer le dendrogramme complet de la CAH et calculer les hauteurs de fusion.
+- [ ] Appliquer le critère de Mojena pour détecter mathématiquement les sauts de clusters optimaux.
+- [ ] Calculer la profondeur ultramétrique du graphe.
 
 
 
@@ -673,15 +741,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les descriptions (Aristocratie, Élites académiques, etc.) doivent rester neutres et statistiques.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Cluster 1 : Aristocratie scolaire fermée (privé ouest, IPS > 158, σ < 20)
-- [ ] Cluster 2 : Grande bourgeoisie catholique élargie (privé, IPS 153-158, σ 20-25)
-- [ ] Cluster 3 : Élites académiques publiques (public, IPS 145-153, σ 27-34)
-- [ ] Cluster 4 : Privés urbains mixtes (privé, IPS 145-150, σ 28-32)
-- [ ] Cluster 5 : Systèmes internationaux et scientifiques (hors modèle national)
-- [ ] Tableau de description de chaque cluster. Carte spatiale des clusters sur l'IDF.
-- [ ] Formulation éthique systématique pour chaque cluster
-- [ ] **V2** : description analytique enrichie sur toutes les variables (DVF, IRIS, bac)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Cluster 1 : Aristocratie scolaire fermée (privé ouest, IPS > 158, σ < 20)
+  - Cluster 2 : Grande bourgeoisie catholique élargie (privé, IPS 153-158, σ 20-25)
+  - Cluster 3 : Élites académiques publiques (public, IPS 145-153, σ 27-34)
+  - Cluster 4 : Privés urbains mixtes (privé, IPS 145-150, σ 28-32)
+  - Cluster 5 : Systèmes internationaux et scientifiques (hors modèle national)
+  - Tableau de description de chaque cluster. Carte spatiale des clusters sur l'IDF.
+  - Formulation éthique systématique pour chaque cluster
+  - **V2** : description analytique enrichie sur toutes les variables (DVF, IRIS, bac)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Extraire les tableaux de description statistique pour les 5 clusters validés.
+- [ ] Générer la carte spatiale positionnant les clusters sur la carte d'Île-de-France.
 
 
 
@@ -692,14 +764,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement transparent des cas ambigus (lycées aux frontières).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4, Rapport de validation.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Silhouette score : cohérence interne des clusters
-- [ ] Gap statistic : les clusters existent-ils vraiment ?
-- [ ] Stabilité bootstrap (ARI) n=1000 : les clusters survivent-ils à la perturbation ?
-- [ ] Séparation statistique : ANOVA post-hoc sur IPS et σ
-- [ ] Score de validation global : k optimal consensuel
-- [ ] Zones de désaccord entre méthodes : les cas ambigus
-- [ ] **V2** : test de robustesse avec sous-échantillons aléatoires (enlever 10% des données)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Silhouette score : cohérence interne des clusters
+  - Gap statistic : les clusters existent-ils vraiment ?
+  - Stabilité bootstrap (ARI) n=1000 : les clusters survivent-ils à la perturbation ?
+  - Séparation statistique : ANOVA post-hoc sur IPS et σ
+  - Score de validation global : k optimal consensuel
+  - Zones de désaccord entre méthodes : les cas ambigus
+  - **V2** : test de robustesse avec sous-échantillons aléatoires (enlever 10% des données)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer le silhouette score et la "gap statistic" pour valider la robustesse des clusters.
+- [ ] Exécuter un test de stabilité bootstrap (Adjusted Rand Index) sur 1000 itérations.
+- [ ] Réaliser une ANOVA post-hoc sur l'IPS et l'écart-type pour valider la séparation statistique.
 
 
 
@@ -710,14 +787,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : L'ultramétrie mesure la rigidité du tri social.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Propriété ultramétrique : définition formelle
-- [ ] Distance cophenétique et corrélation ultramétrique
-- [ ] Score de validité ultramétrique : le système est-il vraiment hiérarchique ?
-- [ ] «Ponts ultramétriques» V1 : liens qui violent la hiérarchie
-- [ ] Signification sociologique : où la logique de classe éclate ?
-- [ ] Indice de cohérence arbre/réseau (ARI CAH vs Louvain)
-- [ ] Note de prudence : outil descriptif, pas preuve d'une logique nécessaire
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Propriété ultramétrique : définition formelle
+  - Distance cophenétique et corrélation ultramétrique
+  - Score de validité ultramétrique : le système est-il vraiment hiérarchique ?
+  - «Ponts ultramétriques» V1 : liens qui violent la hiérarchie
+  - Signification sociologique : où la logique de classe éclate ?
+  - Indice de cohérence arbre/réseau (ARI CAH vs Louvain)
+  - Note de prudence : outil descriptif, pas preuve d'une logique nécessaire
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la distance cophenétique et la corrélation ultramétrique du système.
+- [ ] Extraire les "ponts ultramétriques" (liens violant la hiérarchie).
+- [ ] Calculer l'Adjusted Rand Index pour évaluer la cohérence entre l'arbre (CAH) et le réseau (Louvain).
 
 
 
@@ -728,14 +810,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle des zones de tension structurelle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Principe : maximisation de la modularité Q
-- [ ] Différence conceptuelle entre cluster CAH et communauté Louvain
-- [ ] Résultats V1 : 4-6 communautés naturelles. Comparaison avec la CAH (ARI, NMI)
-- [ ] Ce que la divergence CAH/Louvain révèle : zones de tension structurelle
-- [ ] Hiérarchie de Louvain : super-communautés et micro-communautés
-- [ ] **V2** : réseau sur IPS seul vs réseau sur vecteur enrichi — comparaison ARI
-- [ ] Test de sensibilité résolution : `for r in [0.5, 1.0, 1.5, 2.0]`
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Principe : maximisation de la modularité Q
+  - Différence conceptuelle entre cluster CAH et communauté Louvain
+  - Résultats V1 : 4-6 communautés naturelles. Comparaison avec la CAH (ARI, NMI)
+  - Ce que la divergence CAH/Louvain révèle : zones de tension structurelle
+  - Hiérarchie de Louvain : super-communautés et micro-communautés
+  - **V2** : réseau sur IPS seul vs réseau sur vecteur enrichi — comparaison ARI
+  - Test de sensibilité résolution : `for r in [0.5, 1.0, 1.5, 2.0]`
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Implémenter la détection de communautés avec l'algorithme de Louvain en maximisant la modularité (Q).
+- [ ] Comparer les communautés Louvain avec les clusters CAH (via les métriques ARI et NMI).
+- [ ] Exécuter un test de sensibilité en modifiant la résolution de Louvain (0.5, 1.0, 1.5, 2.0).
 
 
 
@@ -746,14 +833,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identification des corridors de lycéens entre mondes.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Principe du réseau multiplex (V1)
-- [ ] Construction des trois couches de liens (public, privé, international)
-- [ ] **V2** : quatrième couche de proximité géographique (distance GPS réelle)
-- [ ] Détection de communautés transversales. Blocs «purs» vs blocs hybrides
-- [ ] Corridors entre couches : qui traverse les mondes ?
-- [ ] Indice de fragmentation inter-couches (IFC) par couche
-- [ ] Les divergences topologique/géographique révèlent des effets institutionnels
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Principe du réseau multiplex (V1)
+  - Construction des trois couches de liens (public, privé, international)
+  - **V2** : quatrième couche de proximité géographique (distance GPS réelle)
+  - Détection de communautés transversales. Blocs «purs» vs blocs hybrides
+  - Corridors entre couches : qui traverse les mondes ?
+  - Indice de fragmentation inter-couches (IFC) par couche
+  - Les divergences topologique/géographique révèlent des effets institutionnels
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Construire un réseau multiplex (multicouches) intégrant les flux, le statut et la distance géographique (GPS).
+- [ ] Détecter les communautés transversales et extraire la liste des corridors inter-couches.
+- [ ] Calculer l'indice de fragmentation inter-couches (IFC) par couche.
 
 
 ---
@@ -768,12 +860,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce n'est pas un flux physique réel, mais un réseau de potentiel compétitif.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8, Matrice d'Adjacence.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Matrice de distances (euclidienne, Mahalanobis). Fonction de similarité exponentielle.
-- [ ] Seuillage : densité du réseau vs signal/bruit. Propriétés topologiques.
-- [ ] Visualisation : spring layout, force-directed graph
-- [ ] **V2** : comparaison avec modèle nul Erdős–Rényi (même densité). Test de significativité de la modularité.
-- [ ] Test de sensibilité seuil : `for p in [60, 65, 70, 75, 80]`
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Matrice de distances (euclidienne, Mahalanobis). Fonction de similarité exponentielle.
+  - Seuillage : densité du réseau vs signal/bruit. Propriétés topologiques.
+  - Visualisation : spring layout, force-directed graph
+  - **V2** : comparaison avec modèle nul Erdős–Rényi (même densité). Test de significativité de la modularité.
+  - Test de sensibilité seuil : `for p in [60, 65, 70, 75, 80]`
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Construire la matrice de distances (Mahalanobis et Euclidienne) et seuiller le réseau.
+- [ ] Modéliser un réseau nul d'Erdős–Rényi de même densité pour tester la significativité statistique de la modularité.
+- [ ] Générer la visualisation du graphe avec l'algorithme Force-Directed (Spring Layout).
 
 
 
@@ -784,14 +881,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position mathématique, pas jugement qualitatif.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Degré pondéré. Betweenness centrality : les ponts structurels.
-- [ ] Closeness centrality (⚠️ poids inversés : `distance = 1/(weight + 1e-6)`)
-- [ ] Eigenvector centrality : les hubs d'influence
-- [ ] Top 10 lycées par centralité composite (V1)
-- [ ] Carte du réseau avec centralité codée visuellement (V1)
-- [ ] **V2** : corrélation centralité × résultats bac × revenus IRIS
-- [ ] Script `figures/fig3_network_louvain.py`
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Degré pondéré. Betweenness centrality : les ponts structurels.
+  - Closeness centrality (⚠️ poids inversés : `distance = 1/(weight + 1e-6)`)
+  - Eigenvector centrality : les hubs d'influence
+  - Top 10 lycées par centralité composite (V1)
+  - Carte du réseau avec centralité codée visuellement (V1)
+  - **V2** : corrélation centralité × résultats bac × revenus IRIS
+  - Script `figures/fig3_network_louvain.py`
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer les indices de centralité : Eigenvector centrality, Betweenness, et Degré pondéré.
+- [ ] Générer le Top 10 des lycées selon un score composite de centralité.
+- [ ] Produire la visualisation du graphe avec colorisation des nœuds par centralité.
 
 
 
@@ -802,14 +904,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "pont" n'est pas un lycée qui fait consciemment des efforts d'inclusion.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition opérationnelle du pont (V1)
-- [ ] Score de pont composite V1 : betweenness + diversité communautaire + distance ultramétrique
-- [ ] Top ponts du système francilien V1 : Lakanal, Hoche, Louis-le-Grand, Henri-IV
-- [ ] Lycées frontières entre public d'élite et privé bourgeois
-- [ ] Lycées frontières entre monde national et monde international
-- [ ] Signification sociologique : institutions qui limitent la fragmentation
-- [ ] Note éthique : «ponts analytiques» ≠ pratiques d'admission ou ouverture institutionnelle
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition opérationnelle du pont (V1)
+  - Score de pont composite V1 : betweenness + diversité communautaire + distance ultramétrique
+  - Top ponts du système francilien V1 : Lakanal, Hoche, Louis-le-Grand, Henri-IV
+  - Lycées frontières entre public d'élite et privé bourgeois
+  - Lycées frontières entre monde national et monde international
+  - Signification sociologique : institutions qui limitent la fragmentation
+  - Note éthique : «ponts analytiques» ≠ pratiques d'admission ou ouverture institutionnelle
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la formule du score de "pont" composite (betweenness + diversité communautaire + distance ultramétrique).
+- [ ] Extraire le Top 10 des lycées franchissant les frontières (ponts structurels).
 
 
 
@@ -820,14 +926,19 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Pure simulation probabiliste.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Matrice de transition entre clusters
-- [ ] Probabilités de mobilité ascendante / descendante
-- [ ] Distribution stationnaire : à quel équilibre tend le système ?
-- [ ] Entropie des trajectoires. Durée moyenne dans un cluster (V1)
-- [ ] Clusters «pièges» vs clusters «passerelles» (V1)
-- [ ] Note de prudence : matrice simulée ≠ matrice observée (sauf données Affelnet)
-- [ ] **V2** : calibration partielle avec données Affelnet si disponibles, mesure de l'écart simulé/observé
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Matrice de transition entre clusters
+  - Probabilités de mobilité ascendante / descendante
+  - Distribution stationnaire : à quel équilibre tend le système ?
+  - Entropie des trajectoires. Durée moyenne dans un cluster (V1)
+  - Clusters «pièges» vs clusters «passerelles» (V1)
+  - Note de prudence : matrice simulée ≠ matrice observée (sauf données Affelnet)
+  - **V2** : calibration partielle avec données Affelnet si disponibles, mesure de l'écart simulé/observé
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Générer la matrice de transition (Markov) entre les différents clusters.
+- [ ] Estimer mathématiquement la distribution stationnaire du système (équilibre asymptotique).
+- [ ] Calculer l'entropie des trajectoires et la durée de séjour moyenne dans chaque cluster.
 
 
 
@@ -838,12 +949,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les chemins par défaut du système.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Flux observé vs flux attendu (modèle nul d'indépendance)
-- [ ] Score de corridor R_ab = F_ab / E_ab
-- [ ] Corridors actifs : sur-représentation des transitions. Corridors symétriques vs asymétriques (indice Γ)
-- [ ] Top corridors du système francilien — les «autoroutes sociales»
-- [ ] Signification V1 : formalisation des «autoroutes sociales» du système scolaire
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Flux observé vs flux attendu (modèle nul d'indépendance)
+  - Score de corridor R_ab = F_ab / E_ab
+  - Corridors actifs : sur-représentation des transitions. Corridors symétriques vs asymétriques (indice Γ)
+  - Top corridors du système francilien — les «autoroutes sociales»
+  - Signification V1 : formalisation des «autoroutes sociales» du système scolaire
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer les flux attendus via un modèle nul d'indépendance et générer les scores de corridor (R_ab = F_ab / E_ab).
+- [ ] Identifier statistiquement les corridors sur-représentés (autoroutes sociales) et extraire l'indice d'asymétrie Γ.
 
 
 
@@ -854,12 +969,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Termes d'ingénierie socio-physique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition formelle de l'ascenseur (flux ascendant + gradient positif)
-- [ ] Définition formelle du filtre (flux descendant + tri social)
-- [ ] Corridors ambigus : flux fort mais gradient neutre
-- [ ] Distribution spatiale des ascenseurs et filtres. Efficacité des ascenseurs : Δ S moyen (V1)
-- [ ] Encadré V1 : les corridors d'élite vs corridors de mobilité sociale descendante
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition formelle de l'ascenseur (flux ascendant + gradient positif)
+  - Définition formelle du filtre (flux descendant + tri social)
+  - Corridors ambigus : flux fort mais gradient neutre
+  - Distribution spatiale des ascenseurs et filtres. Efficacité des ascenseurs : Δ S moyen (V1)
+  - Encadré V1 : les corridors d'élite vs corridors de mobilité sociale descendante
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder les requêtes d'extraction pour isoler les flux ascendants (ascenseurs) et les flux descendants (filtres).
+- [ ] Calculer l'efficacité moyenne des ascenseurs (ΔS moyen) et générer la distribution spatiale.
 
 
 
@@ -870,12 +989,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Superposition des couches V1 : social, académique, résidentiel, flux
-- [ ] Centralité de chaque couche. Score inter-couches : qui est central dans toutes les couches ?
-- [ ] Indice de fragmentation inter-couches (IFC)
-- [ ] Symétrie / asymétrie des flux selon les couches
-- [ ] Corrélation entre couches : où les logiques se renforcent-elles ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Superposition des couches V1 : social, académique, résidentiel, flux
+  - Centralité de chaque couche. Score inter-couches : qui est central dans toutes les couches ?
+  - Indice de fragmentation inter-couches (IFC)
+  - Symétrie / asymétrie des flux selon les couches
+  - Corrélation entre couches : où les logiques se renforcent-elles ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Fusionner mathématiquement les différentes couches du réseau multiplex (social, académique, résidentiel).
+- [ ] Calculer le score de centralité inter-couches et tester les corrélations de flux entre les dimensions.
 
 
 ---
@@ -890,10 +1013,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Anomalie" = exception statistique pure.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Liste des 50 outliers.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Top outliers Mahalanobis, ellipses de confiance
-- [ ] **Nouveauté** : outliers Mahalanobis vs valeur ajoutée bac atypique (croisement analytique)
-- [ ] "Paradoxes analytiques" traités sans jugement
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Top outliers Mahalanobis, ellipses de confiance
+  - **Nouveauté** : outliers Mahalanobis vs valeur ajoutée bac atypique (croisement analytique)
+  - "Paradoxes analytiques" traités sans jugement
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la distance de Mahalanobis pour l'ensemble du jeu de données et extraire les "outliers" (anomalies statistiques).
+- [ ] Croiser les valeurs atypiques de Mahalanobis avec les résultats inattendus de valeur ajoutée (IVAL).
 
 
 
@@ -904,9 +1031,13 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Structure analytique émergente, pas réalité empirique stricte.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Gradient local des effets, détection des inversions de gradient
-- [ ] Note obligatoire : zones de bascule = structures analytiques émergentes du modèle, pas réalité empirique directe
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Gradient local des effets, détection des inversions de gradient
+  - Note obligatoire : zones de bascule = structures analytiques émergentes du modèle, pas réalité empirique directe
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Détecter algorithmiquement les inversions de gradient spatial et extraire les coordonnées des "zones de bascule".
+- [ ] Générer la carte thermique localisant ces points critiques.
 
 
 
@@ -917,10 +1048,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie des ignorances du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte LISA.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Modèle SAR de base, calcul des résidus, autocorrélation Moran
-- [ ] Score de "blind spot" spatial
-- [ ] **Nouveauté** : corrélation résidus × accessibilité transport
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Modèle SAR de base, calcul des résidus, autocorrélation Moran
+  - Score de "blind spot" spatial
+  - **Nouveauté** : corrélation résidus × accessibilité transport
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Modéliser le système via un Spatial Autoregressive Model (SAR) et calculer l'autocorrélation de Moran.
+- [ ] Extraire les résidus du modèle pour identifier les "blind spots" spatiaux.
+- [ ] Tester la corrélation des résidus avec les données d'accessibilité aux transports.
 
 
 
@@ -931,12 +1067,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle la porosité des mondes.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Modèle GMM (Gaussian Mixture Model)
-- [ ] Latent Class Mixed Model
-- [ ] 5 classes latentes détectées — description profils statistiques et sociologiques
-- [ ] Zones d'incertitude : établissements multi-appartenance
-- [ ] Entropie locale : carte des zones hybrides
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Modèle GMM (Gaussian Mixture Model)
+  - Latent Class Mixed Model
+  - 5 classes latentes détectées — description profils statistiques et sociologiques
+  - Zones d'incertitude : établissements multi-appartenance
+  - Entropie locale : carte des zones hybrides
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Entraîner un modèle GMM (Gaussian Mixture Model) et un Latent Class Mixed Model pour extraire 5 classes latentes.
+- [ ] Calculer l'entropie locale de chaque lycée pour quantifier l'incertitude d'appartenance et cartographier les zones hybrides.
 
 
 
@@ -947,12 +1087,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Épaisseur" des frontières.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
-- **Pistes d'exploration suggérées :**
-- [ ] KDE par cluster, probabilités locales d'appartenance
-- [ ] Entropie locale H(x) comme mesure de flou
-- [ ] Gradient de transition : là où les mondes se mélangent
-- [ ] «Épaisseur» des frontières scolaires (concept central)
-- [ ] Indice global de flou des frontières F
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - KDE par cluster, probabilités locales d'appartenance
+  - Entropie locale H(x) comme mesure de flou
+  - Gradient de transition : là où les mondes se mélangent
+  - «Épaisseur» des frontières scolaires (concept central)
+  - Indice global de flou des frontières F
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Estimer les probabilités locales d'appartenance aux clusters via KDE (Kernel Density Estimation).
+- [ ] Calculer l'indice d'entropie locale H(x) et générer l'indice global de flou des frontières (F).
 
 
 
@@ -963,13 +1107,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Où la mobilité échappe à la hiérarchie ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Mesure de la tension : |d_ij - d^U_ij| × w_ij
-- [ ] Lycées «contradictoires» : proches dans le réseau, éloignés dans l'arbre
-- [ ] Score de désalignement par lycée
-- [ ] Indice global DA : cohérence arbre/réseau
-- [ ] Cartographie des points de bascule
-- [ ] Signification : là où la mobilité scolaire échappe à la hiérarchie
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Mesure de la tension : |d_ij - d^U_ij| × w_ij
+  - Lycées «contradictoires» : proches dans le réseau, éloignés dans l'arbre
+  - Score de désalignement par lycée
+  - Indice global DA : cohérence arbre/réseau
+  - Cartographie des points de bascule
+  - Signification : là où la mobilité scolaire échappe à la hiérarchie
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer le score de tension hiérarchie/réseau (|d_ij - d^U_ij| × w_ij) pour repérer les anomalies topologiques.
+- [ ] Générer l'indice global DA (désalignement) et cartographier les points de bascule ultramétriques.
 
 
 ---
@@ -984,10 +1132,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie d'intensité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Carte PSL.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Score PSL enrichi avec nouvelles variables
-- [ ] Carte PSL sur l'IDF
-- [ ] **Nouveauté** : corrélation PSL × accessibilité transport
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Score PSL enrichi avec nouvelles variables
+  - Carte PSL sur l'IDF
+  - **Nouveauté** : corrélation PSL × accessibilité transport
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder le calcul de la Pression Ségrégative Locale (PSL) intégrée aux variables DVF et IRIS.
+- [ ] Générer la carte spatiale de la PSL et tester sa corrélation avec l'accessibilité transport.
 
 
 
@@ -998,12 +1150,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le système d'Île-de-France analysé sous son pire angle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Formule et interprétation
-- [ ] Décomposition : IFC public/privé + IPS + géographie
-- [ ] IFC par zone (Paris, PC, GC)
-- [ ] Indice de mobilité M = 1 - IFC
-- [ ] Asymétrie des flux : déséquilibres de mobilité
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Formule et interprétation
+  - Décomposition : IFC public/privé + IPS + géographie
+  - IFC par zone (Paris, PC, GC)
+  - Indice de mobilité M = 1 - IFC
+  - Asymétrie des flux : déséquilibres de mobilité
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la fonction de décomposition de l'Indice de Fragmentation Inter-couches (IFC).
+- [ ] Exporter les matrices d'asymétrie des flux et calculer l'indice de mobilité (M = 1 - IFC).
 
 
 
@@ -1014,13 +1170,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le coût structurel d'une mixité forcée sans préparation.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 23.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition de la perméabilité (flux × distance hiérarchique)
-- [ ] Trop fermé vs trop ouvert : les deux déséquilibres structurels du système
-- [ ] Coût structurel : désorganisation par excès de mixité forcée
-- [ ] Indice Π = P_raw / C
-- [ ] Perméabilité locale par lycée
-- [ ] Lycées «passerelles» vs lycées «verrous»
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition de la perméabilité (flux × distance hiérarchique)
+  - Trop fermé vs trop ouvert : les deux déséquilibres structurels du système
+  - Coût structurel : désorganisation par excès de mixité forcée
+  - Indice Π = P_raw / C
+  - Perméabilité locale par lycée
+  - Lycées «passerelles» vs lycées «verrous»
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la boucle de calcul estimant l'indice de perméabilité (Π = P_raw / C) pour chaque lycée.
+- [ ] Générer les graphiques de distribution permettant d'isoler statistiquement les "passerelles" (ultra-ouverts) et les "verrous" (ultra-fermés).
 
 
 
@@ -1031,12 +1191,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la captation des ressources scolaires de la région par des bastions spécifiques.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 24, Top clusters absorbants.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition : flux entrants >> flux sortants
-- [ ] Score d'absorption A_k = In_k / Out_k
-- [ ] Condition spectrale d'attracteur : ρ(T_Ck) > 1
-- [ ] Top clusters absorbants de l'Île-de-France
-- [ ] Signification : «puits scolaires» et accumulation des ressources
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition : flux entrants >> flux sortants
+  - Score d'absorption A_k = In_k / Out_k
+  - Condition spectrale d'attracteur : ρ(T_Ck) > 1
+  - Top clusters absorbants de l'Île-de-France
+  - Signification : «puits scolaires» et accumulation des ressources
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder le score d'absorption des clusters (Flux_IN / Flux_OUT).
+- [ ] Valider la condition spectrale (ρ(T_C) > 1) pour identifier les attracteurs dynamiques (puits scolaires).
 
 
 ---
@@ -1051,10 +1215,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations spatiales $\neq$ effets causaux.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 25.
 
-- **Pistes d'exploration suggérées :**
-- [ ] SAR avec covariables enrichies (revenus IRIS, DVF, accessibilité)
-- [ ] Estimation de ρ, effets directs vs indirects spatiaux
-- [ ] Note obligatoire : associations spatiales ≠ effets causaux
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - SAR avec covariables enrichies (revenus IRIS, DVF, accessibilité)
+  - Estimation de ρ, effets directs vs indirects spatiaux
+  - Note obligatoire : associations spatiales ≠ effets causaux
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Entraîner le modèle SAR en incluant les covariables (DVF, revenus IRIS, accessibilité).
+- [ ] Extraire et décomposer les effets spatiaux directs et indirects pour évaluation.
 
 
 
@@ -1065,9 +1233,13 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Purement exploratoire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 26.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Variables latentes enrichies, R²m vs R²c
-- [ ] **Nouveauté** : DVF et accessibilité transport ajoutent-ils du pouvoir explicatif au-delà de l'IPS et IRIS ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Variables latentes enrichies, R²m vs R²c
+  - **Nouveauté** : DVF et accessibilité transport ajoutent-ils du pouvoir explicatif au-delà de l'IPS et IRIS ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Entraîner le modèle SEM spatial en incluant les variables enrichies (DVF, accessibilité transport).
+- [ ] Extraire et comparer les métriques d'évaluation du modèle (R² marginal vs R² conditionnel).
 
 
 
@@ -1078,11 +1250,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations non-linéaires.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 27.
 
-- **Pistes d'exploration suggérées :**
-- [ ] GAM avec variables enrichies, effets par splines
-- [ ] Note de prudence renforcée : associations non linéaires ≠ identification causale
-- [ ] Zones de gradient positif vs négatif, tipping points analytiques
-- [ ] ⚠️ Random Forest spatial → `/exploratory/` (pas dans le texte principal)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - GAM avec variables enrichies, effets par splines
+  - Note de prudence renforcée : associations non linéaires ≠ identification causale
+  - Zones de gradient positif vs négatif, tipping points analytiques
+  - ⚠️ Random Forest spatial → `/exploratory/` (pas dans le texte principal)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Entraîner un modèle additif généralisé (GAM) non-linéaire avec splines sur les variables enrichies.
+- [ ] Extraire les points d'inflexion (tipping points analytiques) et générer les graphiques d'effets marginaux.
 
 
 
@@ -1093,10 +1269,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 28.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Effet quartier vs effet réseau
-- [ ] Variance quartier / variance réseau
-- [ ] **Nouveauté** : l'accessibilité transport modifie-t-elle cet équilibre ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Effet quartier vs effet réseau
+  - Variance quartier / variance réseau
+  - **Nouveauté** : l'accessibilité transport modifie-t-elle cet équilibre ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la décomposition mathématique de la variance pour séparer l'effet "quartier" de l'effet "réseau".
+- [ ] Tester statistiquement si l'intégration de la variable "accessibilité transport" modifie cet équilibre.
 
 
 
@@ -1107,7 +1287,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transition vers le Tome III.
 - **Artefacts générés** : Conclusion du Tome 2.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Synthétiser les apports et limites des modèles spatiaux développés.
 - [ ] Rédiger le texte de la Conclusion du Tome 2.
 
@@ -1118,7 +1298,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts générant les clusters et les réseaux.
 - [ ] Structurer ce code Python pour l'Annexe A1 du Tome 2.
 
@@ -1129,7 +1309,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A2.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Exporter les matrices mathématiques (distance, flux) sous format lisible (JSON/CSV).
 - [ ] Mettre à disposition ces jeux de données via l'Annexe A2.
 
@@ -1140,7 +1320,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rassembler les différents benchmarks de vitesse et de performance algorithmique.
 - [ ] Dresser le tableau comparatif final dans l'Annexe A3.
 
@@ -1151,7 +1331,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A4.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Compiler les logs et les résultats statistiques bruts (OLS, SAR, SEM).
 - [ ] Structurer ces sorties mathématiques pour l'Annexe A4.
 
@@ -1162,7 +1342,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A5.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rassembler les résultats des méthodes exploratoires (Random Forest, etc.) non retenues.
 - [ ] Rédiger la note méthodologique associée pour l'Annexe A5.
 
@@ -1173,7 +1353,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Regrouper les visualisations géospatiales secondaires générées par les modèles.
 - [ ] Exporter ce recueil cartographique pour l'Annexe A6.
 
@@ -1184,7 +1364,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A7.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la conclusion du Tome II (5 lycées les plus structurants selon centralité composite)
 - [ ] Comparaison internationale courte (Londres, New York — littérature existante)
 - [ ] A1 : Code Python complet
@@ -1208,7 +1388,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clause obligatoire de début : "Ce volume propose des cadres dynamiques exploratoires..." Il faut empêcher le lecteur de prendre les projections pour des prédictions.
 - **Artefacts générés** : Note éthique T3.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la note renforcée (cadres exploratoires, non prédictifs, non causaux)
 - [ ] Phrase protectrice obligatoire en ouverture : *"Ce volume propose des cadres dynamiques exploratoires…"*
 - [ ] Avant-propos : transition "du réseau aux dynamiques", note de limitation explicite sur la granularité des données longitudinales
@@ -1227,13 +1407,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identifier les établissements en évolution sociale descendante ou ascendante sans incrimination morale.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1, Figure 4.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition formelle du score de trajectoire
-- [ ] Trois types analytiques : ascendants, déclinants, instables
-- [ ] Carte des trajectoires sur l'IDF
-- [ ] **Nouveauté** : corrélation trajectoire × évolution prix DVF (polarisation sociale ?)
-- [ ] Corrélation trajectoire × données démographiques temporelles INSEE
-- [ ] Script `figures/fig4_trajectories_changepoints.py`
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition formelle du score de trajectoire
+  - Trois types analytiques : ascendants, déclinants, instables
+  - Carte des trajectoires sur l'IDF
+  - **Nouveauté** : corrélation trajectoire × évolution prix DVF (polarisation sociale ?)
+  - Corrélation trajectoire × données démographiques temporelles INSEE
+  - Script `figures/fig4_trajectories_changepoints.py`
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder le score longitudinal de "trajectoire temporelle" et classer les établissements (ascendants, déclinants, instables).
+- [ ] Générer le script `figures/fig4_trajectories_changepoints.py` et tester la corrélation temporelle avec l'évolution des prix DVF.
 
 
 
@@ -1244,10 +1428,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les frontières bougent-elles ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Partitions annuelles, matrice de transition inter-temporelle
-- [ ] Stabilité ARI entre années, mobilité de cluster
-- [ ] **Nouveauté** : les clusters du Tome II sont-ils stables dans le temps ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Partitions annuelles, matrice de transition inter-temporelle
+  - Stabilité ARI entre années, mobilité de cluster
+  - **Nouveauté** : les clusters du Tome II sont-ils stables dans le temps ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Exécuter la CAH dynamique sur chaque année et générer la matrice de transition inter-temporelle.
+- [ ] Calculer la stabilité (Adjusted Rand Index) des clusters d'une année sur l'autre.
 
 
 
@@ -1258,10 +1446,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Distinguer l'effet réel de la simple révision du calcul IPS de 2021.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Dendrogrammes annuels empilés
-- [ ] Distance ultramétrique inter-temporelle, stabilité hiérarchique
-- [ ] Note de prudence : distinguer changements réels vs artefacts de la révision IPS 2021
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Dendrogrammes annuels empilés
+  - Distance ultramétrique inter-temporelle, stabilité hiérarchique
+  - Note de prudence : distinguer changements réels vs artefacts de la révision IPS 2021
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Générer la pile de dendrogrammes annuels superposés.
+- [ ] Calculer la distance ultramétrique inter-temporelle pour évaluer la résilience hiérarchique du système.
 
 
 
@@ -1272,10 +1464,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Modèle formel métaphorique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Note de statut épistémologique obligatoire : HMM = cadre exploratoire, pas modélisation robuste au sens strict
-- [ ] Variables d'observation : IPS, mixité, résultats bac, prix DVF
-- [ ] 4–5 états cachés estimés, matrice de transition, durée moyenne par état
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Note de statut épistémologique obligatoire : HMM = cadre exploratoire, pas modélisation robuste au sens strict
+  - Variables d'observation : IPS, mixité, résultats bac, prix DVF
+  - 4–5 états cachés estimés, matrice de transition, durée moyenne par état
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Entraîner un Hidden Markov Model (HMM) pour détecter les régimes cachés dans les séries temporelles (IPS, résultats, mixité).
+- [ ] Extraire les matrices de transition estimées et la durée moyenne par état caché.
 
 
 
@@ -1286,9 +1482,13 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Section expérimentale (`/exploratory/`).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Intégration graphe de similarité dans le HMM
-- [ ] Note de prudence renforcée : modèle expérimental, résultats = hypothèses exploratoires
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Intégration graphe de similarité dans le HMM
+  - Note de prudence renforcée : modèle expérimental, résultats = hypothèses exploratoires
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coupler le modèle HMM avec la structure topologique (Graph Neural Network temporel ou modèle couplé).
+- [ ] Extraire les paramètres de diffusion montrant comment les régimes se propagent géographiquement.
 
 
 
@@ -1299,14 +1499,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyser si l'Île-de-France converge vers l'explosion ou vers la stabilité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Série temporelle de T(t)
-- [ ] Décomposition dynamique : ΔT = ΔT_within + ΔT_between
-- [ ] Paris : hétérogénéité interne maximale, quelle évolution ?
-- [ ] Petite couronne : zone de tension, évolution de la polarisation
-- [ ] Grande couronne : homogénéité croissante ou décroissante ?
-- [ ] Vitesse de fragmentation v_T = dT/dt
-- [ ] **V2** : corrélation dynamique Theil × prix DVF
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Série temporelle de T(t)
+  - Décomposition dynamique : ΔT = ΔT_within + ΔT_between
+  - Paris : hétérogénéité interne maximale, quelle évolution ?
+  - Petite couronne : zone de tension, évolution de la polarisation
+  - Grande couronne : homogénéité croissante ou décroissante ?
+  - Vitesse de fragmentation v_T = dT/dt
+  - **V2** : corrélation dynamique Theil × prix DVF
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la série temporelle de l'indice de Theil (T) et sa vitesse de fragmentation (dT/dt).
+- [ ] Extraire la décomposition dynamique (ΔT_within + ΔT_between) et générer les graphiques d'évolution par couronne.
 
 
 
@@ -1317,12 +1521,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La "dérive continentale" de l'éducation francilienne.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Évolution de la matrice de transition T_t
-- [ ] Animation Python conceptuelle 2010-2026 (script fourni)
-- [ ] Ouverture / fermeture des corridors dans le temps
-- [ ] Émergence et disparition d'ascenseurs sociaux
-- [ ] Dérive de T : qu'est-ce qui explique les changements de flux ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Évolution de la matrice de transition T_t
+  - Animation Python conceptuelle 2010-2026 (script fourni)
+  - Ouverture / fermeture des corridors dans le temps
+  - Émergence et disparition d'ascenseurs sociaux
+  - Dérive de T : qu'est-ce qui explique les changements de flux ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Générer la série chronologique des matrices de transition et produire l'animation dynamique de Sankey.
+- [ ] Extraire les métriques identifiant mathématiquement l'apparition de nouveaux ascenseurs sociaux.
 
 
 ---
@@ -1337,12 +1545,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Prudence : corrélation $\neq$ causalité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8.
 
-- **Pistes d'exploration suggérées :**
-- [ ] PELT, segmentation binaire, critère AIC/BIC
-- [ ] Changepoints sur IPS moyen, σ, Theil, résultats bac
-- [ ] **Nouveauté** : coïncidence changepoints scolaires × changepoints DVF immobiliers
-- [ ] Note obligatoire : distinguer ruptures réelles vs artefacts révision IPS 2021
-- [ ] Test de sensibilité penalty PELT (min_size, pen)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - PELT, segmentation binaire, critère AIC/BIC
+  - Changepoints sur IPS moyen, σ, Theil, résultats bac
+  - **Nouveauté** : coïncidence changepoints scolaires × changepoints DVF immobiliers
+  - Note obligatoire : distinguer ruptures réelles vs artefacts révision IPS 2021
+  - Test de sensibilité penalty PELT (min_size, pen)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Exécuter l'algorithme de détection de ruptures (PELT) en ajustant les paramètres de pénalité (AIC/BIC).
+- [ ] Isoler les dates critiques (changepoints) et tester la coïncidence avec les ruptures des séries immobilières DVF.
 
 
 
@@ -1353,9 +1565,13 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Note renforcée : associations temporelles, pas effets causaux
-- [ ] Ce qu'il faudrait pour une identification causale stricte (diff-in-diff, RD — non disponibles)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Note renforcée : associations temporelles, pas effets causaux
+  - Ce qu'il faudrait pour une identification causale stricte (diff-in-diff, RD — non disponibles)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Configurer un modèle exploratoire (Diff-in-Diff ou Regression Discontinuity) sur les changepoints.
+- [ ] Exporter les intervalles de confiance sur les effets temporels estimés.
 
 
 
@@ -1366,11 +1582,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Emprunt fort à la physique statistique. Exiger des "formulations conditionnelles systématiques".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Note épistémologique développée : métaphore analytique formalisée, pas loi empirique
-- [ ] Condition `ρλ_max(W) ≥ 1` présentée comme condition mathématique sur le modèle
-- [ ] Formulations conditionnelles systématiques
-- [ ] Résultats "cohérents avec l'hypothèse de fragilisation croissante"
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Note épistémologique développée : métaphore analytique formalisée, pas loi empirique
+  - Condition `ρλ_max(W) ≥ 1` présentée comme condition mathématique sur le modèle
+  - Formulations conditionnelles systématiques
+  - Résultats "cohérents avec l'hypothèse de fragilisation croissante"
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer la plus grande valeur propre du réseau (ρλ_max) et générer sa série temporelle.
+- [ ] Extraire les fenêtres temporelles critiques où le système s'approche de l'instabilité structurelle (valeur >= 1).
 
 
 
@@ -1381,13 +1601,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites (faux positifs, sensibilité).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Signaux précurseurs d'une transition critique
-- [ ] Indicateurs : variance locale, autocorrélation, «critical slowing down»
-- [ ] Application aux lycées en frontière
-- [ ] Systèmes d'alerte précoce : repérer les lycées «en bascule»
-- [ ] Limites : faux positifs, sensibilité aux données
-- [ ] Encadré : peut-on prévoir une ségrégation scolaire croissante ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Signaux précurseurs d'une transition critique
+  - Indicateurs : variance locale, autocorrélation, «critical slowing down»
+  - Application aux lycées en frontière
+  - Systèmes d'alerte précoce : repérer les lycées «en bascule»
+  - Limites : faux positifs, sensibilité aux données
+  - Encadré : peut-on prévoir une ségrégation scolaire croissante ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la détection des "Early Warning Signals" (variance locale, autocorrélation critique) sur les lycées en frontière.
+- [ ] Modéliser un algorithme prédictif détectant la fragilisation ségrégative d'un établissement.
 
 
 
@@ -1398,13 +1622,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Expérimentation contrefactuelle in-silico.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Extension du DAG statique à une structure dynamique
-- [ ] Ultramétrie comme variable causale latente
-- [ ] Ruptures ultramétriques comme événements dans le DAG
-- [ ] Propagation en cascade : comment un changement de hiérarchie se diffuse
-- [ ] Effet mémoriel (inertie) : α dans le modèle dynamique
-- [ ] Simulation contrefactuelle : que se passe-t-il si on «casse» un lien causal ?
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Extension du DAG statique à une structure dynamique
+  - Ultramétrie comme variable causale latente
+  - Ruptures ultramétriques comme événements dans le DAG
+  - Propagation en cascade : comment un changement de hiérarchie se diffuse
+  - Effet mémoriel (inertie) : α dans le modèle dynamique
+  - Simulation contrefactuelle : que se passe-t-il si on «casse» un lien causal ?
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Construire formellement le Directed Acyclic Graph (DAG) inter-temporel pour inclure les délais et l'inertie.
+- [ ] Simuler mathématiquement une intervention (modification de flux) et en extraire les conséquences en cascade.
 
 
 ---
@@ -1419,7 +1647,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Obligation absolue : spécifier que ce sont des langages analytiques, pas des descriptions empiriques directes.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la note obligatoire (formalismes avancés = langages analytiques, pas descriptions empiriques directement mesurables)
 
 
@@ -1431,10 +1659,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Métaphore puissante pour montrer que l'ascension sociale demande plus d'énergie que le mobilité sociale descendante.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Présentation du formalisme riemannien
-- [ ] Chaque lycée comme point, métrique sociale G_t
-- [ ] Formulation systématique : "permet de penser X… ne constitue pas une mesure directe"
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Présentation du formalisme riemannien
+  - Chaque lycée comme point, métrique sociale G_t
+  - Formulation systématique : "permet de penser X… ne constitue pas une mesure directe"
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la métrique tensorielle représentant l'espace scolaire comme une variété riemannienne (G_t).
+- [ ] Extraire les coordonnées courbées de chaque lycée et générer la visualisation topologique abstraite.
 
 
 
@@ -1445,12 +1677,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la force de rappel du déterminisme local.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Formalisme du champ de tensions (gradient dans l'espace riemannien)
-- [ ] Chaque lycée soumis à des forces structurelles : attraction vers le cluster, répulsion centrifuge
-- [ ] Carte du champ de tensions à un instant t
-- [ ] Lycées en équilibre vs lycées en tension
-- [ ] Formulation : «permet de penser la dynamique structurelle... ne constitue pas une mesure directe»
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Formalisme du champ de tensions (gradient dans l'espace riemannien)
+  - Chaque lycée soumis à des forces structurelles : attraction vers le cluster, répulsion centrifuge
+  - Carte du champ de tensions à un instant t
+  - Lycées en équilibre vs lycées en tension
+  - Formulation : «permet de penser la dynamique structurelle... ne constitue pas une mesure directe»
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer mathématiquement le gradient dans l'espace riemannien (champ de tensions centrifuge/centripète).
+- [ ] Générer la carte vectorielle montrant les lycées soumis aux pressions d'attraction et de répulsion.
 
 
 
@@ -1461,11 +1697,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mettre le code complet dans `/exploratory/`. Ne pas en faire le juge de paix, mais le sommet technique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15.
 
-- **Pistes d'exploration suggérées :**
-- [ ] **Note obligatoire** : `L = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux` = outil formel d'exploration, hyperparamètres fixés exploratoirement
-- [ ] Ce modèle → `/exploratory/` sur GitHub (pas dans le texte principal comme résultat)
-- [ ] Qu'est-ce que ce modèle permet de penser que les modèles séparés ne permettent pas ?
-- [ ] Synthèse des trois tomes : de la carte à la dynamique
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - **Note obligatoire** : `L = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux` = outil formel d'exploration, hyperparamètres fixés exploratoirement
+  - Ce modèle → `/exploratory/` sur GitHub (pas dans le texte principal comme résultat)
+  - Qu'est-ce que ce modèle permet de penser que les modèles séparés ne permettent pas ?
+  - Synthèse des trois tomes : de la carte à la dynamique
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Assembler la fonction de perte composite (Loss = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux).
+- [ ] Entraîner le réseau neuronal unifié et extraire les hyperparamètres finaux vers un fichier de configuration.
 
 
 ---
@@ -1480,7 +1720,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "lycée sous-performant" est un écart statistique au modèle, pas un jugement sur les équipes pédagogiques.
 - **Artefacts générés** : Note éthique Partie IV.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la note spécifique : "paradoxaux", "sur-performants", "sous-performants" = qualifications relatives à un modèle statistique, pas évaluations de qualité de l'enseignement
 
 
@@ -1492,11 +1732,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On constate le paradoxe sans l'expliquer totalement avec des données macro.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition formelle avec résultats bac + valeur ajoutée IVAL comme validation externe
-- [ ] Score de paradoxalité enrichi
-- [ ] Formulation éthique : "performance relative supérieure à ce que leur profil prédirait"
-- [ ] Mécanismes non déductibles des données agrégées
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition formelle avec résultats bac + valeur ajoutée IVAL comme validation externe
+  - Score de paradoxalité enrichi
+  - Formulation éthique : "performance relative supérieure à ce que leur profil prédirait"
+  - Mécanismes non déductibles des données agrégées
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Créer une fonction de filtrage détectant les établissements ayant un fort score de sur-performance relative.
+- [ ] Générer l'export brut (CSV/JSON) de ces anomalies statistiques avec croisement IVAL.
 
 
 
@@ -1507,13 +1751,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Peut-on trop bien trier ses élèves ?" Formulation neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Lycées à IPS très élevé mais performance relative faible
-- [ ] Hypothèses : saturation, effet sélectivité symbolique, inertie institutionnelle
-- [ ] Corrélation entre score d'entre-soi et paradoxe inversé
-- [ ] Peut-on «trop bien» trier ses élèves ? (question analytique clé)
-- [ ] Carte des paradoxes inversés en Île-de-France
-- [ ] **V2** : croisement DVF (dynamique immobilière atypique ?)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Lycées à IPS très élevé mais performance relative faible
+  - Hypothèses : saturation, effet sélectivité symbolique, inertie institutionnelle
+  - Corrélation entre score d'entre-soi et paradoxe inversé
+  - Peut-on «trop bien» trier ses élèves ? (question analytique clé)
+  - Carte des paradoxes inversés en Île-de-France
+  - **V2** : croisement DVF (dynamique immobilière atypique ?)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder l'extraction des "paradoxes inversés" (IPS ultra-élevé mais sous-rendement en VA).
+- [ ] Tester statistiquement la corrélation de ce sous-rendement avec les dynamiques immobilières locales (DVF).
 
 
 
@@ -1524,13 +1772,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les marges du déterminisme scolaire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Définition : P(τ_i) ≪ ε
-- [ ] Score d'anomalie A(τ_i) = -log P(τ_i)
-- [ ] Types : contre-hiérarchiques, «sauts», oscillantes, géographiques
-- [ ] Ce que les trajectoires rares révèlent : contournements, réseaux, stratégies
-- [ ] Signification : les marges du déterminisme scolaire
-- [ ] **V2** : croisement DVF (dynamique immobilière atypique ?)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Définition : P(τ_i) ≪ ε
+  - Score d'anomalie A(τ_i) = -log P(τ_i)
+  - Types : contre-hiérarchiques, «sauts», oscillantes, géographiques
+  - Ce que les trajectoires rares révèlent : contournements, réseaux, stratégies
+  - Signification : les marges du déterminisme scolaire
+  - **V2** : croisement DVF (dynamique immobilière atypique ?)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer l'entropie des trajectoires individuelles (-log P(τ_i)) et isoler les trajectoires outliers de mobilité.
+- [ ] Exporter la liste des établissements ayant des transitions contre-hiérarchiques.
 
 
 
@@ -1541,14 +1793,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les options (latin, bilangue) ou le privé agissent comme tamis invisible.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Paradoxe de la commune «mixte en moyenne»
-- [ ] Indice de fausse mixité F_c = M_global - M_interne
-- [ ] Score d'hyper-ségrégation masquée HS_c
-- [ ] Top communes paradoxales (forte moyenne, forte séparation interne)
-- [ ] Mécanismes : filières, options, réputation, recrutement implicite
-- [ ] Carte IDF des communes hyper-ségrégées
-- [ ] **V2** : croisement DVF (dynamique immobilière atypique ?)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Paradoxe de la commune «mixte en moyenne»
+  - Indice de fausse mixité F_c = M_global - M_interne
+  - Score d'hyper-ségrégation masquée HS_c
+  - Top communes paradoxales (forte moyenne, forte séparation interne)
+  - Mécanismes : filières, options, réputation, recrutement implicite
+  - Carte IDF des communes hyper-ségrégées
+  - **V2** : croisement DVF (dynamique immobilière atypique ?)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer le score d'hyper-ségrégation masquée (HS_c) combinant une forte moyenne communale et un fort indice de ségrégation interne.
+- [ ] Générer la carte spatiale identifiant les communes "faussement mixtes".
 
 
 
@@ -1559,12 +1815,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Avouer les ignorances de la machine de l'Atlas.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Score BS_i = |R_i| × Σ W_ij |R_j|
-- [ ] Consensus multi-modèle d'erreur
-- [ ] Zones systématiquement mal expliquées
-- [ ] Hypothèses sur variables manquantes : réputation, alumni, dérogations
-- [ ] **V2** : croisement DVF (dynamique immobilière atypique ?)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Score BS_i = |R_i| × Σ W_ij |R_j|
+  - Consensus multi-modèle d'erreur
+  - Zones systématiquement mal expliquées
+  - Hypothèses sur variables manquantes : réputation, alumni, dérogations
+  - **V2** : croisement DVF (dynamique immobilière atypique ?)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder la consolidation des erreurs (résidus) multi-modèles pondérées spatialement.
+- [ ] Extraire la liste géographique des "blind spots" (zones systématiquement mal prédites).
 
 
 ---
@@ -1579,7 +1839,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les simulations ne sont PAS des recommandations de politique publique. Les parents s'adapteraient (ex: déménagement, fuite dans le privé), ce que le modèle ignore.
 - **Artefacts générés** : Note de Cadrage.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rédiger la note : simulations = scénarios analytiques, pas prédictions ni recommandations de politique publique
 - [ ] Préciser que les comportements adaptatifs des acteurs ne sont pas modélisés
 
@@ -1592,13 +1852,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Modèle non-linéaire spatial comme outil de simulation
-- [ ] Simulation 1 V1 : redistribution des IPS (re-sectorisation)
-- [ ] Propagation : la réforme se diffuse-t-elle dans le réseau ?
-- [ ] Effets de bord : quels lycées bénéficient, lesquels perdent ?
-- [ ] Condition de succès V1 : éviter de déclencher une transition de phase
-- [ ] Limites section obligatoire : comportements familiaux statiques, effets adaptatifs potentiellement annulateurs
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Modèle non-linéaire spatial comme outil de simulation
+  - Simulation 1 V1 : redistribution des IPS (re-sectorisation)
+  - Propagation : la réforme se diffuse-t-elle dans le réseau ?
+  - Effets de bord : quels lycées bénéficient, lesquels perdent ?
+  - Condition de succès V1 : éviter de déclencher une transition de phase
+  - Limites section obligatoire : comportements familiaux statiques, effets adaptatifs potentiellement annulateurs
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Initialiser la boucle de simulation de re-sectorisation (redistribution artificielle des IPS locaux).
+- [ ] Extraire la nouvelle configuration du réseau et valider la condition de stabilité de la phase de transition simulée.
 
 
 
@@ -1609,14 +1873,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Exercice purement mathématique analytique. Pas une "fermeture" d'écoles, mais un test de stress de l'équation de Theil.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Contrefactuel V1 : que se passe-t-il si on ferme les 20 lycées les plus fermés socialement ?
-- [ ] Réallocation des flux dans le réseau
-- [ ] Impact sur les clusters : recomposition des mondes scolaires ?
-- [ ] Impact sur les corridors : nouveaux ascenseurs sociaux ?
-- [ ] Impact sur les goulots : libération de mobilité ?
-- [ ] Discussion V1 : est-ce souhaitable ? faisable ? suffisant ? — exercice analytique, pas proposition de politique
-- [ ] Note obligatoire : exercice analytique, pas proposition de politique publique
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Contrefactuel V1 : que se passe-t-il si on ferme les 20 lycées les plus fermés socialement ?
+  - Réallocation des flux dans le réseau
+  - Impact sur les clusters : recomposition des mondes scolaires ?
+  - Impact sur les corridors : nouveaux ascenseurs sociaux ?
+  - Impact sur les goulots : libération de mobilité ?
+  - Discussion V1 : est-ce souhaitable ? faisable ? suffisant ? — exercice analytique, pas proposition de politique
+  - Note obligatoire : exercice analytique, pas proposition de politique publique
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Coder le modèle contrefactuel "suppression des noeuds hyper-sélectifs" (fermeture simulée du Top 20 fermé).
+- [ ] Relancer l'algorithme de routage des flux et exporter les nouvelles matrices d'accessibilité sociale.
 
 
 
@@ -1627,12 +1895,16 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Risque in-silico de polarisation sociale scolaire progressive mis en évidence.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 23.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Investir dans les lycées qui sur-performent socialement
-- [ ] Impact sur le réseau de mobilité
-- [ ] Risque de polarisation sociale scolaire progressive (V1)
-- [ ] Effet de labellisation : comment la réputation change les flux
-- [ ] Quelle politique de communication accompagne cette stratégie ? (V1)
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Investir dans les lycées qui sur-performent socialement
+  - Impact sur le réseau de mobilité
+  - Risque de polarisation sociale scolaire progressive (V1)
+  - Effet de labellisation : comment la réputation change les flux
+  - Quelle politique de communication accompagne cette stratégie ? (V1)
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Injecter un bonus attractif simulé sur les lycées paradoxaux positifs.
+- [ ] Extraire l'impact de ce choc sur l'ouverture de nouveaux corridors sociaux dans le modèle probabiliste.
 
 
 
@@ -1643,13 +1915,17 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mixité forcée vs mixité incitée. "Le risque de la réforme sans modèle".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 24.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Ce que les modèles disent sur la mixité (V1)
-- [ ] La mixité forcée vs la mixité incitée
-- [ ] L'optimum de perméabilité : ni trop fermé ni trop ouvert
-- [ ] Le rôle des corridors : soutenir les ascenseurs, contester les filtres
-- [ ] Les lycées-ponts comme leviers de politique publique
-- [ ] Le risque de la réforme sans modèle : déclencher une phase transition non désirée
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Ce que les modèles disent sur la mixité (V1)
+  - La mixité forcée vs la mixité incitée
+  - L'optimum de perméabilité : ni trop fermé ni trop ouvert
+  - Le rôle des corridors : soutenir les ascenseurs, contester les filtres
+  - Les lycées-ponts comme leviers de politique publique
+  - Le risque de la réforme sans modèle : déclencher une phase transition non désirée
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Calculer les seuils critiques (tipping points) de mixité provoquant la bascule des corridors.
+- [ ] Générer un rapport d'optimisation probabiliste comparant les stratégies de régulation de flux.
 
 
 
@@ -1660,10 +1936,14 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présenter l'Atlas comme un outil d'aide à la compréhension, pas comme un juge.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 25.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Les 9 couches de l'atlas
-- [ ] Concept d'interactivité (GitHub interactif si développé)
-- [ ] Ce que les données actuelles permettent et ne permettent pas encore
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Les 9 couches de l'atlas
+  - Concept d'interactivité (GitHub interactif si développé)
+  - Ce que les données actuelles permettent et ne permettent pas encore
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] Compiler l'architecture des couches JSON pour la cartographie web interactive finale.
+- [ ] Générer les tuiles de base géographiques et les calques statistiques (IPS, résidus, clusters).
 
 
 ---
@@ -1678,15 +1958,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le chapitre le plus important. Non-stationnarité du réel vs stationnarité des modèles.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 26.
 
-- **Pistes d'exploration suggérées :**
-- [ ] IPS comme proxy imparfait
-- [ ] Données agrégées et ecological fallacy
-- [ ] Absence de données individuelles longitudinales
-- [ ] Biais de sélection du corpus (top 100 seulement — implications)
-- [ ] Limites des simulations (comportements adaptatifs non modélisés)
-- [ ] Non-stationnarité du réel vs stationnarité des modèles
-- [ ] Modifications méthodologiques du Ministère (révision IPS 2021)
-- [ ] Confusion potentielle artefacts de mesure / changements réels
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - IPS comme proxy imparfait
+  - Données agrégées et ecological fallacy
+  - Absence de données individuelles longitudinales
+  - Biais de sélection du corpus (top 100 seulement — implications)
+  - Limites des simulations (comportements adaptatifs non modélisés)
+  - Non-stationnarité du réel vs stationnarité des modèles
+  - Modifications méthodologiques du Ministère (révision IPS 2021)
+  - Confusion potentielle artefacts de mesure / changements réels
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse méthodologique.*
 
 
 
@@ -1697,12 +1980,15 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le risque de naturaliser les inégalités. Distinguer "décrire une structure" de "l'accepter comme naturelle". L'IPS peut-il être interprété abusivement ??
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 27.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Le risque de naturaliser les inégalités
-- [ ] La mise en données de l'inégalité : pouvoir et contre-pouvoir
-- [ ] L'IPS peut-il être interprété abusivement ??
-- [ ] Responsabilité du chercheur dans la diffusion
-- [ ] Distinction : décrire une structure ≠ l'accepter comme naturelle
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Le risque de naturaliser les inégalités
+  - La mise en données de l'inégalité : pouvoir et contre-pouvoir
+  - L'IPS peut-il être interprété abusivement ??
+  - Responsabilité du chercheur dans la diffusion
+  - Distinction : décrire une structure ≠ l'accepter comme naturelle
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse éthique.*
 
 
 
@@ -1713,9 +1999,12 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ne pas faire d'inférence, juste de la bibliographie comparative.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 28.
 
-- **Pistes d'exploration suggérées :**
-- [ ] Sociologie, géographie sociale, économie, informatique, physique statistique
-- [ ] Comparaisons internationales développées (Paris vs Londres, New York, Berlin, Tokyo, Barcelone) — littérature existante uniquement
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - Sociologie, géographie sociale, économie, informatique, physique statistique
+  - Comparaisons internationales développées (Paris vs Londres, New York, Berlin, Tokyo, Barcelone) — littérature existante uniquement
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige ces ouvertures disciplinaires.*
 
 
 
@@ -1726,10 +2015,13 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce qu'un accès aux données individuelles permettrait de faire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 29.
 
-- **Pistes d'exploration suggérées :**
-- [ ] 10 questions ouvertes
-- [ ] Données nécessaires pour aller plus loin
-- [ ] Ce qu'un accès à des données individuelles longitudinales permettrait de faire
+- **Synopsis du Chapitre (Ligne directrice) :**
+  - 10 questions ouvertes
+  - Données nécessaires pour aller plus loin
+  - Ce qu'un accès à des données individuelles longitudinales permettrait de faire
+
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur définit l'agenda de recherche.*
 
 
 
@@ -1740,7 +2032,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le paradoxe de la méritocratie républicaine face aux données. Sans prescription normative.
 - **Artefacts générés** : Conclusion Générale.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Ce que l'IDF dit de la France scolaire
 - [ ] La ségrégation scolaire comme processus, pas état
 - [ ] Le paradoxe de la méritocratie républicaine face aux données
@@ -1756,7 +2048,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts Python dédiés aux séries temporelles et détections de ruptures.
 - [ ] Structurer le code dynamique pour l'Annexe A1 du Tome 3.
 
@@ -1767,7 +2059,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A2.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Réunir les justifications mathématiques des paramètres choisis pour les modèles.
 - [ ] Rédiger la note méthodologique justificative dans l'Annexe A2.
 
@@ -1778,7 +2070,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A3.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Extraire les paramètres estimés par les modèles temporels (HMM, algorithme PELT).
 - [ ] Compiler ces valeurs mathématiques dans l'Annexe A3.
 
@@ -1789,7 +2081,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Annexe A4.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Agréger les tableaux de projection issus des simulations de réformes.
 - [ ] Mettre en page ces résultats chiffrés pour l'Annexe A4.
 
@@ -1800,7 +2092,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
 - **Artefacts générés** : Annexe A5.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Générer et optimiser les animations (GIFs, vidéos) d'évolution des flux scolaires.
 - [ ] Constituer la galerie multimédia de l'Annexe A5.
 
@@ -1811,7 +2103,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A6.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Inventorier les sources de données longitudinales exploitées.
 - [ ] Dresser la bibliographie data complète pour l'Annexe A6.
 
@@ -1822,7 +2114,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
 - **Artefacts générés** : Annexe A7.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Créer l'indexation globale croisée sur l'ensemble de la trilogie.
 - [ ] Générer l'index général final pour l'Annexe A7.
 
@@ -1833,7 +2125,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A8.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Agréger les citations et la littérature scientifique de l'ensemble du projet.
 - [ ] Formater la bibliographie exhaustive de l'Annexe A8.
 
@@ -1844,7 +2136,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarté.
 - **Artefacts générés** : Annexe A9.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Unifier le dictionnaire des termes techniques (code, stats, socio) employés dans les trois tomes.
 - [ ] Rédiger le glossaire de référence global dans l'Annexe A9.
 
@@ -1855,7 +2147,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Droit.
 - **Artefacts générés** : Annexe A10.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Vérifier la conformité légale et recenser l'ensemble des licences Open Data.
 - [ ] Rédiger le récapitulatif juridique pour l'Annexe A10.
 
@@ -1866,7 +2158,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Académique.
 - **Artefacts générés** : Annexe A11.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] A1 : Code Python complet (HMM, changepoints, simulations, phase transitions) + lien GitHub
 - [ ] A2 : Note méthodes `/exploratory/` avec justification (pourquoi non-inclus dans le texte principal)
 - [ ] A3 : Paramètres estimés des modèles dynamiques
@@ -1892,7 +2184,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Carte factuelle.
 - **Artefacts générés** : Figure 1 HD et Caption LaTeX.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Collecter les données géographiques (GeoPandas, communes IDF)
 - [ ] Intégrer les revenus IRIS en transparence
 - [ ] Taille des points ∝ effectif, gradient Est/Ouest visible
@@ -1909,7 +2201,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Standard Nature/Science.
 - **Artefacts générés** : Figure 2 HD et Caption LaTeX.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Densité KDE en fond
 - [ ] Couleurs rouge/bleu privé/public
 - [ ] Annotations cas emblématiques
@@ -1926,7 +2218,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarifier dans la caption que c'est un réseau mathématique, pas physique.
 - **Artefacts générés** : Figure 3 HD et Caption LaTeX.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Layout force-directed (spring_layout)
 - [ ] Taille nœuds ∝ centralité eigenvector
 - [ ] Épaisseur arêtes ∝ similarité
@@ -1943,7 +2235,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Annotations directement dans le graphique (ex: "changement de formule IPS").
 - **Artefacts générés** : Figure 4 HD et Caption LaTeX.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Courbes temporelles colorées par cluster Louvain
 - [ ] Changepoints PELT marqués en rouge
 - [ ] Annotation épistémologique directement dans le graphique
@@ -1963,7 +2255,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites explicites inscrites dès l'abstract.
 - **Artefacts générés** : PDF final `main.pdf`.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Compiler `paper_arxiv/main.tex` (base dans `manifesto.tex`)
 - [ ] Intégrer les 4 figures signature
 - [ ] Abstract ≤ 250 mots
@@ -1979,7 +2271,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Validation stricte.
 - **Artefacts générés** : Rapport de robustesse intégré aux annexes.
 
-- **Pistes d'exploration suggérées :**
+- **Cahier des charges Data-Science (Ouvert aux contributions) :**
 - [ ] Moran global (permutation CI, n=999)
 - [ ] Moran local (LISA, correction Bonferroni)
 - [ ] SAR avec différentes matrices de poids (k=4, k=8, inverse distance)
