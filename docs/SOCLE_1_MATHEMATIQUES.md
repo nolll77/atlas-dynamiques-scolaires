@@ -1,4 +1,4 @@
-# 🧮 Socle Mathématique et Algorithmique (Formulaire Complet)
+#  Socle Mathématique et Algorithmique (Formulaire Complet)
 
 > **GUIDE DE CONSTRUCTION (MANIFESTE DU SOCLE)**
 > 

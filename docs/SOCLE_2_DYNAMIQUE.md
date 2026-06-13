@@ -1,4 +1,4 @@
-# 🔬 Socle Mathématique, Dynamique et Causal (Monde B)
+#  Socle Mathématique, Dynamique et Causal (Monde B)
 
 > **GUIDE DE CONSTRUCTION (MANIFESTE DU SOCLE DYNAMIQUE)**
 > Ce document est l'extension du Socle Mathématique, dédié aux modèles complexes, spatiaux, temporels et causaux (Le "Monde B"). Il capture l'intégration des dynamiques de réseau et d'évolution temporelle.
