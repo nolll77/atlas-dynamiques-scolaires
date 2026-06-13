@@ -397,7 +397,8 @@
 - **Artefacts générés** : Texte du Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Calcul par z-scores : $Z_{entre-soi} = Z(IPS) + Z(1/\sigma)$. Carte spatiale IDF.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
 ### Issue #023 — Chapitre 15 : L'indice de Gini des lycées franciliens
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -407,7 +408,8 @@
 - **Artefacts générés** : Texte du Chapitre 15, Courbe de Lorenz.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Décomposition within/between (secteur, géographie). Tracé de la Courbe de Lorenz.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 15, Courbe de Lorenz.
 
 ### Issue #024 — Chapitre 16 : L'indice de Theil : ségrégation décomposable
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -417,7 +419,8 @@
 - **Artefacts générés** : Texte du Chapitre 16, Tableau de décomposition de variance.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Calcul $T_{total} = T_{between} + T_{within}$ à trois niveaux (zones, statut, revenus IRIS).
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 16, Tableau de décomposition de variance.
 
 ### Issue #025 — Chapitre 17 : L'indice de dissimilarité spatial (Duncan D)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -427,7 +430,8 @@
 - **Artefacts générés** : Texte du Chapitre 17, Carte choroplèthe de $D$.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Calcul de $D$ par ville. Corrélation avec la richesse communale et l'accessibilité transport (IDF Mobilités).
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 17, Carte choroplèthe de $D$.
 
 ### Issue #026 — Chapitre 18 : L'indice global de fragmentation scolaire (IFC)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -441,7 +445,8 @@
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Calcul de l'indice composite. Contribution relative de chaque composante.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 18.
 
 ### Issue #027 — Chapitre 19 : ANOVA simple : public/privé explique-t-il tout ?
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -467,7 +472,8 @@
 - **Artefacts générés** : Texte du Chapitre 20, Tableau de décomposition complet.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : OLS multi-facteurs avec termes d'interactions (ex: privé × ouest). Test d'intégration DVF et transports.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 20, Tableau de décomposition complet.
 
 ### Issue #029 — Chapitre 21 : Le modèle multiniveau (HLM)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -477,7 +483,8 @@
 - **Artefacts générés** : Texte du Chapitre 21, Sorties du modèle.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Estimation des ICC (Intraclass Correlation Coefficients). $R^2$ marginal vs $R^2$ conditionnel.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 21, Sorties du modèle.
 
 ### Issue #030 — Chapitre 22 : Vers un modèle causal : DAG statique
 **Labels** : `chapitre`, `documentation`, `exploratory`, `difficulty: low`
@@ -487,7 +494,8 @@
 - **Artefacts générés** : Texte du Chapitre 22, Schéma du DAG.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Construction du réseau causal (Backdoor criterion). Simulation "do-calculus" : effet d'une neutralisation de variable.
+- [ ] Mettre en forme et livrer le document : Texte du Chapitre 22, Schéma du DAG.
 
 ### Issue #031 — Conclusion du Tome I
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
@@ -497,7 +505,8 @@
 - **Artefacts générés** : Conclusion du Tome 1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Synthèse des trouvailles.
+- [ ] Mettre en forme et livrer le document : Conclusion du Tome 1.
 
 ### Issue #032 — Annexe A1 : Tableau complet des lycées
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -507,7 +516,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Export CSV.
+- [ ] Mettre en forme et livrer le document : Annexe A1.
 
 ### Issue #033 — Annexe A2 : Sources de données complètes + licences
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -517,7 +527,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Listing exhaustif.
+- [ ] Mettre en forme et livrer le document : Annexe A2.
 
 ### Issue #034 — Annexe A3 : Méthode de calcul de tous les indices
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -527,7 +538,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Formules LaTeX.
+- [ ] Mettre en forme et livrer le document : Annexe A3.
 
 ### Issue #035 — Annexe A4 : Note sur les licences Open Data
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -537,7 +549,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Licences.
+- [ ] Mettre en forme et livrer le document : Annexe A4.
 
 ### Issue #036 — Annexe A5 : Code Python reproductible complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
@@ -547,7 +560,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Dépôt de code.
+- [ ] Mettre en forme et livrer le document : Annexe A5.
 
 ### Issue #037 — Annexe A6 : Cartographie complète
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -557,7 +571,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Cartes additionnelles.
+- [ ] Mettre en forme et livrer le document : Annexe A6.
 
 ### Issue #038 — Annexe A7 : Glossaire des termes statistiques et sociologiques
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -567,7 +582,8 @@
 - **Artefacts générés** : Annexe A7.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Définitions.
+- [ ] Mettre en forme et livrer le document : Annexe A7.
 
 ### Issue #039 — Annexe A8 : Bibliographie sélective
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -577,7 +593,8 @@
 - **Artefacts générés** : Annexe A8.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Références.
+- [ ] Mettre en forme et livrer le document : Annexe A8.
 
 ### Issue #040 — Annexe A9 : Comparaison internationale courte
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -591,7 +608,8 @@
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Synthèse.
+- [ ] Mettre en forme et livrer le document : Annexe A9.
 
 ### Issue #041 — Note éthique Tome II + Avant-propos
 **Labels** : `documentation`, `ethique`, `difficulty: low`
@@ -1090,7 +1108,8 @@
 - **Artefacts générés** : Conclusion du Tome 2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Synthèse des modèles spatiaux.
+- [ ] Mettre en forme et livrer le document : Conclusion du Tome 2.
 
 ### Issue #071 — Annexe A1 : Code Python complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
@@ -1100,7 +1119,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Scripts de clustering et graphes.
+- [ ] Mettre en forme et livrer le document : Annexe A1.
 
 ### Issue #072 — Annexe A2 : Matrices de distance, similarité, flux
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1110,7 +1130,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Exports JSON/CSV.
+- [ ] Mettre en forme et livrer le document : Annexe A2.
 
 ### Issue #073 — Annexe A3 : Tableau comparatif méthodes de clustering
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1120,7 +1141,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Benchmarks.
+- [ ] Mettre en forme et livrer le document : Annexe A3.
 
 ### Issue #074 — Annexe A4 : Résultats complets des modèles
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1130,7 +1152,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : OLS, SAR, SEM outputs.
+- [ ] Mettre en forme et livrer le document : Annexe A4.
 
 ### Issue #075 — Annexe A5 : Note sur les méthodes dans /exploratory/
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1140,7 +1163,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Random Forest, etc.
+- [ ] Mettre en forme et livrer le document : Annexe A5.
 
 ### Issue #076 — Annexe A6 : Cartes supplémentaires
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1150,7 +1174,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Cartes secondaires.
+- [ ] Mettre en forme et livrer le document : Annexe A6.
 
 ### Issue #077 — Annexe A7 : Bibliographie méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1732,7 +1757,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Scripts dynamiques.
+- [ ] Mettre en forme et livrer le document : Annexe A1.
 
 ### Issue #113 — Annexe A2 : Note méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1742,7 +1768,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Justifications.
+- [ ] Mettre en forme et livrer le document : Annexe A2.
 
 ### Issue #114 — Annexe A3 : Paramètres estimés des modèles dynamiques
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1752,7 +1779,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : HMM, PELT.
+- [ ] Mettre en forme et livrer le document : Annexe A3.
 
 ### Issue #115 — Annexe A4 : Résultats des simulations de réforme
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1762,7 +1790,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Tableaux de projection.
+- [ ] Mettre en forme et livrer le document : Annexe A4.
 
 ### Issue #116 — Annexe A5 : Cartes temporelles et animations
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1772,7 +1801,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : GIFs/Vidéos.
+- [ ] Mettre en forme et livrer le document : Annexe A5.
 
 ### Issue #117 — Annexe A6 : Sources longitudinales
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1782,7 +1812,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Bibliographie data.
+- [ ] Mettre en forme et livrer le document : Annexe A6.
 
 ### Issue #118 — Annexe A7 : Index général de la trilogie
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1792,7 +1823,8 @@
 - **Artefacts générés** : Annexe A7.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Indexation.
+- [ ] Mettre en forme et livrer le document : Annexe A7.
 
 ### Issue #119 — Annexe A8 : Bibliographie complète
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1802,7 +1834,8 @@
 - **Artefacts générés** : Annexe A8.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Références globales.
+- [ ] Mettre en forme et livrer le document : Annexe A8.
 
 ### Issue #120 — Annexe A9 : Glossaire général unifié
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1812,7 +1845,8 @@
 - **Artefacts générés** : Annexe A9.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Dictionnaire de termes.
+- [ ] Mettre en forme et livrer le document : Annexe A9.
 
 ### Issue #121 — Annexe A10 : Licences de données
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1822,7 +1856,8 @@
 - **Artefacts générés** : Annexe A10.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+- [ ] Récupérer les éléments liés à : Open Data.
+- [ ] Mettre en forme et livrer le document : Annexe A10.
 
 ### Issue #122 — Annexe A11 : Table de correspondance méthode
 **Labels** : `annexe`, `documentation`, `difficulty: low`
