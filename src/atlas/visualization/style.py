@@ -24,33 +24,25 @@ ETHICAL_NOTE = (
 
 def set_atlas_style() -> None:
     """Applique le thème graphique global."""
-    plt.rcParams.update(
-        {
-            "figure.facecolor": COLORS["background"],
-            "axes.facecolor": COLORS["background"],
-            "axes.grid": True,
-            "grid.color": COLORS["grid"],
-            "font.family": "DejaVu Sans",
-            "font.size": 11,
-            "axes.titlesize": 14,
-            "figure.dpi": 150,
-            "savefig.dpi": 300,
-            "savefig.bbox": "tight",
-        }
-    )
+    plt.rcParams.update({
+        "figure.facecolor": COLORS["background"],
+        "axes.facecolor": COLORS["background"],
+        "axes.grid": True,
+        "grid.color": COLORS["grid"],
+        "font.family": "DejaVu Sans",
+        "font.size": 11,
+        "axes.titlesize": 14,
+        "figure.dpi": 150,
+        "savefig.dpi": 300,
+        "savefig.bbox": "tight",
+    })
 
 
 def add_ethical_note(ax, text: str = None) -> None:
     """Ajoute la note éthique standardisée à une figure."""
-    ax.text(
-        0.01,
-        -0.10,
-        text or ETHICAL_NOTE,
-        transform=ax.transAxes,
-        fontsize=8,
-        color="gray",
-        fontstyle="italic",
-    )
+    ax.text(0.01, -0.10, text or ETHICAL_NOTE,
+            transform=ax.transAxes, fontsize=8,
+            color="gray", fontstyle="italic")
 
 
 def save_figure(fig, name: str, formats: tuple = ("png", "pdf")) -> None:

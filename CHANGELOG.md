@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [0.1.0] — 2026-06-12
+## [0.1.0] — 2026-06-13
 
 ### Added
 - Structure initiale du dépôt

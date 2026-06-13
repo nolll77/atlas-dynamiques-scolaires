@@ -12,7 +12,7 @@ le contexte résidentiel (revenus IRIS, prix DVF) et les dynamiques de réseau.
 ❌ Il ne prédit pas le comportement individuel (ecological fallacy).
 ❌ Il ne formule pas de recommandations de politique publique.
 
-## Formulations acceptables vs inacceptables
+## Formulations
 
 | ❌ À éviter | ✅ À utiliser |
 |---|---|

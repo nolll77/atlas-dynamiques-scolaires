@@ -1,13 +1,13 @@
 .PHONY: help setup install data figures tests lint format docs docs-serve arxiv clean
 
-help:  ## Afficher l'aide
+help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 setup:  ## Installation complète de l'environnement
-	uv sync --extra dev
+	uv sync --all-extras
 	pre-commit install
-	@echo "✅ Environnement prêt"
+	@echo "✅ Environnement prêt. Lancer : make tests"
 
 install:  ## Installer le package en mode éditable
 	uv pip install -e ".[dev]"
@@ -56,7 +56,7 @@ clean:  ## Nettoyer les fichiers générés
 clean-figures:  ## Supprimer les figures générées
 	rm -rf figures/output/*
 
-run-all:  ## Pipeline complète
+run-all:  ## Pipeline complète (données + indices + figures + tests)
 	dvc repro
 	make figures
 	make tests

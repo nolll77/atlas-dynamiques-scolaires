@@ -1,13 +1,11 @@
 """Configuration centrale — charge params.yaml et variables d'environnement."""
 
+import os
 from pathlib import Path
 import yaml
+from dotenv import load_dotenv
 
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass
+load_dotenv()
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 PARAMS_FILE = PROJECT_ROOT / "params.yaml"

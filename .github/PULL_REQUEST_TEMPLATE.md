@@ -1,11 +1,11 @@
 ## Description
 
 ## Type de changement
-- [ ] feat
-- [ ] fix
-- [ ] data
-- [ ] docs
-- [ ] test
+- [ ] feat (nouvelle fonctionnalité)
+- [ ] fix (correction de bug)
+- [ ] data (données)
+- [ ] docs (documentation)
+- [ ] test (tests)
 - [ ] refactor
 
 ## Checklist

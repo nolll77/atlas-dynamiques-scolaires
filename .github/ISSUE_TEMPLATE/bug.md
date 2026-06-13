@@ -7,6 +7,9 @@ labels: bug
 ## Description
 
 ## Reproduction
+\`\`\`bash
+
+\`\`\`
 
 ## Comportement attendu
 
