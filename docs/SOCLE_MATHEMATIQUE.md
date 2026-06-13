@@ -25,7 +25,11 @@
 ## 0. Fondations Statistiques (Analyse Exploratoire)
 
 ### Normalisation (Z-Score) et Indice d'Entre-Soi
-**Formule :** $z = \frac{x - \mu}{\sigma} \quad \text{et} \quad E^* = z_{IPS} - z_{\sigma}$
+**Formule :**
+
+$$
+z = \frac{x - \mu}{\sigma} \quad \text{et} \quad E^* = z_{IPS} - z_{\sigma}
+$$
 *   **Quoi :** Centrage-réduction des variables pour créer un score composite sans unité.
 *   **Pourquoi :** Mesurer rigoureusement "l'entre-soi" : un lycée fermé a un IPS très haut et un écart-type très bas.
 *   **Inputs :** Vecteur des moyennes IPS ($x$), moyenne globale ($\mu$), écart-type ($\sigma$).
@@ -37,7 +41,11 @@
 *   **Limites / Biais (Edge Cases) :** Le calcul devient aveugle s'il y a un lycée ultra-élitiste avec 100% de CSP+, il va étirer l'écart-type et écraser tous les autres vers la moyenne.
 
 ### Distance de Mahalanobis
-**Formule :** $D_M(x) = \sqrt{(x - \mu)^T \Sigma^{-1} (x - \mu)}$
+**Formule :**
+
+$$
+D_M(x) = \sqrt{(x - \mu)^T \Sigma^{-1} (x - \mu)}
+$$
 *   **Quoi :** Calcul de la distance au barycentre en tenant compte de la covariance matricielle entre les dimensions.
 *   **Pourquoi :** Identifier les vrais "outliers" (anomalies statistiques), comme les lycées ultra-élitistes ou exceptionnellement mixtes.
 *   **Inputs :** Matrice de features (IPS, CSP+, etc.), Matrice de covariance inverse $\Sigma^{-1}$.
@@ -49,7 +57,11 @@
 *   **Limites / Biais (Edge Cases) :** Si deux variables mesurent exactement la même chose (colinéarité parfaite), la matrice devient mathématiquement impossible à inverser et le code plantera.
 
 ### Indice de Dissimilarité de Duncan ($D$)
-**Formule :** $D = \frac{1}{2} \sum \left| \frac{priv\acute{e}_i}{Total\_Priv\acute{e}} - \frac{public_i}{Total\_Public} \right|$
+**Formule :**
+
+$$
+D = \frac{1}{2} \sum \left| \frac{priv\acute{e}_i}{Total\_Priv\acute{e}} - \frac{public_i}{Total\_Public} \right|
+$$
 *   **Quoi :** Mesure de ségrégation binaire calculant la proportion de population devant déménager pour atteindre une mixité parfaite.
 *   **Pourquoi :** Démontrer que la ségrégation institutionnelle (séparation public/privé) est maximale dans les zones riches.
 *   **Inputs :** Effectifs agrégés public/privé par unité géographique (ex: commune).
@@ -61,7 +73,11 @@
 *   **Limites / Biais (Edge Cases) :** Biais de la petite taille : si on l'applique sur un tout petit quartier avec 3 élèves du privé, la formule hallucine une ségrégation maximale de 100%.
 
 ### Indice de Fragmentation par Établissement ($F_i$)
-**Formule :** $F_i = \alpha \cdot B_i + \beta \cdot D_i + \gamma \cdot \Delta Var_i + \delta \cdot R_i$
+**Formule :**
+
+$$
+F_i = \alpha \cdot B_i + \beta \cdot D_i + \gamma \cdot \Delta Var_i + \delta \cdot R_i
+$$
 *   **Quoi :** Score composite agrégeant centralité, dissimilarité, impact sur la variance globale et sauts de clustering.
 *   **Pourquoi :** Classer mathématiquement le pouvoir "structurant" (pont) ou "fragmentant" d'un lycée sur l'ensemble du système.
 *   **Inputs :** Betweenness $B_i$, Duncan $D_i$, Variance $\Delta Var_i$, Rupture $R_i$.
@@ -77,7 +93,11 @@
 ## 1. Topologie et Distances
 
 ### Distance Ultramétrique (Hiérarchie)
-**Formule :** $d_U(i,j) \le \max(d_U(i,k), d_U(k,j))$
+**Formule :**
+
+$$
+d_U(i,j) \le \max(d_U(i,k), d_U(k,j))
+$$
 *   **Quoi :** Inégalité forte définissant une distance dans un système de castes scolaires fermées.
 *   **Pourquoi :** Modéliser la société scolaire comme des strates étanches et mutuellement exclusives.
 *   **Inputs :** Dendrogramme issu d'un algorithme de clustering (ex: Ward).
@@ -89,7 +109,11 @@
 *   **Limites / Biais (Edge Cases) :** S'il y a des lycées "hybrides" qui n'appartiennent à aucun groupe clair, l'algorithme va les forcer brutalement dans la branche la moins pire, faussant l'architecture.
 
 ### Distance Sociale et Similarité (Poids du Graphe)
-**Formule :** $W_{ij} = \exp\left(-\frac{D_{ij}}{\sigma}\right)$
+**Formule :**
+
+$$
+W_{ij} = \exp\left(-\frac{D_{ij}}{\sigma}\right)
+$$
 *   **Quoi :** Conversion non-linéaire d'une distance euclidienne $D_{ij}$ en un poids de similarité probabiliste.
 *   **Pourquoi :** Permettre de tracer les arêtes du graphe continu des lycées franciliens (réseau affinitaire).
 *   **Inputs :** Matrice de distances euclidiennes ou de Mahalanobis $D_{ij}$, paramètre de lissage $\sigma$.
@@ -105,7 +129,11 @@
 ## 2. Théorie des Réseaux et Graphes
 
 ### Modularité (Algorithme de Louvain)
-**Formule :** $Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_i, c_j)$
+**Formule :**
+
+$$
+Q = \frac{1}{2m} \sum_{i,j} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_i, c_j)
+$$
 *   **Quoi :** Algorithme maximisant la densité des liens intra-communautaires par rapport à un graphe aléatoire équivalent.
 *   **Pourquoi :** Détecter endogènement les "mondes scolaires" (sans imposer le nombre de clusters à l'avance).
 *   **Inputs :** Matrice d'adjacence $A_{ij}$ (poids des liens).
@@ -117,7 +145,11 @@
 *   **Limites / Biais (Edge Cases) :** Limite de résolution : les micro-communautés (ex: un groupuscule de 3 lycées très spécifiques) seront aveuglément englouties de force et diluées dans un bloc géant par l'algorithme.
 
 ### Centralité d'Intermédiarité (Betweenness)
-**Formule :** $B(i) = \sum_{s \ne i \ne t} \frac{\sigma_{st}(i)}{\sigma_{st}}$
+**Formule :**
+
+$$
+B(i) = \sum_{s \ne i \ne t} \frac{\sigma_{st}(i)}{\sigma_{st}}
+$$
 *   **Quoi :** Proportion des plus courts chemins du graphe passant par un nœud donné.
 *   **Pourquoi :** Identifier les "goulets d'étranglement" et les lycées "ponts" structurels entre mondes sociaux.
 *   **Inputs :** Graphe relationnel (nœuds et arêtes pondérées).
@@ -129,7 +161,11 @@
 *   **Limites / Biais (Edge Cases) :** Si le réseau est déconnecté (deux mondes qui ne se parlent absolument jamais), le calcul devient fou et assigne des scores nuls ou infinis aux ponts intermédiaires.
 
 ### Tension Hiérarchie vs Réseau (Indice Hybride)
-**Formule :** $T = 1 - ARI$ (où ARI = Adjusted Rand Index)
+**Formule :**
+
+$$
+T = 1 - ARI
+$$ (où ARI = Adjusted Rand Index)
 *   **Quoi :** Mesure de divergence globale entre deux partitions statistiques.
 *   **Pourquoi :** Démontrer que la structure verticale hiérarchisée (CAH) entre en conflit avec la structure relationnelle horizontale (Louvain).
 *   **Inputs :** Partition assignée par la CAH, Partition assignée par Louvain.
@@ -145,7 +181,11 @@
 ## 3. Ségrégation et Inégalités Spatiales
 
 ### Indice de Theil (Décomposition de l'Entropie)
-**Formule :** $T = \sum_i \frac{x_i}{\mu} \log\left(\frac{x_i}{\mu}\right)$
+**Formule :**
+
+$$
+T = \sum_i \frac{x_i}{\mu} \log\left(\frac{x_i}{\mu}\right)
+$$
 **Décomposition :** $T = T_{between\_zones} + T_{between\_lycees} + T_{within\_lycees}$
 *   **Quoi :** Mesure d'entropie informationnelle permettant l'addition linéaire parfaite des sous-groupes.
 *   **Pourquoi :** Prouver que l'inégalité se construit en "poupées russes" (ségrégation territoriale vs institutionnelle vs interne).
@@ -158,7 +198,11 @@
 *   **Limites / Biais (Edge Cases) :** Le Theil réagit très mal s'il y a des établissements avec un score exactement de 0 (le logarithme de zéro fait crasher le code), il faut toujours lisser en ajoutant un epsilon (+0.0001).
 
 ### Pression Ségrégative Locale (PSL)
-**Formule :** $PSL_i = \alpha H_i + \beta D_i + \gamma B_i + \delta C_i$
+**Formule :**
+
+$$
+PSL_i = \alpha H_i + \beta D_i + \gamma B_i + \delta C_i
+$$
 *   **Quoi :** Indice spatial combinant Hétérogénéité des voisins ($H$), Distance sociale au centre ($D$), Betweenness ($B$) et Diversité ($C$).
 *   **Pourquoi :** Cartographier non pas l'état passif, mais la *tension géographique* (les zones de faille actives du système).
 *   **Inputs :** Données géolocalisées, métriques de réseau du Bloc 2.
@@ -174,7 +218,11 @@
 ## 4. Modèles Causaux Spatiaux (Économétrie)
 
 ### Spatial Autoregressive Model (SAR)
-**Formule :** $y = \rho Wy + X\beta + \epsilon$
+**Formule :**
+
+$$
+y = \rho Wy + X\beta + \epsilon
+$$
 *   **Quoi :** Régression linéaire intégrant un terme de dépendance spatiale endogène via une matrice de voisinage $W$.
 *   **Pourquoi :** Quantifier la "contagion" de la ségrégation (prouver mathématiquement qu'un lycée est causé en partie par ses voisins).
 *   **Inputs :** Vecteur cible $y$ (IPS), covariables $X$, matrice de poids spatiaux géographiques $W$ (standardisée en ligne).
@@ -186,7 +234,11 @@
 *   **Limites / Biais (Edge Cases) :** Si la matrice de voisinage $W$ n'est pas standardisée à 1 (somme des lignes = 1), le paramètre $\rho$ perd tout son sens et la prédiction peut exploser vers l'infini.
 
 ### Effets Marginaux Spatiaux (Propagation)
-**Formule :** $ME = (I - \rho W)^{-1} \beta$
+**Formule :**
+
+$$
+ME = (I - \rho W)^{-1} \beta
+$$
 *   **Quoi :** Multiplicateur spatial filtrant l'effet direct de l'effet de rebond (feedback loop) sur les voisins géographiques.
 *   **Pourquoi :** Tracer l'onde de choc causale (ex: "si j'améliore le lycée A, voici comment cela se propage géographiquement jusqu'au lycée B par ricochet").
 *   **Inputs :** $\rho$, $W$, $\beta$ (estimés par le modèle SAR).
@@ -202,7 +254,11 @@
 ## 5. Algorithmique et Seuils
 
 ### Critère de Mojena (Sauts de Rupture CAH)
-**Formule :** $h_k > \bar{h} + \beta \cdot \sigma_h$
+**Formule :**
+
+$$
+h_k > \bar{h} + \beta \cdot \sigma_h
+$$
 *   **Quoi :** Règle de coupure statistique ciblant les sauts anormalement longs dans les hauteurs $h_k$ d'un dendrogramme.
 *   **Pourquoi :** Éviter de choisir le nombre de clusters au doigt mouillé, et prouver mathématiquement l'existence de "plafonds de verre" sociaux abrupts.
 *   **Inputs :** Hauteurs des nœuds du dendrogramme $h_k$, constante de sévérité $\beta$ (souvent entre 1.25 et 3).
@@ -218,7 +274,11 @@
 ## 6. Analyse des Résidus et Modèles Causaux Avancés
 
 ### Résidus Spatiaux (Anomalies Structurelles)
-**Formule :** $residu_i = y_i - \hat{y}_i$
+**Formule :**
+
+$$
+residu_i = y_i - \hat{y}_i
+$$
 *   **Quoi :** Erreur de prédiction géolocalisée (écart entre le monde réel et le modèle spatial).
 *   **Pourquoi :** Traquer les anomalies politiques : les "miracles" (trop mixtes) ou les "bunkers" (trop ségrégués) par rapport à ce que la géographie commanderait "normalement".
 *   **Inputs :** Valeurs réelles $y_i$, prédictions SAR $\hat{y}_i$.
@@ -246,7 +306,11 @@
 ## 7. Dynamique et Topologie Spatiale
 
 ### Entropie de Transition (CAH Dynamique)
-**Formule :** $H_i = -\sum_k p_{ik} \log p_{ik}$
+**Formule :**
+
+$$
+H_i = -\sum_k p_{ik} \log p_{ik}
+$$
 *   **Quoi :** Calcul d'incertitude de Shannon sur la trajectoire future d'un lycée, basé sur ses changements de clusters passés.
 *   **Pourquoi :** Distinguer l'élite stable et prévisible (entropie zéro) des zones de déclassement ou d'ascension chaotique (forte incertitude).
 *   **Inputs :** Matrice de probabilités de transition markovienne temporelle $p_{ik}$.
@@ -258,7 +322,11 @@
 *   **Limites / Biais (Edge Cases) :** Un lycée qui n'a jamais bougé aura une entropie strictement de 0. La formule dira alors que son destin est "tracé dans le marbre" pour l'éternité, même en cas de réforme gouvernementale radicale.
 
 ### CAH Contrainte (Distance Pénalisée)
-**Formule :** $D' = D_{social} + \lambda D_{geo}$
+**Formule :**
+
+$$
+D' = D_{social} + \lambda D_{geo}
+$$
 *   **Quoi :** Injection additive d'une pénalité géographique dans la matrice de distance sociologique pure.
 *   **Pourquoi :** Forcer l'algorithme à regrouper des zones à la fois similaires socialement ET adjacentes physiquement (pour prouver l'existence d'îlots territoriaux contigus).
 *   **Inputs :** Matrice de distances sociales, matrice de distances spatiales, hyperparamètre de contrainte $\lambda$.
@@ -286,7 +354,11 @@
 ## 8. Validation Structurelle des Clusters
 
 ### Silhouette Score (Cohérence Interne)
-**Formule :** $s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}$
+**Formule :**
+
+$$
+s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}
+$$
 *   **Quoi :** Métrique mesurant la distance intra-cluster moyenne $a(i)$ vs la distance au cluster voisin le plus proche $b(i)$.
 *   **Pourquoi :** Valider rigoureusement à quel point les "mondes scolaires" sont bien séparés les uns des autres (frontières étanches ou poreuses).
 *   **Inputs :** Matrice de distances de base, vecteurs d'appartenance aux clusters.
@@ -298,7 +370,11 @@
 *   **Limites / Biais (Edge Cases) :** Si la société est organisée en longs "filaments" ou structures étirées complexes, le score de Silhouette va mal-noter le système et dire que le clustering est raté, alors qu'il capte une vraie structure sociologique non-sphérique.
 
 ### Gap Statistic (Validation Réalité vs Bruit)
-**Formule :** $Gap(k) = E[\log(W_k^*)] - \log(W_k)$
+**Formule :**
+
+$$
+Gap(k) = E[\log(W_k^*)] - \log(W_k)
+$$
 *   **Quoi :** Comparaison de la dispersion intra-cluster $W_k$ observée avec celle d'un jeu de données aléatoire simulé par Monte-Carlo $W_k^*$.
 *   **Pourquoi :** Fournir la preuve algorithmique absolue que la stratification sociale observée (en $k$ classes) n'est pas un simple artéfact mathématique.
 *   **Inputs :** Matrice de features originelles, distribution nulle générée (simulations aléatoires).
@@ -314,7 +390,11 @@
 ## 9. Fractures et Tensions Structurelles
 
 ### Tension Ultramétrique / Réseau Locale
-**Formule :** $T_i = \sum_j |d_U(i,j) - d_G(i,j)| w_{ij}$
+**Formule :**
+
+$$
+T_i = \sum_j |d_U(i,j) - d_G(i,j)| w_{ij}
+$$
 *   **Quoi :** Somme des écarts absolus entre la distance hiérarchique verticale et la distance communautaire horizontale, pondérée par la force du lien.
 *   **Pourquoi :** Détecter mathématiquement les "Points de Bascule" (les établissements tiraillés entre leur strate sociale assignée et la réalité de leurs interactions locales de voisinage).
 *   **Inputs :** Matrice des distances ultramétriques $d_U$, Matrice des chemins de graphe $d_G$, Matrice d'adjacence $w_{ij}$.
@@ -330,7 +410,11 @@
 ## 10. Modèles de Dynamique et Flux Markoviens
 
 ### Matrice de Transition (Modèle de Markov)
-**Formule :** $P_{ij} = P(C_{t+1}=j \mid C_t=i)$
+**Formule :**
+
+$$
+P_{ij} = P(C_{t+1}=j \mid C_t=i)
+$$
 *   **Quoi :** Modèle probabiliste encodant la dynamique de saut d'un état (cluster) à l'autre au fil des années.
 *   **Pourquoi :** Démontrer que le système scolaire n'est pas figé statiquement mais est un espace de circulation macroscopique.
 *   **Inputs :** Panel longitudinal des trajectoires (Lycée assigné à un cluster au temps $t$ et $t+1$).
@@ -342,7 +426,11 @@
 *   **Limites / Biais (Edge Cases) :** Si un établissement d'élite disparaît des radars (fermeture administrative) d'une année sur l'autre, il crée un "trou noir" mathématique dans la matrice qui empêchera la somme des probabilités de faire exactement 1.
 
 ### Distribution Stationnaire (Stabilité)
-**Formule :** $\pi P = \pi$
+**Formule :**
+
+$$
+\pi P = \pi
+$$
 *   **Quoi :** Calcul du vecteur propre gauche correspondant à la valeur propre maximale ($\lambda=1$) de la matrice de transition $P$.
 *   **Pourquoi :** Révéler mathématiquement le point d'équilibre inéluctable du système à long terme (dans 50 ans) si les politiques de flux ne changent pas d'un iota.
 *   **Inputs :** Matrice de transition $P$.
@@ -354,7 +442,11 @@
 *   **Limites / Biais (Edge Cases) :** Si le système contient un "puits absorbant" absolu (un cluster d'hyper-élite dont historiquement personne n'est jamais ressorti vers le bas), la formule annoncera aveuglément que 100% du système scolaire va finir par tomber dans ce puits avec le temps, ce qui est physiquement impossible.
 
 ### Centralité de Transition (Flux Nets)
-**Formule :** $F_i = \sum_j (P_{ij} + P_{ji})$
+**Formule :**
+
+$$
+F_i = \sum_j (P_{ij} + P_{ji})
+$$
 *   **Quoi :** Agrégation bidirectionnelle de toutes les probabilités de mouvement associées à un état $i$.
 *   **Pourquoi :** Classer sociologiquement les zones du système en grandes gares de tri : "attracteurs" (aimants sociaux), "émetteurs" (zones de fuite) ou "passerelles transitoires".
 *   **Inputs :** Matrice de transition $P$.
@@ -366,7 +458,11 @@
 *   **Limites / Biais (Edge Cases) :** Ce score est facilement piégeux si lu isolément : il ne distingue absolument pas un cluster "poubelle" qui se vide massivement sans retour, d'un cluster hyper-dynamique qui brasse énormément d'élèves avec un équilibre entrée/sortie parfait (les deux auront un énorme score $F_i$).
 
 ### Entropie de Transition (Vitesse de Mobilité)
-**Formule :** $H_i = -\sum_j P_{ij} \log P_{ij}$
+**Formule :**
+
+$$
+H_i = -\sum_j P_{ij} \log P_{ij}
+$$
 *   **Quoi :** Mesure de Shannon appliquée aux probabilités de fuite conditionnelles partant d'un cluster spécifique.
 *   **Pourquoi :** Quantifier le niveau de "déterminisme" d'un cluster : un $H_i$ proche de 0 signifie que le parcours futur est tracé et inévitable pour ceux qui s'y trouvent.
 *   **Inputs :** Lignes vectorielles de la matrice de transition $P$.
@@ -382,7 +478,11 @@
 ## 11. Réseaux Multiplexes et Mobilité Inter-Couches
 
 ### Flux entre Couches ($F_{ab}$)
-**Formule :** $F_{ab} = P(\text{layer}_t=a \to \text{layer}_{t+1}=b)$
+**Formule :**
+
+$$
+F_{ab} = P(\text{layer}_t=a \to \text{layer}_{t+1}=b)
+$$
 *   **Quoi :** Décompte probabiliste strict des sauts entre strates indépendantes (ex: Secteur Public $\to$ Privé, ou IPS Q1 $\to$ Q4).
 *   **Pourquoi :** Modéliser la véritable mobilité scolaire en 3D (fusionnant institution, géographie et sociologie de l'élève).
 *   **Inputs :** Base de données longitudinale assignant chaque entité (élève/lycée) à un "layer" (strate) explicite.
@@ -406,7 +506,11 @@
 *   **Limites / Biais (Edge Cases) :** Si le Privé représente en réalité 20% des places du système et le Public 80%, la formule normalisée "par le hasard strict $1/K$" (soit 50/50) explose et donne des résultats faux. Il faut obligatoirement ajuster le modèle sur les probabilités marginales réelles des sièges disponibles.
 
 ### IFC Pondéré (Distance Sociale Inter-strata)
-**Formule :** $IFC_w = \sum_{a,b} F_{ab} \cdot d_{ab}$
+**Formule :**
+
+$$
+IFC_w = \sum_{a,b} F_{ab} \cdot d_{ab}
+$$
 *   **Quoi :** Fragmentation ajustée par un tenseur imposant une distance sociale pure entre les strates de départ et d'arrivée.
 *   **Pourquoi :** Modérer les volumes par la réalité de l'effort social (le passage d'un "Public favorisé" à un "Privé favorisé" coûte beaucoup moins d'énergie qu'un saut "Public très défavorisé $\to$ Privé d'élite").
 *   **Inputs :** Matrice des flux $F_{ab}$, Matrice de distance sémantique/sociale $d_{ab}$ entre les couches.
@@ -418,7 +522,11 @@
 *   **Limites / Biais (Edge Cases) :** Complètement dépendant du choix arbitraire des poids : si l'analyste décide qu'aller de "Q1 vers Q4" pèse 10 fois plus lourd qu'un saut "Q3 vers Q4", l'indice final peut être gonflé ou sous-estimé selon la subjectivité humaine qui a configuré $d_{ab}$.
 
 ### Asymétrie des Flux (Déséquilibre d'Aspiration)
-**Formule :** $A = \sum_{a,b} |F_{ab} - F_{ba}|$
+**Formule :**
+
+$$
+A = \sum_{a,b} |F_{ab} - F_{ba}|
+$$
 *   **Quoi :** Mesure de la différence absolue des échanges croisés dans un réseau multiplex dirigé.
 *   **Pourquoi :** Détecter la violence du "siphonnage" d'une strate par une autre (ex: démontrer que le Privé aspire les meilleurs profils du Public sans jamais renvoyer l'équivalent dans l'autre sens).
 *   **Inputs :** Matrice de Flux entre Couches $F_{ab}$.
@@ -430,7 +538,11 @@
 *   **Limites / Biais (Edge Cases) :** Ce chiffre brut va mathématiquement crier à "l'alerte rouge au siphonnage" si la population totale d'une des couches est de base 10 fois plus grande que l'autre couche, même si la proportion relative des flux est parfaitement saine en termes de ratios de chance.
 
 ### Entropie Globale des Flux (Chaos du Réseau)
-**Formule :** $H_{flux} = -\sum_{a,b} F_{ab} \log F_{ab}$
+**Formule :**
+
+$$
+H_{flux} = -\sum_{a,b} F_{ab} \log F_{ab}
+$$
 *   **Quoi :** Évaluation globale de la dispersion informationnelle calculée sur l'intégralité des flux possibles traversant le réseau.
 *   **Pourquoi :** Évaluer macroscopiquement si le système éducatif est "liquide" (tout communique, forte mobilité croisée) ou s'il est "sclérosé" (les flux suivent des canaux de caste uniques et prévisibles).
 *   **Inputs :** Matrice de Flux aplatie en vecteur.
@@ -446,7 +558,11 @@
 ## 12. Modularité Avancée (Multi-couches et Hiérarchique)
 
 ### Modularité Généralisée (Louvain Multi-couches)
-**Formule :** $Q_{multi} = \sum_{\alpha} \sum_{ij} \left( A_{ij}^\alpha - \gamma^\alpha P_{ij}^\alpha \right) \delta(c_i, c_j)$
+**Formule :**
+
+$$
+Q_{multi} = \sum_{\alpha} \sum_{ij} \left( A_{ij}^\alpha - \gamma^\alpha P_{ij}^\alpha \right) \delta(c_i, c_j)
+$$
 *   **Quoi :** Algorithme de maximisation de densité s'appliquant simultanément sur plusieurs graphes $\alpha$ superposés (ex: le graphe des lycées publics et le graphe des lycées privés).
 *   **Pourquoi :** Découvrir les "Super-Communautés hybrides" qui transcendent l'opposition binaire institutionnelle et prouver l'existence d'alliances invisibles ou de bassins de vie partagés entre le privé et le public.
 *   **Inputs :** Tenseur d'adjacence tridimensionnel $A_{ij}^\alpha$ (le réseau multiplex), hyperparamètre de couplage inter-couche $\omega$ (la force qui relie un même lycée à travers ses différentes dimensions).
@@ -458,7 +574,11 @@
 *   **Limites / Biais (Edge Cases) :** Entièrement à la merci de l'hyperparamètre de saut "omega". S'il est forcé à 0, l'algorithme traitera chaque monde comme un silo séparé (aucun intérêt multi-couches). S'il est réglé de manière démesurée, la formule écrasera les subtilités, fusionnera violemment le public et le privé et produira une bouillie analytique.
 
 ### Cohésion des Super-Communautés (Résistance Interne)
-**Formule :** $Q_k = \frac{W_{intra}}{W_{total}}$
+**Formule :**
+
+$$
+Q_k = \frac{W_{intra}}{W_{total}}
+$$
 *   **Quoi :** Ratio de densité mesurant le poids des connexions purement internes à un "méta-bloc" divisé par le total de ses forces gravitationnelles (internes + externes).
 *   **Pourquoi :** Contrôler si l'agrégation pyramidale de l'algorithme (qui a fusionné des micro-mondes scolaires) ne vient pas de forcer artificiellement la création d'alliances politiquement bancales et instables au sommet de l'arbre.
 *   **Inputs :** Graphe condensé par blocs d'états (où un méta-nœud = toute une super-communauté).
@@ -474,7 +594,11 @@
 ## 13. Frontières Sociales et Discontinuités
 
 ### Score de Frontière Sociale ($FS_{ij}$)
-**Formule :** $FS_{ij} = d_{ij} \cdot (1 - w_{ij}) \cdot \mathbf{1}(c_i \neq c_j)$
+**Formule :**
+
+$$
+FS_{ij} = d_{ij} \cdot (1 - w_{ij}) \cdot \mathbf{1}(c_i \neq c_j)
+$$
 *   **Quoi :** Indice multiplicatif évalué sur chaque arête du réseau, ciblant les paires de lycées qui maximisent simultanément une grande distance mathématique, une très faible probabilité de lien, et une coupure stricte de cluster.
 *   **Pourquoi :** Permettre de cartographier au GPS les véritables "murs de Berlin invisibles", c'est-à-dire les zones de tension extrêmes où deux lycées pourtant physiquement voisins n'ont aucune chance statistique de se mélanger.
 *   **Inputs :** Matrice de distances sociales pures $d_{ij}$, matrice d'affinité/similarité probabiliste $w_{ij}$, et vecteur de la partition de clustering.
@@ -486,7 +610,11 @@
 *   **Limites / Biais (Edge Cases) :** En cas de légère instabilité dans le clustering amont (si un lycée est balancé dans le mauvais monde social par un artefact d'algorithme), la formule "hallucinera" et générera de fausses alarmes de fracture avec tous ses voisins de trottoir directs.
 
 ### Rigidité des Frontières (Le Syndrome de la Forteresse)
-**Formule :** $R = 1 - \frac{\text{Flux inter-communautés}}{\text{Flux total}}$
+**Formule :**
+
+$$
+R = 1 - \frac{\text{Flux inter-communautés}}{\text{Flux total}}
+$$
 *   **Quoi :** Taux net mesurant la capacité de rétention (le verrouillage) des élèves à l'intérieur d'un grand bloc communautaire donné, empêchant toute évasion vers un autre monde.
 *   **Pourquoi :** Distinguer de manière implacable une simple "zone de transition" relativement poreuse, d'une véritable "forteresse de ségrégation" totalement hermétique au monde extérieur.
 *   **Inputs :** Base des volumes de flux agrégés, recoupés au couteau par les partitions communautaires.
@@ -502,7 +630,11 @@
 ## 14. Décomposition Spatio-Temporelle des Inégalités
 
 ### Theil Spatial par Commune ($T_c$)
-**Formule :** $T_c = \sum_{s \in \text{classes\_IPS}} \frac{n_{c,s}}{n_c} \log\left(\frac{n_{c,s}/n_c}{p_s}\right)$
+**Formule :**
+
+$$
+T_c = \sum_{s \in \text{classes\_IPS}} \frac{n_{c,s}}{n_c} \log\left(\frac{n_{c,s}/n_c}{p_s}\right)
+$$
 *   **Quoi :** Projection territoriale de l'indice de Theil mesurant la "pureté" ou "l'entropie compositionnelle" de chaque commune $c$ face à la mixité idéale représentée par la moyenne régionale $p_s$.
 *   **Pourquoi :** Permettre la production de heatmaps de ségrégation chirurgicales révélant les véritables "archipels de l'entre-soi" (ces villes fracturées de l'intérieur par des strates sociales qui ne se côtoient jamais).
 *   **Inputs :** Effectifs locaux ultra-granulaires par quantile d'IPS $n_{c,s}$, somme des effectifs de la commune $n_c$, proportions globales visées $p_s$.
@@ -514,7 +646,11 @@
 *   **Limites / Biais (Edge Cases) :** Sur les minuscules villages dotés d'un seul et unique groupe scolaire, la formule n'a plus le moindre sens mathématique, subit des effets de seuil violents et crache des valeurs d'entropie absurdes qui pollueront visuellement toute la carte spatiale.
 
 ### Polarisation Locale (Le Choc des Extrêmes)
-**Formule :** $P_c = p(Q1) \cdot p(Q4)$
+**Formule :**
+
+$$
+P_c = p(Q1) \cdot p(Q4)
+$$
 *   **Quoi :** Produit mathématique brut traduisant le niveau de "co-présence" asymétrique des extrema sociaux absolus (les élèves hyper-favorisés du Q4 avec les élèves en grande détresse du Q1).
 *   **Pourquoi :** Mettre immédiatement en lumière la forme de violence sociale la plus crue : les territoires "duaux" (gentrifiés) où la grande richesse côtoie la grande pauvreté sur le même trottoir sans aucun sas de décompression au milieu.
 *   **Inputs :** Proportions communales exactes (probabilités d'occurrence) des classes de quartiers (Q1 et Q4).
@@ -526,7 +662,11 @@
 *   **Limites / Biais (Edge Cases) :** Cette formule mathématique mutile la réalité en ignorant à 100% l'existence de la "classe moyenne" (les Q2 et Q3). Une ville gigantesque exclusivement composée de classes moyennes aura exactement le même score de "0.0" qu'une ville de milliardaires 100% pure, créant des angles morts massifs dans l'analyse de la mixité.
 
 ### Décomposition Dynamique Temporelle (L'Évolution du Fracture)
-**Formule :** $\Delta T = \Delta T_{within} + \Delta T_{between}$
+**Formule :**
+
+$$
+\Delta T = \Delta T_{within} + \Delta T_{between}
+$$
 *   **Quoi :** Différentiation (dérivée discrète) isolant la dégradation ou l'amélioration temporelle de l'inégalité en deux forces distinctes : la dynamique inter-villes et la dynamique inter-écoles au sein des villes.
 *   **Pourquoi :** Identifier le vrai moteur de l'aggravation en cours : la ségrégation monte-t-elle parce que des mairies se barricadent contre les autres (ghettoïsation des territoires éloignés), ou parce que les écoles d'une même commune s'étanchent (création de bunkers locaux au bout de la rue) ?
 *   **Inputs :** Les scores globaux de l'Indice Theil (Bloc 3) calculés à une année $t$, et à son année de référence antérieure $t-1$.
@@ -538,7 +678,11 @@
 *   **Limites / Biais (Edge Cases) :** Si la carte scolaire est réorganisée politiquement par le ministère (ouverture d'un nouveau lycée ou fusion de deux collèges) entre le temps $t$ et $t-1$, l'équation s'effondre techniquement. On ne peut pas soustraire des "ensembles Theil" dont la taille de base (le nombre d'établissements) a magiquement changé sans appliquer des poids de redressement mathématiques ultra-lourds.
 
 ### Score Composite Global de Ségrégation ($S$)
-**Formule :** $S = \alpha T + \beta G - \gamma H$
+**Formule :**
+
+$$
+S = \alpha T + \beta G - \gamma H
+$$
 *   **Quoi :** Le méta-indicateur politique "Triptyque" unifiant la fragmentation géographique spatiale (le Theil $T$), la concentration historique du capital (le Gini $G$), et la sclérose de la mobilité dynamique du système (l'Entropie $H$).
 *   **Pourquoi :** L'objectif ultime, la raison d'être du livre : condenser l'intégralité de la "maladie sociologique" d'un écosystème en un unique verdict chiffré qui fusionne de force la dimension Spatiale, l'Accumulation des ressources et le Vecteur Temps.
 *   **Inputs :** Le score Theil Global $T$ (Bloc 3), le Gini classique $G$, l'Entropie des flux réseaux $H$ (Bloc 11), pondérés par des "hyperparamètres doctrinaux" $\alpha, \beta, \gamma$.
