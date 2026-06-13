@@ -5,86 +5,81 @@
 ### Issue #001 — Structure du dépôt GitHub
 **Labels** : `infrastructure`, `difficulty: hard`
 - **Contexte Analytique** : Déploiement de l'environnement de recherche reproductible pour l'Atlas.
-- **Périmètre Technique (Ouvert aux contributions)** : Création des dossiers (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`). Fichiers `pyproject.toml`, `Makefile` et `config/analysis.yaml`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Architecture transparente et documentée.
 - **Artefacts générés** : Dépôt structuré, `README.md` bilingue, `MANIFESTO.md`, `DATA_SOURCES.md`, `LICENSE`.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Créer la structure de dossiers complète (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`)
-- [ ] Initialiser `README.md` bilingue FR/EN
-- [ ] Créer `LICENSE` (MIT)
-- [ ] Créer `MANIFESTO.md`
-- [ ] Créer `DATA_SOURCES.md`
-- [ ] Créer `config/analysis.yaml` avec tous les hyperparamètres centralisés
-- [ ] Créer `requirements.txt`
-- [ ] Créer `Makefile`
+  - [ ] Créer la structure de dossiers complète (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`)
+  - [ ] Initialiser `README.md` bilingue FR/EN
+  - [ ] Créer `LICENSE` (MIT)
+  - [ ] Créer `MANIFESTO.md`
+  - [ ] Créer `DATA_SOURCES.md`
+  - [ ] Créer `config/analysis.yaml` avec tous les hyperparamètres centralisés
+  - [ ] Créer `requirements.txt`
+  - [ ] Créer `Makefile`
 
 
 
 ### Issue #002 — Dataset maître et pipeline de collecte
 **Labels** : `data`, `infrastructure`, `difficulty: hard`
 - **Contexte Analytique** : Constitution de la matrice d'état $S_i$. L'IPS seul est insuffisant, il faut capturer l'écosystème local.
-- **Périmètre Technique (Ouvert aux contributions)** : Scraping/API et jointure spatiale (Geopandas) de l'IPS historique, résultats bac (IVAL), IRIS INSEE, coordonnées GPS, sectorisation, DVF Etalab, IDF Mobilités.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement factuel des sources publiques, sourçage rigoureux.
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Collecter IPS historiques par année (data.gouv.fr)
-- [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
-- [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
-- [ ] Collecter coordonnées GPS des établissements (lat/lon)
-- [ ] Collecter données sectorisation scolaire
-- [ ] Collecter données DVF Etalab (prix m² par zone)
-- [ ] Collecter données IDF Mobilités (accessibilité transport)
-- [ ] Collecter données démographiques temporelles INSEE
-- [ ] Construire la table maître : `| uai | nom | annee | ips | sigma_ips | taux_mention | lat | lon | iris | revenu_median | prix_dvf | ... |`
-- [ ] Documenter toutes les sources dans `DATA_SOURCES.md`
+  - [ ] Collecter IPS historiques par année (data.gouv.fr)
+  - [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
+  - [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
+  - [ ] Collecter coordonnées GPS des établissements (lat/lon)
+  - [ ] Collecter données sectorisation scolaire
+  - [ ] Collecter données DVF Etalab (prix m² par zone)
+  - [ ] Collecter données IDF Mobilités (accessibilité transport)
+  - [ ] Collecter données démographiques temporelles INSEE
+  - [ ] Construire la table maître : `| uai | nom | annee | ips | sigma_ips | taux_mention | lat | lon | iris | revenu_median | prix_dvf | ... |`
+  - [ ] Documenter toutes les sources dans `DATA_SOURCES.md`
 
 
 
 ### Issue #003 — Documents éthiques, épistémologiques et socles mathématiques
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Cadrage des limites de l'inférence causale, définition du lexique mathématique (modélisation statique et dynamique) et du vocabulaire sociologique.
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction des fichiers Markdown fondateurs.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Affirmation de la doctrine descriptive vs normative (aucun jugement moral).
 - **Artefacts générés** : `docs/CAUSALITY_LIMITS.md`, `docs/NETWORK_INTERPRETATION.md`, `docs/SOCLE_MATHEMATIQUE.md`, `docs/SOCLE_DYNAMIQUE.md`, `docs/GLOSSAIRE.md`.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Créer `docs/CAUSALITY_LIMITS.md` (template validé dans info_github.md)
-- [ ] Créer `docs/NETWORK_INTERPRETATION.md` (template validé dans info_github.md)
-- [ ] Intégrer `docs/SOCLE_MATHEMATIQUE.md` (Formules statistiques et indices de ségrégation)
-- [ ] Intégrer `docs/SOCLE_DYNAMIQUE.md` (Modèles dynamiques, causaux et temporels)
-- [ ] Intégrer `docs/GLOSSAIRE.md` (Lexique unifié déjà existant)
-- [ ] Vérifier que chaque tome intègre la note éthique modèle
+  - [ ] Créer `docs/CAUSALITY_LIMITS.md` (template validé dans info_github.md)
+  - [ ] Créer `docs/NETWORK_INTERPRETATION.md` (template validé dans info_github.md)
+  - [ ] Intégrer `docs/SOCLE_MATHEMATIQUE.md` (Formules statistiques et indices de ségrégation)
+  - [ ] Intégrer `docs/SOCLE_DYNAMIQUE.md` (Modèles dynamiques, causaux et temporels)
+  - [ ] Intégrer `docs/GLOSSAIRE.md` (Lexique unifié déjà existant)
+  - [ ] Vérifier que chaque tome intègre la note éthique modèle
 
 
 
 ### Issue #004 — Tests unitaires (infrastructure)
 **Labels** : `code`, `validation`, `infrastructure`, `difficulty: hard`
 - **Contexte Analytique** : Validation mathématique des outils de l'Atlas (Modèles 1 à 15).
-- **Périmètre Technique (Ouvert aux contributions)** : Tests sous `pytest`. Vérification : Theil_total = Theil_between + Theil_within, symétrie des graphes, poids inversés pour closeness, transitions de Markov sum=1, distribution nulle de Moran centrée sur 0.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Garantie de la rigueur algorithmique de la recherche.
 - **Artefacts générés** : Suite de tests `tests/` opérationnelle.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] `tests/test_theil_decomposition.py` — Theil_total = Theil_between + Theil_within
-- [ ] `tests/test_graph_construction.py` — symétrie, pas de self-loops
-- [ ] `tests/test_closeness_weights.py` — poids inversés avant calcul closeness
-- [ ] `tests/test_markov_transitions.py` — lignes de transition sommant à 1
-- [ ] `tests/test_moran_permutation.py` — distribution nulle centrée sur 0
+  - [ ] `tests/test_theil_decomposition.py` — Theil_total = Theil_between + Theil_within
+  - [ ] `tests/test_graph_construction.py` — symétrie, pas de self-loops
+  - [ ] `tests/test_closeness_weights.py` — poids inversés avant calcul closeness
+  - [ ] `tests/test_markov_transitions.py` — lignes de transition sommant à 1
+  - [ ] `tests/test_moran_permutation.py` — distribution nulle centrée sur 0
 
 
 
 ### Issue #005 — Experiment tracking (`runs/`)
 **Labels** : `infrastructure`, `code`, `difficulty: hard`
 - **Contexte Analytique** : Traçabilité des explorations algorithmiques (spécialement pour HMM, Louvain, PELT).
-- **Périmètre Technique (Ouvert aux contributions)** : Mise en place d'un format JSON pour enregistrer : git_hash, timestamp, config, metrics. Script d'enregistrement automatique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité totale et transparence des essais.
 - **Artefacts générés** : Système de logging opérationnel dans le dossier `runs/`.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Définir le format JSON des runs (git_hash, timestamp, config, metrics)
-- [ ] Script d'enregistrement automatique des runs
+  - [ ] Définir le format JSON des runs (git_hash, timestamp, config, metrics)
+  - [ ] Script d'enregistrement automatique des runs
 
 
 ---
@@ -97,32 +92,30 @@
 ### Issue #006 — Note éthique Tome I + Préface générale
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Cadrage de l'approche descriptive et statique.
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction Markdown.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On décrit des structures spatiales, on ne juge pas les politiques d'établissement. Focus sur les données cartographiques.
 - **Artefacts générés** : Note éthique T1, Préface générale de la trilogie (8-12 pages), Avant-propos Tome I.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger note éthique spécifique au Tome I (focus : données cartographiques et statistiques descriptives)
-- [ ] Rédiger préface générale de la trilogie (8–12 pages, version narrative du manifeste)
-- [ ] Rédiger avant-propos du Tome I (passage "classement → structure spatiale", guide de lecture)
+  - [ ] Rédiger note éthique spécifique au Tome I (focus : données cartographiques et statistiques descriptives)
+  - [ ] Rédiger préface générale de la trilogie (8–12 pages, version narrative du manifeste)
+  - [ ] Rédiger avant-propos du Tome I (passage "classement → structure spatiale", guide de lecture)
 
 
 
 ### Issue #007 — Introduction générale : Le paradoxe de l'école républicaine
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Exposition du paradoxe central (égalité de droit / inégalité de fait spatialisée).
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présentation factuelle du corpus enrichi, de la méthode Ministère (IPS), justification des ajouts (σ, DVF).
 - **Artefacts générés** : Texte de l'Introduction Générale.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Formaliser le paradoxe central (égalité de droit / inégalité de fait comme objet d'analyse)
-- [ ] Présenter le corpus et toutes les couches du dataset enrichi
-- [ ] Expliquer la construction de l'IPS (méthode Ministère)
-- [ ] Présenter σ comme révélateur de mixité sous-utilisé
-- [ ] Justifier chaque couche de données ajoutée ("nous ajoutons X parce que Y ne capture pas Z")
-- [ ] Premières observations descriptives
-- [ ] Annonce du plan du tome
+  - [ ] Formaliser le paradoxe central (égalité de droit / inégalité de fait comme objet d'analyse)
+  - [ ] Présenter le corpus et toutes les couches du dataset enrichi
+  - [ ] Expliquer la construction de l'IPS (méthode Ministère)
+  - [ ] Présenter σ comme révélateur de mixité sous-utilisé
+  - [ ] Justifier chaque couche de données ajoutée ("nous ajoutons X parce que Y ne capture pas Z")
+  - [ ] Premières observations descriptives
+  - [ ] Annonce du plan du tome
 
 
 ---
@@ -133,7 +126,6 @@
 ### Issue #008 — Chapitre 1 : L'IPS, un indice, pas une vérité
 **Labels** : `chapitre`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Déconstruction de la moyenne de l'IPS.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de l'IPS composite (IPS + σ + revenus IRIS). Script de calcul composite.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : IPS vs capital culturel. Distinction entre statistiques et utilisation politique ou médiatique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1, Code Python (annexe A5).
 
@@ -148,15 +140,14 @@
   - Encadré : différence IPS / taux de boursiers / PCS
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la matrice de corrélation statistique entre l'IPS et les revenus médians par IRIS.
-- [ ] Coder la fonction mathématique de l'indice composite (IPS + σ + revenus IRIS) et exporter les scores des lycées.
+  - [ ] Calculer la matrice de corrélation statistique entre l'IPS et les revenus médians par IRIS.
+  - [ ] Coder la fonction mathématique de l'indice composite (IPS + σ + revenus IRIS) et exporter les scores des lycées.
 
 
 
 ### Issue #009 — Chapitre 2 : L'écart-type, révélateur de mixité cachée
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : L'écart-type $\sigma$ (Modèle 1) comme mesure vitale de la diversité interne.
-- **Périmètre Technique (Ouvert aux contributions)** : Extraction du Top 20 lycées homogènes / hétérogènes. Corrélation exploratoire $\sigma$ × DVF.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Homogénéité" est un fait statistique, pas un jugement moral sur la valeur des élèves ou le projet pédagogique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2, Tableaux du Top 20.
 
@@ -171,16 +162,15 @@
   - Cas emblématiques décrits comme "appartenant à des clusters de forte homogénéité" (note éthique)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer l'écart-type de l'IPS pour chaque lycée afin d'estimer la mixité sociale interne.
-- [ ] Générer le tableau récapitulatif du Top 20 des lycées les plus homogènes et les plus hétérogènes.
-- [ ] Exécuter un test de corrélation exploratoire entre l'écart-type et les données immobilières DVF.
+  - [ ] Calculer l'écart-type de l'IPS pour chaque lycée afin d'estimer la mixité sociale interne.
+  - [ ] Générer le tableau récapitulatif du Top 20 des lycées les plus homogènes et les plus hétérogènes.
+  - [ ] Exécuter un test de corrélation exploratoire entre l'écart-type et les données immobilières DVF.
 
 
 
 ### Issue #010 — Chapitre 3 : Panorama du corpus enrichi
 **Labels** : `chapitre`, `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : Distribution statistique globale du système scolaire francilien.
-- **Périmètre Technique (Ouvert aux contributions)** : Densité KDE, corrélations croisées. Script `figures/fig2_scatter_ips_sigma.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mention des "absents du classement" (biais de sélection). Standard Nature/Science pour la Figure 2.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3, Figure Signature 2.
 
@@ -193,8 +183,8 @@
   - Script `figures/fig2_scatter_ips_sigma.py`
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire la distribution statistique de l'IPS, de l'écart-type et de la répartition par secteur (public/privé).
-- [ ] Générer le "scatter plot" (Figure Signature 2) croisant IPS et écart-type, avec colorisation par statut et courbes de densité KDE.
+  - [ ] Extraire la distribution statistique de l'IPS, de l'écart-type et de la répartition par secteur (public/privé).
+  - [ ] Générer le "scatter plot" (Figure Signature 2) croisant IPS et écart-type, avec colorisation par statut et courbes de densité KDE.
 
 
 ---
@@ -205,7 +195,6 @@
 ### Issue #011 — Chapitre 4 : La carte de l'élite scolaire francilienne
 **Labels** : `chapitre`, `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : Spatialisation de la performance (IPS) et des prix de l'immobilier (DVF).
-- **Périmètre Technique (Ouvert aux contributions)** : Corrélation OLS (IPS vs Prix DVF). Script `figures/fig1_map.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat du "croissant de l'ouest" et des "déserts scolaires favorisés". Purement descriptif géographique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4, Figure Signature 1.
 
@@ -220,15 +209,14 @@
   - Les "déserts scolaires favorisés" : communes aisées sans lycée élite (analyse spécifique)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la corrélation spatiale entre l'IPS moyen par commune et le prix médian au m² (DVF).
-- [ ] Générer la carte choroplèthe des IPS moyens par commune et le scatter plot correspondant.
+  - [ ] Calculer la corrélation spatiale entre l'IPS moyen par commune et le prix médian au m² (DVF).
+  - [ ] Générer la carte choroplèthe des IPS moyens par commune et le scatter plot correspondant.
 
 
 
 ### Issue #012 — Chapitre 5 : Les trois couronnes
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Mesurer l'effet pur de la géographie.
-- **Périmètre Technique (Ouvert aux contributions)** : ANOVA spatiale (zone × statut × revenus IRIS). Indice de dissimilarité de Duncan par commune.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les trois couronnes sont-elles trois systèmes distincts ? La géographie explique-t-elle plus que le statut institutionnel ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5, Résultats ANOVA.
 
@@ -242,16 +230,15 @@
   - Tableau comparatif des trois zones avec toutes les variables
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Réaliser une ANOVA spatiale pour décomposer la variance selon 3 facteurs (zone géographique, statut public/privé, revenus IRIS).
-- [ ] Extraire les pourcentages de variance expliquée et dresser le tableau comparatif complet des trois couronnes.
-- [ ] Calculer l'indice de dissimilarité de Duncan pour chaque commune.
+  - [ ] Réaliser une ANOVA spatiale pour décomposer la variance selon 3 facteurs (zone géographique, statut public/privé, revenus IRIS).
+  - [ ] Extraire les pourcentages de variance expliquée et dresser le tableau comparatif complet des trois couronnes.
+  - [ ] Calculer l'indice de dissimilarité de Duncan pour chaque commune.
 
 
 
 ### Issue #013 — Chapitre 6 : La ségrégation invisible
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Le paradoxe de la commune "mixte" contenant des lycées "homogènes".
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de l'indice de "fausse mixité" $F_c = M_{global} - M_{interne}$. Test croisé avec IDF Mobilités.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Fausse mixité" est un écart statistique, pas une accusation de volonté politique locale.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6, Topologie des communes paradoxales.
 
@@ -262,15 +249,14 @@
   - Test exploratoire : accessibilité transport × niveau de ségrégation (données IDF Mobilités)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la formule de l'indice de "fausse mixité" (F_c = M_global - M_interne) et générer les scores communaux.
-- [ ] Tester la corrélation statistique entre l'accessibilité aux transports (IDF Mobilités) et le niveau de ségrégation.
+  - [ ] Coder la formule de l'indice de "fausse mixité" (F_c = M_global - M_interne) et générer les scores communaux.
+  - [ ] Tester la corrélation statistique entre l'accessibilité aux transports (IDF Mobilités) et le niveau de ségrégation.
 
 
 
 ### Issue #014 — Chapitre 7 : Secteur public vs privé, géographie différenciée
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Effet de ségrégation institutionnelle spatialisée.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul du $\Delta$ IPS public/privé par zone. Régression : densité privé vs prix DVF.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyse neutre de la répartition. Encadré sur le hors contrat comme terra incognita.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
@@ -282,8 +268,8 @@
   - Encadré : lycées hors contrat (terra incognita statistique)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la polarisation de l'IPS (delta public/privé) ventilée par zone géographique.
-- [ ] Tester statistiquement la corrélation entre la densité locale d'établissements privés et le prix immobilier (DVF).
+  - [ ] Calculer la polarisation de l'IPS (delta public/privé) ventilée par zone géographique.
+  - [ ] Tester statistiquement la corrélation entre la densité locale d'établissements privés et le prix immobilier (DVF).
 
 
 ---
@@ -294,20 +280,18 @@
 ### Issue #015 — Note éthique renforcée Partie III
 **Labels** : `ethique`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Préparation au clustering CAH (Création de typologies de lycées).
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un cluster statistique est un groupe mathématique, non une volonté délibérée d'exclusion. Les termes ("Aristocratie", etc.) sont des étiquettes typologiques.
 - **Artefacts générés** : Note introductive de la Partie III.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la note d'ouverture de la Partie III (résultats d'une analyse statistique, aucun jugement sur pratiques internes)
-- [ ] Intégrer la note dans le texte principal
+  - [ ] Rédiger la note d'ouverture de la Partie III (résultats d'une analyse statistique, aucun jugement sur pratiques internes)
+  - [ ] Intégrer la note dans le texte principal
 
 
 
 ### Issue #016 — Chapitre 8 : L'aristocratie scolaire fermée (Cluster 1)
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse du premier cluster (IPS > 158, $\sigma$ < 20).
-- **Périmètre Technique (Ouvert aux contributions)** : Extraction du profil moyen. Calcul du Score d'entre-soi composite (IPS/$\sigma$).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Indicateur de concentration sociale" jamais "ce lycée s'organise pour exclure". Effet systémique, pas intention.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8.
 
@@ -324,15 +308,14 @@
   - Enrichissement résultats bac et valeur ajoutée → "paradoxe analytique" si applicable
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Isoler statistiquement le Cluster 1 (IPS > 158, écart-type < 20).
-- [ ] Calculer le score composite d'entre-soi pour ces établissements et exporter les statistiques descriptives.
+  - [ ] Isoler statistiquement le Cluster 1 (IPS > 158, écart-type < 20).
+  - [ ] Calculer le score composite d'entre-soi pour ces établissements et exporter les statistiques descriptives.
 
 
 
 ### Issue #017 — Chapitre 9 : La grande bourgeoisie catholique élargie (Cluster 2)
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse du deuxième cluster (IPS 153-158, $\sigma$ 20-25).
-- **Périmètre Technique (Ouvert aux contributions)** : Profilage sur toutes les variables (IPS, $\sigma$, DVF, IRIS, bac).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation statistique systématique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
@@ -346,15 +329,14 @@
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les statistiques descriptives du Cluster 2 sur l'ensemble du vecteur de variables (IPS, écart-type, DVF, IRIS, bac).
-- [ ] Générer la liste brute des lycées constituant ce cluster.
+  - [ ] Extraire les statistiques descriptives du Cluster 2 sur l'ensemble du vecteur de variables (IPS, écart-type, DVF, IRIS, bac).
+  - [ ] Générer la liste brute des lycées constituant ce cluster.
 
 
 
 ### Issue #018 — Chapitre 10 : Les élites académiques publiques (Cluster 3)
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse du cluster public méritocratique (IPS 145-153, $\sigma$ > 30).
-- **Périmètre Technique (Ouvert aux contributions)** : Analyse de l'écart-type très élevé (diversité réelle). Analyse de la valeur ajoutée IVAL.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La méritocratie républicaine en acte et le rôle des classes préparatoires (filtre secondaire).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
@@ -370,15 +352,14 @@
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les statistiques descriptives complètes du Cluster 3 (IPS élevé, mixité forte).
-- [ ] Extraire la valeur ajoutée IVAL pour tester statistiquement la corrélation avec l'hétérogénéité sociale.
+  - [ ] Extraire les statistiques descriptives complètes du Cluster 3 (IPS élevé, mixité forte).
+  - [ ] Extraire la valeur ajoutée IVAL pour tester statistiquement la corrélation avec l'hétérogénéité sociale.
 
 
 
 ### Issue #019 — Chapitre 11 : Les privés intermédiaires ouverts (Cluster 4)
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse du cluster hybride (IPS 145-152, $\sigma$ 28-32).
-- **Périmètre Technique (Ouvert aux contributions)** : Extraction des données spatiales (positionnement géographique).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat d'ouverture relative.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
@@ -391,15 +372,14 @@
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les statistiques descriptives complètes du Cluster 4 (IPS, σ, DVF, IRIS, résultats bac).
-- [ ] Générer la liste brute des établissements appartenant à ce cluster pour validation.
+  - [ ] Extraire les statistiques descriptives complètes du Cluster 4 (IPS, σ, DVF, IRIS, résultats bac).
+  - [ ] Générer la liste brute des établissements appartenant à ce cluster pour validation.
 
 
 
 ### Issue #020 — Chapitre 12 : Les élites internationales et scientifiques (Cluster 5)
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse de l'écologie scolaire singulière (ex: Saclay, Saint-Germain-en-Laye).
-- **Périmètre Technique (Ouvert aux contributions)** : Identification des atypismes statistiques.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position hors logique nationale classique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
@@ -412,15 +392,14 @@
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Isoler les établissements internationaux et scientifiques (Cluster 5) et extraire leurs caractéristiques statistiques.
-- [ ] Produire le tableau récapitulatif des variables descriptives (IPS, σ, DVF, IRIS, résultats bac).
+  - [ ] Isoler les établissements internationaux et scientifiques (Cluster 5) et extraire leurs caractéristiques statistiques.
+  - [ ] Produire le tableau récapitulatif des variables descriptives (IPS, σ, DVF, IRIS, résultats bac).
 
 
 
 ### Issue #021 — Chapitre 13 : Les lycées publics favorisés résidentiels
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Analyse des lycées de quartier aisés.
-- **Périmètre Technique (Ouvert aux contributions)** : Comparaison avec le Cluster 3 et le Cluster 1. Cartographie complète des 5 clusters.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Synthèse neutre des 5 mondes scolaires.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13, Carte spatiale IDF des 5 mondes.
 
@@ -434,8 +413,8 @@
   - Carte spatiale des 5 clusters sur l'IDF + formulation éthique transversale
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les statistiques descriptives des lycées publics favorisés résidentiels.
-- [ ] Générer la carte spatiale positionnant les 5 clusters sur la région Île-de-France.
+  - [ ] Extraire les statistiques descriptives des lycées publics favorisés résidentiels.
+  - [ ] Générer la carte spatiale positionnant les 5 clusters sur la région Île-de-France.
 
 
 ---
@@ -446,51 +425,46 @@
 ### Issue #022 — Chapitre 14 : Construire un score d'entre-soi social
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 12. L'agrégation de l'IPS et de l'inverse de la dispersion.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul par z-scores : $Z_{entre-soi} = Z(IPS) + Z(1/\sigma)$. Carte spatiale IDF.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites de l'indice brut précisées.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer les z-scores spatiaux (entre-soi) et générer la carte d'Île-de-France.
-- [ ] Exporter le script ainsi que le Top 20.
+  - [ ] Calculer les z-scores spatiaux (entre-soi) et générer la carte d'Île-de-France.
+  - [ ] Exporter le script ainsi que le Top 20.
 
 ### Issue #023 — Chapitre 15 : L'indice de Gini des lycées franciliens
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 9. Gini de la distribution des IPS.
-- **Périmètre Technique (Ouvert aux contributions)** : Décomposition within/between (secteur, géographie). Tracé de la Courbe de Lorenz.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Application d'un standard mathématique universel.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Courbe de Lorenz.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Décomposer mathématiquement la variance (secteur, géographie) et tracer la Courbe de Lorenz.
-- [ ] Livrer les graphiques formatés pour le Chapitre 15.
+  - [ ] Décomposer mathématiquement la variance (secteur, géographie) et tracer la Courbe de Lorenz.
+  - [ ] Livrer les graphiques formatés pour le Chapitre 15.
 
 ### Issue #024 — Chapitre 16 : L'indice de Theil : ségrégation décomposable
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 10. Indice d'entropie décomposable spatialement et institutionnellement.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul $T_{total} = T_{between} + T_{within}$ à trois niveaux (zones, statut, revenus IRIS).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Objectivation rigoureuse des parts de variance.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16, Tableau de décomposition de variance.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer l'indice de Theil aux trois niveaux géographiques et institutionnels.
-- [ ] Dresser le tableau complet de décomposition de la variance pour le Chapitre 16.
+  - [ ] Calculer l'indice de Theil aux trois niveaux géographiques et institutionnels.
+  - [ ] Dresser le tableau complet de décomposition de la variance pour le Chapitre 16.
 
 ### Issue #025 — Chapitre 17 : L'indice de dissimilarité spatial (Duncan D)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 11. Dissimilarité entre "classes favorisées" et "classes populaires" par commune.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de $D$ par ville. Corrélation avec la richesse communale et l'accessibilité transport (IDF Mobilités).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mise en évidence des paradoxes locaux.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte choroplèthe de $D$.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer l'indice de dissimilarité de Duncan (D) et tester la corrélation avec les transports/revenus.
-- [ ] Produire la carte choroplèthe finale pour le Chapitre 17.
+  - [ ] Calculer l'indice de dissimilarité de Duncan (D) et tester la corrélation avec les transports/revenus.
+  - [ ] Produire la carte choroplèthe finale pour le Chapitre 17.
 
 ### Issue #026 — Chapitre 18 : L'indice global de fragmentation scolaire (IFC)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Agrégation de Theil, ANOVA, Gini et polarisation.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de l'indice composite. Contribution relative de chaque composante.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le système est "multi-dimensionnellement structuré".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
@@ -499,13 +473,12 @@
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Établir la formule de l'indice composite de fragmentation scolaire et pondérer ses composantes.
-- [ ] Consolider les résultats statistiques pour le Chapitre 18.
+  - [ ] Établir la formule de l'indice composite de fragmentation scolaire et pondérer ses composantes.
+  - [ ] Consolider les résultats statistiques pour le Chapitre 18.
 
 ### Issue #027 — Chapitre 19 : ANOVA simple : public/privé explique-t-il tout ?
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Isolation du facteur "Statut".
-- **Périmètre Technique (Ouvert aux contributions)** : Régression OLS unidimensionnelle (IPS ~ statut). Extraction du $R^2$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation prudente (Associations fortes $\neq$ mécanismes causaux).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
@@ -517,147 +490,134 @@
   - Formulation prudente systématique : associations fortes ≠ mécanismes causaux
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Modéliser une ANOVA unidimensionnelle (IPS en fonction du statut public/privé).
-- [ ] Extraire le pourcentage de variance expliquée (R²) et générer le tableau des résidus statistiques.
+  - [ ] Modéliser une ANOVA unidimensionnelle (IPS en fonction du statut public/privé).
+  - [ ] Extraire le pourcentage de variance expliquée (R²) et générer le tableau des résidus statistiques.
 
 
 
 ### Issue #028 — Chapitre 20 : ANOVA multi-facteurs
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle complet (Statut + Géographie + Type de lycée).
-- **Périmètre Technique (Ouvert aux contributions)** : OLS multi-facteurs avec termes d'interactions (ex: privé × ouest). Test d'intégration DVF et transports.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontrer que la géographie domine et le statut amplifie.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20, Tableau de décomposition complet.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Exécuter les régressions OLS multi-facteurs (interactions privé/géographie) et tester les variables DVF/transports.
-- [ ] Exporter le tableau de décomposition complet pour le Chapitre 20.
+  - [ ] Exécuter les régressions OLS multi-facteurs (interactions privé/géographie) et tester les variables DVF/transports.
+  - [ ] Exporter le tableau de décomposition complet pour le Chapitre 20.
 
 ### Issue #029 — Chapitre 21 : Le modèle multiniveau (HLM)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 14. Structure imbriquée (Lycée $\to$ Ville $\to$ Zone).
-- **Périmètre Technique (Ouvert aux contributions)** : Estimation des ICC (Intraclass Correlation Coefficients). $R^2$ marginal vs $R^2$ conditionnel.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Postulat validé analytiquement : "La géographie structure, l'institution filtre".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Sorties du modèle.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Estimer les ICC (Intraclass Correlation Coefficients) et comparer les R² marginaux et conditionnels.
-- [ ] Extraire les sorties du modèle multiniveau pour le Chapitre 21.
+  - [ ] Estimer les ICC (Intraclass Correlation Coefficients) et comparer les R² marginaux et conditionnels.
+  - [ ] Extraire les sorties du modèle multiniveau pour le Chapitre 21.
 
 ### Issue #030 — Chapitre 22 : Vers un modèle causal : DAG statique
 **Labels** : `chapitre`, `documentation`, `exploratory`, `difficulty: low`
 - **Contexte Analytique** : Modèle 15. Directed Acyclic Graph des déterminants de l'IPS.
-- **Périmètre Technique (Ouvert aux contributions)** : Construction du réseau causal (Backdoor criterion). Simulation "do-calculus" : effet d'une neutralisation de variable.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le DAG est une hypothèse formelle, pas une vérité révélée infaillible.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22, Schéma du DAG.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Construire formellement le réseau causal (DAG) et simuler l'effet d'une intervention par "do-calculus".
-- [ ] Exporter le schéma du DAG pour le Chapitre 22.
+  - [ ] Construire formellement le réseau causal (DAG) et simuler l'effet d'une intervention par "do-calculus".
+  - [ ] Exporter le schéma du DAG pour le Chapitre 22.
 
 ### Issue #031 — Conclusion du Tome I
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture du Tome I (La Carte et le Territoire).
-- **Périmètre Technique (Ouvert aux contributions)** : Synthèse des trouvailles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Invitation à réfléchir aux politiques.
 - **Artefacts générés** : Conclusion du Tome 1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Synthétiser les découvertes majeures et les limites de la première partie.
-- [ ] Rédiger le texte de la Conclusion du Tome 1.
+  - [ ] Synthétiser les découvertes majeures et les limites de la première partie.
+  - [ ] Rédiger le texte de la Conclusion du Tome 1.
 
 ### Issue #032 — Annexe A1 : Tableau complet des lycées
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes transparentes.
-- **Périmètre Technique (Ouvert aux contributions)** : Export CSV.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Exporter les données nettoyées des lycées au format CSV.
-- [ ] Intégrer cet export pour constituer le Tableau complet de l'Annexe A1.
+  - [ ] Exporter les données nettoyées des lycées au format CSV.
+  - [ ] Intégrer cet export pour constituer le Tableau complet de l'Annexe A1.
 
 ### Issue #033 — Annexe A2 : Sources de données complètes + licences
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Traçabilité des sources.
-- **Périmètre Technique (Ouvert aux contributions)** : Listing exhaustif.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Dresser l'inventaire exhaustif des jeux de données mobilisés.
-- [ ] Présenter ces métadonnées proprement dans l'Annexe A2.
+  - [ ] Dresser l'inventaire exhaustif des jeux de données mobilisés.
+  - [ ] Présenter ces métadonnées proprement dans l'Annexe A2.
 
 ### Issue #034 — Annexe A3 : Méthode de calcul de tous les indices
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mathématiques appliquées.
-- **Périmètre Technique (Ouvert aux contributions)** : Formules LaTeX.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Convertir la documentation mathématique au format LaTeX.
-- [ ] Compiler ces équations pour constituer l'Annexe A3.
+  - [ ] Convertir la documentation mathématique au format LaTeX.
+  - [ ] Compiler ces équations pour constituer l'Annexe A3.
 
 ### Issue #035 — Annexe A4 : Note sur les licences Open Data
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Cadre légal.
-- **Périmètre Technique (Ouvert aux contributions)** : Licences.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Recenser les contraintes légales et licences Open Data des jeux de données.
-- [ ] Rédiger la note juridique correspondante pour l'Annexe A4.
+  - [ ] Recenser les contraintes légales et licences Open Data des jeux de données.
+  - [ ] Rédiger la note juridique correspondante pour l'Annexe A4.
 
 ### Issue #036 — Annexe A5 : Code Python reproductible complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité absolue.
-- **Périmètre Technique (Ouvert aux contributions)** : Dépôt de code.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rassembler les scripts de nettoyage et de modélisation du Tome 1.
-- [ ] Structurer ce dépôt de code pour l'Annexe A5.
+  - [ ] Rassembler les scripts de nettoyage et de modélisation du Tome 1.
+  - [ ] Structurer ce dépôt de code pour l'Annexe A5.
 
 ### Issue #037 — Annexe A6 : Cartographie complète
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation étendue.
-- **Périmètre Technique (Ouvert aux contributions)** : Cartes additionnelles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Regrouper les cartes exploratoires non incluses dans les chapitres principaux.
-- [ ] Exporter l'atlas cartographique additionnel pour l'Annexe A6.
+  - [ ] Regrouper les cartes exploratoires non incluses dans les chapitres principaux.
+  - [ ] Exporter l'atlas cartographique additionnel pour l'Annexe A6.
 
 ### Issue #038 — Annexe A7 : Glossaire des termes statistiques et sociologiques
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Pédagogie conceptuelle.
-- **Périmètre Technique (Ouvert aux contributions)** : Définitions.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Compiler les définitions des termes sociologiques et statistiques utilisés.
-- [ ] Rédiger le glossaire complet pour l'Annexe A7.
+  - [ ] Compiler les définitions des termes sociologiques et statistiques utilisés.
+  - [ ] Rédiger le glossaire complet pour l'Annexe A7.
 
 ### Issue #039 — Annexe A8 : Bibliographie sélective
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Ancrage académique.
-- **Périmètre Technique (Ouvert aux contributions)** : Références.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
 - **Artefacts générés** : Annexe A8.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Vérifier la mise en forme des références académiques citées dans le texte.
-- [ ] Exporter la bibliographie sélective pour l'Annexe A8.
+  - [ ] Vérifier la mise en forme des références académiques citées dans le texte.
+  - [ ] Exporter la bibliographie sélective pour l'Annexe A8.
 
 ### Issue #040 — Annexe A9 : Comparaison internationale courte
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mise en perspective.
-- **Périmètre Technique (Ouvert aux contributions)** : Synthèse.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité géographique.
 - **Artefacts générés** : Annexe A9.
 
@@ -666,20 +626,19 @@
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Réaliser une courte synthèse des travaux comparables à l'étranger.
-- [ ] Rédiger cette note de mise en perspective pour l'Annexe A9.
+  - [ ] Réaliser une courte synthèse des travaux comparables à l'étranger.
+  - [ ] Rédiger cette note de mise en perspective pour l'Annexe A9.
 
 ### Issue #041 — Note éthique Tome II + Avant-propos
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Le Tome II introduit la similarité et la théorie des graphes. Il faut s'assurer que "proximité mathématique" ne soit pas confondue avec "entente institutionnelle".
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction Markdown dans `paper_arxiv/tome2/`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La position dans le réseau est une propriété émergente, pas une caractéristique intrinsèque (anti-essentialisme).
 - **Artefacts générés** : Avant-propos du Tome II et Note éthique d'ouverture.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Note éthique Tome II (position dans le réseau = propriété émergente, pas caractéristique intrinsèque)
-- [ ] Avant-propos : "du territoire au réseau" — formulation obligatoire sur les liens de similarité vs flux réels
-- [ ] Introduction : nœuds, liens, poids — justification de la fonction de similarité choisie vs alternatives (Jaccard, cosinus)
+  - [ ] Note éthique Tome II (position dans le réseau = propriété émergente, pas caractéristique intrinsèque)
+  - [ ] Avant-propos : "du territoire au réseau" — formulation obligatoire sur les liens de similarité vs flux réels
+  - [ ] Introduction : nœuds, liens, poids — justification de la fonction de similarité choisie vs alternatives (Jaccard, cosinus)
 
 
 ---
@@ -690,7 +649,6 @@
 ### Issue #042 — Chapitre 1 : La CAH comme outil de sociologie scolaire
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Classification Ascendante Hiérarchique pour diviser l'espace social continu en mondes discrets.
-- **Périmètre Technique (Ouvert aux contributions)** : Application de la méthode de Ward. Utilisation de la distance de Mahalanobis. Validation via silhouette score et gap statistic.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La CAH est un algorithme, pas une vérité absolue.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1.
 
@@ -705,16 +663,15 @@
   - **V2** : comparaison IPS seul vs vecteur enrichi
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Implémenter la Classification Ascendante Hiérarchique (CAH) avec la méthode de Ward et normalisation en z-scores.
-- [ ] Comparer statistiquement les résultats de la CAH avec l'algorithme k-means et un modèle GMM.
-- [ ] Exécuter le clustering (V2) sur le vecteur enrichi (IPS, écart-type, revenus IRIS, résultats bac, statut).
+  - [ ] Implémenter la Classification Ascendante Hiérarchique (CAH) avec la méthode de Ward et normalisation en z-scores.
+  - [ ] Comparer statistiquement les résultats de la CAH avec l'algorithme k-means et un modèle GMM.
+  - [ ] Exécuter le clustering (V2) sur le vecteur enrichi (IPS, écart-type, revenus IRIS, résultats bac, statut).
 
 
 
 ### Issue #043 — Chapitre 2 : Le dendrogramme comme arbre social
 **Labels** : `chapitre`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Interprétation de la structure arborescente (Modèle 16).
-- **Périmètre Technique (Ouvert aux contributions)** : Tracé du dendrogramme avec le critère de Mojena pour couper l'arbre. Calcul de la profondeur ultramétrique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le dendrogramme n'est pas une hiérarchie de valeur, c'est une mesure de distance.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2, Figure du Dendrogramme.
 
@@ -728,16 +685,15 @@
   - **V2** : revenus IRIS ou résultats bac créent-ils une nouvelle dimension de séparation ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Générer le dendrogramme complet de la CAH et calculer les hauteurs de fusion.
-- [ ] Appliquer le critère de Mojena pour détecter mathématiquement les sauts de clusters optimaux.
-- [ ] Calculer la profondeur ultramétrique du graphe.
+  - [ ] Générer le dendrogramme complet de la CAH et calculer les hauteurs de fusion.
+  - [ ] Appliquer le critère de Mojena pour détecter mathématiquement les sauts de clusters optimaux.
+  - [ ] Calculer la profondeur ultramétrique du graphe.
 
 
 
 ### Issue #044 — Chapitre 3 : Cinq clusters, cinq mondes scolaires
 **Labels** : `chapitre`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Profilage statistique des 5 mondes isolés.
-- **Périmètre Technique (Ouvert aux contributions)** : Extraction des profils moyens pour chaque cluster (IPS, $\sigma$, DVF, IRIS).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les descriptions (Aristocratie, Élites académiques, etc.) doivent rester neutres et statistiques.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3.
 
@@ -752,15 +708,14 @@
   - **V2** : description analytique enrichie sur toutes les variables (DVF, IRIS, bac)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les tableaux de description statistique pour les 5 clusters validés.
-- [ ] Générer la carte spatiale positionnant les clusters sur la carte d'Île-de-France.
+  - [ ] Extraire les tableaux de description statistique pour les 5 clusters validés.
+  - [ ] Générer la carte spatiale positionnant les clusters sur la carte d'Île-de-France.
 
 
 
 ### Issue #045 — Chapitre 4 : Validation statistique des clusters
 **Labels** : `chapitre`, `code`, `validation`, `difficulty: medium`
 - **Contexte Analytique** : Les clusters existent-ils vraiment ?
-- **Périmètre Technique (Ouvert aux contributions)** : Test de stabilité bootstrap ARI (n=1000). ANOVA post-hoc sur IPS et $\sigma$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement transparent des cas ambigus (lycées aux frontières).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4, Rapport de validation.
 
@@ -774,16 +729,15 @@
   - **V2** : test de robustesse avec sous-échantillons aléatoires (enlever 10% des données)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer le silhouette score et la "gap statistic" pour valider la robustesse des clusters.
-- [ ] Exécuter un test de stabilité bootstrap (Adjusted Rand Index) sur 1000 itérations.
-- [ ] Réaliser une ANOVA post-hoc sur l'IPS et l'écart-type pour valider la séparation statistique.
+  - [ ] Calculer le silhouette score et la "gap statistic" pour valider la robustesse des clusters.
+  - [ ] Exécuter un test de stabilité bootstrap (Adjusted Rand Index) sur 1000 itérations.
+  - [ ] Réaliser une ANOVA post-hoc sur l'IPS et l'écart-type pour valider la séparation statistique.
 
 
 
 ### Issue #046 — Chapitre 5 : L'ultramétrie
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 32. Le système est-il une hiérarchie parfaite ?
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de la distance cophenétique et de la corrélation ultramétrique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : L'ultramétrie mesure la rigidité du tri social.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5.
 
@@ -797,16 +751,15 @@
   - Note de prudence : outil descriptif, pas preuve d'une logique nécessaire
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la distance cophenétique et la corrélation ultramétrique du système.
-- [ ] Extraire les "ponts ultramétriques" (liens violant la hiérarchie).
-- [ ] Calculer l'Adjusted Rand Index pour évaluer la cohérence entre l'arbre (CAH) et le réseau (Louvain).
+  - [ ] Calculer la distance cophenétique et la corrélation ultramétrique du système.
+  - [ ] Extraire les "ponts ultramétriques" (liens violant la hiérarchie).
+  - [ ] Calculer l'Adjusted Rand Index pour évaluer la cohérence entre l'arbre (CAH) et le réseau (Louvain).
 
 
 
 ### Issue #047 — Chapitre 6 : Détection de communautés Louvain
 **Labels** : `chapitre`, `code`, `validation`, `difficulty: medium`
 - **Contexte Analytique** : Différence entre hiérarchie (CAH) et communautés (Louvain).
-- **Périmètre Technique (Ouvert aux contributions)** : Maximisation de la modularité $Q$. Comparaison CAH vs Louvain via indice ARI.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle des zones de tension structurelle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6.
 
@@ -820,16 +773,15 @@
   - Test de sensibilité résolution : `for r in [0.5, 1.0, 1.5, 2.0]`
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Implémenter la détection de communautés avec l'algorithme de Louvain en maximisant la modularité (Q).
-- [ ] Comparer les communautés Louvain avec les clusters CAH (via les métriques ARI et NMI).
-- [ ] Exécuter un test de sensibilité en modifiant la résolution de Louvain (0.5, 1.0, 1.5, 2.0).
+  - [ ] Implémenter la détection de communautés avec l'algorithme de Louvain en maximisant la modularité (Q).
+  - [ ] Comparer les communautés Louvain avec les clusters CAH (via les métriques ARI et NMI).
+  - [ ] Exécuter un test de sensibilité en modifiant la résolution de Louvain (0.5, 1.0, 1.5, 2.0).
 
 
 
 ### Issue #048 — Chapitre 7 : Louvain multi-couches (multiplex)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Analyse du réseau sur plusieurs strates (social, spatial, académique).
-- **Périmètre Technique (Ouvert aux contributions)** : Algorithme Louvain Multiplex. Calcul de l'Indice de fragmentation inter-couches (IFC).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identification des corridors de lycéens entre mondes.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
@@ -843,9 +795,9 @@
   - Les divergences topologique/géographique révèlent des effets institutionnels
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Construire un réseau multiplex (multicouches) intégrant les flux, le statut et la distance géographique (GPS).
-- [ ] Détecter les communautés transversales et extraire la liste des corridors inter-couches.
-- [ ] Calculer l'indice de fragmentation inter-couches (IFC) par couche.
+  - [ ] Construire un réseau multiplex (multicouches) intégrant les flux, le statut et la distance géographique (GPS).
+  - [ ] Détecter les communautés transversales et extraire la liste des corridors inter-couches.
+  - [ ] Calculer l'indice de fragmentation inter-couches (IFC) par couche.
 
 
 ---
@@ -856,7 +808,6 @@
 ### Issue #049 — Chapitre 8 : Construire un réseau de similarité
 **Labels** : `chapitre`, `code`, `validation`, `difficulty: medium`
 - **Contexte Analytique** : Construction du Graphe de Similarité $W_{ij}$.
-- **Périmètre Technique (Ouvert aux contributions)** : Application d'une fonction de noyau exponentiel sur la distance de Mahalanobis. Seuillage et filtrage de densité.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce n'est pas un flux physique réel, mais un réseau de potentiel compétitif.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8, Matrice d'Adjacence.
 
@@ -868,16 +819,15 @@
   - Test de sensibilité seuil : `for p in [60, 65, 70, 75, 80]`
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Construire la matrice de distances (Mahalanobis et Euclidienne) et seuiller le réseau.
-- [ ] Modéliser un réseau nul d'Erdős–Rényi de même densité pour tester la significativité statistique de la modularité.
-- [ ] Générer la visualisation du graphe avec l'algorithme Force-Directed (Spring Layout).
+  - [ ] Construire la matrice de distances (Mahalanobis et Euclidienne) et seuiller le réseau.
+  - [ ] Modéliser un réseau nul d'Erdős–Rényi de même densité pour tester la significativité statistique de la modularité.
+  - [ ] Générer la visualisation du graphe avec l'algorithme Force-Directed (Spring Layout).
 
 
 
 ### Issue #050 — Chapitre 9 : Centralité
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèles 21 & 22. Qui détient l'influence structurelle ?
-- **Périmètre Technique (Ouvert aux contributions)** : Eigenvector, Betweenness, et Closeness centrality (avec poids inversés).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position mathématique, pas jugement qualitatif.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
@@ -891,16 +841,15 @@
   - Script `figures/fig3_network_louvain.py`
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer les indices de centralité : Eigenvector centrality, Betweenness, et Degré pondéré.
-- [ ] Générer le Top 10 des lycées selon un score composite de centralité.
-- [ ] Produire la visualisation du graphe avec colorisation des nœuds par centralité.
+  - [ ] Calculer les indices de centralité : Eigenvector centrality, Betweenness, et Degré pondéré.
+  - [ ] Générer le Top 10 des lycées selon un score composite de centralité.
+  - [ ] Produire la visualisation du graphe avec colorisation des nœuds par centralité.
 
 
 
 ### Issue #051 — Chapitre 10 : Les ponts entre mondes scolaires
 **Labels** : `chapitre`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Lycées situés à l'intersection des clusters sociaux.
-- **Périmètre Technique (Ouvert aux contributions)** : Score de pont composite (Betweenness + diversité communautaire).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "pont" n'est pas un lycée qui fait consciemment des efforts d'inclusion.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
@@ -914,15 +863,14 @@
   - Note éthique : «ponts analytiques» ≠ pratiques d'admission ou ouverture institutionnelle
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la formule du score de "pont" composite (betweenness + diversité communautaire + distance ultramétrique).
-- [ ] Extraire le Top 10 des lycées franchissant les frontières (ponts structurels).
+  - [ ] Coder la formule du score de "pont" composite (betweenness + diversité communautaire + distance ultramétrique).
+  - [ ] Extraire le Top 10 des lycées franchissant les frontières (ponts structurels).
 
 
 
 ### Issue #052 — Chapitre 11 : Flux de mobilité, matrice de Markov
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 24. Mobilité aléatoire simulée.
-- **Périmètre Technique (Ouvert aux contributions)** : Normalisation de la matrice de transition $P_{ij}$. Calcul de la distribution stationnaire.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Pure simulation probabiliste.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
@@ -936,16 +884,15 @@
   - **V2** : calibration partielle avec données Affelnet si disponibles, mesure de l'écart simulé/observé
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Générer la matrice de transition (Markov) entre les différents clusters.
-- [ ] Estimer mathématiquement la distribution stationnaire du système (équilibre asymptotique).
-- [ ] Calculer l'entropie des trajectoires et la durée de séjour moyenne dans chaque cluster.
+  - [ ] Générer la matrice de transition (Markov) entre les différents clusters.
+  - [ ] Estimer mathématiquement la distribution stationnaire du système (équilibre asymptotique).
+  - [ ] Calculer l'entropie des trajectoires et la durée de séjour moyenne dans chaque cluster.
 
 
 
 ### Issue #053 — Chapitre 12 : Corridors sociaux : définition et détection
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Détection des autoroutes sociales.
-- **Périmètre Technique (Ouvert aux contributions)** : Score de corridor $R_{ab} = F_{ab} / E_{ab}$. Corridors symétriques vs asymétriques ($\Gamma$).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les chemins par défaut du système.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
@@ -957,15 +904,14 @@
   - Signification V1 : formalisation des «autoroutes sociales» du système scolaire
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer les flux attendus via un modèle nul d'indépendance et générer les scores de corridor (R_ab = F_ab / E_ab).
-- [ ] Identifier statistiquement les corridors sur-représentés (autoroutes sociales) et extraire l'indice d'asymétrie Γ.
+  - [ ] Calculer les flux attendus via un modèle nul d'indépendance et générer les scores de corridor (R_ab = F_ab / E_ab).
+  - [ ] Identifier statistiquement les corridors sur-représentés (autoroutes sociales) et extraire l'indice d'asymétrie Γ.
 
 
 
 ### Issue #054 — Chapitre 13 : Ascenseurs sociaux vs filtres
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Distinction de l'efficacité verticale des corridors.
-- **Périmètre Technique (Ouvert aux contributions)** : Mesure du flux ascendant + gradient positif (Ascenseur) vs flux descendant (Filtre).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Termes d'ingénierie socio-physique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13.
 
@@ -977,15 +923,14 @@
   - Encadré V1 : les corridors d'élite vs corridors de mobilité sociale descendante
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder les requêtes d'extraction pour isoler les flux ascendants (ascenseurs) et les flux descendants (filtres).
-- [ ] Calculer l'efficacité moyenne des ascenseurs (ΔS moyen) et générer la distribution spatiale.
+  - [ ] Coder les requêtes d'extraction pour isoler les flux ascendants (ascenseurs) et les flux descendants (filtres).
+  - [ ] Calculer l'efficacité moyenne des ascenseurs (ΔS moyen) et générer la distribution spatiale.
 
 
 
 ### Issue #055 — Chapitre 14 : Réseau multiplex et analyse multi-couches
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Synthèse de la centralité inter-couches.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de la symétrie de flux selon la couche.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14.
 
@@ -997,8 +942,8 @@
   - Corrélation entre couches : où les logiques se renforcent-elles ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Fusionner mathématiquement les différentes couches du réseau multiplex (social, académique, résidentiel).
-- [ ] Calculer le score de centralité inter-couches et tester les corrélations de flux entre les dimensions.
+  - [ ] Fusionner mathématiquement les différentes couches du réseau multiplex (social, académique, résidentiel).
+  - [ ] Calculer le score de centralité inter-couches et tester les corrélations de flux entre les dimensions.
 
 
 ---
@@ -1009,7 +954,6 @@
 ### Issue #056 — Chapitre 15 : Distance de Mahalanobis
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Détection des anomalies.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de l'inversion de matrice de covariance. Ellipses de confiance.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Anomalie" = exception statistique pure.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Liste des 50 outliers.
 
@@ -1019,15 +963,14 @@
   - "Paradoxes analytiques" traités sans jugement
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la distance de Mahalanobis pour l'ensemble du jeu de données et extraire les "outliers" (anomalies statistiques).
-- [ ] Croiser les valeurs atypiques de Mahalanobis avec les résultats inattendus de valeur ajoutée (IVAL).
+  - [ ] Calculer la distance de Mahalanobis pour l'ensemble du jeu de données et extraire les "outliers" (anomalies statistiques).
+  - [ ] Croiser les valeurs atypiques de Mahalanobis avec les résultats inattendus de valeur ajoutée (IVAL).
 
 
 
 ### Issue #057 — Chapitre 16 : Les zones de bascule
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Lycées à la lisière des inversions de gradients.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul du gradient local des effets.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Structure analytique émergente, pas réalité empirique stricte.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16.
 
@@ -1036,15 +979,14 @@
   - Note obligatoire : zones de bascule = structures analytiques émergentes du modèle, pas réalité empirique directe
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Détecter algorithmiquement les inversions de gradient spatial et extraire les coordonnées des "zones de bascule".
-- [ ] Générer la carte thermique localisant ces points critiques.
+  - [ ] Détecter algorithmiquement les inversions de gradient spatial et extraire les coordonnées des "zones de bascule".
+  - [ ] Générer la carte thermique localisant ces points critiques.
 
 
 
 ### Issue #058 — Chapitre 17 : Résidus structurels (SAR + Moran)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèles 26 & 27. Là où la géographie ne suffit plus à expliquer.
-- **Périmètre Technique (Ouvert aux contributions)** : Modèle SAR. Calcul des résidus (Blind spots). Indice LISA de Moran.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie des ignorances du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte LISA.
 
@@ -1054,16 +996,15 @@
   - **Nouveauté** : corrélation résidus × accessibilité transport
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Modéliser le système via un Spatial Autoregressive Model (SAR) et calculer l'autocorrélation de Moran.
-- [ ] Extraire les résidus du modèle pour identifier les "blind spots" spatiaux.
-- [ ] Tester la corrélation des résidus avec les données d'accessibilité aux transports.
+  - [ ] Modéliser le système via un Spatial Autoregressive Model (SAR) et calculer l'autocorrélation de Moran.
+  - [ ] Extraire les résidus du modèle pour identifier les "blind spots" spatiaux.
+  - [ ] Tester la corrélation des résidus avec les données d'accessibilité aux transports.
 
 
 
 ### Issue #059 — Chapitre 18 : Classes latentes — les mondes scolaires cachés
 **Labels** : `chapitre`, `code`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Modèle GMM (Gaussian Mixture Model).
-- **Périmètre Technique (Ouvert aux contributions)** : Estimation des probabilités locales d'appartenance à 5 classes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle la porosité des mondes.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
@@ -1075,15 +1016,14 @@
   - Entropie locale : carte des zones hybrides
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Entraîner un modèle GMM (Gaussian Mixture Model) et un Latent Class Mixed Model pour extraire 5 classes latentes.
-- [ ] Calculer l'entropie locale de chaque lycée pour quantifier l'incertitude d'appartenance et cartographier les zones hybrides.
+  - [ ] Entraîner un modèle GMM (Gaussian Mixture Model) et un Latent Class Mixed Model pour extraire 5 classes latentes.
+  - [ ] Calculer l'entropie locale de chaque lycée pour quantifier l'incertitude d'appartenance et cartographier les zones hybrides.
 
 
 
 ### Issue #060 — Chapitre 19 : Frontières sociales floues — le gradient KDE
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Mesure de l'entropie des frontières.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de l'entropie locale $H(x) = -\sum p \log p$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Épaisseur" des frontières.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
@@ -1095,15 +1035,14 @@
   - Indice global de flou des frontières F
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Estimer les probabilités locales d'appartenance aux clusters via KDE (Kernel Density Estimation).
-- [ ] Calculer l'indice d'entropie locale H(x) et générer l'indice global de flou des frontières (F).
+  - [ ] Estimer les probabilités locales d'appartenance aux clusters via KDE (Kernel Density Estimation).
+  - [ ] Calculer l'indice d'entropie locale H(x) et générer l'indice global de flou des frontières (F).
 
 
 
 ### Issue #061 — Chapitre 20 : Tension hiérarchie/réseau — points de bascule ultramétriques
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : L'écart entre distance en graphe et distance en arbre.
-- **Périmètre Technique (Ouvert aux contributions)** : Mesure du désalignement $|d_{ij} - d^U_{ij}| \times w_{ij}$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Où la mobilité échappe à la hiérarchie ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20.
 
@@ -1116,8 +1055,8 @@
   - Signification : là où la mobilité scolaire échappe à la hiérarchie
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer le score de tension hiérarchie/réseau (|d_ij - d^U_ij| × w_ij) pour repérer les anomalies topologiques.
-- [ ] Générer l'indice global DA (désalignement) et cartographier les points de bascule ultramétriques.
+  - [ ] Calculer le score de tension hiérarchie/réseau (|d_ij - d^U_ij| × w_ij) pour repérer les anomalies topologiques.
+  - [ ] Générer l'indice global DA (désalignement) et cartographier les points de bascule ultramétriques.
 
 
 ---
@@ -1128,7 +1067,6 @@
 ### Issue #062 — Chapitre 21 : Pression Ségrégative Locale (PSL)
 **Labels** : `chapitre`, `code`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Mise à jour avec réseau de flux.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul complet PSL (gravitationnel).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie d'intensité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Carte PSL.
 
@@ -1138,15 +1076,14 @@
   - **Nouveauté** : corrélation PSL × accessibilité transport
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder le calcul de la Pression Ségrégative Locale (PSL) intégrée aux variables DVF et IRIS.
-- [ ] Générer la carte spatiale de la PSL et tester sa corrélation avec l'accessibilité transport.
+  - [ ] Coder le calcul de la Pression Ségrégative Locale (PSL) intégrée aux variables DVF et IRIS.
+  - [ ] Générer la carte spatiale de la PSL et tester sa corrélation avec l'accessibilité transport.
 
 
 
 ### Issue #063 — Chapitre 22 : Indice de fragmentation inter-couches (IFC)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Synthèse finale.
-- **Périmètre Technique (Ouvert aux contributions)** : Décomposition de l'IFC.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le système d'Île-de-France analysé sous son pire angle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22.
 
@@ -1158,15 +1095,14 @@
   - Asymétrie des flux : déséquilibres de mobilité
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la fonction de décomposition de l'Indice de Fragmentation Inter-couches (IFC).
-- [ ] Exporter les matrices d'asymétrie des flux et calculer l'indice de mobilité (M = 1 - IFC).
+  - [ ] Coder la fonction de décomposition de l'Indice de Fragmentation Inter-couches (IFC).
+  - [ ] Exporter les matrices d'asymétrie des flux et calculer l'indice de mobilité (M = 1 - IFC).
 
 
 
 ### Issue #064 — Chapitre 23 : Perméabilité structurelle — un optimum existe-t-il ?
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modélisation des déséquilibres structurels "trop ouvert" vs "trop fermé".
-- **Périmètre Technique (Ouvert aux contributions)** : Définition flux $\times$ distance hiérarchique. Indice $\Pi$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le coût structurel d'une mixité forcée sans préparation.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 23.
 
@@ -1179,15 +1115,14 @@
   - Lycées «passerelles» vs lycées «verrous»
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la boucle de calcul estimant l'indice de perméabilité (Π = P_raw / C) pour chaque lycée.
-- [ ] Générer les graphiques de distribution permettant d'isoler statistiquement les "passerelles" (ultra-ouverts) et les "verrous" (ultra-fermés).
+  - [ ] Coder la boucle de calcul estimant l'indice de perméabilité (Π = P_raw / C) pour chaque lycée.
+  - [ ] Générer les graphiques de distribution permettant d'isoler statistiquement les "passerelles" (ultra-ouverts) et les "verrous" (ultra-fermés).
 
 
 
 ### Issue #065 — Chapitre 24 : Clusters absorbants et attracteurs dynamiques
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Détection des "trous noirs" scolaires.
-- **Périmètre Technique (Ouvert aux contributions)** : Condition spectrale $\rho(T_{Ck}) > 1$. Score $In_k / Out_k$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la captation des ressources scolaires de la région par des bastions spécifiques.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 24, Top clusters absorbants.
 
@@ -1199,8 +1134,8 @@
   - Signification : «puits scolaires» et accumulation des ressources
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder le score d'absorption des clusters (Flux_IN / Flux_OUT).
-- [ ] Valider la condition spectrale (ρ(T_C) > 1) pour identifier les attracteurs dynamiques (puits scolaires).
+  - [ ] Coder le score d'absorption des clusters (Flux_IN / Flux_OUT).
+  - [ ] Valider la condition spectrale (ρ(T_C) > 1) pour identifier les attracteurs dynamiques (puits scolaires).
 
 
 ---
@@ -1211,7 +1146,6 @@
 ### Issue #066 — Chapitre 25 : Modèle SAR
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Extension spatiale stricte.
-- **Périmètre Technique (Ouvert aux contributions)** : SAR avec covariables enrichies. Estimation de $\rho$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations spatiales $\neq$ effets causaux.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 25.
 
@@ -1221,15 +1155,14 @@
   - Note obligatoire : associations spatiales ≠ effets causaux
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Entraîner le modèle SAR en incluant les covariables (DVF, revenus IRIS, accessibilité).
-- [ ] Extraire et décomposer les effets spatiaux directs et indirects pour évaluation.
+  - [ ] Entraîner le modèle SAR en incluant les covariables (DVF, revenus IRIS, accessibilité).
+  - [ ] Extraire et décomposer les effets spatiaux directs et indirects pour évaluation.
 
 
 
 ### Issue #067 — Chapitre 26 : Modèle SEM spatial
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle structurel avec variables latentes.
-- **Périmètre Technique (Ouvert aux contributions)** : DVF et Accessibilité ajoutés au modèle SEM.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Purement exploratoire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 26.
 
@@ -1238,15 +1171,14 @@
   - **Nouveauté** : DVF et accessibilité transport ajoutent-ils du pouvoir explicatif au-delà de l'IPS et IRIS ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Entraîner le modèle SEM spatial en incluant les variables enrichies (DVF, accessibilité transport).
-- [ ] Extraire et comparer les métriques d'évaluation du modèle (R² marginal vs R² conditionnel).
+  - [ ] Entraîner le modèle SEM spatial en incluant les variables enrichies (DVF, accessibilité transport).
+  - [ ] Extraire et comparer les métriques d'évaluation du modèle (R² marginal vs R² conditionnel).
 
 
 
 ### Issue #068 — Chapitre 27 : GAM non-linéaire
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Les effets ne sont pas droits (splines).
-- **Périmètre Technique (Ouvert aux contributions)** : Generalized Additive Models. Tipping points analytiques. (Random Forest placé en annexe).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations non-linéaires.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 27.
 
@@ -1257,15 +1189,14 @@
   - ⚠️ Random Forest spatial → `/exploratory/` (pas dans le texte principal)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Entraîner un modèle additif généralisé (GAM) non-linéaire avec splines sur les variables enrichies.
-- [ ] Extraire les points d'inflexion (tipping points analytiques) et générer les graphiques d'effets marginaux.
+  - [ ] Entraîner un modèle additif généralisé (GAM) non-linéaire avec splines sur les variables enrichies.
+  - [ ] Extraire les points d'inflexion (tipping points analytiques) et générer les graphiques d'effets marginaux.
 
 
 
 ### Issue #069 — Chapitre 28 : Décomposition des effets indirects
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Effet de quartier vs Effet de réseau.
-- **Périmètre Technique (Ouvert aux contributions)** : Extraction des parts de variance.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 28.
 
@@ -1275,105 +1206,97 @@
   - **Nouveauté** : l'accessibilité transport modifie-t-elle cet équilibre ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la décomposition mathématique de la variance pour séparer l'effet "quartier" de l'effet "réseau".
-- [ ] Tester statistiquement si l'intégration de la variable "accessibilité transport" modifie cet équilibre.
+  - [ ] Calculer la décomposition mathématique de la variance pour séparer l'effet "quartier" de l'effet "réseau".
+  - [ ] Tester statistiquement si l'intégration de la variable "accessibilité transport" modifie cet équilibre.
 
 
 
 ### Issue #070 — Conclusion Tome II
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Fin du Tome II.
-- **Périmètre Technique (Ouvert aux contributions)** : Synthèse des modèles spatiaux.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transition vers le Tome III.
 - **Artefacts générés** : Conclusion du Tome 2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Synthétiser les apports et limites des modèles spatiaux développés.
-- [ ] Rédiger le texte de la Conclusion du Tome 2.
+  - [ ] Synthétiser les apports et limites des modèles spatiaux développés.
+  - [ ] Rédiger le texte de la Conclusion du Tome 2.
 
 ### Issue #071 — Annexe A1 : Code Python complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité.
-- **Périmètre Technique (Ouvert aux contributions)** : Scripts de clustering et graphes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rassembler les scripts générant les clusters et les réseaux.
-- [ ] Structurer ce code Python pour l'Annexe A1 du Tome 2.
+  - [ ] Rassembler les scripts générant les clusters et les réseaux.
+  - [ ] Structurer ce code Python pour l'Annexe A1 du Tome 2.
 
 ### Issue #072 — Annexe A2 : Matrices de distance, similarité, flux
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes réseau.
-- **Périmètre Technique (Ouvert aux contributions)** : Exports JSON/CSV.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Exporter les matrices mathématiques (distance, flux) sous format lisible (JSON/CSV).
-- [ ] Mettre à disposition ces jeux de données via l'Annexe A2.
+  - [ ] Exporter les matrices mathématiques (distance, flux) sous format lisible (JSON/CSV).
+  - [ ] Mettre à disposition ces jeux de données via l'Annexe A2.
 
 ### Issue #073 — Annexe A3 : Tableau comparatif méthodes de clustering
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix algorithmiques.
-- **Périmètre Technique (Ouvert aux contributions)** : Benchmarks.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rassembler les différents benchmarks de vitesse et de performance algorithmique.
-- [ ] Dresser le tableau comparatif final dans l'Annexe A3.
+  - [ ] Rassembler les différents benchmarks de vitesse et de performance algorithmique.
+  - [ ] Dresser le tableau comparatif final dans l'Annexe A3.
 
 ### Issue #074 — Annexe A4 : Résultats complets des modèles
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Inférence.
-- **Périmètre Technique (Ouvert aux contributions)** : OLS, SAR, SEM outputs.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Compiler les logs et les résultats statistiques bruts (OLS, SAR, SEM).
-- [ ] Structurer ces sorties mathématiques pour l'Annexe A4.
+  - [ ] Compiler les logs et les résultats statistiques bruts (OLS, SAR, SEM).
+  - [ ] Structurer ces sorties mathématiques pour l'Annexe A4.
 
 ### Issue #075 — Annexe A5 : Note sur les méthodes dans /exploratory/
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèles alternatifs.
-- **Périmètre Technique (Ouvert aux contributions)** : Random Forest, etc.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rassembler les résultats des méthodes exploratoires (Random Forest, etc.) non retenues.
-- [ ] Rédiger la note méthodologique associée pour l'Annexe A5.
+  - [ ] Rassembler les résultats des méthodes exploratoires (Random Forest, etc.) non retenues.
+  - [ ] Rédiger la note méthodologique associée pour l'Annexe A5.
 
 ### Issue #076 — Annexe A6 : Cartes supplémentaires
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
-- **Périmètre Technique (Ouvert aux contributions)** : Cartes secondaires.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Regrouper les visualisations géospatiales secondaires générées par les modèles.
-- [ ] Exporter ce recueil cartographique pour l'Annexe A6.
+  - [ ] Regrouper les visualisations géospatiales secondaires générées par les modèles.
+  - [ ] Exporter ce recueil cartographique pour l'Annexe A6.
 
 ### Issue #077 — Annexe A7 : Bibliographie méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Bibliographie.
-- **Périmètre Technique (Ouvert aux contributions)** : Références.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la conclusion du Tome II (5 lycées les plus structurants selon centralité composite)
-- [ ] Comparaison internationale courte (Londres, New York — littérature existante)
-- [ ] A1 : Code Python complet
-- [ ] A2 : Matrices de distance, similarité, flux simulés/observés
-- [ ] A3 : Tableau comparatif méthodes de clustering
-- [ ] A4 : Résultats complets des modèles
-- [ ] A5 : Note sur les méthodes dans `/exploratory/`
-- [ ] A6 : Cartes supplémentaires (PSL, centralité, communautés)
-- [ ] A7 : Bibliographie méthodes
+  - [ ] Rédiger la conclusion du Tome II (5 lycées les plus structurants selon centralité composite)
+  - [ ] Comparaison internationale courte (Londres, New York — littérature existante)
+  - [ ] A1 : Code Python complet
+  - [ ] A2 : Matrices de distance, similarité, flux simulés/observés
+  - [ ] A3 : Tableau comparatif méthodes de clustering
+  - [ ] A4 : Résultats complets des modèles
+  - [ ] A5 : Note sur les méthodes dans `/exploratory/`
+  - [ ] A6 : Cartes supplémentaires (PSL, centralité, communautés)
+  - [ ] A7 : Bibliographie méthodes
 
 
 ## 🌀 TOME III — LE TEMPS ET LA RÉFORME
@@ -1384,15 +1307,14 @@
 ### Issue #078 — Note éthique et épistémologique Tome III (version renforcée)
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Le Tome III traite du temps, des dynamiques et des métaphores riemanniennes.
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clause obligatoire de début : "Ce volume propose des cadres dynamiques exploratoires..." Il faut empêcher le lecteur de prendre les projections pour des prédictions.
 - **Artefacts générés** : Note éthique T3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la note renforcée (cadres exploratoires, non prédictifs, non causaux)
-- [ ] Phrase protectrice obligatoire en ouverture : *"Ce volume propose des cadres dynamiques exploratoires…"*
-- [ ] Avant-propos : transition "du réseau aux dynamiques", note de limitation explicite sur la granularité des données longitudinales
-- [ ] Introduction : présentation transparente du dataset longitudinal (qualité, années manquantes, biais)
+  - [ ] Rédiger la note renforcée (cadres exploratoires, non prédictifs, non causaux)
+  - [ ] Phrase protectrice obligatoire en ouverture : *"Ce volume propose des cadres dynamiques exploratoires…"*
+  - [ ] Avant-propos : transition "du réseau aux dynamiques", note de limitation explicite sur la granularité des données longitudinales
+  - [ ] Introduction : présentation transparente du dataset longitudinal (qualité, années manquantes, biais)
 
 
 ---
@@ -1403,7 +1325,6 @@
 ### Issue #079 — Chapitre 1 : Trajectoires de lycées
 **Labels** : `chapitre`, `code`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Traquer l'évolution de la valeur $S_{i,t}$ sur plusieurs années.
-- **Périmètre Technique (Ouvert aux contributions)** : Score de trajectoire (dérivée moyenne). Corrélation trajectoire $\times$ prix DVF. Script `figures/fig4_trajectories_changepoints.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identifier les établissements en évolution sociale descendante ou ascendante sans incrimination morale.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 1, Figure 4.
 
@@ -1416,15 +1337,14 @@
   - Script `figures/fig4_trajectories_changepoints.py`
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder le score longitudinal de "trajectoire temporelle" et classer les établissements (ascendants, déclinants, instables).
-- [ ] Générer le script `figures/fig4_trajectories_changepoints.py` et tester la corrélation temporelle avec l'évolution des prix DVF.
+  - [ ] Coder le score longitudinal de "trajectoire temporelle" et classer les établissements (ascendants, déclinants, instables).
+  - [ ] Générer le script `figures/fig4_trajectories_changepoints.py` et tester la corrélation temporelle avec l'évolution des prix DVF.
 
 
 
 ### Issue #080 — Chapitre 2 : CAH dynamique
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Évolution de la matrice de clustering.
-- **Périmètre Technique (Ouvert aux contributions)** : Matrices de transition inter-temporelles. Indice ARI pour tester si le cluster "Élite" survit dans le temps.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les frontières bougent-elles ?
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 2.
 
@@ -1434,15 +1354,14 @@
   - **Nouveauté** : les clusters du Tome II sont-ils stables dans le temps ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Exécuter la CAH dynamique sur chaque année et générer la matrice de transition inter-temporelle.
-- [ ] Calculer la stabilité (Adjusted Rand Index) des clusters d'une année sur l'autre.
+  - [ ] Exécuter la CAH dynamique sur chaque année et générer la matrice de transition inter-temporelle.
+  - [ ] Calculer la stabilité (Adjusted Rand Index) des clusters d'une année sur l'autre.
 
 
 
 ### Issue #081 — Chapitre 3 : L'ultramétrie temporelle
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : La hiérarchie se rigidifie-t-elle avec le temps ?
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de la distance ultramétrique sur 10 ans. Empilement de dendrogrammes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Distinguer l'effet réel de la simple révision du calcul IPS de 2021.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 3.
 
@@ -1452,15 +1371,14 @@
   - Note de prudence : distinguer changements réels vs artefacts de la révision IPS 2021
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Générer la pile de dendrogrammes annuels superposés.
-- [ ] Calculer la distance ultramétrique inter-temporelle pour évaluer la résilience hiérarchique du système.
+  - [ ] Générer la pile de dendrogrammes annuels superposés.
+  - [ ] Calculer la distance ultramétrique inter-temporelle pour évaluer la résilience hiérarchique du système.
 
 
 
 ### Issue #082 — Chapitre 4 : Le modèle HMM (régimes cachés)
 **Labels** : `chapitre`, `code`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 35. Le système possède-t-il des "humeurs" latentes ?
-- **Périmètre Technique (Ouvert aux contributions)** : Hidden Markov Models sur la série IPS/$\sigma$/Bac. Détection de 4 états latents.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Modèle formel métaphorique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 4.
 
@@ -1470,15 +1388,14 @@
   - 4–5 états cachés estimés, matrice de transition, durée moyenne par état
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Entraîner un Hidden Markov Model (HMM) pour détecter les régimes cachés dans les séries temporelles (IPS, résultats, mixité).
-- [ ] Extraire les matrices de transition estimées et la durée moyenne par état caché.
+  - [ ] Entraîner un Hidden Markov Model (HMM) pour détecter les régimes cachés dans les séries temporelles (IPS, résultats, mixité).
+  - [ ] Extraire les matrices de transition estimées et la durée moyenne par état caché.
 
 
 
 ### Issue #083 — Chapitre 5 : HMM couplé au réseau (diffusion des régimes)
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 36 & 37. Un changement de régime dans Paris se diffuse-t-il via les corridors ?
-- **Périmètre Technique (Ouvert aux contributions)** : Graph Neural Network simple ou modèle de diffusion matricielle.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Section expérimentale (`/exploratory/`).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 5.
 
@@ -1487,15 +1404,14 @@
   - Note de prudence renforcée : modèle expérimental, résultats = hypothèses exploratoires
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coupler le modèle HMM avec la structure topologique (Graph Neural Network temporel ou modèle couplé).
-- [ ] Extraire les paramètres de diffusion montrant comment les régimes se propagent géographiquement.
+  - [ ] Coupler le modèle HMM avec la structure topologique (Graph Neural Network temporel ou modèle couplé).
+  - [ ] Extraire les paramètres de diffusion montrant comment les régimes se propagent géographiquement.
 
 
 
 ### Issue #084 — Chapitre 6 : Dynamique de Theil — évolution de la ségrégation
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : La dérivée de la ségrégation (Modèle 31).
-- **Périmètre Technique (Ouvert aux contributions)** : $\Delta T = \Delta T_{within} + \Delta T_{between}$. Calcul de la vitesse $v_T = dT/dt$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyser si l'Île-de-France converge vers l'explosion ou vers la stabilité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 6.
 
@@ -1509,15 +1425,14 @@
   - **V2** : corrélation dynamique Theil × prix DVF
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la série temporelle de l'indice de Theil (T) et sa vitesse de fragmentation (dT/dt).
-- [ ] Extraire la décomposition dynamique (ΔT_within + ΔT_between) et générer les graphiques d'évolution par couronne.
+  - [ ] Calculer la série temporelle de l'indice de Theil (T) et sa vitesse de fragmentation (dT/dt).
+  - [ ] Extraire la décomposition dynamique (ΔT_within + ΔT_between) et générer les graphiques d'évolution par couronne.
 
 
 
 ### Issue #085 — Chapitre 7 : Flux de mobilité scolaire — un Sankey dans le temps
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 33. Matérialisation de l'évolution des clusters.
-- **Périmètre Technique (Ouvert aux contributions)** : Génération d'une animation Sankey / diagramme de flux temporel.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La "dérive continentale" de l'éducation francilienne.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 7.
 
@@ -1529,8 +1444,8 @@
   - Dérive de T : qu'est-ce qui explique les changements de flux ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Générer la série chronologique des matrices de transition et produire l'animation dynamique de Sankey.
-- [ ] Extraire les métriques identifiant mathématiquement l'apparition de nouveaux ascenseurs sociaux.
+  - [ ] Générer la série chronologique des matrices de transition et produire l'animation dynamique de Sankey.
+  - [ ] Extraire les métriques identifiant mathématiquement l'apparition de nouveaux ascenseurs sociaux.
 
 
 ---
@@ -1541,7 +1456,6 @@
 ### Issue #086 — Chapitre 8 : Détection de changepoints (PELT)
 **Labels** : `chapitre`, `code`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Modèle 34. Trouver les années exactes où le système s'est cassé.
-- **Périmètre Technique (Ouvert aux contributions)** : Algorithme PELT (Pruned Exact Linear Time). Corrélation avec les changepoints immobiliers.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Prudence : corrélation $\neq$ causalité.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 8.
 
@@ -1553,15 +1467,14 @@
   - Test de sensibilité penalty PELT (min_size, pen)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Exécuter l'algorithme de détection de ruptures (PELT) en ajustant les paramètres de pénalité (AIC/BIC).
-- [ ] Isoler les dates critiques (changepoints) et tester la coïncidence avec les ruptures des séries immobilières DVF.
+  - [ ] Exécuter l'algorithme de détection de ruptures (PELT) en ajustant les paramètres de pénalité (AIC/BIC).
+  - [ ] Isoler les dates critiques (changepoints) et tester la coïncidence avec les ruptures des séries immobilières DVF.
 
 
 
 ### Issue #087 — Chapitre 9 : Analyse causale des changepoints
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Essayer d'expliquer pourquoi la rupture a eu lieu.
-- **Périmètre Technique (Ouvert aux contributions)** : Identification des limites causales (absence de Diff-in-Diff).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 9.
 
@@ -1570,15 +1483,14 @@
   - Ce qu'il faudrait pour une identification causale stricte (diff-in-diff, RD — non disponibles)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Configurer un modèle exploratoire (Diff-in-Diff ou Regression Discontinuity) sur les changepoints.
-- [ ] Exporter les intervalles de confiance sur les effets temporels estimés.
+  - [ ] Configurer un modèle exploratoire (Diff-in-Diff ou Regression Discontinuity) sur les changepoints.
+  - [ ] Exporter les intervalles de confiance sur les effets temporels estimés.
 
 
 
 ### Issue #088 — Chapitre 10 : Phase transitions
 **Labels** : `chapitre`, `exploratory`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèle 42. Percolation et points critiques.
-- **Périmètre Technique (Ouvert aux contributions)** : Condition spectrale de stabilité.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Emprunt fort à la physique statistique. Exiger des "formulations conditionnelles systématiques".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 10.
 
@@ -1589,15 +1501,14 @@
   - Résultats "cohérents avec l'hypothèse de fragilisation croissante"
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer la plus grande valeur propre du réseau (ρλ_max) et générer sa série temporelle.
-- [ ] Extraire les fenêtres temporelles critiques où le système s'approche de l'instabilité structurelle (valeur >= 1).
+  - [ ] Calculer la plus grande valeur propre du réseau (ρλ_max) et générer sa série temporelle.
+  - [ ] Extraire les fenêtres temporelles critiques où le système s'approche de l'instabilité structurelle (valeur >= 1).
 
 
 
 ### Issue #089 — Chapitre 11 : Early Warning Signals — prédire les ruptures
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Peut-on savoir si un lycée va s'effondrer socialement ?
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul de la variance locale montante, du "critical slowing down".
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites (faux positifs, sensibilité).
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 11.
 
@@ -1610,15 +1521,14 @@
   - Encadré : peut-on prévoir une ségrégation scolaire croissante ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la détection des "Early Warning Signals" (variance locale, autocorrélation critique) sur les lycées en frontière.
-- [ ] Modéliser un algorithme prédictif détectant la fragilisation ségrégative d'un établissement.
+  - [ ] Coder la détection des "Early Warning Signals" (variance locale, autocorrélation critique) sur les lycées en frontière.
+  - [ ] Modéliser un algorithme prédictif détectant la fragilisation ségrégative d'un établissement.
 
 
 
 ### Issue #090 — Chapitre 12 : Le DAG inter-temporel — causes et conséquences
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Extension du Modèle 15 au temps $t$.
-- **Périmètre Technique (Ouvert aux contributions)** : Inférence causale dynamique, ajout de l'effet inertiel $\alpha$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Expérimentation contrefactuelle in-silico.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 12.
 
@@ -1631,8 +1541,8 @@
   - Simulation contrefactuelle : que se passe-t-il si on «casse» un lien causal ?
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Construire formellement le Directed Acyclic Graph (DAG) inter-temporel pour inclure les délais et l'inertie.
-- [ ] Simuler mathématiquement une intervention (modification de flux) et en extraire les conséquences en cascade.
+  - [ ] Construire formellement le Directed Acyclic Graph (DAG) inter-temporel pour inclure les délais et l'inertie.
+  - [ ] Simuler mathématiquement une intervention (modification de flux) et en extraire les conséquences en cascade.
 
 
 ---
@@ -1643,19 +1553,17 @@
 ### Issue #091 — Note préliminaire Partie III
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Introduction du climax théorique de l'Atlas : l'espace de Riemann (modélisation de la dynamique spatio-temporelle).
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Obligation absolue : spécifier que ce sont des langages analytiques, pas des descriptions empiriques directes.
 - **Artefacts générés** : Note introductive de la Partie III.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la note obligatoire (formalismes avancés = langages analytiques, pas descriptions empiriques directement mesurables)
+  - [ ] Rédiger la note obligatoire (formalismes avancés = langages analytiques, pas descriptions empiriques directement mesurables)
 
 
 
 ### Issue #092 — Chapitre 13 : L'espace scolaire comme variété riemannienne
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 48. La topologie sociale n'est pas plate (Espace euclidien), elle est courbée par les privilèges.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul du Tenseur métrique $G_t$. Extraction de la distance non-euclidienne par Isomap.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Métaphore puissante pour montrer que l'ascension sociale demande plus d'énergie que le mobilité sociale descendante.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 13.
 
@@ -1665,15 +1573,14 @@
   - Formulation systématique : "permet de penser X… ne constitue pas une mesure directe"
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la métrique tensorielle représentant l'espace scolaire comme une variété riemannienne (G_t).
-- [ ] Extraire les coordonnées courbées de chaque lycée et générer la visualisation topologique abstraite.
+  - [ ] Coder la métrique tensorielle représentant l'espace scolaire comme une variété riemannienne (G_t).
+  - [ ] Extraire les coordonnées courbées de chaque lycée et générer la visualisation topologique abstraite.
 
 
 
 ### Issue #093 — Chapitre 14 : Champ de tensions dynamiques
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Calcul des forces sur chaque établissement (gradient sur l'espace courbe).
-- **Périmètre Technique (Ouvert aux contributions)** : Cartographie du champ vectoriel. Calcul $\Phi_{i,t}$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la force de rappel du déterminisme local.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14.
 
@@ -1685,15 +1592,14 @@
   - Formulation : «permet de penser la dynamique structurelle... ne constitue pas une mesure directe»
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer mathématiquement le gradient dans l'espace riemannien (champ de tensions centrifuge/centripète).
-- [ ] Générer la carte vectorielle montrant les lycées soumis aux pressions d'attraction et de répulsion.
+  - [ ] Calculer mathématiquement le gradient dans l'espace riemannien (champ de tensions centrifuge/centripète).
+  - [ ] Générer la carte vectorielle montrant les lycées soumis aux pressions d'attraction et de répulsion.
 
 
 
 ### Issue #094 — Chapitre 15 : Le modèle unifié
 **Labels** : `chapitre`, `exploratory`, `difficulty: medium`
 - **Contexte Analytique** : Synthèse mathématique finale.
-- **Périmètre Technique (Ouvert aux contributions)** : Intégration de la fonction de perte multi-composantes $L = L_{HMM} + \lambda_1 L_{GNN} + \lambda_2 L_{ultra} + \lambda_3 L_{flux}$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mettre le code complet dans `/exploratory/`. Ne pas en faire le juge de paix, mais le sommet technique.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15.
 
@@ -1704,8 +1610,8 @@
   - Synthèse des trois tomes : de la carte à la dynamique
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Assembler la fonction de perte composite (Loss = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux).
-- [ ] Entraîner le réseau neuronal unifié et extraire les hyperparamètres finaux vers un fichier de configuration.
+  - [ ] Assembler la fonction de perte composite (Loss = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux).
+  - [ ] Entraîner le réseau neuronal unifié et extraire les hyperparamètres finaux vers un fichier de configuration.
 
 
 ---
@@ -1716,19 +1622,17 @@
 ### Issue #095 — Note éthique Partie IV
 **Labels** : `ethique`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Introduction sur les anomalies paradoxales (Modèle 45).
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "lycée sous-performant" est un écart statistique au modèle, pas un jugement sur les équipes pédagogiques.
 - **Artefacts générés** : Note éthique Partie IV.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la note spécifique : "paradoxaux", "sur-performants", "sous-performants" = qualifications relatives à un modèle statistique, pas évaluations de qualité de l'enseignement
+  - [ ] Rédiger la note spécifique : "paradoxaux", "sur-performants", "sous-performants" = qualifications relatives à un modèle statistique, pas évaluations de qualité de l'enseignement
 
 
 
 ### Issue #096 — Chapitre 16 : Lycées paradoxaux positifs (sur-performance sociale)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Les lycées qui défient la gravité sociale.
-- **Périmètre Technique (Ouvert aux contributions)** : Résidus OLS massifs positifs confirmés par la valeur ajoutée IVAL. Score $P_i$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On constate le paradoxe sans l'expliquer totalement avec des données macro.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16.
 
@@ -1739,15 +1643,14 @@
   - Mécanismes non déductibles des données agrégées
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Créer une fonction de filtrage détectant les établissements ayant un fort score de sur-performance relative.
-- [ ] Générer l'export brut (CSV/JSON) de ces anomalies statistiques avec croisement IVAL.
+  - [ ] Créer une fonction de filtrage détectant les établissements ayant un fort score de sur-performance relative.
+  - [ ] Générer l'export brut (CSV/JSON) de ces anomalies statistiques avec croisement IVAL.
 
 
 
 ### Issue #097 — Chapitre 17 : Paradoxes inversés — le sous-rendement de l'élite
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Les lycées qui, vu leur recrutement élitiste, devraient faire bien mieux au bac.
-- **Périmètre Technique (Ouvert aux contributions)** : Corrélation avec le score d'entre-soi. Hypothèse de l'effet d'inertie institutionnelle.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Peut-on trop bien trier ses élèves ?" Formulation neutre.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17.
 
@@ -1760,15 +1663,14 @@
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder l'extraction des "paradoxes inversés" (IPS ultra-élevé mais sous-rendement en VA).
-- [ ] Tester statistiquement la corrélation de ce sous-rendement avec les dynamiques immobilières locales (DVF).
+  - [ ] Coder l'extraction des "paradoxes inversés" (IPS ultra-élevé mais sous-rendement en VA).
+  - [ ] Tester statistiquement la corrélation de ce sous-rendement avec les dynamiques immobilières locales (DVF).
 
 
 
 ### Issue #098 — Chapitre 18 : Trajectoires rares — les outliers de mobilité scolaire
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Analyser les trajectoires individuelles de lycées qui sautent de cluster.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul anomalie $A(\tau) = -\log P(\tau)$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les marges du déterminisme scolaire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
@@ -1781,15 +1683,14 @@
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer l'entropie des trajectoires individuelles (-log P(τ_i)) et isoler les trajectoires outliers de mobilité.
-- [ ] Exporter la liste des établissements ayant des transitions contre-hiérarchiques.
+  - [ ] Calculer l'entropie des trajectoires individuelles (-log P(τ_i)) et isoler les trajectoires outliers de mobilité.
+  - [ ] Exporter la liste des établissements ayant des transitions contre-hiérarchiques.
 
 
 
 ### Issue #099 — Chapitre 19 : Communes hyper-ségrégées malgré mixité apparente
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Les villes qui s'illustrent par une ségrégation intra-muros intense.
-- **Périmètre Technique (Ouvert aux contributions)** : Score $HS_c$. Carte IDF des communes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les options (latin, bilangue) ou le privé agissent comme tamis invisible.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 19.
 
@@ -1803,15 +1704,14 @@
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer le score d'hyper-ségrégation masquée (HS_c) combinant une forte moyenne communale et un fort indice de ségrégation interne.
-- [ ] Générer la carte spatiale identifiant les communes "faussement mixtes".
+  - [ ] Calculer le score d'hyper-ségrégation masquée (HS_c) combinant une forte moyenne communale et un fort indice de ségrégation interne.
+  - [ ] Générer la carte spatiale identifiant les communes "faussement mixtes".
 
 
 
 ### Issue #100 — Chapitre 20 : Blind spots systémiques
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Ce que tous les modèles (SAR, GMM, Theil) n'arrivent pas à prévoir.
-- **Périmètre Technique (Ouvert aux contributions)** : Calcul du score $BS_i$. Consensus d'erreur.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Avouer les ignorances de la machine de l'Atlas.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20.
 
@@ -1823,8 +1723,8 @@
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder la consolidation des erreurs (résidus) multi-modèles pondérées spatialement.
-- [ ] Extraire la liste géographique des "blind spots" (zones systématiquement mal prédites).
+  - [ ] Coder la consolidation des erreurs (résidus) multi-modèles pondérées spatialement.
+  - [ ] Extraire la liste géographique des "blind spots" (zones systématiquement mal prédites).
 
 
 ---
@@ -1835,20 +1735,18 @@
 ### Issue #101 — Note de cadrage Partie V (obligatoire)
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : "Que se passerait-il si... ?"
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les simulations ne sont PAS des recommandations de politique publique. Les parents s'adapteraient (ex: déménagement, fuite dans le privé), ce que le modèle ignore.
 - **Artefacts générés** : Note de Cadrage.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rédiger la note : simulations = scénarios analytiques, pas prédictions ni recommandations de politique publique
-- [ ] Préciser que les comportements adaptatifs des acteurs ne sont pas modélisés
+  - [ ] Rédiger la note : simulations = scénarios analytiques, pas prédictions ni recommandations de politique publique
+  - [ ] Préciser que les comportements adaptatifs des acteurs ne sont pas modélisés
 
 
 
 ### Issue #102 — Chapitre 21 : Simulation réforme — changer la carte scolaire
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Redistribution in-silico des IPS.
-- **Périmètre Technique (Ouvert aux contributions)** : Simulation spatiale non-linéaire. Vérifier si cela déclenche une "transition de phase".
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21.
 
@@ -1861,15 +1759,14 @@
   - Limites section obligatoire : comportements familiaux statiques, effets adaptatifs potentiellement annulateurs
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Initialiser la boucle de simulation de re-sectorisation (redistribution artificielle des IPS locaux).
-- [ ] Extraire la nouvelle configuration du réseau et valider la condition de stabilité de la phase de transition simulée.
+  - [ ] Initialiser la boucle de simulation de re-sectorisation (redistribution artificielle des IPS locaux).
+  - [ ] Extraire la nouvelle configuration du réseau et valider la condition de stabilité de la phase de transition simulée.
 
 
 
 ### Issue #103 — Chapitre 22 : Simulation — neutraliser le privé sélectif
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Contrefactuel : supprimer les 20 lycées les plus fermés de l'algorithme.
-- **Périmètre Technique (Ouvert aux contributions)** : Réallocation des flux dans le réseau. Modélisation de l'impact sur les corridors (nouveaux ascenseurs ?).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Exercice purement mathématique analytique. Pas une "fermeture" d'écoles, mais un test de stress de l'équation de Theil.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22.
 
@@ -1883,15 +1780,14 @@
   - Note obligatoire : exercice analytique, pas proposition de politique publique
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Coder le modèle contrefactuel "suppression des noeuds hyper-sélectifs" (fermeture simulée du Top 20 fermé).
-- [ ] Relancer l'algorithme de routage des flux et exporter les nouvelles matrices d'accessibilité sociale.
+  - [ ] Coder le modèle contrefactuel "suppression des noeuds hyper-sélectifs" (fermeture simulée du Top 20 fermé).
+  - [ ] Relancer l'algorithme de routage des flux et exporter les nouvelles matrices d'accessibilité sociale.
 
 
 
 ### Issue #104 — Chapitre 23 : Simulation — renforcer les lycées paradoxaux positifs
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modéliser un "label d'excellence" sur la base de la VA au lieu du recrutement social.
-- **Périmètre Technique (Ouvert aux contributions)** : Augmentation artificielle du coefficient d'attractivité des "paradoxes positifs" dans le réseau $W$.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Risque in-silico de polarisation sociale scolaire progressive mis en évidence.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 23.
 
@@ -1903,15 +1799,14 @@
   - Quelle politique de communication accompagne cette stratégie ? (V1)
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Injecter un bonus attractif simulé sur les lycées paradoxaux positifs.
-- [ ] Extraire l'impact de ce choc sur l'ouverture de nouveaux corridors sociaux dans le modèle probabiliste.
+  - [ ] Injecter un bonus attractif simulé sur les lycées paradoxaux positifs.
+  - [ ] Extraire l'impact de ce choc sur l'ouverture de nouveaux corridors sociaux dans le modèle probabiliste.
 
 
 
 ### Issue #105 — Chapitre 24 : Politiques de mixité : leçons des modèles
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Synthèse théorique des trois simulations.
-- **Périmètre Technique (Ouvert aux contributions)** : Analyse de "l'optimum de perméabilité" théorique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mixité forcée vs mixité incitée. "Le risque de la réforme sans modèle".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 24.
 
@@ -1924,15 +1819,14 @@
   - Le risque de la réforme sans modèle : déclencher une phase transition non désirée
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Calculer les seuils critiques (tipping points) de mixité provoquant la bascule des corridors.
-- [ ] Générer un rapport d'optimisation probabiliste comparant les stratégies de régulation de flux.
+  - [ ] Calculer les seuils critiques (tipping points) de mixité provoquant la bascule des corridors.
+  - [ ] Générer un rapport d'optimisation probabiliste comparant les stratégies de régulation de flux.
 
 
 
 ### Issue #106 — Chapitre 25 : Vers un atlas dynamique
 **Labels** : `chapitre`, `infrastructure`, `difficulty: hard`
 - **Contexte Analytique** : Structuration de l'outil technique (Atlas).
-- **Périmètre Technique (Ouvert aux contributions)** : Cartographie des 9 couches de données empilées.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présenter l'Atlas comme un outil d'aide à la compréhension, pas comme un juge.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 25.
 
@@ -1942,8 +1836,8 @@
   - Ce que les données actuelles permettent et ne permettent pas encore
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Compiler l'architecture des couches JSON pour la cartographie web interactive finale.
-- [ ] Générer les tuiles de base géographiques et les calques statistiques (IPS, résidus, clusters).
+  - [ ] Compiler l'architecture des couches JSON pour la cartographie web interactive finale.
+  - [ ] Générer les tuiles de base géographiques et les calques statistiques (IPS, résidus, clusters).
 
 
 ---
@@ -1954,7 +1848,6 @@
 ### Issue #107 — Chapitre 26 : Limites méthodologiques (le plus important du tome)
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Auto-critique algorithmique de l'Atlas.
-- **Périmètre Technique (Ouvert aux contributions)** : Évaluation du "ecological fallacy", des biais de sélection (seulement top 100 ou corpus partiel), de l'absence de données individuelles longitudinales.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le chapitre le plus important. Non-stationnarité du réel vs stationnarité des modèles.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 26.
 
@@ -1969,14 +1862,13 @@
   - Confusion potentielle artefacts de mesure / changements réels
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse méthodologique.*
+  - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse méthodologique.*
 
 
 
 ### Issue #108 — Chapitre 27 : Éthique de la quantification scolaire
 **Labels** : `chapitre`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Le danger des mathématiques sociales.
-- **Périmètre Technique (Ouvert aux contributions)** : Rédaction théorique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le risque de naturaliser les inégalités. Distinguer "décrire une structure" de "l'accepter comme naturelle". L'IPS peut-il être interprété abusivement ??
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 27.
 
@@ -1988,14 +1880,13 @@
   - Distinction : décrire une structure ≠ l'accepter comme naturelle
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse éthique.*
+  - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse éthique.*
 
 
 
 ### Issue #109 — Chapitre 28 : Ouvertures disciplinaires et comparaisons internationales
 **Labels** : `chapitre`, `difficulty: medium`
 - **Contexte Analytique** : Paris face au reste du monde.
-- **Périmètre Technique (Ouvert aux contributions)** : Synthèse de la littérature existante sur Londres, New York, Berlin, Tokyo.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ne pas faire d'inférence, juste de la bibliographie comparative.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 28.
 
@@ -2004,14 +1895,13 @@
   - Comparaisons internationales développées (Paris vs Londres, New York, Berlin, Tokyo, Barcelone) — littérature existante uniquement
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige ces ouvertures disciplinaires.*
+  - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige ces ouvertures disciplinaires.*
 
 
 
 ### Issue #110 — Chapitre 29 : Agenda de recherche
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Les prochaines frontières.
-- **Périmètre Technique (Ouvert aux contributions)** : Listing de 10 questions ouvertes et des Data manquantes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce qu'un accès aux données individuelles permettrait de faire.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 29.
 
@@ -2021,155 +1911,143 @@
   - Ce qu'un accès à des données individuelles longitudinales permettrait de faire
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur définit l'agenda de recherche.*
+  - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur définit l'agenda de recherche.*
 
 
 
 ### Issue #111 — Conclusion générale de la trilogie
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture de l'Atlas.
-- **Périmètre Technique (Ouvert aux contributions)** : Synthèse narrative.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le paradoxe de la méritocratie républicaine face aux données. Sans prescription normative.
 - **Artefacts générés** : Conclusion Générale.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Ce que l'IDF dit de la France scolaire
-- [ ] La ségrégation scolaire comme processus, pas état
-- [ ] Le paradoxe de la méritocratie républicaine face aux données
-- [ ] Mise en perspective internationale finale
-- [ ] Responsabilité collective et leviers d'action (sans prescription normative)
+  - [ ] Ce que l'IDF dit de la France scolaire
+  - [ ] La ségrégation scolaire comme processus, pas état
+  - [ ] Le paradoxe de la méritocratie républicaine face aux données
+  - [ ] Mise en perspective internationale finale
+  - [ ] Responsabilité collective et leviers d'action (sans prescription normative)
 
 
 
 ### Issue #112 — Annexe A1 : Code Python complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité du Tome 3.
-- **Périmètre Technique (Ouvert aux contributions)** : Scripts dynamiques.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Rassembler les scripts Python dédiés aux séries temporelles et détections de ruptures.
-- [ ] Structurer le code dynamique pour l'Annexe A1 du Tome 3.
+  - [ ] Rassembler les scripts Python dédiés aux séries temporelles et détections de ruptures.
+  - [ ] Structurer le code dynamique pour l'Annexe A1 du Tome 3.
 
 ### Issue #113 — Annexe A2 : Note méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix avancés.
-- **Périmètre Technique (Ouvert aux contributions)** : Justifications.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Réunir les justifications mathématiques des paramètres choisis pour les modèles.
-- [ ] Rédiger la note méthodologique justificative dans l'Annexe A2.
+  - [ ] Réunir les justifications mathématiques des paramètres choisis pour les modèles.
+  - [ ] Rédiger la note méthodologique justificative dans l'Annexe A2.
 
 ### Issue #114 — Annexe A3 : Paramètres estimés des modèles dynamiques
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Résultats bruts.
-- **Périmètre Technique (Ouvert aux contributions)** : HMM, PELT.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Extraire les paramètres estimés par les modèles temporels (HMM, algorithme PELT).
-- [ ] Compiler ces valeurs mathématiques dans l'Annexe A3.
+  - [ ] Extraire les paramètres estimés par les modèles temporels (HMM, algorithme PELT).
+  - [ ] Compiler ces valeurs mathématiques dans l'Annexe A3.
 
 ### Issue #115 — Annexe A4 : Résultats des simulations de réforme
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Scénarios.
-- **Périmètre Technique (Ouvert aux contributions)** : Tableaux de projection.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Agréger les tableaux de projection issus des simulations de réformes.
-- [ ] Mettre en page ces résultats chiffrés pour l'Annexe A4.
+  - [ ] Agréger les tableaux de projection issus des simulations de réformes.
+  - [ ] Mettre en page ces résultats chiffrés pour l'Annexe A4.
 
 ### Issue #116 — Annexe A5 : Cartes temporelles et animations
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
-- **Périmètre Technique (Ouvert aux contributions)** : GIFs/Vidéos.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Générer et optimiser les animations (GIFs, vidéos) d'évolution des flux scolaires.
-- [ ] Constituer la galerie multimédia de l'Annexe A5.
+  - [ ] Générer et optimiser les animations (GIFs, vidéos) d'évolution des flux scolaires.
+  - [ ] Constituer la galerie multimédia de l'Annexe A5.
 
 ### Issue #117 — Annexe A6 : Sources longitudinales
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Données temporelles.
-- **Périmètre Technique (Ouvert aux contributions)** : Bibliographie data.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Inventorier les sources de données longitudinales exploitées.
-- [ ] Dresser la bibliographie data complète pour l'Annexe A6.
+  - [ ] Inventorier les sources de données longitudinales exploitées.
+  - [ ] Dresser la bibliographie data complète pour l'Annexe A6.
 
 ### Issue #118 — Annexe A7 : Index général de la trilogie
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Navigation.
-- **Périmètre Technique (Ouvert aux contributions)** : Indexation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Créer l'indexation globale croisée sur l'ensemble de la trilogie.
-- [ ] Générer l'index général final pour l'Annexe A7.
+  - [ ] Créer l'indexation globale croisée sur l'ensemble de la trilogie.
+  - [ ] Générer l'index général final pour l'Annexe A7.
 
 ### Issue #119 — Annexe A8 : Bibliographie complète
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture bibliographique.
-- **Périmètre Technique (Ouvert aux contributions)** : Références globales.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A8.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Agréger les citations et la littérature scientifique de l'ensemble du projet.
-- [ ] Formater la bibliographie exhaustive de l'Annexe A8.
+  - [ ] Agréger les citations et la littérature scientifique de l'ensemble du projet.
+  - [ ] Formater la bibliographie exhaustive de l'Annexe A8.
 
 ### Issue #120 — Annexe A9 : Glossaire général unifié
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Définitions.
-- **Périmètre Technique (Ouvert aux contributions)** : Dictionnaire de termes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarté.
 - **Artefacts générés** : Annexe A9.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Unifier le dictionnaire des termes techniques (code, stats, socio) employés dans les trois tomes.
-- [ ] Rédiger le glossaire de référence global dans l'Annexe A9.
+  - [ ] Unifier le dictionnaire des termes techniques (code, stats, socio) employés dans les trois tomes.
+  - [ ] Rédiger le glossaire de référence global dans l'Annexe A9.
 
 ### Issue #121 — Annexe A10 : Licences de données
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Légal.
-- **Périmètre Technique (Ouvert aux contributions)** : Open Data.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Droit.
 - **Artefacts générés** : Annexe A10.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Vérifier la conformité légale et recenser l'ensemble des licences Open Data.
-- [ ] Rédiger le récapitulatif juridique pour l'Annexe A10.
+  - [ ] Vérifier la conformité légale et recenser l'ensemble des licences Open Data.
+  - [ ] Rédiger le récapitulatif juridique pour l'Annexe A10.
 
 ### Issue #122 — Annexe A11 : Table de correspondance méthode
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Justification.
-- **Périmètre Technique (Ouvert aux contributions)** : Table récapitulative.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Académique.
 - **Artefacts générés** : Annexe A11.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] A1 : Code Python complet (HMM, changepoints, simulations, phase transitions) + lien GitHub
-- [ ] A2 : Note méthodes `/exploratory/` avec justification (pourquoi non-inclus dans le texte principal)
-- [ ] A3 : Paramètres estimés des modèles dynamiques
-- [ ] A4 : Résultats des simulations de réforme (tableaux complets)
-- [ ] A5 : Cartes temporelles et animations (Python script fourni)
-- [ ] A6 : Sources longitudinales, méthode de construction dataset temporel + biais documentés
-- [ ] A7 : Index général de la trilogie
-- [ ] A8 : Bibliographie complète (3 tomes)
-- [ ] A9 : Glossaire général unifié
-- [ ] A10 : Licences de données (Etalab, Open Data Commons, conditions réutilisation)
-- [ ] A11 : Table de correspondance méthode/justification sociologique complète
+  - [ ] A1 : Code Python complet (HMM, changepoints, simulations, phase transitions) + lien GitHub
+  - [ ] A2 : Note méthodes `/exploratory/` avec justification (pourquoi non-inclus dans le texte principal)
+  - [ ] A3 : Paramètres estimés des modèles dynamiques
+  - [ ] A4 : Résultats des simulations de réforme (tableaux complets)
+  - [ ] A5 : Cartes temporelles et animations (Python script fourni)
+  - [ ] A6 : Sources longitudinales, méthode de construction dataset temporel + biais documentés
+  - [ ] A7 : Index général de la trilogie
+  - [ ] A8 : Bibliographie complète (3 tomes)
+  - [ ] A9 : Glossaire général unifié
+  - [ ] A10 : Licences de données (Etalab, Open Data Commons, conditions réutilisation)
+  - [ ] A11 : Table de correspondance méthode/justification sociologique complète
 
 
 ---
@@ -2180,67 +2058,63 @@
 ### Issue #123 — Figure 1 : Carte IPS + ségrégation territoriale
 **Labels** : `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : Première image frappante du Tome I.
-- **Périmètre Technique (Ouvert aux contributions)** : Taille des points proportionnelle à l'effectif. Gradient Est/Ouest. Intégrer les revenus IRIS en transparence. Sous-panel scatter IPS vs DVF. Script `figures/fig1_map.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Carte factuelle.
 - **Artefacts générés** : Figure 1 HD et Caption LaTeX.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Collecter les données géographiques (GeoPandas, communes IDF)
-- [ ] Intégrer les revenus IRIS en transparence
-- [ ] Taille des points ∝ effectif, gradient Est/Ouest visible
-- [ ] Sous-panel : scatter IPS communal vs prix médian DVF
-- [ ] Script `figures/fig1_map.py` (code complet dans plan_integral_v2.md)
-- [ ] Caption arXiv rédigée
+  - [ ] Collecter les données géographiques (GeoPandas, communes IDF)
+  - [ ] Intégrer les revenus IRIS en transparence
+  - [ ] Taille des points ∝ effectif, gradient Est/Ouest visible
+  - [ ] Sous-panel : scatter IPS communal vs prix médian DVF
+  - [ ] Script `figures/fig1_map.py` (code complet dans plan_integral_v2.md)
+  - [ ] Caption arXiv rédigée
 
 
 
 ### Issue #124 — Figure 2 : Scatter IPS vs σ
 **Labels** : `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : Démonstration visuelle de la "mixité cachée".
-- **Périmètre Technique (Ouvert aux contributions)** : Densité KDE en fond, couleurs rouge/bleu (privé/public). Annotations des lycées emblématiques. Script `figures/fig2_scatter_ips_sigma.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Standard Nature/Science.
 - **Artefacts générés** : Figure 2 HD et Caption LaTeX.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Densité KDE en fond
-- [ ] Couleurs rouge/bleu privé/public
-- [ ] Annotations cas emblématiques
-- [ ] Sous-panel : corrélation σ × DVF
-- [ ] Script `figures/fig2_scatter_ips_sigma.py` (code complet dans plan_integral_v2.md)
-- [ ] Caption arXiv rédigée
+  - [ ] Densité KDE en fond
+  - [ ] Couleurs rouge/bleu privé/public
+  - [ ] Annotations cas emblématiques
+  - [ ] Sous-panel : corrélation σ × DVF
+  - [ ] Script `figures/fig2_scatter_ips_sigma.py` (code complet dans plan_integral_v2.md)
+  - [ ] Caption arXiv rédigée
 
 
 
 ### Issue #125 — Figure 3 : Réseau Louvain
 **Labels** : `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : Le graphe de l'Île-de-France.
-- **Périmètre Technique (Ouvert aux contributions)** : Layout force-directed (spring). Taille nœuds proportionnelle à la centralité eigenvector. Épaisseur arêtes proportionnelle à la similarité. Script `figures/fig3_network_louvain.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarifier dans la caption que c'est un réseau mathématique, pas physique.
 - **Artefacts générés** : Figure 3 HD et Caption LaTeX.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Layout force-directed (spring_layout)
-- [ ] Taille nœuds ∝ centralité eigenvector
-- [ ] Épaisseur arêtes ∝ similarité
-- [ ] Annotation top 10 nœuds centraux
-- [ ] Script `figures/fig3_network_louvain.py` (code complet dans plan_integral_v2.md)
-- [ ] Caption arXiv avec valeur de modularité Q
+  - [ ] Layout force-directed (spring_layout)
+  - [ ] Taille nœuds ∝ centralité eigenvector
+  - [ ] Épaisseur arêtes ∝ similarité
+  - [ ] Annotation top 10 nœuds centraux
+  - [ ] Script `figures/fig3_network_louvain.py` (code complet dans plan_integral_v2.md)
+  - [ ] Caption arXiv avec valeur de modularité Q
 
 
 
 ### Issue #126 — Figure 4 : Trajectoires + changepoints
 **Labels** : `figure`, `code`, `difficulty: low`
 - **Contexte Analytique** : La dynamique dans le temps.
-- **Périmètre Technique (Ouvert aux contributions)** : Courbes temporelles colorées par cluster. Changepoints PELT marqués en rouge. Script `figures/fig4_trajectories_changepoints.py`.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Annotations directement dans le graphique (ex: "changement de formule IPS").
 - **Artefacts générés** : Figure 4 HD et Caption LaTeX.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Courbes temporelles colorées par cluster Louvain
-- [ ] Changepoints PELT marqués en rouge
-- [ ] Annotation épistémologique directement dans le graphique
-- [ ] Script `figures/fig4_trajectories_changepoints.py` (code complet dans plan_integral_v2.md)
-- [ ] Caption arXiv rédigée
+  - [ ] Courbes temporelles colorées par cluster Louvain
+  - [ ] Changepoints PELT marqués en rouge
+  - [ ] Annotation épistémologique directement dans le graphique
+  - [ ] Script `figures/fig4_trajectories_changepoints.py` (code complet dans plan_integral_v2.md)
+  - [ ] Caption arXiv rédigée
 
 
 ---
@@ -2251,38 +2125,36 @@
 ### Issue #127 — Paper arXiv (LaTeX)
 **Labels** : `documentation`, `infrastructure`, `difficulty: hard`
 - **Contexte Analytique** : Soumission scientifique.
-- **Périmètre Technique (Ouvert aux contributions)** : Compilation de `paper_arxiv/main.tex`. Abstract < 250 mots. Intégration des figures.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites explicites inscrites dès l'abstract.
 - **Artefacts générés** : PDF final `main.pdf`.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Compiler `paper_arxiv/main.tex` (base dans `manifesto.tex`)
-- [ ] Intégrer les 4 figures signature
-- [ ] Abstract ≤ 250 mots
-- [ ] Note de limitation explicite dans l'abstract
-- [ ] Vérifier conformité arXiv (format, fonts, références)
+  - [ ] Compiler `paper_arxiv/main.tex` (base dans `manifesto.tex`)
+  - [ ] Intégrer les 4 figures signature
+  - [ ] Abstract ≤ 250 mots
+  - [ ] Note de limitation explicite dans l'abstract
+  - [ ] Vérifier conformité arXiv (format, fonts, références)
 
 
 
 ### Issue #128 — Robustesse & Sensibilité (checklist globale)
 **Labels** : `validation`, `difficulty: medium`
 - **Contexte Analytique** : La garantie de solidité des 3 tomes.
-- **Périmètre Technique (Ouvert aux contributions)** : Permutation Moran (n=999), MAUP check, sensibilité seuil réseau (p=60,70,80), Bootstrap ARI (n=1000).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Validation stricte.
 - **Artefacts générés** : Rapport de robustesse intégré aux annexes.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-- [ ] Moran global (permutation CI, n=999)
-- [ ] Moran local (LISA, correction Bonferroni)
-- [ ] SAR avec différentes matrices de poids (k=4, k=8, inverse distance)
-- [ ] ICC (HLM nul) pour justification multi-niveaux
-- [ ] MAUP check (analyse à IRIS, commune, département)
-- [ ] Sensibilité seuil réseau
-- [ ] Sensibilité résolution Louvain
-- [ ] Stabilité bootstrap ARI (n=1000)
-- [ ] Comparaison modularité observée vs modèle nul
-- [ ] Normalisation z-score avant PELT
-- [ ] Bootstrap sur Gini, Theil, Duncan (CI n=1000)
+  - [ ] Moran global (permutation CI, n=999)
+  - [ ] Moran local (LISA, correction Bonferroni)
+  - [ ] SAR avec différentes matrices de poids (k=4, k=8, inverse distance)
+  - [ ] ICC (HLM nul) pour justification multi-niveaux
+  - [ ] MAUP check (analyse à IRIS, commune, département)
+  - [ ] Sensibilité seuil réseau
+  - [ ] Sensibilité résolution Louvain
+  - [ ] Stabilité bootstrap ARI (n=1000)
+  - [ ] Comparaison modularité observée vs modèle nul
+  - [ ] Normalisation z-score avant PELT
+  - [ ] Bootstrap sur Gini, Theil, Duncan (CI n=1000)
 
 
 
