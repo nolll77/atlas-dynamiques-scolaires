@@ -164,8 +164,8 @@ $$
 **Formule :**
 
 $$
-\Huge T = 1 - ARI
-$$ (où ARI = Adjusted Rand Index)
+\Huge T = 1 - ARI \quad \text{(où ARI = Adjusted Rand Index)} \quad
+$$
 *   **Quoi :** Mesure de divergence globale entre deux partitions statistiques.
 *   **Pourquoi :** Démontrer que la structure verticale hiérarchisée (CAH) entre en conflit avec la structure relationnelle horizontale (Louvain).
 *   **Inputs :** Partition assignée par la CAH, Partition assignée par Louvain.
