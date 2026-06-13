@@ -9,7 +9,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Architecture transparente et documentée.
 - **Artefacts générés** : Dépôt structuré, `README.md` bilingue, `MANIFESTO.md`, `DATA_SOURCES.md`, `LICENSE`.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Créer la structure de dossiers complète (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`)
 - [ ] Initialiser `README.md` bilingue FR/EN
 - [ ] Créer `LICENSE` (MIT)
@@ -28,7 +28,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement factuel des sources publiques, sourçage rigoureux.
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Collecter IPS historiques par année (data.gouv.fr)
 - [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
 - [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
@@ -49,7 +49,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Affirmation de la doctrine descriptive vs normative (aucun jugement moral).
 - **Artefacts générés** : `docs/CAUSALITY_LIMITS.md`, `docs/NETWORK_INTERPRETATION.md`, `docs/SOCLE_MATHEMATIQUE.md`, `docs/SOCLE_DYNAMIQUE.md`, `docs/GLOSSAIRE.md`.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Créer `docs/CAUSALITY_LIMITS.md` (template validé dans info_github.md)
 - [ ] Créer `docs/NETWORK_INTERPRETATION.md` (template validé dans info_github.md)
 - [ ] Intégrer `docs/SOCLE_MATHEMATIQUE.md` (Formules statistiques et indices de ségrégation)
@@ -66,7 +66,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Garantie de la rigueur algorithmique de la recherche.
 - **Artefacts générés** : Suite de tests `tests/` opérationnelle.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] `tests/test_theil_decomposition.py` — Theil_total = Theil_between + Theil_within
 - [ ] `tests/test_graph_construction.py` — symétrie, pas de self-loops
 - [ ] `tests/test_closeness_weights.py` — poids inversés avant calcul closeness
@@ -82,7 +82,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité totale et transparence des essais.
 - **Artefacts générés** : Système de logging opérationnel dans le dossier `runs/`.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définir le format JSON des runs (git_hash, timestamp, config, metrics)
 - [ ] Script d'enregistrement automatique des runs
 
@@ -101,7 +101,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On décrit des structures spatiales, on ne juge pas les politiques d'établissement. Focus sur les données cartographiques.
 - **Artefacts générés** : Note éthique T1, Préface générale de la trilogie (8-12 pages), Avant-propos Tome I.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger note éthique spécifique au Tome I (focus : données cartographiques et statistiques descriptives)
 - [ ] Rédiger préface générale de la trilogie (8–12 pages, version narrative du manifeste)
 - [ ] Rédiger avant-propos du Tome I (passage "classement → structure spatiale", guide de lecture)
@@ -115,7 +115,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présentation factuelle du corpus enrichi, de la méthode Ministère (IPS), justification des ajouts (σ, DVF).
 - **Artefacts générés** : Texte de l'Introduction Générale.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Formaliser le paradoxe central (égalité de droit / inégalité de fait comme objet d'analyse)
 - [ ] Présenter le corpus et toutes les couches du dataset enrichi
 - [ ] Expliquer la construction de l'IPS (méthode Ministère)
@@ -137,7 +137,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : IPS vs capital culturel. Distinction entre statistiques et utilisation politique ou médiatique.
 - **Artefacts générés** : Texte du Chapitre 1, Code Python (annexe A5).
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Construction statistique de l'IPS (méthode Ministère)
 - [ ] Ce que l'IPS capture et ce qu'il efface
 - [ ] IPS et capital culturel : distinction bourdieusienne revisitée
@@ -156,7 +156,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Homogénéité" est un fait statistique, pas un jugement moral sur la valeur des élèves ou le projet pédagogique.
 - **Artefacts générés** : Texte du Chapitre 2, Tableaux du Top 20.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition statistique et interprétation sociologique de σ
 - [ ] Deux lycées même IPS, structures sociales opposées
 - [ ] σ comme mesure de diversité interne
@@ -175,7 +175,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mention des "absents du classement" (biais de sélection). Standard Nature/Science pour la Figure 2.
 - **Artefacts générés** : Texte du Chapitre 3, Figure Signature 2.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Distribution statistique : IPS, σ, répartition public/privé, géographie
 - [ ] Répartition par type (général, technologique, polyvalent, international)
 - [ ] Premières corrélations IPS / σ / statut / revenus IRIS / résultats bac
@@ -196,7 +196,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat du "croissant de l'ouest" et des "déserts scolaires favorisés". Purement descriptif géographique.
 - **Artefacts générés** : Texte du Chapitre 4, Figure Signature 1.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Villes surreprésentées : Paris, Neuilly, Versailles, Saint-Germain-en-Laye
 - [ ] Histoire du "croissant de l'ouest" (géographie et histoire)
 - [ ] Carte choroplèthe des IPS moyens par commune
@@ -215,7 +215,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les trois couronnes sont-elles trois systèmes distincts ? La géographie explique-t-elle plus que le statut institutionnel ?
 - **Artefacts générés** : Texte du Chapitre 5, Résultats ANOVA.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Profil analytique de Paris (hétérogénéité maximale)
 - [ ] Profil de la petite couronne (compétition et polarisation)
 - [ ] Profil de la grande couronne (homogénéité relative)
@@ -233,7 +233,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Fausse mixité" est un écart statistique, pas une accusation de volonté politique locale.
 - **Artefacts générés** : Texte du Chapitre 6, Topologie des communes paradoxales.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Le paradoxe de la mixité apparente
 - [ ] Mécanismes : carte scolaire, dérogations, filières sélectives, réputation
 - [ ] **Nouveauté** : indice de "fausse mixité" formalisé `F_c = M_global - M_interne`
@@ -248,7 +248,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyse neutre de la répartition. Encadré sur le hors contrat comme terra incognita.
 - **Artefacts générés** : Texte du Chapitre 7.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Répartition spatiale public/privé
 - [ ] Histoire du réseau catholique en Île-de-France
 - [ ] Polarisation Δ IPS public/privé par zone
@@ -268,7 +268,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un cluster statistique est un groupe mathématique, non une volonté délibérée d'exclusion. Les termes ("Aristocratie", etc.) sont des étiquettes typologiques.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la note d'ouverture de la Partie III (résultats d'une analyse statistique, aucun jugement sur pratiques internes)
 - [ ] Intégrer la note dans le texte principal
 
@@ -281,7 +281,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Indicateur de concentration sociale" jamais "ce lycée s'organise pour exclure". Effet systémique, pas intention.
 - **Artefacts générés** : Texte du Chapitre 8.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition structurelle : IPS > 158, σ < 20, privé catholique
 - [ ] Profil sociologique : bourgeoisie patrimoniale, réseaux familiaux anciens
 - [ ] Établissements emblématiques : Saint-Jean de Passy, Saint-Dominique, Massillon, Saint-Louis de Gonzague
@@ -302,7 +302,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation statistique systématique.
 - **Artefacts générés** : Texte du Chapitre 9.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Profil : IPS 153-158, écart-type 20-25
 - [ ] Établissements : Sainte-Marie Neuilly, Notre-Dame du Grandchamp, Blanche de Castille, Madeleine Daniélou
 - [ ] Capital scolaire familial : professions libérales, cadres dirigeants
@@ -320,7 +320,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La méritocratie républicaine en acte et le rôle des classes préparatoires (filtre secondaire).
 - **Artefacts générés** : Texte du Chapitre 10.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Profil paradoxal : IPS élevé (145-153), mais mixité forte (σ > 30)
 - [ ] Établissements : Henri-IV, Louis-le-Grand, Hoche, Lakanal, Fénelon, Blaise-Pascal
 - [ ] La méritocratie républicaine en acte
@@ -340,7 +340,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Constat d'ouverture relative.
 - **Artefacts générés** : Texte du Chapitre 11.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Profil : IPS 145-152, écart-type 28-32
 - [ ] Établissements : Charles Péguy, Notre-Dame de la Providence, Rambam, Montalembert
 - [ ] Des établissements privés qui recrutent dans des milieux plus variés
@@ -357,7 +357,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position hors logique nationale classique.
 - **Artefacts générés** : Texte du Chapitre 12.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Établissements : École Jeannine Manuel, Lycée international de Saint-Germain-en-Laye, Lycée franco-allemand, Blaise-Pascal, Vallée de Chevreuse
 - [ ] Capital culturel mondialisé vs capital technoscientifique
 - [ ] Recrutement : expatriés, ingénieurs, chercheurs, hauts fonctionnaires internationaux
@@ -374,7 +374,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Synthèse neutre des 5 mondes scolaires.
 - **Artefacts générés** : Texte du Chapitre 13, Carte spatiale IDF des 5 mondes.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Établissements : Lycée Alain, Louis de Broglie, La Bruyère, Louis Pasteur Neuilly
 - [ ] Profil : bons bassins résidentiels, public local favorisé
 - [ ] Mixité modérée, stabilité sociale
@@ -396,12 +396,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites de l'indice brut précisées.
 - **Artefacts générés** : Texte du Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #023 — Chapitre 15 : L'indice de Gini des lycées franciliens
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 9. Gini de la distribution des IPS.
 - **Périmètre Technique (Ouvert aux contributions)** : Décomposition within/between (secteur, géographie). Tracé de la Courbe de Lorenz.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Application d'un standard mathématique universel.
 - **Artefacts générés** : Texte du Chapitre 15, Courbe de Lorenz.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #024 — Chapitre 16 : L'indice de Theil : ségrégation décomposable
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -410,12 +416,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Objectivation rigoureuse des parts de variance.
 - **Artefacts générés** : Texte du Chapitre 16, Tableau de décomposition de variance.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #025 — Chapitre 17 : L'indice de dissimilarité spatial (Duncan D)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 11. Dissimilarité entre "classes favorisées" et "classes populaires" par commune.
 - **Périmètre Technique (Ouvert aux contributions)** : Calcul de $D$ par ville. Corrélation avec la richesse communale et l'accessibilité transport (IDF Mobilités).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mise en évidence des paradoxes locaux.
 - **Artefacts générés** : Texte du Chapitre 17, Carte choroplèthe de $D$.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #026 — Chapitre 18 : L'indice global de fragmentation scolaire (IFC)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -428,6 +440,9 @@
 
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #027 — Chapitre 19 : ANOVA simple : public/privé explique-t-il tout ?
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Isolation du facteur "Statut".
@@ -435,7 +450,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Formulation prudente (Associations fortes $\neq$ mécanismes causaux).
 - **Artefacts générés** : Texte du Chapitre 19.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Modèle ANOVA unidimensionnel : IPS ~ secteur (public/privé)
 - [ ] Résultat V1 : 35-45% de variance expliquée par le statut
 - [ ] Ce que le résidu nous dit (V1)
@@ -451,12 +466,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontrer que la géographie domine et le statut amplifie.
 - **Artefacts générés** : Texte du Chapitre 20, Tableau de décomposition complet.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #029 — Chapitre 21 : Le modèle multiniveau (HLM)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 14. Structure imbriquée (Lycée $\to$ Ville $\to$ Zone).
 - **Périmètre Technique (Ouvert aux contributions)** : Estimation des ICC (Intraclass Correlation Coefficients). $R^2$ marginal vs $R^2$ conditionnel.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Postulat validé analytiquement : "La géographie structure, l'institution filtre".
 - **Artefacts générés** : Texte du Chapitre 21, Sorties du modèle.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #030 — Chapitre 22 : Vers un modèle causal : DAG statique
 **Labels** : `chapitre`, `documentation`, `exploratory`, `difficulty: low`
@@ -465,12 +486,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le DAG est une hypothèse formelle, pas une vérité révélée infaillible.
 - **Artefacts générés** : Texte du Chapitre 22, Schéma du DAG.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #031 — Conclusion du Tome I
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture du Tome I (La Carte et le Territoire).
 - **Périmètre Technique (Ouvert aux contributions)** : Synthèse des trouvailles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Invitation à réfléchir aux politiques.
 - **Artefacts générés** : Conclusion du Tome 1.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #032 — Annexe A1 : Tableau complet des lycées
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -479,12 +506,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence totale.
 - **Artefacts générés** : Annexe A1.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #033 — Annexe A2 : Sources de données complètes + licences
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Traçabilité des sources.
 - **Périmètre Technique (Ouvert aux contributions)** : Listing exhaustif.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A2.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #034 — Annexe A3 : Méthode de calcul de tous les indices
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -493,12 +526,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #035 — Annexe A4 : Note sur les licences Open Data
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Cadre légal.
 - **Périmètre Technique (Ouvert aux contributions)** : Licences.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
 - **Artefacts générés** : Annexe A4.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #036 — Annexe A5 : Code Python reproductible complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
@@ -507,12 +546,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A5.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #037 — Annexe A6 : Cartographie complète
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation étendue.
 - **Périmètre Technique (Ouvert aux contributions)** : Cartes additionnelles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #038 — Annexe A7 : Glossaire des termes statistiques et sociologiques
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -521,12 +566,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A7.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #039 — Annexe A8 : Bibliographie sélective
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Ancrage académique.
 - **Périmètre Technique (Ouvert aux contributions)** : Références.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
 - **Artefacts générés** : Annexe A8.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #040 — Annexe A9 : Comparaison internationale courte
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -539,6 +590,9 @@
 
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #041 — Note éthique Tome II + Avant-propos
 **Labels** : `documentation`, `ethique`, `difficulty: low`
 - **Contexte Analytique** : Le Tome II introduit la similarité et la théorie des graphes. Il faut s'assurer que "proximité mathématique" ne soit pas confondue avec "entente institutionnelle".
@@ -546,7 +600,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La position dans le réseau est une propriété émergente, pas une caractéristique intrinsèque (anti-essentialisme).
 - **Artefacts générés** : Avant-propos du Tome II et Note éthique d'ouverture.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Note éthique Tome II (position dans le réseau = propriété émergente, pas caractéristique intrinsèque)
 - [ ] Avant-propos : "du territoire au réseau" — formulation obligatoire sur les liens de similarité vs flux réels
 - [ ] Introduction : nœuds, liens, poids — justification de la fonction de similarité choisie vs alternatives (Jaccard, cosinus)
@@ -564,7 +618,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La CAH est un algorithme, pas une vérité absolue.
 - **Artefacts générés** : Texte du Chapitre 1.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rappel : Classification Ascendante Hiérarchique (méthode de Ward)
 - [ ] Distance euclidienne vs distance de Mahalanobis
 - [ ] Normalisation des variables : pourquoi les z-scores sont essentiels
@@ -583,7 +637,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le dendrogramme n'est pas une hiérarchie de valeur, c'est une mesure de distance.
 - **Artefacts générés** : Texte du Chapitre 2, Figure du Dendrogramme.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Lecture sociologique du dendrogramme
 - [ ] Premier split V1 : homogénéité vs hétérogénéité comme séparation fondamentale
 - [ ] Lecture des branches V1 : privé élitiste / public académique / internationaux / scientifiques
@@ -601,7 +655,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les descriptions (Aristocratie, Élites académiques, etc.) doivent rester neutres et statistiques.
 - **Artefacts générés** : Texte du Chapitre 3.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Cluster 1 : Aristocratie scolaire fermée (privé ouest, IPS > 158, σ < 20)
 - [ ] Cluster 2 : Grande bourgeoisie catholique élargie (privé, IPS 153-158, σ 20-25)
 - [ ] Cluster 3 : Élites académiques publiques (public, IPS 145-153, σ 27-34)
@@ -620,7 +674,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement transparent des cas ambigus (lycées aux frontières).
 - **Artefacts générés** : Texte du Chapitre 4, Rapport de validation.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Silhouette score : cohérence interne des clusters
 - [ ] Gap statistic : les clusters existent-ils vraiment ?
 - [ ] Stabilité bootstrap (ARI) n=1000 : les clusters survivent-ils à la perturbation ?
@@ -638,7 +692,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : L'ultramétrie mesure la rigidité du tri social.
 - **Artefacts générés** : Texte du Chapitre 5.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Propriété ultramétrique : définition formelle
 - [ ] Distance cophenétique et corrélation ultramétrique
 - [ ] Score de validité ultramétrique : le système est-il vraiment hiérarchique ?
@@ -656,7 +710,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle des zones de tension structurelle.
 - **Artefacts générés** : Texte du Chapitre 6.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Principe : maximisation de la modularité Q
 - [ ] Différence conceptuelle entre cluster CAH et communauté Louvain
 - [ ] Résultats V1 : 4-6 communautés naturelles. Comparaison avec la CAH (ARI, NMI)
@@ -674,7 +728,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identification des corridors de lycéens entre mondes.
 - **Artefacts générés** : Texte du Chapitre 7.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Principe du réseau multiplex (V1)
 - [ ] Construction des trois couches de liens (public, privé, international)
 - [ ] **V2** : quatrième couche de proximité géographique (distance GPS réelle)
@@ -696,7 +750,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce n'est pas un flux physique réel, mais un réseau de potentiel compétitif.
 - **Artefacts générés** : Texte du Chapitre 8, Matrice d'Adjacence.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Matrice de distances (euclidienne, Mahalanobis). Fonction de similarité exponentielle.
 - [ ] Seuillage : densité du réseau vs signal/bruit. Propriétés topologiques.
 - [ ] Visualisation : spring layout, force-directed graph
@@ -712,7 +766,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Position mathématique, pas jugement qualitatif.
 - **Artefacts générés** : Texte du Chapitre 9.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Degré pondéré. Betweenness centrality : les ponts structurels.
 - [ ] Closeness centrality (⚠️ poids inversés : `distance = 1/(weight + 1e-6)`)
 - [ ] Eigenvector centrality : les hubs d'influence
@@ -730,7 +784,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "pont" n'est pas un lycée qui fait consciemment des efforts d'inclusion.
 - **Artefacts générés** : Texte du Chapitre 10.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition opérationnelle du pont (V1)
 - [ ] Score de pont composite V1 : betweenness + diversité communautaire + distance ultramétrique
 - [ ] Top ponts du système francilien V1 : Lakanal, Hoche, Louis-le-Grand, Henri-IV
@@ -748,7 +802,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Pure simulation probabiliste.
 - **Artefacts générés** : Texte du Chapitre 11.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Matrice de transition entre clusters
 - [ ] Probabilités de mobilité ascendante / descendante
 - [ ] Distribution stationnaire : à quel équilibre tend le système ?
@@ -766,7 +820,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les chemins par défaut du système.
 - **Artefacts générés** : Texte du Chapitre 12.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Flux observé vs flux attendu (modèle nul d'indépendance)
 - [ ] Score de corridor R_ab = F_ab / E_ab
 - [ ] Corridors actifs : sur-représentation des transitions. Corridors symétriques vs asymétriques (indice Γ)
@@ -782,7 +836,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Termes d'ingénierie socio-physique.
 - **Artefacts générés** : Texte du Chapitre 13.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition formelle de l'ascenseur (flux ascendant + gradient positif)
 - [ ] Définition formelle du filtre (flux descendant + tri social)
 - [ ] Corridors ambigus : flux fort mais gradient neutre
@@ -798,7 +852,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Texte du Chapitre 14.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Superposition des couches V1 : social, académique, résidentiel, flux
 - [ ] Centralité de chaque couche. Score inter-couches : qui est central dans toutes les couches ?
 - [ ] Indice de fragmentation inter-couches (IFC)
@@ -818,7 +872,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Anomalie" = exception statistique pure.
 - **Artefacts générés** : Texte du Chapitre 15, Liste des 50 outliers.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Top outliers Mahalanobis, ellipses de confiance
 - [ ] **Nouveauté** : outliers Mahalanobis vs valeur ajoutée bac atypique (croisement analytique)
 - [ ] "Paradoxes analytiques" traités sans jugement
@@ -832,7 +886,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Structure analytique émergente, pas réalité empirique stricte.
 - **Artefacts générés** : Texte du Chapitre 16.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Gradient local des effets, détection des inversions de gradient
 - [ ] Note obligatoire : zones de bascule = structures analytiques émergentes du modèle, pas réalité empirique directe
 
@@ -845,7 +899,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie des ignorances du modèle.
 - **Artefacts générés** : Texte du Chapitre 17, Carte LISA.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Modèle SAR de base, calcul des résidus, autocorrélation Moran
 - [ ] Score de "blind spot" spatial
 - [ ] **Nouveauté** : corrélation résidus × accessibilité transport
@@ -859,7 +913,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Révèle la porosité des mondes.
 - **Artefacts générés** : Texte du Chapitre 18.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Modèle GMM (Gaussian Mixture Model)
 - [ ] Latent Class Mixed Model
 - [ ] 5 classes latentes détectées — description profils statistiques et sociologiques
@@ -875,7 +929,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Épaisseur" des frontières.
 - **Artefacts générés** : Texte du Chapitre 19.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] KDE par cluster, probabilités locales d'appartenance
 - [ ] Entropie locale H(x) comme mesure de flou
 - [ ] Gradient de transition : là où les mondes se mélangent
@@ -891,7 +945,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Où la mobilité échappe à la hiérarchie ?
 - **Artefacts générés** : Texte du Chapitre 20.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Mesure de la tension : |d_ij - d^U_ij| × w_ij
 - [ ] Lycées «contradictoires» : proches dans le réseau, éloignés dans l'arbre
 - [ ] Score de désalignement par lycée
@@ -912,7 +966,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cartographie d'intensité.
 - **Artefacts générés** : Texte du Chapitre 21, Carte PSL.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Score PSL enrichi avec nouvelles variables
 - [ ] Carte PSL sur l'IDF
 - [ ] **Nouveauté** : corrélation PSL × accessibilité transport
@@ -926,7 +980,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le système d'Île-de-France analysé sous son pire angle.
 - **Artefacts générés** : Texte du Chapitre 22.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Formule et interprétation
 - [ ] Décomposition : IFC public/privé + IPS + géographie
 - [ ] IFC par zone (Paris, PC, GC)
@@ -942,7 +996,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le coût structurel d'une mixité forcée sans préparation.
 - **Artefacts générés** : Texte du Chapitre 23.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition de la perméabilité (flux × distance hiérarchique)
 - [ ] Trop fermé vs trop ouvert : les deux déséquilibres structurels du système
 - [ ] Coût structurel : désorganisation par excès de mixité forcée
@@ -959,7 +1013,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la captation des ressources scolaires de la région par des bastions spécifiques.
 - **Artefacts générés** : Texte du Chapitre 24, Top clusters absorbants.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition : flux entrants >> flux sortants
 - [ ] Score d'absorption A_k = In_k / Out_k
 - [ ] Condition spectrale d'attracteur : ρ(T_Ck) > 1
@@ -979,7 +1033,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations spatiales $\neq$ effets causaux.
 - **Artefacts générés** : Texte du Chapitre 25.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] SAR avec covariables enrichies (revenus IRIS, DVF, accessibilité)
 - [ ] Estimation de ρ, effets directs vs indirects spatiaux
 - [ ] Note obligatoire : associations spatiales ≠ effets causaux
@@ -993,7 +1047,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Purement exploratoire.
 - **Artefacts générés** : Texte du Chapitre 26.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Variables latentes enrichies, R²m vs R²c
 - [ ] **Nouveauté** : DVF et accessibilité transport ajoutent-ils du pouvoir explicatif au-delà de l'IPS et IRIS ?
 
@@ -1006,7 +1060,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Associations non-linéaires.
 - **Artefacts générés** : Texte du Chapitre 27.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] GAM avec variables enrichies, effets par splines
 - [ ] Note de prudence renforcée : associations non linéaires ≠ identification causale
 - [ ] Zones de gradient positif vs négatif, tipping points analytiques
@@ -1021,7 +1075,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Texte du Chapitre 28.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Effet quartier vs effet réseau
 - [ ] Variance quartier / variance réseau
 - [ ] **Nouveauté** : l'accessibilité transport modifie-t-elle cet équilibre ?
@@ -1035,12 +1089,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transition vers le Tome III.
 - **Artefacts générés** : Conclusion du Tome 2.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #071 — Annexe A1 : Code Python complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité.
 - **Périmètre Technique (Ouvert aux contributions)** : Scripts de clustering et graphes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A1.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #072 — Annexe A2 : Matrices de distance, similarité, flux
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1049,12 +1109,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A2.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #073 — Annexe A3 : Tableau comparatif méthodes de clustering
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix algorithmiques.
 - **Périmètre Technique (Ouvert aux contributions)** : Benchmarks.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #074 — Annexe A4 : Résultats complets des modèles
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1063,12 +1129,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A4.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #075 — Annexe A5 : Note sur les méthodes dans /exploratory/
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèles alternatifs.
 - **Périmètre Technique (Ouvert aux contributions)** : Random Forest, etc.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A5.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #076 — Annexe A6 : Cartes supplémentaires
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1077,6 +1149,9 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #077 — Annexe A7 : Bibliographie méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Bibliographie.
@@ -1084,7 +1159,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A7.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la conclusion du Tome II (5 lycées les plus structurants selon centralité composite)
 - [ ] Comparaison internationale courte (Londres, New York — littérature existante)
 - [ ] A1 : Code Python complet
@@ -1108,7 +1183,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clause obligatoire de début : "Ce volume propose des cadres dynamiques exploratoires..." Il faut empêcher le lecteur de prendre les projections pour des prédictions.
 - **Artefacts générés** : Note éthique T3.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la note renforcée (cadres exploratoires, non prédictifs, non causaux)
 - [ ] Phrase protectrice obligatoire en ouverture : *"Ce volume propose des cadres dynamiques exploratoires…"*
 - [ ] Avant-propos : transition "du réseau aux dynamiques", note de limitation explicite sur la granularité des données longitudinales
@@ -1127,7 +1202,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Identifier les établissements en évolution sociale descendante ou ascendante sans incrimination morale.
 - **Artefacts générés** : Texte du Chapitre 1, Figure 4.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition formelle du score de trajectoire
 - [ ] Trois types analytiques : ascendants, déclinants, instables
 - [ ] Carte des trajectoires sur l'IDF
@@ -1144,7 +1219,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les frontières bougent-elles ?
 - **Artefacts générés** : Texte du Chapitre 2.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Partitions annuelles, matrice de transition inter-temporelle
 - [ ] Stabilité ARI entre années, mobilité de cluster
 - [ ] **Nouveauté** : les clusters du Tome II sont-ils stables dans le temps ?
@@ -1158,7 +1233,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Distinguer l'effet réel de la simple révision du calcul IPS de 2021.
 - **Artefacts générés** : Texte du Chapitre 3.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Dendrogrammes annuels empilés
 - [ ] Distance ultramétrique inter-temporelle, stabilité hiérarchique
 - [ ] Note de prudence : distinguer changements réels vs artefacts de la révision IPS 2021
@@ -1172,7 +1247,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Modèle formel métaphorique.
 - **Artefacts générés** : Texte du Chapitre 4.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Note de statut épistémologique obligatoire : HMM = cadre exploratoire, pas modélisation robuste au sens strict
 - [ ] Variables d'observation : IPS, mixité, résultats bac, prix DVF
 - [ ] 4–5 états cachés estimés, matrice de transition, durée moyenne par état
@@ -1186,7 +1261,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Section expérimentale (`/exploratory/`).
 - **Artefacts générés** : Texte du Chapitre 5.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Intégration graphe de similarité dans le HMM
 - [ ] Note de prudence renforcée : modèle expérimental, résultats = hypothèses exploratoires
 
@@ -1199,7 +1274,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Analyser si l'Île-de-France converge vers l'explosion ou vers la stabilité.
 - **Artefacts générés** : Texte du Chapitre 6.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Série temporelle de T(t)
 - [ ] Décomposition dynamique : ΔT = ΔT_within + ΔT_between
 - [ ] Paris : hétérogénéité interne maximale, quelle évolution ?
@@ -1217,7 +1292,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La "dérive continentale" de l'éducation francilienne.
 - **Artefacts générés** : Texte du Chapitre 7.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Évolution de la matrice de transition T_t
 - [ ] Animation Python conceptuelle 2010-2026 (script fourni)
 - [ ] Ouverture / fermeture des corridors dans le temps
@@ -1237,7 +1312,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Prudence : corrélation $\neq$ causalité.
 - **Artefacts générés** : Texte du Chapitre 8.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] PELT, segmentation binaire, critère AIC/BIC
 - [ ] Changepoints sur IPS moyen, σ, Theil, résultats bac
 - [ ] **Nouveauté** : coïncidence changepoints scolaires × changepoints DVF immobiliers
@@ -1253,7 +1328,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Texte du Chapitre 9.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Note renforcée : associations temporelles, pas effets causaux
 - [ ] Ce qu'il faudrait pour une identification causale stricte (diff-in-diff, RD — non disponibles)
 
@@ -1266,7 +1341,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Emprunt fort à la physique statistique. Exiger des "formulations conditionnelles systématiques".
 - **Artefacts générés** : Texte du Chapitre 10.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Note épistémologique développée : métaphore analytique formalisée, pas loi empirique
 - [ ] Condition `ρλ_max(W) ≥ 1` présentée comme condition mathématique sur le modèle
 - [ ] Formulations conditionnelles systématiques
@@ -1281,7 +1356,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites (faux positifs, sensibilité).
 - **Artefacts générés** : Texte du Chapitre 11.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Signaux précurseurs d'une transition critique
 - [ ] Indicateurs : variance locale, autocorrélation, «critical slowing down»
 - [ ] Application aux lycées en frontière
@@ -1298,7 +1373,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Expérimentation contrefactuelle in-silico.
 - **Artefacts générés** : Texte du Chapitre 12.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Extension du DAG statique à une structure dynamique
 - [ ] Ultramétrie comme variable causale latente
 - [ ] Ruptures ultramétriques comme événements dans le DAG
@@ -1319,7 +1394,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Obligation absolue : spécifier que ce sont des langages analytiques, pas des descriptions empiriques directes.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la note obligatoire (formalismes avancés = langages analytiques, pas descriptions empiriques directement mesurables)
 
 
@@ -1331,7 +1406,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Métaphore puissante pour montrer que l'ascension sociale demande plus d'énergie que le mobilité sociale descendante.
 - **Artefacts générés** : Texte du Chapitre 13.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Présentation du formalisme riemannien
 - [ ] Chaque lycée comme point, métrique sociale G_t
 - [ ] Formulation systématique : "permet de penser X… ne constitue pas une mesure directe"
@@ -1345,7 +1420,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontre la force de rappel du déterminisme local.
 - **Artefacts générés** : Texte du Chapitre 14.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Formalisme du champ de tensions (gradient dans l'espace riemannien)
 - [ ] Chaque lycée soumis à des forces structurelles : attraction vers le cluster, répulsion centrifuge
 - [ ] Carte du champ de tensions à un instant t
@@ -1361,7 +1436,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mettre le code complet dans `/exploratory/`. Ne pas en faire le juge de paix, mais le sommet technique.
 - **Artefacts générés** : Texte du Chapitre 15.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] **Note obligatoire** : `L = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux` = outil formel d'exploration, hyperparamètres fixés exploratoirement
 - [ ] Ce modèle → `/exploratory/` sur GitHub (pas dans le texte principal comme résultat)
 - [ ] Qu'est-ce que ce modèle permet de penser que les modèles séparés ne permettent pas ?
@@ -1380,7 +1455,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "lycée sous-performant" est un écart statistique au modèle, pas un jugement sur les équipes pédagogiques.
 - **Artefacts générés** : Note éthique Partie IV.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la note spécifique : "paradoxaux", "sur-performants", "sous-performants" = qualifications relatives à un modèle statistique, pas évaluations de qualité de l'enseignement
 
 
@@ -1392,7 +1467,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On constate le paradoxe sans l'expliquer totalement avec des données macro.
 - **Artefacts générés** : Texte du Chapitre 16.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition formelle avec résultats bac + valeur ajoutée IVAL comme validation externe
 - [ ] Score de paradoxalité enrichi
 - [ ] Formulation éthique : "performance relative supérieure à ce que leur profil prédirait"
@@ -1407,7 +1482,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : "Peut-on trop bien trier ses élèves ?" Formulation neutre.
 - **Artefacts générés** : Texte du Chapitre 17.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Lycées à IPS très élevé mais performance relative faible
 - [ ] Hypothèses : saturation, effet sélectivité symbolique, inertie institutionnelle
 - [ ] Corrélation entre score d'entre-soi et paradoxe inversé
@@ -1424,7 +1499,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les marges du déterminisme scolaire.
 - **Artefacts générés** : Texte du Chapitre 18.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Définition : P(τ_i) ≪ ε
 - [ ] Score d'anomalie A(τ_i) = -log P(τ_i)
 - [ ] Types : contre-hiérarchiques, «sauts», oscillantes, géographiques
@@ -1441,7 +1516,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les options (latin, bilangue) ou le privé agissent comme tamis invisible.
 - **Artefacts générés** : Texte du Chapitre 19.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Paradoxe de la commune «mixte en moyenne»
 - [ ] Indice de fausse mixité F_c = M_global - M_interne
 - [ ] Score d'hyper-ségrégation masquée HS_c
@@ -1459,7 +1534,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Avouer les ignorances de la machine de l'Atlas.
 - **Artefacts générés** : Texte du Chapitre 20.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Score BS_i = |R_i| × Σ W_ij |R_j|
 - [ ] Consensus multi-modèle d'erreur
 - [ ] Zones systématiquement mal expliquées
@@ -1479,7 +1554,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les simulations ne sont PAS des recommandations de politique publique. Les parents s'adapteraient (ex: déménagement, fuite dans le privé), ce que le modèle ignore.
 - **Artefacts générés** : Note de Cadrage.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Rédiger la note : simulations = scénarios analytiques, pas prédictions ni recommandations de politique publique
 - [ ] Préciser que les comportements adaptatifs des acteurs ne sont pas modélisés
 
@@ -1492,7 +1567,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Cadrage strict des limites du modèle.
 - **Artefacts générés** : Texte du Chapitre 21.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Modèle non-linéaire spatial comme outil de simulation
 - [ ] Simulation 1 V1 : redistribution des IPS (re-sectorisation)
 - [ ] Propagation : la réforme se diffuse-t-elle dans le réseau ?
@@ -1509,7 +1584,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Exercice purement mathématique analytique. Pas une "fermeture" d'écoles, mais un test de stress de l'équation de Theil.
 - **Artefacts générés** : Texte du Chapitre 22.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Contrefactuel V1 : que se passe-t-il si on ferme les 20 lycées les plus fermés socialement ?
 - [ ] Réallocation des flux dans le réseau
 - [ ] Impact sur les clusters : recomposition des mondes scolaires ?
@@ -1527,7 +1602,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Risque in-silico de polarisation sociale scolaire progressive mis en évidence.
 - **Artefacts générés** : Texte du Chapitre 23.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Investir dans les lycées qui sur-performent socialement
 - [ ] Impact sur le réseau de mobilité
 - [ ] Risque de polarisation sociale scolaire progressive (V1)
@@ -1543,7 +1618,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mixité forcée vs mixité incitée. "Le risque de la réforme sans modèle".
 - **Artefacts générés** : Texte du Chapitre 24.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Ce que les modèles disent sur la mixité (V1)
 - [ ] La mixité forcée vs la mixité incitée
 - [ ] L'optimum de perméabilité : ni trop fermé ni trop ouvert
@@ -1560,7 +1635,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présenter l'Atlas comme un outil d'aide à la compréhension, pas comme un juge.
 - **Artefacts générés** : Texte du Chapitre 25.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Les 9 couches de l'atlas
 - [ ] Concept d'interactivité (GitHub interactif si développé)
 - [ ] Ce que les données actuelles permettent et ne permettent pas encore
@@ -1578,7 +1653,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le chapitre le plus important. Non-stationnarité du réel vs stationnarité des modèles.
 - **Artefacts générés** : Texte du Chapitre 26.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] IPS comme proxy imparfait
 - [ ] Données agrégées et ecological fallacy
 - [ ] Absence de données individuelles longitudinales
@@ -1597,7 +1672,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le risque de naturaliser les inégalités. Distinguer "décrire une structure" de "l'accepter comme naturelle". L'IPS peut-il être interprété abusivement ??
 - **Artefacts générés** : Texte du Chapitre 27.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Le risque de naturaliser les inégalités
 - [ ] La mise en données de l'inégalité : pouvoir et contre-pouvoir
 - [ ] L'IPS peut-il être interprété abusivement ??
@@ -1613,7 +1688,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ne pas faire d'inférence, juste de la bibliographie comparative.
 - **Artefacts générés** : Texte du Chapitre 28.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Sociologie, géographie sociale, économie, informatique, physique statistique
 - [ ] Comparaisons internationales développées (Paris vs Londres, New York, Berlin, Tokyo, Barcelone) — littérature existante uniquement
 
@@ -1626,7 +1701,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Ce qu'un accès aux données individuelles permettrait de faire.
 - **Artefacts générés** : Texte du Chapitre 29.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] 10 questions ouvertes
 - [ ] Données nécessaires pour aller plus loin
 - [ ] Ce qu'un accès à des données individuelles longitudinales permettrait de faire
@@ -1640,7 +1715,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le paradoxe de la méritocratie républicaine face aux données. Sans prescription normative.
 - **Artefacts générés** : Conclusion Générale.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Ce que l'IDF dit de la France scolaire
 - [ ] La ségrégation scolaire comme processus, pas état
 - [ ] Le paradoxe de la méritocratie républicaine face aux données
@@ -1656,12 +1731,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A1.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #113 — Annexe A2 : Note méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix avancés.
 - **Périmètre Technique (Ouvert aux contributions)** : Justifications.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A2.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #114 — Annexe A3 : Paramètres estimés des modèles dynamiques
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1670,12 +1751,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transparence.
 - **Artefacts générés** : Annexe A3.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #115 — Annexe A4 : Résultats des simulations de réforme
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Scénarios.
 - **Périmètre Technique (Ouvert aux contributions)** : Tableaux de projection.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Annexe A4.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #116 — Annexe A5 : Cartes temporelles et animations
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1684,12 +1771,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
 - **Artefacts générés** : Annexe A5.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #117 — Annexe A6 : Sources longitudinales
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Données temporelles.
 - **Périmètre Technique (Ouvert aux contributions)** : Bibliographie data.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A6.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #118 — Annexe A7 : Index général de la trilogie
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1698,12 +1791,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
 - **Artefacts générés** : Annexe A7.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #119 — Annexe A8 : Bibliographie complète
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture bibliographique.
 - **Périmètre Technique (Ouvert aux contributions)** : Références globales.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A8.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #120 — Annexe A9 : Glossaire général unifié
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1712,12 +1811,18 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarté.
 - **Artefacts générés** : Annexe A9.
 
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
+
 ### Issue #121 — Annexe A10 : Licences de données
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Légal.
 - **Périmètre Technique (Ouvert aux contributions)** : Open Data.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Droit.
 - **Artefacts générés** : Annexe A10.
+
+- **Pistes d'exploration suggérées :**
+- [ ] Rassembler les éléments décrits dans le périmètre technique et générer l'artefact cible.
 
 ### Issue #122 — Annexe A11 : Table de correspondance méthode
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1726,7 +1831,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Académique.
 - **Artefacts générés** : Annexe A11.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] A1 : Code Python complet (HMM, changepoints, simulations, phase transitions) + lien GitHub
 - [ ] A2 : Note méthodes `/exploratory/` avec justification (pourquoi non-inclus dans le texte principal)
 - [ ] A3 : Paramètres estimés des modèles dynamiques
@@ -1752,7 +1857,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Carte factuelle.
 - **Artefacts générés** : Figure 1 HD et Caption LaTeX.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Collecter les données géographiques (GeoPandas, communes IDF)
 - [ ] Intégrer les revenus IRIS en transparence
 - [ ] Taille des points ∝ effectif, gradient Est/Ouest visible
@@ -1769,7 +1874,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Standard Nature/Science.
 - **Artefacts générés** : Figure 2 HD et Caption LaTeX.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Densité KDE en fond
 - [ ] Couleurs rouge/bleu privé/public
 - [ ] Annotations cas emblématiques
@@ -1786,7 +1891,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarifier dans la caption que c'est un réseau mathématique, pas physique.
 - **Artefacts générés** : Figure 3 HD et Caption LaTeX.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Layout force-directed (spring_layout)
 - [ ] Taille nœuds ∝ centralité eigenvector
 - [ ] Épaisseur arêtes ∝ similarité
@@ -1803,7 +1908,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Annotations directement dans le graphique (ex: "changement de formule IPS").
 - **Artefacts générés** : Figure 4 HD et Caption LaTeX.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Courbes temporelles colorées par cluster Louvain
 - [ ] Changepoints PELT marqués en rouge
 - [ ] Annotation épistémologique directement dans le graphique
@@ -1823,7 +1928,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites explicites inscrites dès l'abstract.
 - **Artefacts générés** : PDF final `main.pdf`.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Compiler `paper_arxiv/main.tex` (base dans `manifesto.tex`)
 - [ ] Intégrer les 4 figures signature
 - [ ] Abstract ≤ 250 mots
@@ -1839,7 +1944,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Validation stricte.
 - **Artefacts générés** : Rapport de robustesse intégré aux annexes.
 
-- **Protocole d'implémentation (étapes suggérées) :**
+- **Pistes d'exploration suggérées :**
 - [ ] Moran global (permutation CI, n=999)
 - [ ] Moran local (LISA, correction Bonferroni)
 - [ ] SAR avec différentes matrices de poids (k=4, k=8, inverse distance)
