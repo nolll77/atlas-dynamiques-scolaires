@@ -18,6 +18,9 @@ data:  ## Construire le dataset maître via DVC
 data-all:  ## Pipeline complète des données
 	dvc repro
 
+mlflow-ui:  ## Lancer le dashboard de MLflow
+	uv run mlflow ui
+
 figures:  ## Générer les 4 figures signature
 	uv run python figures/fig1_map.py
 	uv run python figures/fig2_scatter_ips_sigma.py
