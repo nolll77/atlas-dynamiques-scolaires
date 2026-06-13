@@ -56,4 +56,17 @@ Ne parlez jamais d'"Objectifs" ou d'"Actions" (qui sonnent comme des ordres). Ut
 
 ---
 
+## 5. Experiment Tracking (MLflow Obligatoire)
+
+Toute issue impliquant la création ou la modification d'un algorithme mathématique (clustering, modèle de Markov, DAG, etc.) doit impérativement utiliser **MLflow** pour enregistrer ses résultats. L'infrastructure est déjà en place (cf. Issue #003).
+
+Dans vos scripts Python, vous devez :
+1. Importer `mlflow`.
+2. Logger les hyperparamètres avec `mlflow.log_param()` (ex: nombre de clusters, hyperparamètres du modèle).
+3. Logger les métriques avec `mlflow.log_metric()` (ex: score de silhouette, modularité).
+
+Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclut une checklist que vous devrez valider avant de soumettre votre code.
+
+---
+
 Merci d'avance pour votre expertise technique. En respectant ces règles, vous contribuez à faire de ce projet une référence d'honnêteté intellectuelle et de rigueur open-source !
