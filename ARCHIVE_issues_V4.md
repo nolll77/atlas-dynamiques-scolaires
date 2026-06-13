@@ -413,6 +413,14 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 12. L'agrégation de l'IPS et de l'inverse de la dispersion.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites de l'indice brut précisées.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Indice IPS/σ : formule, calcul, interprétation sociologique.
+  - - Top 20 lycées les plus «fermés» socialement — formulation éthique obligatoire.
+  - - Top 20 lycées les plus «ouverts» relativement à leur niveau.
+  - - Corrélation score d'entre-soi / secteur / géographie.
+  - - Limites de l'indice brut.
+  - - *V2* : indice normalisé par z-scores (IPS et inverse de σ). Carte spatiale IDF. Script Python annexe A5.
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -423,6 +431,13 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 9. Gini de la distribution des IPS.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Application d'un standard mathématique universel.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Application de l'indice de Gini à la distribution des IPS en Île-de-France.
+  - - Décomposition public/privé : Gini within (dans chaque secteur) et between (entre secteurs).
+  - - Décomposition géographique (Paris/PC/GC). Courbe de Lorenz de l'IPS scolaire.
+  - - *V2* : comparaison nationale (Lyon, Marseille si données disponibles).
+  - - Encadré comparatif international court (Londres, Berlin) basé sur la littérature existante.
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Courbe de Lorenz.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -433,6 +448,15 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 10. Indice d'entropie décomposable spatialement et institutionnellement.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Objectivation rigoureuse des parts de variance.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Formule et interprétation sociologique du Theil.
+  - - Theil global francilien.
+  - - Décomposition V1 : within zones / between zones / within lycées / between lycées.
+  - - Theil public vs privé.
+  - - Quelle dimension explique le plus d'inégalité ? Tableau synthétique de décomposition.
+  - - *V2* : décomposition supplémentaire avec revenus IRIS (troisième niveau d'analyse).
+  - - Test unitaire `test_theil_decomposition.py` : Theil_total = Theil_between + Theil_within.
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16, Tableau de décomposition de variance.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -443,6 +467,13 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 11. Dissimilarité entre "classes favorisées" et "classes populaires" par commune.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mise en évidence des paradoxes locaux.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Duncan D par ville. Carte choroplèthe de D en Île-de-France.
+  - - Corrélation D / richesse communale (V1).
+  - - Les villes les plus ségrégées entre public et privé.
+  - - Les villes les moins ségrégées : que nous apprennent-elles ? (V1)
+  - - *V2* : corrélation D × accessibilité transport (temps de trajet gares/RER).
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte choroplèthe de $D$.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -453,6 +484,13 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Agrégation de Theil, ANOVA, Gini et polarisation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le système est "multi-dimensionnellement structuré".
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Construction d'un indice composite : Theil + ANOVA + polarisation + hétérogénéité.
+  - - Calcul et résultat pour l'Île-de-France.
+  - - Contribution relative de chaque composante (V1).
+  - - Comparaison avec d'autres régions françaises / si données disponibles (Lyon, Marseille, Bordeaux).
+  - - Interprétation V1 : système «modérément fragmenté» mais «multi-dimensionnellement structuré».
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 18.
 
 ---
@@ -485,6 +523,13 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle complet (Statut + Géographie + Type de lycée).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontrer que la géographie domine et le statut amplifie.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Modèle complet V1 : public/privé + zone + type de lycée + interactions.
+  - - Interactions significatives V1 : privé × ouest parisien, scientifique × Saclay.
+  - - Hiérarchie des facteurs : géographie domine, statut amplifie (V1).
+  - - Tableau de décomposition V1.
+  - - *V2* : intégration variables DVF + accessibilité transport. Comparaison modèle simple vs modèle complet : gain de variance expliquée.
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20, Tableau de décomposition complet.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -495,6 +540,15 @@
 **Labels** : `chapitre`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Modèle 14. Structure imbriquée (Lycée $\to$ Ville $\to$ Zone).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Postulat validé analytiquement : "La géographie structure, l'institution filtre".
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Structure imbriquée : lycée → ville → zone (V1).
+  - - ICC par niveau (V1).
+  - - Part de variance expliquée par le contexte spatial.
+  - - Résultat central V1 : *«la géographie structure, l'institution filtre»*.
+  - - R² marginal vs R² conditionnel.
+  - - Encadré V1 : effets fixes vs effets aléatoires dans l'analyse scolaire.
+  - - *V2* : covariables niveau 2 enrichies : revenus médians IRIS, prix DVF, accessibilité transport.
+
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Sorties du modèle.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -515,6 +569,12 @@
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Clôture du Tome I (La Carte et le Territoire).
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Invitation à réfléchir aux politiques.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Synthèse des structures identifiées. Ce que la carte et le classement cachent.
+  - - Limites de l'approche statique → transition vers le Tome II.
+  - - Position de l'IDF dans un contexte comparatif (2–3 pages, littérature existante).
+  - - Encadré : données disponibles, données manquantes, ce qui serait nécessaire.
+
 - **Artefacts générés** : Conclusion du Tome 1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -525,6 +585,9 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes transparentes.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Tableau complet lycées (IPS, σ, secteur, ville, score entre-soi, revenus IRIS, résultats bac)
+
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -535,6 +598,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Traçabilité des sources.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Sources de données complètes (data.gouv.fr, INSEE, DVF Etalab, IDF Mobilités, IGN) + licences
+
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -545,6 +611,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mathématiques appliquées.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Méthode de calcul de tous les indices (Gini, Theil, Duncan, IFC, score d'entre-soi)
+
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -555,6 +624,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Cadre légal.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Note sur les licences Open Data (Etalab, Open Data Commons, conditions réutilisation)
+
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -565,6 +637,9 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité absolue.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Code Python reproductible + lien GitHub
+
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -575,6 +650,9 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation étendue.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Cartographie complète
+
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -585,6 +663,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Pédagogie conceptuelle.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Glossaire des termes statistiques et sociologiques
+
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -595,6 +676,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Ancrage académique.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Bibliographie sélective (sociologie éducation, géographie sociale, ségrégation urbaine)
+
 - **Artefacts générés** : Annexe A8.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -605,6 +689,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Mise en perspective.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité géographique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Comparaison internationale courte (tableau synthétique, 5–6 métropoles)
+
 - **Artefacts générés** : Annexe A9.
 
 ## 🕸️ TOME II — LES RÉSEAUX ET LES MONDES
@@ -1173,6 +1260,12 @@
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Fin du Tome II.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transition vers le Tome III.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - - Des structures cachées à la structure réelle. Ce que le réseau révèle que le territoire ne montrait pas.
+  - - Les 5 lycées les plus structurants selon la centralité composite.
+  - - Comparaison internationale courte : réseaux scolaires de Londres et New York (littérature existante).
+  - - Transition vers le Tome III.
+
 - **Artefacts générés** : Conclusion du Tome 2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1183,6 +1276,9 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Code Python complet (CAH, Louvain, réseau, SAR, GAM, toutes les figures) + lien GitHub
+
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1193,6 +1289,9 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Données brutes réseau.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Matrices de distance, similarité, flux simulés et flux observés (Affelnet partiels)
+
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1203,6 +1302,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix algorithmiques.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Tableau comparatif méthodes de clustering sur le dataset enrichi
+
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1213,6 +1315,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Inférence.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Résultats complets des modèles statistiques
+
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1223,6 +1328,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Modèles alternatifs.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Note sur les méthodes dans `/exploratory/` avec justification du choix de non-inclusion
+
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1233,6 +1341,9 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Cartes supplémentaires (PSL, centralité, communautés multi-couches)
+
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1243,6 +1354,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Bibliographie.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Bibliographie méthodes (network science, spatial econometrics, sociologie computationnelle)
+
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1863,6 +1977,9 @@
 **Labels** : `annexe`, `code`, `difficulty: medium`
 - **Contexte Analytique** : Reproductibilité du Tome 3.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Code Python complet + lien GitHub
+
 - **Artefacts générés** : Annexe A1.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1873,6 +1990,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Choix avancés.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Note sur les méthodes `/exploratory/` avec justification
+
 - **Artefacts générés** : Annexe A2.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1883,6 +2003,9 @@
 **Labels** : `annexe`, `data`, `difficulty: medium`
 - **Contexte Analytique** : Résultats bruts.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Paramètres estimés des modèles dynamiques
+
 - **Artefacts générés** : Annexe A3.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1893,6 +2016,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Scénarios.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Résultats des simulations (tableaux complets)
+
 - **Artefacts générés** : Annexe A4.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1903,6 +2029,9 @@
 **Labels** : `annexe`, `figure`, `difficulty: low`
 - **Contexte Analytique** : Visualisation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Sources longitudinales, méthode de construction dataset temporel
+
 - **Artefacts générés** : Annexe A5.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1913,6 +2042,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Données temporelles.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Index général de la trilogie
+
 - **Artefacts générés** : Annexe A6.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
@@ -1923,6 +2055,9 @@
 **Labels** : `annexe`, `documentation`, `difficulty: low`
 - **Contexte Analytique** : Navigation.
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
+- **Synopsis du Chapitre (Réflexions de l'Auteur) :**
+  - Bibliographie complète (3 tomes)
+
 - **Artefacts générés** : Annexe A7.
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
