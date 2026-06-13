@@ -23,7 +23,7 @@ def ensure_labels(filepath):
         subprocess.run(["gh", "label", "create", lbl, "-f"], capture_output=True)
 
 def create_issues_ordered():
-    filepath = "ARCHIVE_issues_V4_citadelle.md"
+    filepath = "ARCHIVE_issues_V4.md"
     if not os.path.exists(filepath):
         print(f"❌ Fichier {filepath} introuvable.")
         return
