@@ -9,7 +9,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Architecture transparente et documentée.
 - **Artefacts générés** : Dépôt structuré, `README.md` bilingue, `MANIFESTO.md`, `DATA_SOURCES.md`, `LICENSE`.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Créer la structure de dossiers complète (`data/`, `src/`, `exploratory/`, `figures/`, `tests/`, `runs/`, `config/`, `docs/`, `paper_arxiv/`, `manifesto/`)
 - [ ] Initialiser `README.md` bilingue FR/EN
 - [ ] Créer `LICENSE` (MIT)
@@ -28,7 +28,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Traitement factuel des sources publiques, sourçage rigoureux.
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Collecter IPS historiques par année (data.gouv.fr)
 - [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
 - [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
@@ -49,7 +49,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Affirmation de la doctrine descriptive vs normative (aucun jugement moral).
 - **Artefacts générés** : `docs/CAUSALITY_LIMITS.md`, `docs/NETWORK_INTERPRETATION.md`, `docs/SOCLE_MATHEMATIQUE.md`, `docs/SOCLE_DYNAMIQUE.md`, `docs/GLOSSAIRE.md`.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Créer `docs/CAUSALITY_LIMITS.md` (template validé dans info_github.md)
 - [ ] Créer `docs/NETWORK_INTERPRETATION.md` (template validé dans info_github.md)
 - [ ] Intégrer `docs/SOCLE_MATHEMATIQUE.md` (Formules statistiques et indices de ségrégation)
@@ -66,7 +66,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Garantie de la rigueur algorithmique de la recherche.
 - **Artefacts générés** : Suite de tests `tests/` opérationnelle.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] `tests/test_theil_decomposition.py` — Theil_total = Theil_between + Theil_within
 - [ ] `tests/test_graph_construction.py` — symétrie, pas de self-loops
 - [ ] `tests/test_closeness_weights.py` — poids inversés avant calcul closeness
@@ -82,7 +82,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité totale et transparence des essais.
 - **Artefacts générés** : Système de logging opérationnel dans le dossier `runs/`.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Définir le format JSON des runs (git_hash, timestamp, config, metrics)
 - [ ] Script d'enregistrement automatique des runs
 
@@ -101,7 +101,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : On décrit des structures spatiales, on ne juge pas les politiques d'établissement. Focus sur les données cartographiques.
 - **Artefacts générés** : Note éthique T1, Préface générale de la trilogie (8-12 pages), Avant-propos Tome I.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger note éthique spécifique au Tome I (focus : données cartographiques et statistiques descriptives)
 - [ ] Rédiger préface générale de la trilogie (8–12 pages, version narrative du manifeste)
 - [ ] Rédiger avant-propos du Tome I (passage "classement → structure spatiale", guide de lecture)
@@ -115,7 +115,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Présentation factuelle du corpus enrichi, de la méthode Ministère (IPS), justification des ajouts (σ, DVF).
 - **Artefacts générés** : Texte de l'Introduction Générale.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Formaliser le paradoxe central (égalité de droit / inégalité de fait comme objet d'analyse)
 - [ ] Présenter le corpus et toutes les couches du dataset enrichi
 - [ ] Expliquer la construction de l'IPS (méthode Ministère)
@@ -147,7 +147,7 @@
   - Encadré : "L'IPS peut-il être interprété abusivement ?institutionnellement ?" (formulation analytique stricte)
   - Encadré : différence IPS / taux de boursiers / PCS
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la matrice de corrélation statistique entre l'IPS et les revenus médians par IRIS.
 - [ ] Coder la fonction mathématique de l'indice composite (IPS + σ + revenus IRIS) et exporter les scores des lycées.
 
@@ -170,7 +170,7 @@
   - Tableau : top 20 lycées les plus homogènes / les plus hétérogènes
   - Cas emblématiques décrits comme "appartenant à des clusters de forte homogénéité" (note éthique)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer l'écart-type de l'IPS pour chaque lycée afin d'estimer la mixité sociale interne.
 - [ ] Générer le tableau récapitulatif du Top 20 des lycées les plus homogènes et les plus hétérogènes.
 - [ ] Exécuter un test de corrélation exploratoire entre l'écart-type et les données immobilières DVF.
@@ -192,7 +192,7 @@
   - Encadré "les absents du classement" (lycées populaires hors corpus, biais de sélection)
   - Script `figures/fig2_scatter_ips_sigma.py`
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire la distribution statistique de l'IPS, de l'écart-type et de la répartition par secteur (public/privé).
 - [ ] Générer le "scatter plot" (Figure Signature 2) croisant IPS et écart-type, avec colorisation par statut et courbes de densité KDE.
 
@@ -219,7 +219,7 @@
   - Encadré : les arrondissements parisiens (du 6e au 20e, gradient saisissant)
   - Les "déserts scolaires favorisés" : communes aisées sans lycée élite (analyse spécifique)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la corrélation spatiale entre l'IPS moyen par commune et le prix médian au m² (DVF).
 - [ ] Générer la carte choroplèthe des IPS moyens par commune et le scatter plot correspondant.
 
@@ -241,7 +241,7 @@
   - Indice de dissimilarité de Duncan par commune
   - Tableau comparatif des trois zones avec toutes les variables
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Réaliser une ANOVA spatiale pour décomposer la variance selon 3 facteurs (zone géographique, statut public/privé, revenus IRIS).
 - [ ] Extraire les pourcentages de variance expliquée et dresser le tableau comparatif complet des trois couronnes.
 - [ ] Calculer l'indice de dissimilarité de Duncan pour chaque commune.
@@ -261,7 +261,7 @@
   - **Nouveauté** : indice de "fausse mixité" formalisé `F_c = M_global - M_interne`
   - Test exploratoire : accessibilité transport × niveau de ségrégation (données IDF Mobilités)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la formule de l'indice de "fausse mixité" (F_c = M_global - M_interne) et générer les scores communaux.
 - [ ] Tester la corrélation statistique entre l'accessibilité aux transports (IDF Mobilités) et le niveau de ségrégation.
 
@@ -281,7 +281,7 @@
   - **Nouveauté** : corrélation densité privé × prix DVF
   - Encadré : lycées hors contrat (terra incognita statistique)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la polarisation de l'IPS (delta public/privé) ventilée par zone géographique.
 - [ ] Tester statistiquement la corrélation entre la densité locale d'établissements privés et le prix immobilier (DVF).
 
@@ -298,7 +298,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un cluster statistique est un groupe mathématique, non une volonté délibérée d'exclusion. Les termes ("Aristocratie", etc.) sont des étiquettes typologiques.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la note d'ouverture de la Partie III (résultats d'une analyse statistique, aucun jugement sur pratiques internes)
 - [ ] Intégrer la note dans le texte principal
 
@@ -323,7 +323,7 @@
   - Encadré : le rôle des associations de parents d'élèves
   - Enrichissement résultats bac et valeur ajoutée → "paradoxe analytique" si applicable
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Isoler statistiquement le Cluster 1 (IPS > 158, écart-type < 20).
 - [ ] Calculer le score composite d'entre-soi pour ces établissements et exporter les statistiques descriptives.
 
@@ -345,7 +345,7 @@
   - Formulation éthique systématique : structures statistiques, pas intentions institutionnelles
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les statistiques descriptives du Cluster 2 sur l'ensemble du vecteur de variables (IPS, écart-type, DVF, IRIS, bac).
 - [ ] Générer la liste brute des lycées constituant ce cluster.
 
@@ -369,7 +369,7 @@
   - Enrichissement : valeur ajoutée IVAL — paradoxe analytique si applicable
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les statistiques descriptives complètes du Cluster 3 (IPS élevé, mixité forte).
 - [ ] Extraire la valeur ajoutée IVAL pour tester statistiquement la corrélation avec l'hétérogénéité sociale.
 
@@ -390,7 +390,7 @@
   - Hypothèses : localisation, tradition, offre pédagogique
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les statistiques descriptives complètes du Cluster 4 (IPS, σ, DVF, IRIS, résultats bac).
 - [ ] Générer la liste brute des établissements appartenant à ce cluster pour validation.
 
@@ -411,7 +411,7 @@
   - Encadré : le bassin de Paris-Saclay — une écologie scolaire singulière
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Isoler les établissements internationaux et scientifiques (Cluster 5) et extraire leurs caractéristiques statistiques.
 - [ ] Produire le tableau récapitulatif des variables descriptives (IPS, σ, DVF, IRIS, résultats bac).
 
@@ -433,7 +433,7 @@
   - Description analytique sur toutes les variables (IPS, σ, DVF, IRIS, résultats bac)
   - Carte spatiale des 5 clusters sur l'IDF + formulation éthique transversale
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les statistiques descriptives des lycées publics favorisés résidentiels.
 - [ ] Générer la carte spatiale positionnant les 5 clusters sur la région Île-de-France.
 
@@ -450,7 +450,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites de l'indice brut précisées.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer les z-scores spatiaux (entre-soi) et générer la carte d'Île-de-France.
 - [ ] Exporter le script ainsi que le Top 20.
 
@@ -461,7 +461,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Application d'un standard mathématique universel.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 15, Courbe de Lorenz.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Décomposer mathématiquement la variance (secteur, géographie) et tracer la Courbe de Lorenz.
 - [ ] Livrer les graphiques formatés pour le Chapitre 15.
 
@@ -472,7 +472,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Objectivation rigoureuse des parts de variance.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 16, Tableau de décomposition de variance.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer l'indice de Theil aux trois niveaux géographiques et institutionnels.
 - [ ] Dresser le tableau complet de décomposition de la variance pour le Chapitre 16.
 
@@ -483,7 +483,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Mise en évidence des paradoxes locaux.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 17, Carte choroplèthe de $D$.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer l'indice de dissimilarité de Duncan (D) et tester la corrélation avec les transports/revenus.
 - [ ] Produire la carte choroplèthe finale pour le Chapitre 17.
 
@@ -498,7 +498,7 @@
 
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Établir la formule de l'indice composite de fragmentation scolaire et pondérer ses composantes.
 - [ ] Consolider les résultats statistiques pour le Chapitre 18.
 
@@ -516,7 +516,7 @@
   - Limites de l'ANOVA simple appliquée à des données scolaires
   - Formulation prudente systématique : associations fortes ≠ mécanismes causaux
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Modéliser une ANOVA unidimensionnelle (IPS en fonction du statut public/privé).
 - [ ] Extraire le pourcentage de variance expliquée (R²) et générer le tableau des résidus statistiques.
 
@@ -529,7 +529,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Démontrer que la géographie domine et le statut amplifie.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 20, Tableau de décomposition complet.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Exécuter les régressions OLS multi-facteurs (interactions privé/géographie) et tester les variables DVF/transports.
 - [ ] Exporter le tableau de décomposition complet pour le Chapitre 20.
 
@@ -540,7 +540,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Postulat validé analytiquement : "La géographie structure, l'institution filtre".
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 21, Sorties du modèle.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Estimer les ICC (Intraclass Correlation Coefficients) et comparer les R² marginaux et conditionnels.
 - [ ] Extraire les sorties du modèle multiniveau pour le Chapitre 21.
 
@@ -551,7 +551,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le DAG est une hypothèse formelle, pas une vérité révélée infaillible.
 - **Artefacts générés** : Sorties analytiques (graphes, data, scripts) pour le Chapitre 22, Schéma du DAG.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Construire formellement le réseau causal (DAG) et simuler l'effet d'une intervention par "do-calculus".
 - [ ] Exporter le schéma du DAG pour le Chapitre 22.
 
@@ -562,7 +562,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Invitation à réfléchir aux politiques.
 - **Artefacts générés** : Conclusion du Tome 1.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Synthétiser les découvertes majeures et les limites de la première partie.
 - [ ] Rédiger le texte de la Conclusion du Tome 1.
 
@@ -573,7 +573,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Exporter les données nettoyées des lycées au format CSV.
 - [ ] Intégrer cet export pour constituer le Tableau complet de l'Annexe A1.
 
@@ -584,7 +584,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A2.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Dresser l'inventaire exhaustif des jeux de données mobilisés.
 - [ ] Présenter ces métadonnées proprement dans l'Annexe A2.
 
@@ -595,7 +595,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Convertir la documentation mathématique au format LaTeX.
 - [ ] Compiler ces équations pour constituer l'Annexe A3.
 
@@ -606,7 +606,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Respect du droit.
 - **Artefacts générés** : Annexe A4.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Recenser les contraintes légales et licences Open Data des jeux de données.
 - [ ] Rédiger la note juridique correspondante pour l'Annexe A4.
 
@@ -617,7 +617,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A5.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts de nettoyage et de modélisation du Tome 1.
 - [ ] Structurer ce dépôt de code pour l'Annexe A5.
 
@@ -628,7 +628,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Regrouper les cartes exploratoires non incluses dans les chapitres principaux.
 - [ ] Exporter l'atlas cartographique additionnel pour l'Annexe A6.
 
@@ -639,7 +639,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A7.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Compiler les définitions des termes sociologiques et statistiques utilisés.
 - [ ] Rédiger le glossaire complet pour l'Annexe A7.
 
@@ -650,7 +650,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Humilité scientifique.
 - **Artefacts générés** : Annexe A8.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Vérifier la mise en forme des références académiques citées dans le texte.
 - [ ] Exporter la bibliographie sélective pour l'Annexe A8.
 
@@ -665,7 +665,7 @@
 
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Réaliser une courte synthèse des travaux comparables à l'étranger.
 - [ ] Rédiger cette note de mise en perspective pour l'Annexe A9.
 
@@ -676,7 +676,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : La position dans le réseau est une propriété émergente, pas une caractéristique intrinsèque (anti-essentialisme).
 - **Artefacts générés** : Avant-propos du Tome II et Note éthique d'ouverture.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Note éthique Tome II (position dans le réseau = propriété émergente, pas caractéristique intrinsèque)
 - [ ] Avant-propos : "du territoire au réseau" — formulation obligatoire sur les liens de similarité vs flux réels
 - [ ] Introduction : nœuds, liens, poids — justification de la fonction de similarité choisie vs alternatives (Jaccard, cosinus)
@@ -704,7 +704,7 @@
   - **V2** : clustering sur vecteur enrichi (IPS + σ + revenus IRIS + résultats bac + statut)
   - **V2** : comparaison IPS seul vs vecteur enrichi
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Implémenter la Classification Ascendante Hiérarchique (CAH) avec la méthode de Ward et normalisation en z-scores.
 - [ ] Comparer statistiquement les résultats de la CAH avec l'algorithme k-means et un modèle GMM.
 - [ ] Exécuter le clustering (V2) sur le vecteur enrichi (IPS, écart-type, revenus IRIS, résultats bac, statut).
@@ -727,7 +727,7 @@
   - Profondeur ultramétrique V1 : un indice de hiérarchisation sociale
   - **V2** : revenus IRIS ou résultats bac créent-ils une nouvelle dimension de séparation ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Générer le dendrogramme complet de la CAH et calculer les hauteurs de fusion.
 - [ ] Appliquer le critère de Mojena pour détecter mathématiquement les sauts de clusters optimaux.
 - [ ] Calculer la profondeur ultramétrique du graphe.
@@ -751,7 +751,7 @@
   - Formulation éthique systématique pour chaque cluster
   - **V2** : description analytique enrichie sur toutes les variables (DVF, IRIS, bac)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les tableaux de description statistique pour les 5 clusters validés.
 - [ ] Générer la carte spatiale positionnant les clusters sur la carte d'Île-de-France.
 
@@ -773,7 +773,7 @@
   - Zones de désaccord entre méthodes : les cas ambigus
   - **V2** : test de robustesse avec sous-échantillons aléatoires (enlever 10% des données)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer le silhouette score et la "gap statistic" pour valider la robustesse des clusters.
 - [ ] Exécuter un test de stabilité bootstrap (Adjusted Rand Index) sur 1000 itérations.
 - [ ] Réaliser une ANOVA post-hoc sur l'IPS et l'écart-type pour valider la séparation statistique.
@@ -796,7 +796,7 @@
   - Indice de cohérence arbre/réseau (ARI CAH vs Louvain)
   - Note de prudence : outil descriptif, pas preuve d'une logique nécessaire
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la distance cophenétique et la corrélation ultramétrique du système.
 - [ ] Extraire les "ponts ultramétriques" (liens violant la hiérarchie).
 - [ ] Calculer l'Adjusted Rand Index pour évaluer la cohérence entre l'arbre (CAH) et le réseau (Louvain).
@@ -819,7 +819,7 @@
   - **V2** : réseau sur IPS seul vs réseau sur vecteur enrichi — comparaison ARI
   - Test de sensibilité résolution : `for r in [0.5, 1.0, 1.5, 2.0]`
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Implémenter la détection de communautés avec l'algorithme de Louvain en maximisant la modularité (Q).
 - [ ] Comparer les communautés Louvain avec les clusters CAH (via les métriques ARI et NMI).
 - [ ] Exécuter un test de sensibilité en modifiant la résolution de Louvain (0.5, 1.0, 1.5, 2.0).
@@ -842,7 +842,7 @@
   - Indice de fragmentation inter-couches (IFC) par couche
   - Les divergences topologique/géographique révèlent des effets institutionnels
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Construire un réseau multiplex (multicouches) intégrant les flux, le statut et la distance géographique (GPS).
 - [ ] Détecter les communautés transversales et extraire la liste des corridors inter-couches.
 - [ ] Calculer l'indice de fragmentation inter-couches (IFC) par couche.
@@ -867,7 +867,7 @@
   - **V2** : comparaison avec modèle nul Erdős–Rényi (même densité). Test de significativité de la modularité.
   - Test de sensibilité seuil : `for p in [60, 65, 70, 75, 80]`
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Construire la matrice de distances (Mahalanobis et Euclidienne) et seuiller le réseau.
 - [ ] Modéliser un réseau nul d'Erdős–Rényi de même densité pour tester la significativité statistique de la modularité.
 - [ ] Générer la visualisation du graphe avec l'algorithme Force-Directed (Spring Layout).
@@ -890,7 +890,7 @@
   - **V2** : corrélation centralité × résultats bac × revenus IRIS
   - Script `figures/fig3_network_louvain.py`
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer les indices de centralité : Eigenvector centrality, Betweenness, et Degré pondéré.
 - [ ] Générer le Top 10 des lycées selon un score composite de centralité.
 - [ ] Produire la visualisation du graphe avec colorisation des nœuds par centralité.
@@ -913,7 +913,7 @@
   - Signification sociologique : institutions qui limitent la fragmentation
   - Note éthique : «ponts analytiques» ≠ pratiques d'admission ou ouverture institutionnelle
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la formule du score de "pont" composite (betweenness + diversité communautaire + distance ultramétrique).
 - [ ] Extraire le Top 10 des lycées franchissant les frontières (ponts structurels).
 
@@ -935,7 +935,7 @@
   - Note de prudence : matrice simulée ≠ matrice observée (sauf données Affelnet)
   - **V2** : calibration partielle avec données Affelnet si disponibles, mesure de l'écart simulé/observé
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Générer la matrice de transition (Markov) entre les différents clusters.
 - [ ] Estimer mathématiquement la distribution stationnaire du système (équilibre asymptotique).
 - [ ] Calculer l'entropie des trajectoires et la durée de séjour moyenne dans chaque cluster.
@@ -956,7 +956,7 @@
   - Top corridors du système francilien — les «autoroutes sociales»
   - Signification V1 : formalisation des «autoroutes sociales» du système scolaire
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer les flux attendus via un modèle nul d'indépendance et générer les scores de corridor (R_ab = F_ab / E_ab).
 - [ ] Identifier statistiquement les corridors sur-représentés (autoroutes sociales) et extraire l'indice d'asymétrie Γ.
 
@@ -976,7 +976,7 @@
   - Distribution spatiale des ascenseurs et filtres. Efficacité des ascenseurs : Δ S moyen (V1)
   - Encadré V1 : les corridors d'élite vs corridors de mobilité sociale descendante
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder les requêtes d'extraction pour isoler les flux ascendants (ascenseurs) et les flux descendants (filtres).
 - [ ] Calculer l'efficacité moyenne des ascenseurs (ΔS moyen) et générer la distribution spatiale.
 
@@ -996,7 +996,7 @@
   - Symétrie / asymétrie des flux selon les couches
   - Corrélation entre couches : où les logiques se renforcent-elles ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Fusionner mathématiquement les différentes couches du réseau multiplex (social, académique, résidentiel).
 - [ ] Calculer le score de centralité inter-couches et tester les corrélations de flux entre les dimensions.
 
@@ -1018,7 +1018,7 @@
   - **Nouveauté** : outliers Mahalanobis vs valeur ajoutée bac atypique (croisement analytique)
   - "Paradoxes analytiques" traités sans jugement
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la distance de Mahalanobis pour l'ensemble du jeu de données et extraire les "outliers" (anomalies statistiques).
 - [ ] Croiser les valeurs atypiques de Mahalanobis avec les résultats inattendus de valeur ajoutée (IVAL).
 
@@ -1035,7 +1035,7 @@
   - Gradient local des effets, détection des inversions de gradient
   - Note obligatoire : zones de bascule = structures analytiques émergentes du modèle, pas réalité empirique directe
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Détecter algorithmiquement les inversions de gradient spatial et extraire les coordonnées des "zones de bascule".
 - [ ] Générer la carte thermique localisant ces points critiques.
 
@@ -1053,7 +1053,7 @@
   - Score de "blind spot" spatial
   - **Nouveauté** : corrélation résidus × accessibilité transport
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Modéliser le système via un Spatial Autoregressive Model (SAR) et calculer l'autocorrélation de Moran.
 - [ ] Extraire les résidus du modèle pour identifier les "blind spots" spatiaux.
 - [ ] Tester la corrélation des résidus avec les données d'accessibilité aux transports.
@@ -1074,7 +1074,7 @@
   - Zones d'incertitude : établissements multi-appartenance
   - Entropie locale : carte des zones hybrides
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Entraîner un modèle GMM (Gaussian Mixture Model) et un Latent Class Mixed Model pour extraire 5 classes latentes.
 - [ ] Calculer l'entropie locale de chaque lycée pour quantifier l'incertitude d'appartenance et cartographier les zones hybrides.
 
@@ -1094,7 +1094,7 @@
   - «Épaisseur» des frontières scolaires (concept central)
   - Indice global de flou des frontières F
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Estimer les probabilités locales d'appartenance aux clusters via KDE (Kernel Density Estimation).
 - [ ] Calculer l'indice d'entropie locale H(x) et générer l'indice global de flou des frontières (F).
 
@@ -1115,7 +1115,7 @@
   - Cartographie des points de bascule
   - Signification : là où la mobilité scolaire échappe à la hiérarchie
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer le score de tension hiérarchie/réseau (|d_ij - d^U_ij| × w_ij) pour repérer les anomalies topologiques.
 - [ ] Générer l'indice global DA (désalignement) et cartographier les points de bascule ultramétriques.
 
@@ -1137,7 +1137,7 @@
   - Carte PSL sur l'IDF
   - **Nouveauté** : corrélation PSL × accessibilité transport
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder le calcul de la Pression Ségrégative Locale (PSL) intégrée aux variables DVF et IRIS.
 - [ ] Générer la carte spatiale de la PSL et tester sa corrélation avec l'accessibilité transport.
 
@@ -1157,7 +1157,7 @@
   - Indice de mobilité M = 1 - IFC
   - Asymétrie des flux : déséquilibres de mobilité
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la fonction de décomposition de l'Indice de Fragmentation Inter-couches (IFC).
 - [ ] Exporter les matrices d'asymétrie des flux et calculer l'indice de mobilité (M = 1 - IFC).
 
@@ -1178,7 +1178,7 @@
   - Perméabilité locale par lycée
   - Lycées «passerelles» vs lycées «verrous»
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la boucle de calcul estimant l'indice de perméabilité (Π = P_raw / C) pour chaque lycée.
 - [ ] Générer les graphiques de distribution permettant d'isoler statistiquement les "passerelles" (ultra-ouverts) et les "verrous" (ultra-fermés).
 
@@ -1198,7 +1198,7 @@
   - Top clusters absorbants de l'Île-de-France
   - Signification : «puits scolaires» et accumulation des ressources
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder le score d'absorption des clusters (Flux_IN / Flux_OUT).
 - [ ] Valider la condition spectrale (ρ(T_C) > 1) pour identifier les attracteurs dynamiques (puits scolaires).
 
@@ -1220,7 +1220,7 @@
   - Estimation de ρ, effets directs vs indirects spatiaux
   - Note obligatoire : associations spatiales ≠ effets causaux
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Entraîner le modèle SAR en incluant les covariables (DVF, revenus IRIS, accessibilité).
 - [ ] Extraire et décomposer les effets spatiaux directs et indirects pour évaluation.
 
@@ -1237,7 +1237,7 @@
   - Variables latentes enrichies, R²m vs R²c
   - **Nouveauté** : DVF et accessibilité transport ajoutent-ils du pouvoir explicatif au-delà de l'IPS et IRIS ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Entraîner le modèle SEM spatial en incluant les variables enrichies (DVF, accessibilité transport).
 - [ ] Extraire et comparer les métriques d'évaluation du modèle (R² marginal vs R² conditionnel).
 
@@ -1256,7 +1256,7 @@
   - Zones de gradient positif vs négatif, tipping points analytiques
   - ⚠️ Random Forest spatial → `/exploratory/` (pas dans le texte principal)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Entraîner un modèle additif généralisé (GAM) non-linéaire avec splines sur les variables enrichies.
 - [ ] Extraire les points d'inflexion (tipping points analytiques) et générer les graphiques d'effets marginaux.
 
@@ -1274,7 +1274,7 @@
   - Variance quartier / variance réseau
   - **Nouveauté** : l'accessibilité transport modifie-t-elle cet équilibre ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la décomposition mathématique de la variance pour séparer l'effet "quartier" de l'effet "réseau".
 - [ ] Tester statistiquement si l'intégration de la variable "accessibilité transport" modifie cet équilibre.
 
@@ -1287,7 +1287,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Transition vers le Tome III.
 - **Artefacts générés** : Conclusion du Tome 2.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Synthétiser les apports et limites des modèles spatiaux développés.
 - [ ] Rédiger le texte de la Conclusion du Tome 2.
 
@@ -1298,7 +1298,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts générant les clusters et les réseaux.
 - [ ] Structurer ce code Python pour l'Annexe A1 du Tome 2.
 
@@ -1309,7 +1309,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A2.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Exporter les matrices mathématiques (distance, flux) sous format lisible (JSON/CSV).
 - [ ] Mettre à disposition ces jeux de données via l'Annexe A2.
 
@@ -1320,7 +1320,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur scientifique.
 - **Artefacts générés** : Annexe A3.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rassembler les différents benchmarks de vitesse et de performance algorithmique.
 - [ ] Dresser le tableau comparatif final dans l'Annexe A3.
 
@@ -1331,7 +1331,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A4.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Compiler les logs et les résultats statistiques bruts (OLS, SAR, SEM).
 - [ ] Structurer ces sorties mathématiques pour l'Annexe A4.
 
@@ -1342,7 +1342,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A5.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rassembler les résultats des méthodes exploratoires (Random Forest, etc.) non retenues.
 - [ ] Rédiger la note méthodologique associée pour l'Annexe A5.
 
@@ -1353,7 +1353,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutralité.
 - **Artefacts générés** : Annexe A6.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Regrouper les visualisations géospatiales secondaires générées par les modèles.
 - [ ] Exporter ce recueil cartographique pour l'Annexe A6.
 
@@ -1364,7 +1364,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A7.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la conclusion du Tome II (5 lycées les plus structurants selon centralité composite)
 - [ ] Comparaison internationale courte (Londres, New York — littérature existante)
 - [ ] A1 : Code Python complet
@@ -1388,7 +1388,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clause obligatoire de début : "Ce volume propose des cadres dynamiques exploratoires..." Il faut empêcher le lecteur de prendre les projections pour des prédictions.
 - **Artefacts générés** : Note éthique T3.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la note renforcée (cadres exploratoires, non prédictifs, non causaux)
 - [ ] Phrase protectrice obligatoire en ouverture : *"Ce volume propose des cadres dynamiques exploratoires…"*
 - [ ] Avant-propos : transition "du réseau aux dynamiques", note de limitation explicite sur la granularité des données longitudinales
@@ -1415,7 +1415,7 @@
   - Corrélation trajectoire × données démographiques temporelles INSEE
   - Script `figures/fig4_trajectories_changepoints.py`
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder le score longitudinal de "trajectoire temporelle" et classer les établissements (ascendants, déclinants, instables).
 - [ ] Générer le script `figures/fig4_trajectories_changepoints.py` et tester la corrélation temporelle avec l'évolution des prix DVF.
 
@@ -1433,7 +1433,7 @@
   - Stabilité ARI entre années, mobilité de cluster
   - **Nouveauté** : les clusters du Tome II sont-ils stables dans le temps ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Exécuter la CAH dynamique sur chaque année et générer la matrice de transition inter-temporelle.
 - [ ] Calculer la stabilité (Adjusted Rand Index) des clusters d'une année sur l'autre.
 
@@ -1451,7 +1451,7 @@
   - Distance ultramétrique inter-temporelle, stabilité hiérarchique
   - Note de prudence : distinguer changements réels vs artefacts de la révision IPS 2021
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Générer la pile de dendrogrammes annuels superposés.
 - [ ] Calculer la distance ultramétrique inter-temporelle pour évaluer la résilience hiérarchique du système.
 
@@ -1469,7 +1469,7 @@
   - Variables d'observation : IPS, mixité, résultats bac, prix DVF
   - 4–5 états cachés estimés, matrice de transition, durée moyenne par état
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Entraîner un Hidden Markov Model (HMM) pour détecter les régimes cachés dans les séries temporelles (IPS, résultats, mixité).
 - [ ] Extraire les matrices de transition estimées et la durée moyenne par état caché.
 
@@ -1486,7 +1486,7 @@
   - Intégration graphe de similarité dans le HMM
   - Note de prudence renforcée : modèle expérimental, résultats = hypothèses exploratoires
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coupler le modèle HMM avec la structure topologique (Graph Neural Network temporel ou modèle couplé).
 - [ ] Extraire les paramètres de diffusion montrant comment les régimes se propagent géographiquement.
 
@@ -1508,7 +1508,7 @@
   - Vitesse de fragmentation v_T = dT/dt
   - **V2** : corrélation dynamique Theil × prix DVF
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la série temporelle de l'indice de Theil (T) et sa vitesse de fragmentation (dT/dt).
 - [ ] Extraire la décomposition dynamique (ΔT_within + ΔT_between) et générer les graphiques d'évolution par couronne.
 
@@ -1528,7 +1528,7 @@
   - Émergence et disparition d'ascenseurs sociaux
   - Dérive de T : qu'est-ce qui explique les changements de flux ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Générer la série chronologique des matrices de transition et produire l'animation dynamique de Sankey.
 - [ ] Extraire les métriques identifiant mathématiquement l'apparition de nouveaux ascenseurs sociaux.
 
@@ -1552,7 +1552,7 @@
   - Note obligatoire : distinguer ruptures réelles vs artefacts révision IPS 2021
   - Test de sensibilité penalty PELT (min_size, pen)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Exécuter l'algorithme de détection de ruptures (PELT) en ajustant les paramètres de pénalité (AIC/BIC).
 - [ ] Isoler les dates critiques (changepoints) et tester la coïncidence avec les ruptures des séries immobilières DVF.
 
@@ -1569,7 +1569,7 @@
   - Note renforcée : associations temporelles, pas effets causaux
   - Ce qu'il faudrait pour une identification causale stricte (diff-in-diff, RD — non disponibles)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Configurer un modèle exploratoire (Diff-in-Diff ou Regression Discontinuity) sur les changepoints.
 - [ ] Exporter les intervalles de confiance sur les effets temporels estimés.
 
@@ -1588,7 +1588,7 @@
   - Formulations conditionnelles systématiques
   - Résultats "cohérents avec l'hypothèse de fragilisation croissante"
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer la plus grande valeur propre du réseau (ρλ_max) et générer sa série temporelle.
 - [ ] Extraire les fenêtres temporelles critiques où le système s'approche de l'instabilité structurelle (valeur >= 1).
 
@@ -1609,7 +1609,7 @@
   - Limites : faux positifs, sensibilité aux données
   - Encadré : peut-on prévoir une ségrégation scolaire croissante ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la détection des "Early Warning Signals" (variance locale, autocorrélation critique) sur les lycées en frontière.
 - [ ] Modéliser un algorithme prédictif détectant la fragilisation ségrégative d'un établissement.
 
@@ -1630,7 +1630,7 @@
   - Effet mémoriel (inertie) : α dans le modèle dynamique
   - Simulation contrefactuelle : que se passe-t-il si on «casse» un lien causal ?
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Construire formellement le Directed Acyclic Graph (DAG) inter-temporel pour inclure les délais et l'inertie.
 - [ ] Simuler mathématiquement une intervention (modification de flux) et en extraire les conséquences en cascade.
 
@@ -1647,7 +1647,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Obligation absolue : spécifier que ce sont des langages analytiques, pas des descriptions empiriques directes.
 - **Artefacts générés** : Note introductive de la Partie III.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la note obligatoire (formalismes avancés = langages analytiques, pas descriptions empiriques directement mesurables)
 
 
@@ -1664,7 +1664,7 @@
   - Chaque lycée comme point, métrique sociale G_t
   - Formulation systématique : "permet de penser X… ne constitue pas une mesure directe"
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la métrique tensorielle représentant l'espace scolaire comme une variété riemannienne (G_t).
 - [ ] Extraire les coordonnées courbées de chaque lycée et générer la visualisation topologique abstraite.
 
@@ -1684,7 +1684,7 @@
   - Lycées en équilibre vs lycées en tension
   - Formulation : «permet de penser la dynamique structurelle... ne constitue pas une mesure directe»
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer mathématiquement le gradient dans l'espace riemannien (champ de tensions centrifuge/centripète).
 - [ ] Générer la carte vectorielle montrant les lycées soumis aux pressions d'attraction et de répulsion.
 
@@ -1703,7 +1703,7 @@
   - Qu'est-ce que ce modèle permet de penser que les modèles séparés ne permettent pas ?
   - Synthèse des trois tomes : de la carte à la dynamique
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Assembler la fonction de perte composite (Loss = L_HMM + λ₁L_GNN + λ₂L_ultra + λ₃L_flux).
 - [ ] Entraîner le réseau neuronal unifié et extraire les hyperparamètres finaux vers un fichier de configuration.
 
@@ -1720,7 +1720,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Un "lycée sous-performant" est un écart statistique au modèle, pas un jugement sur les équipes pédagogiques.
 - **Artefacts générés** : Note éthique Partie IV.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la note spécifique : "paradoxaux", "sur-performants", "sous-performants" = qualifications relatives à un modèle statistique, pas évaluations de qualité de l'enseignement
 
 
@@ -1738,7 +1738,7 @@
   - Formulation éthique : "performance relative supérieure à ce que leur profil prédirait"
   - Mécanismes non déductibles des données agrégées
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Créer une fonction de filtrage détectant les établissements ayant un fort score de sur-performance relative.
 - [ ] Générer l'export brut (CSV/JSON) de ces anomalies statistiques avec croisement IVAL.
 
@@ -1759,7 +1759,7 @@
   - Carte des paradoxes inversés en Île-de-France
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder l'extraction des "paradoxes inversés" (IPS ultra-élevé mais sous-rendement en VA).
 - [ ] Tester statistiquement la corrélation de ce sous-rendement avec les dynamiques immobilières locales (DVF).
 
@@ -1780,7 +1780,7 @@
   - Signification : les marges du déterminisme scolaire
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer l'entropie des trajectoires individuelles (-log P(τ_i)) et isoler les trajectoires outliers de mobilité.
 - [ ] Exporter la liste des établissements ayant des transitions contre-hiérarchiques.
 
@@ -1802,7 +1802,7 @@
   - Carte IDF des communes hyper-ségrégées
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer le score d'hyper-ségrégation masquée (HS_c) combinant une forte moyenne communale et un fort indice de ségrégation interne.
 - [ ] Générer la carte spatiale identifiant les communes "faussement mixtes".
 
@@ -1822,7 +1822,7 @@
   - Hypothèses sur variables manquantes : réputation, alumni, dérogations
   - **V2** : croisement DVF (dynamique immobilière atypique ?)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder la consolidation des erreurs (résidus) multi-modèles pondérées spatialement.
 - [ ] Extraire la liste géographique des "blind spots" (zones systématiquement mal prédites).
 
@@ -1839,7 +1839,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Les simulations ne sont PAS des recommandations de politique publique. Les parents s'adapteraient (ex: déménagement, fuite dans le privé), ce que le modèle ignore.
 - **Artefacts générés** : Note de Cadrage.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rédiger la note : simulations = scénarios analytiques, pas prédictions ni recommandations de politique publique
 - [ ] Préciser que les comportements adaptatifs des acteurs ne sont pas modélisés
 
@@ -1860,7 +1860,7 @@
   - Condition de succès V1 : éviter de déclencher une transition de phase
   - Limites section obligatoire : comportements familiaux statiques, effets adaptatifs potentiellement annulateurs
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Initialiser la boucle de simulation de re-sectorisation (redistribution artificielle des IPS locaux).
 - [ ] Extraire la nouvelle configuration du réseau et valider la condition de stabilité de la phase de transition simulée.
 
@@ -1882,7 +1882,7 @@
   - Discussion V1 : est-ce souhaitable ? faisable ? suffisant ? — exercice analytique, pas proposition de politique
   - Note obligatoire : exercice analytique, pas proposition de politique publique
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Coder le modèle contrefactuel "suppression des noeuds hyper-sélectifs" (fermeture simulée du Top 20 fermé).
 - [ ] Relancer l'algorithme de routage des flux et exporter les nouvelles matrices d'accessibilité sociale.
 
@@ -1902,7 +1902,7 @@
   - Effet de labellisation : comment la réputation change les flux
   - Quelle politique de communication accompagne cette stratégie ? (V1)
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Injecter un bonus attractif simulé sur les lycées paradoxaux positifs.
 - [ ] Extraire l'impact de ce choc sur l'ouverture de nouveaux corridors sociaux dans le modèle probabiliste.
 
@@ -1923,7 +1923,7 @@
   - Les lycées-ponts comme leviers de politique publique
   - Le risque de la réforme sans modèle : déclencher une phase transition non désirée
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Calculer les seuils critiques (tipping points) de mixité provoquant la bascule des corridors.
 - [ ] Générer un rapport d'optimisation probabiliste comparant les stratégies de régulation de flux.
 
@@ -1941,7 +1941,7 @@
   - Concept d'interactivité (GitHub interactif si développé)
   - Ce que les données actuelles permettent et ne permettent pas encore
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Compiler l'architecture des couches JSON pour la cartographie web interactive finale.
 - [ ] Générer les tuiles de base géographiques et les calques statistiques (IPS, résidus, clusters).
 
@@ -1968,7 +1968,7 @@
   - Modifications méthodologiques du Ministère (révision IPS 2021)
   - Confusion potentielle artefacts de mesure / changements réels
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse méthodologique.*
 
 
@@ -1987,7 +1987,7 @@
   - Responsabilité du chercheur dans la diffusion
   - Distinction : décrire une structure ≠ l'accepter comme naturelle
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige cette analyse éthique.*
 
 
@@ -2003,7 +2003,7 @@
   - Sociologie, géographie sociale, économie, informatique, physique statistique
   - Comparaisons internationales développées (Paris vs Londres, New York, Berlin, Tokyo, Barcelone) — littérature existante uniquement
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur rédige ces ouvertures disciplinaires.*
 
 
@@ -2020,7 +2020,7 @@
   - Données nécessaires pour aller plus loin
   - Ce qu'un accès à des données individuelles longitudinales permettrait de faire
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] *Le contributeur n'a aucune tâche technique assignée. L'Auteur définit l'agenda de recherche.*
 
 
@@ -2032,7 +2032,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Le paradoxe de la méritocratie républicaine face aux données. Sans prescription normative.
 - **Artefacts générés** : Conclusion Générale.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Ce que l'IDF dit de la France scolaire
 - [ ] La ségrégation scolaire comme processus, pas état
 - [ ] Le paradoxe de la méritocratie républicaine face aux données
@@ -2048,7 +2048,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A1.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Rassembler les scripts Python dédiés aux séries temporelles et détections de ruptures.
 - [ ] Structurer le code dynamique pour l'Annexe A1 du Tome 3.
 
@@ -2059,7 +2059,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A2.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Réunir les justifications mathématiques des paramètres choisis pour les modèles.
 - [ ] Rédiger la note méthodologique justificative dans l'Annexe A2.
 
@@ -2070,7 +2070,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Reproductibilité de la recherche.
 - **Artefacts générés** : Annexe A3.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Extraire les paramètres estimés par les modèles temporels (HMM, algorithme PELT).
 - [ ] Compiler ces valeurs mathématiques dans l'Annexe A3.
 
@@ -2081,7 +2081,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Neutre.
 - **Artefacts générés** : Annexe A4.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Agréger les tableaux de projection issus des simulations de réformes.
 - [ ] Mettre en page ces résultats chiffrés pour l'Annexe A4.
 
@@ -2092,7 +2092,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Factuel.
 - **Artefacts générés** : Annexe A5.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Générer et optimiser les animations (GIFs, vidéos) d'évolution des flux scolaires.
 - [ ] Constituer la galerie multimédia de l'Annexe A5.
 
@@ -2103,7 +2103,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A6.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Inventorier les sources de données longitudinales exploitées.
 - [ ] Dresser la bibliographie data complète pour l'Annexe A6.
 
@@ -2114,7 +2114,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Facilité.
 - **Artefacts générés** : Annexe A7.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Créer l'indexation globale croisée sur l'ensemble de la trilogie.
 - [ ] Générer l'index général final pour l'Annexe A7.
 
@@ -2125,7 +2125,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Rigueur.
 - **Artefacts générés** : Annexe A8.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Agréger les citations et la littérature scientifique de l'ensemble du projet.
 - [ ] Formater la bibliographie exhaustive de l'Annexe A8.
 
@@ -2136,7 +2136,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarté.
 - **Artefacts générés** : Annexe A9.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Unifier le dictionnaire des termes techniques (code, stats, socio) employés dans les trois tomes.
 - [ ] Rédiger le glossaire de référence global dans l'Annexe A9.
 
@@ -2147,7 +2147,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Droit.
 - **Artefacts générés** : Annexe A10.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Vérifier la conformité légale et recenser l'ensemble des licences Open Data.
 - [ ] Rédiger le récapitulatif juridique pour l'Annexe A10.
 
@@ -2158,7 +2158,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Académique.
 - **Artefacts générés** : Annexe A11.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] A1 : Code Python complet (HMM, changepoints, simulations, phase transitions) + lien GitHub
 - [ ] A2 : Note méthodes `/exploratory/` avec justification (pourquoi non-inclus dans le texte principal)
 - [ ] A3 : Paramètres estimés des modèles dynamiques
@@ -2184,7 +2184,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Carte factuelle.
 - **Artefacts générés** : Figure 1 HD et Caption LaTeX.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Collecter les données géographiques (GeoPandas, communes IDF)
 - [ ] Intégrer les revenus IRIS en transparence
 - [ ] Taille des points ∝ effectif, gradient Est/Ouest visible
@@ -2201,7 +2201,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Standard Nature/Science.
 - **Artefacts générés** : Figure 2 HD et Caption LaTeX.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Densité KDE en fond
 - [ ] Couleurs rouge/bleu privé/public
 - [ ] Annotations cas emblématiques
@@ -2218,7 +2218,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Clarifier dans la caption que c'est un réseau mathématique, pas physique.
 - **Artefacts générés** : Figure 3 HD et Caption LaTeX.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Layout force-directed (spring_layout)
 - [ ] Taille nœuds ∝ centralité eigenvector
 - [ ] Épaisseur arêtes ∝ similarité
@@ -2235,7 +2235,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Annotations directement dans le graphique (ex: "changement de formule IPS").
 - **Artefacts générés** : Figure 4 HD et Caption LaTeX.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Courbes temporelles colorées par cluster Louvain
 - [ ] Changepoints PELT marqués en rouge
 - [ ] Annotation épistémologique directement dans le graphique
@@ -2255,7 +2255,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Limites explicites inscrites dès l'abstract.
 - **Artefacts générés** : PDF final `main.pdf`.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Compiler `paper_arxiv/main.tex` (base dans `manifesto.tex`)
 - [ ] Intégrer les 4 figures signature
 - [ ] Abstract ≤ 250 mots
@@ -2271,7 +2271,7 @@
 - **Périmètre Éditorial & Éthique (Réservé à l'Auteur)** : Validation stricte.
 - **Artefacts générés** : Rapport de robustesse intégré aux annexes.
 
-- **Cahier des charges Data-Science (Ouvert aux contributions) :**
+- **Périmètre de cohérence technique (Ouvert aux contributions) :**
 - [ ] Moran global (permutation CI, n=999)
 - [ ] Moran local (LISA, correction Bonferroni)
 - [ ] SAR avec différentes matrices de poids (k=4, k=8, inverse distance)
