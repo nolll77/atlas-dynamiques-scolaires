@@ -397,8 +397,8 @@
 - **Artefacts générés** : Texte du Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Calcul par z-scores : $Z_{entre-soi} = Z(IPS) + Z(1/\sigma)$. Carte spatiale IDF.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 14, Script de calcul, Top 20 "Ouverts" / "Fermés".
+- [ ] Calculer les z-scores spatiaux (entre-soi) et générer la carte d'Île-de-France.
+- [ ] Rédiger le texte du Chapitre 14 et exporter le script ainsi que le Top 20.
 
 ### Issue #023 — Chapitre 15 : L'indice de Gini des lycées franciliens
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -408,8 +408,8 @@
 - **Artefacts générés** : Texte du Chapitre 15, Courbe de Lorenz.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Décomposition within/between (secteur, géographie). Tracé de la Courbe de Lorenz.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 15, Courbe de Lorenz.
+- [ ] Décomposer mathématiquement la variance (secteur, géographie) et tracer la Courbe de Lorenz.
+- [ ] Intégrer les graphiques et rédiger l'analyse finale dans le Chapitre 15.
 
 ### Issue #024 — Chapitre 16 : L'indice de Theil : ségrégation décomposable
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -419,8 +419,8 @@
 - **Artefacts générés** : Texte du Chapitre 16, Tableau de décomposition de variance.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Calcul $T_{total} = T_{between} + T_{within}$ à trois niveaux (zones, statut, revenus IRIS).
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 16, Tableau de décomposition de variance.
+- [ ] Calculer l'indice de Theil aux trois niveaux géographiques et institutionnels.
+- [ ] Dresser le tableau complet de décomposition de la variance pour le Chapitre 16.
 
 ### Issue #025 — Chapitre 17 : L'indice de dissimilarité spatial (Duncan D)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -430,8 +430,8 @@
 - **Artefacts générés** : Texte du Chapitre 17, Carte choroplèthe de $D$.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Calcul de $D$ par ville. Corrélation avec la richesse communale et l'accessibilité transport (IDF Mobilités).
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 17, Carte choroplèthe de $D$.
+- [ ] Calculer l'indice de dissimilarité de Duncan (D) et tester la corrélation avec les transports/revenus.
+- [ ] Produire la carte choroplèthe finale et rédiger le Chapitre 17.
 
 ### Issue #026 — Chapitre 18 : L'indice global de fragmentation scolaire (IFC)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -445,8 +445,8 @@
 ### MILESTONE T1-P5 — Partie V : Décomposition de variance
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Calcul de l'indice composite. Contribution relative de chaque composante.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 18.
+- [ ] Établir la formule de l'indice composite de fragmentation scolaire et pondérer ses composantes.
+- [ ] Rédiger l'analyse détaillée des résultats dans le Chapitre 18.
 
 ### Issue #027 — Chapitre 19 : ANOVA simple : public/privé explique-t-il tout ?
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -472,8 +472,8 @@
 - **Artefacts générés** : Texte du Chapitre 20, Tableau de décomposition complet.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : OLS multi-facteurs avec termes d'interactions (ex: privé × ouest). Test d'intégration DVF et transports.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 20, Tableau de décomposition complet.
+- [ ] Exécuter les régressions OLS multi-facteurs (interactions privé/géographie) et tester les variables DVF/transports.
+- [ ] Exporter le tableau de décomposition complet et rédiger le Chapitre 20.
 
 ### Issue #029 — Chapitre 21 : Le modèle multiniveau (HLM)
 **Labels** : `chapitre`, `code`, `difficulty: medium`
@@ -483,8 +483,8 @@
 - **Artefacts générés** : Texte du Chapitre 21, Sorties du modèle.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Estimation des ICC (Intraclass Correlation Coefficients). $R^2$ marginal vs $R^2$ conditionnel.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 21, Sorties du modèle.
+- [ ] Estimer les ICC (Intraclass Correlation Coefficients) et comparer les R² marginaux et conditionnels.
+- [ ] Extraire les sorties du modèle multiniveau pour le texte du Chapitre 21.
 
 ### Issue #030 — Chapitre 22 : Vers un modèle causal : DAG statique
 **Labels** : `chapitre`, `documentation`, `exploratory`, `difficulty: low`
@@ -494,8 +494,8 @@
 - **Artefacts générés** : Texte du Chapitre 22, Schéma du DAG.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Construction du réseau causal (Backdoor criterion). Simulation "do-calculus" : effet d'une neutralisation de variable.
-- [ ] Mettre au propre ces travaux pour constituer le document : Texte du Chapitre 22, Schéma du DAG.
+- [ ] Construire formellement le réseau causal (DAG) et simuler l'effet d'une intervention par "do-calculus".
+- [ ] Exporter le schéma du DAG et rédiger l'analyse du Chapitre 22.
 
 ### Issue #031 — Conclusion du Tome I
 **Labels** : `chapitre`, `documentation`, `difficulty: low`
@@ -505,8 +505,8 @@
 - **Artefacts générés** : Conclusion du Tome 1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Synthèse des trouvailles.
-- [ ] Mettre au propre ces travaux pour constituer le document : Conclusion du Tome 1.
+- [ ] Synthétiser les découvertes majeures et les limites de la première partie.
+- [ ] Rédiger le texte de la Conclusion du Tome 1.
 
 ### Issue #032 — Annexe A1 : Tableau complet des lycées
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -516,8 +516,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Export CSV.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A1.
+- [ ] Exporter les données nettoyées des lycées au format CSV.
+- [ ] Intégrer cet export pour constituer le Tableau complet de l'Annexe A1.
 
 ### Issue #033 — Annexe A2 : Sources de données complètes + licences
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -527,8 +527,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Listing exhaustif.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A2.
+- [ ] Dresser l'inventaire exhaustif des jeux de données mobilisés.
+- [ ] Présenter ces métadonnées proprement dans l'Annexe A2.
 
 ### Issue #034 — Annexe A3 : Méthode de calcul de tous les indices
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -538,8 +538,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Formules LaTeX.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A3.
+- [ ] Convertir la documentation mathématique au format LaTeX.
+- [ ] Compiler ces équations pour constituer l'Annexe A3.
 
 ### Issue #035 — Annexe A4 : Note sur les licences Open Data
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -549,8 +549,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Licences.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A4.
+- [ ] Recenser les contraintes légales et licences Open Data des jeux de données.
+- [ ] Rédiger la note juridique correspondante pour l'Annexe A4.
 
 ### Issue #036 — Annexe A5 : Code Python reproductible complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
@@ -560,8 +560,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Dépôt de code.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A5.
+- [ ] Rassembler les scripts de nettoyage et de modélisation du Tome 1.
+- [ ] Structurer ce dépôt de code pour l'Annexe A5.
 
 ### Issue #037 — Annexe A6 : Cartographie complète
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -571,8 +571,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Cartes additionnelles.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A6.
+- [ ] Regrouper les cartes exploratoires non incluses dans les chapitres principaux.
+- [ ] Exporter l'atlas cartographique additionnel pour l'Annexe A6.
 
 ### Issue #038 — Annexe A7 : Glossaire des termes statistiques et sociologiques
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -582,8 +582,8 @@
 - **Artefacts générés** : Annexe A7.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Définitions.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A7.
+- [ ] Compiler les définitions des termes sociologiques et statistiques utilisés.
+- [ ] Rédiger le glossaire complet pour l'Annexe A7.
 
 ### Issue #039 — Annexe A8 : Bibliographie sélective
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -593,8 +593,8 @@
 - **Artefacts générés** : Annexe A8.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Références.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A8.
+- [ ] Vérifier la mise en forme des références académiques citées dans le texte.
+- [ ] Exporter la bibliographie sélective pour l'Annexe A8.
 
 ### Issue #040 — Annexe A9 : Comparaison internationale courte
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -608,8 +608,8 @@
 ### MILESTONE T2-INTRO — Pages liminaires & Introduction
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Synthèse.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A9.
+- [ ] Réaliser une courte synthèse des travaux comparables à l'étranger.
+- [ ] Rédiger cette note de mise en perspective pour l'Annexe A9.
 
 ### Issue #041 — Note éthique Tome II + Avant-propos
 **Labels** : `documentation`, `ethique`, `difficulty: low`
@@ -1108,8 +1108,8 @@
 - **Artefacts générés** : Conclusion du Tome 2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Synthèse des modèles spatiaux.
-- [ ] Mettre au propre ces travaux pour constituer le document : Conclusion du Tome 2.
+- [ ] Synthétiser les apports et limites des modèles spatiaux développés.
+- [ ] Rédiger le texte de la Conclusion du Tome 2.
 
 ### Issue #071 — Annexe A1 : Code Python complet
 **Labels** : `annexe`, `code`, `difficulty: medium`
@@ -1119,8 +1119,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Scripts de clustering et graphes.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A1.
+- [ ] Rassembler les scripts générant les clusters et les réseaux.
+- [ ] Structurer ce code Python pour l'Annexe A1 du Tome 2.
 
 ### Issue #072 — Annexe A2 : Matrices de distance, similarité, flux
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1130,8 +1130,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Exports JSON/CSV.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A2.
+- [ ] Exporter les matrices mathématiques (distance, flux) sous format lisible (JSON/CSV).
+- [ ] Mettre à disposition ces jeux de données via l'Annexe A2.
 
 ### Issue #073 — Annexe A3 : Tableau comparatif méthodes de clustering
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1141,8 +1141,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Benchmarks.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A3.
+- [ ] Rassembler les différents benchmarks de vitesse et de performance algorithmique.
+- [ ] Dresser le tableau comparatif final dans l'Annexe A3.
 
 ### Issue #074 — Annexe A4 : Résultats complets des modèles
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1152,8 +1152,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : OLS, SAR, SEM outputs.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A4.
+- [ ] Compiler les logs et les résultats statistiques bruts (OLS, SAR, SEM).
+- [ ] Structurer ces sorties mathématiques pour l'Annexe A4.
 
 ### Issue #075 — Annexe A5 : Note sur les méthodes dans /exploratory/
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1163,8 +1163,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Random Forest, etc.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A5.
+- [ ] Rassembler les résultats des méthodes exploratoires (Random Forest, etc.) non retenues.
+- [ ] Rédiger la note méthodologique associée pour l'Annexe A5.
 
 ### Issue #076 — Annexe A6 : Cartes supplémentaires
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1174,8 +1174,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Cartes secondaires.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A6.
+- [ ] Regrouper les visualisations géospatiales secondaires générées par les modèles.
+- [ ] Exporter ce recueil cartographique pour l'Annexe A6.
 
 ### Issue #077 — Annexe A7 : Bibliographie méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1757,8 +1757,8 @@
 - **Artefacts générés** : Annexe A1.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Scripts dynamiques.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A1.
+- [ ] Rassembler les scripts Python dédiés aux séries temporelles et détections de ruptures.
+- [ ] Structurer le code dynamique pour l'Annexe A1 du Tome 3.
 
 ### Issue #113 — Annexe A2 : Note méthodes
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1768,8 +1768,8 @@
 - **Artefacts générés** : Annexe A2.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Justifications.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A2.
+- [ ] Réunir les justifications mathématiques des paramètres choisis pour les modèles.
+- [ ] Rédiger la note méthodologique justificative dans l'Annexe A2.
 
 ### Issue #114 — Annexe A3 : Paramètres estimés des modèles dynamiques
 **Labels** : `annexe`, `data`, `difficulty: medium`
@@ -1779,8 +1779,8 @@
 - **Artefacts générés** : Annexe A3.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : HMM, PELT.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A3.
+- [ ] Extraire les paramètres estimés par les modèles temporels (HMM, algorithme PELT).
+- [ ] Compiler ces valeurs mathématiques dans l'Annexe A3.
 
 ### Issue #115 — Annexe A4 : Résultats des simulations de réforme
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1790,8 +1790,8 @@
 - **Artefacts générés** : Annexe A4.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Tableaux de projection.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A4.
+- [ ] Agréger les tableaux de projection issus des simulations de réformes.
+- [ ] Mettre en page ces résultats chiffrés pour l'Annexe A4.
 
 ### Issue #116 — Annexe A5 : Cartes temporelles et animations
 **Labels** : `annexe`, `figure`, `difficulty: low`
@@ -1801,8 +1801,8 @@
 - **Artefacts générés** : Annexe A5.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : GIFs/Vidéos.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A5.
+- [ ] Générer et optimiser les animations (GIFs, vidéos) d'évolution des flux scolaires.
+- [ ] Constituer la galerie multimédia de l'Annexe A5.
 
 ### Issue #117 — Annexe A6 : Sources longitudinales
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1812,8 +1812,8 @@
 - **Artefacts générés** : Annexe A6.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Bibliographie data.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A6.
+- [ ] Inventorier les sources de données longitudinales exploitées.
+- [ ] Dresser la bibliographie data complète pour l'Annexe A6.
 
 ### Issue #118 — Annexe A7 : Index général de la trilogie
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1823,8 +1823,8 @@
 - **Artefacts générés** : Annexe A7.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Indexation.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A7.
+- [ ] Créer l'indexation globale croisée sur l'ensemble de la trilogie.
+- [ ] Générer l'index général final pour l'Annexe A7.
 
 ### Issue #119 — Annexe A8 : Bibliographie complète
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1834,8 +1834,8 @@
 - **Artefacts générés** : Annexe A8.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Références globales.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A8.
+- [ ] Agréger les citations et la littérature scientifique de l'ensemble du projet.
+- [ ] Formater la bibliographie exhaustive de l'Annexe A8.
 
 ### Issue #120 — Annexe A9 : Glossaire général unifié
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1845,8 +1845,8 @@
 - **Artefacts générés** : Annexe A9.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Dictionnaire de termes.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A9.
+- [ ] Unifier le dictionnaire des termes techniques (code, stats, socio) employés dans les trois tomes.
+- [ ] Rédiger le glossaire de référence global dans l'Annexe A9.
 
 ### Issue #121 — Annexe A10 : Licences de données
 **Labels** : `annexe`, `documentation`, `difficulty: low`
@@ -1856,8 +1856,8 @@
 - **Artefacts générés** : Annexe A10.
 
 - **Pistes d'exploration suggérées :**
-- [ ] Explorer et rassembler les éléments concernant : Open Data.
-- [ ] Mettre au propre ces travaux pour constituer le document : Annexe A10.
+- [ ] Vérifier la conformité légale et recenser l'ensemble des licences Open Data.
+- [ ] Rédiger le récapitulatif juridique pour l'Annexe A10.
 
 ### Issue #122 — Annexe A11 : Table de correspondance méthode
 **Labels** : `annexe`, `documentation`, `difficulty: low`
