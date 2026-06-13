@@ -12,7 +12,7 @@
 **Formule :**
 
 $$
-\Large Y_i = \alpha X_i + \beta \sum_j W_{ij} X_j + \varepsilon_i
+\Huge Y_i = \alpha X_i + \beta \sum_j W_{ij} X_j + \varepsilon_i
 $$
 *   **Quoi :** Séparation statistique entre ce que le lycée "produit" seul (effet direct $\alpha$) et ce qu'il "subit" de ses voisins (effet indirect $\beta$).
 *   **Pourquoi :** Comprendre si un lycée est un acteur autonome de la ségrégation ou s'il est simplement porté par son écosystème territorial.
@@ -30,7 +30,7 @@ $$
 **Formule :**
 
 $$
-\Large SPS_i = S_i \cdot \sum_j W_{ij} S_j
+\Huge SPS_i = S_i \cdot \sum_j W_{ij} S_j
 $$
 *   **Quoi :** Mesure de la "contagion" ségrégative d'un lieu vers ses voisins.
 *   **Pourquoi :** Identifier les "hotspots", ces lycées qui ne sont pas seulement inégalitaires, mais qui diffusent activement cette ségrégation autour d'eux.
@@ -48,7 +48,7 @@ $$
 **Formule :**
 
 $$
-\Large Bascule_i = \mathbb{1}(\beta_i \times \bar{\beta}_{voisins(i)} < 0)
+\Huge Bascule_i = \mathbb{1}(\beta_i \times \bar{\beta}_{voisins(i)} < 0)
 $$
 *   **Quoi :** Détection spatiale des ruptures de régime (où l'impact d'une variable s'inverse par rapport aux voisins).
 *   **Pourquoi :** Repérer les lignes de faille urbaines où "plus de mixité" passe d'un effet intégrateur à un effet destructeur selon le quartier.
@@ -66,7 +66,7 @@ $$
 **Formule :**
 
 $$
-\Large r_i = Y_i - \hat{Y}_i = z_{c(i)} + u_i
+\Huge r_i = Y_i - \hat{Y}_i = z_{c(i)} + u_i
 $$
 *   **Quoi :** Utilisation des erreurs prédictives (résidus) pour découvrir des classes sociales "cachées".
 *   **Pourquoi :** Traquer la ségrégation invisible. Ce que les modèles classiques n'expliquent pas (le bruit) est souvent le signal des arrangements discrets entre familles (réputations, évitements).
@@ -84,7 +84,7 @@ $$
 **Formule :**
 
 $$
-\Large Y = X\beta + \rho WY + \varepsilon
+\Huge Y = X\beta + \rho WY + \varepsilon
 $$
 *   **Quoi :** Modélisation simultanée des causes internes et de la contagion par le voisinage.
 *   **Pourquoi :** Démontrer que le niveau social d'un lycée est organiquement lié au niveau de ceux qui l'entourent (effet "spillover").
@@ -102,7 +102,7 @@ $$
 **Formule :**
 
 $$
-\Large Y_{ijk} = X_{ijk}\beta + u_{jk} + v_k + \rho Wv_k + \varepsilon_{ijk}
+\Huge Y_{ijk} = X_{ijk}\beta + u_{jk} + v_k + \rho Wv_k + \varepsilon_{ijk}
 $$
 *   **Quoi :** Emboîtement causal à 3 échelles : la classe sociale de l'élève, la politique du lycée, et le territoire environnant.
 *   **Pourquoi :** Prouver que la ségrégation est un mille-feuille où les actions individuelles se heurtent à la structure de l'établissement et à la pesanteur du quartier.
@@ -120,7 +120,7 @@ $$
 **Formule :**
 
 $$
-\Large Y_t = \alpha Y_{t-1} + \beta X_t + \gamma WY_{t-1} + \varepsilon_t
+\Huge Y_t = \alpha Y_{t-1} + \beta X_t + \gamma WY_{t-1} + \varepsilon_t
 $$
 *   **Quoi :** Chaînage causal chronologique pour analyser la ségrégation comme une trajectoire historique.
 *   **Pourquoi :** Mesurer l'inertie du système : un lycée ghettoïsé en 2010 a-t-il une chance statistique d'échapper à son destin en 2026 ?
@@ -138,7 +138,7 @@ $$
 **Formule :**
 
 $$
-\Large P_{ab}(t \to t+1) = P(C(t)=a \to C(t+1)=b)
+\Huge P_{ab}(t \to t+1) = P(C(t)=a \to C(t+1)=b)
 $$
 *   **Quoi :** Matrice de transition mesurant la probabilité pour un lycée de changer de "monde social" d'une époque à l'autre.
 *   **Pourquoi :** Visualiser la fluidité du système : l'élite s'élargit-elle ou s'enferme-t-elle ? Les classes moyennes s'effondrent-elles vers le bas ?
@@ -156,7 +156,7 @@ $$
 **Formule :**
 
 $$
-\Large d_t = 1 - \text{ARI}(C_t, C_{t-1})
+\Huge d_t = 1 - \text{ARI}(C_t, C_{t-1})
 $$ ou $D_t = \|Z_t - Z_{t-1}\|$
 *   **Quoi :** Algorithme mesurant les "séismes" dans la composition du système éducatif.
 *   **Pourquoi :** Démontrer que la ségrégation n'évolue pas de manière lisse, mais procède par "chocs" brutaux (ex: une réforme, une crise démographique) qui redessinent la carte scolaire.
@@ -174,7 +174,7 @@ $$ ou $D_t = \|Z_t - Z_{t-1}\|$
 **Formule :**
 
 $$
-\Large \Delta_t = d(D_t, D_{t-1})
+\Huge \Delta_t = d(D_t, D_{t-1})
 $$ et l'Indice Global $U = 1 - \frac{1}{T}\sum_t \Delta_t$
 *   **Quoi :** Empilement de dendrogrammes (arbres de classification) année par année pour filmer le mouvement de la "distance sociale" entre les lycées.
 *   **Pourquoi :** Visualiser l'ossature profonde de la reproduction sociale : à quel point la hiérarchie entre l'élite et le populaire est-elle figée dans le temps ($U \approx 1$) ou mouvante ?
@@ -192,7 +192,7 @@ $$ et l'Indice Global $U = 1 - \frac{1}{T}\sum_t \Delta_t$
 **Formule :**
 
 $$
-\Large S_i(t+1) = S_i(t) + \alpha X_i(t) + \beta W S(t) - \gamma C_i(t) + \varepsilon_i(t)
+\Huge S_i(t+1) = S_i(t) + \alpha X_i(t) + \beta W S(t) - \gamma C_i(t) + \varepsilon_i(t)
 $$
 *   **Quoi :** Équation de mouvement où un lycée "grimpe" ou "chute" dans le prestige scolaire comme une particule dans un champ de forces.
 *   **Pourquoi :** Prouver mathématiquement qu'un établissement n'est pas maître de son destin : sa réussite ($\alpha X$) est freinée par les contraintes territoriales ($\gamma C$) et tiraillée par la concurrence ou la déchéance de ses voisins ($\beta W S$).
@@ -210,7 +210,7 @@ $$
 **Formule :**
 
 $$
-\Large F_{ij} = BC_{ij} \cdot (1 - w_{ij})
+\Huge F_{ij} = BC_{ij} \cdot (1 - w_{ij})
 $$
 *   **Quoi :** Algorithme de détection des "ponts de fragilité" dans le réseau scolaire.
 *   **Pourquoi :** Cartographier les "lignes de faille" : identifier les liens géographiques qui, s'ils sautent, cassent définitivement la mixité sociale et scindent le territoire en ghettos isolés.
@@ -228,7 +228,7 @@ $$
 **Formule :**
 
 $$
-\Large R_{ab} = \frac{T_{ab}}{E_{ab}}
+\Huge R_{ab} = \frac{T_{ab}}{E_{ab}}
 $$ et $C_{ab} = R_{ab} \cdot \min(p_a, p_b)$
 *   **Quoi :** Matrice isolant les flux d'élèves ou les transferts de similarité anormalement élevés entre deux "mondes sociaux" différents.
 *   **Pourquoi :** Identifier les "ascenseurs sociaux" ou "toboggans de déclassement" : ces canaux souterrains par lesquels la mixité transite miraculeusement.
@@ -246,7 +246,7 @@ $$ et $C_{ab} = R_{ab} \cdot \min(p_a, p_b)$
 **Formule :**
 
 $$
-\Large I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2}
+\Huge I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2}
 $$ et $F_{territorial} = 1 - I_{Moran}$
 *   **Quoi :** Mesure de la "ghettoïsation spatiale" des clusters sociaux.
 *   **Pourquoi :** Prouver que la ségrégation n'est pas qu'un phénomène abstrait de notes, mais une réalité géographique (des blocs physiques de lycées populaires collés les uns aux autres).
@@ -264,7 +264,7 @@ $$ et $F_{territorial} = 1 - I_{Moran}$
 **Formule :**
 
 $$
-\Large H(x) = -\sum_k P_k(x) \log P_k(x)
+\Huge H(x) = -\sum_k P_k(x) \log P_k(x)
 $$ et $F_t = \int H_t(x) dx$
 *   **Quoi :** Carte d'entropie qui remplace la ligne de fracture "pure et dure" par des "zones d'incertitude et de mélange" via l'estimation par noyau KDE.
 *   **Pourquoi :** Visualiser la ségrégation comme un nuage de gaz plutôt que comme un mur de briques : traquer les zones "grises" où le système hésite, se mélange, et offre de vraies opportunités de mixité.
@@ -282,7 +282,7 @@ $$ et $F_t = \int H_t(x) dx$
 **Formule :**
 
 $$
-\Large C_i = 1 - \frac{\text{Var}(\tilde{S}_i, \tilde{A}_i, \tilde{F}_i)}{3}
+\Huge C_i = 1 - \frac{\text{Var}(\tilde{S}_i, \tilde{A}_i, \tilde{F}_i)}{3}
 $$
 *   **Quoi :** Mesure de l'alignement entre le niveau social ($S$), la performance ($A$) et l'attractivité ($F$) d'un lycée.
 *   **Pourquoi :** Identifier les "anomalies du système" (les lycées paradoxaux qui réussissent sans le bon profil social, ou qui échouent malgré l'entre-soi bourgeois) par rapport aux blocs scolaires cohérents.
@@ -300,7 +300,7 @@ $$
 **Formule :**
 
 $$
-\Large C(k) = \alpha S(k) + \beta G(k) + \gamma B(k) + \delta S_{stab}(k)
+\Huge C(k) = \alpha S(k) + \beta G(k) + \gamma B(k) + \delta S_{stab}(k)
 $$
 *   **Quoi :** Vote multi-critères (Silhouette, Gap Statistic, Inertie, Bootstrap) pour choisir le nombre "réaliste" de classes sociales.
 *   **Pourquoi :** Éviter de choisir un $k$ arbitraire ou mathématiquement instable. Prouver que la segmentation retenue est la vraie ossature de la société, résiliente aux perturbations.
@@ -318,7 +318,7 @@ $$
 **Formule :**
 
 $$
-\Large A_i = \text{Entropie}(\{C_i^{(m)}\}_m)
+\Huge A_i = \text{Entropie}(\{C_i^{(m)}\}_m)
 $$ et Indice Global $F = 1 - \frac{1}{N}\sum A_i$
 *   **Quoi :** Repérage des établissements qui sont classés différemment selon qu'on utilise KMeans, CAH, Louvain ou GMM.
 *   **Pourquoi :** Les divergences entre IA ne sont pas des bugs, ce sont des marqueurs de "zones frontières" ou de "lycées de transition" où plusieurs logiques sociales s'affrontent.
@@ -336,7 +336,7 @@ $$ et Indice Global $F = 1 - \frac{1}{N}\sum A_i$
 **Formule :**
 
 $$
-\Large B_{ij} = d_{ij} - d_{ij}^U
+\Huge B_{ij} = d_{ij} - d_{ij}^U
 $$ et Violation $V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))$
 *   **Quoi :** Détection des "arêtes" géographiques qui relient deux lycées censés être séparés par un gouffre dans le dendrogramme social.
 *   **Pourquoi :** Identifier les "exceptions scolaires" : les ponts ultramétriques révèlent quand le système de reproduction en arbre est piraté ou court-circuité par le réseau physique de la ville.
@@ -354,7 +354,7 @@ $$ et Violation $V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))$
 **Formule :**
 
 $$
-\Large SG_{ij} = \alpha B_{ij}^{\text{HMM}} + \beta B_{ij}^{\text{GNN}} + \gamma B_{ij}^{U} + \delta B_{ij}^{C}
+\Huge SG_{ij} = \alpha B_{ij}^{\text{HMM}} + \beta B_{ij}^{\text{GNN}} + \gamma B_{ij}^{U} + \delta B_{ij}^{C}
 $$
 *   **Quoi :** Modèle génératif colossal fusionnant le temps (Hidden Markov Model), le réseau (GNN), la hiérarchie (Ultramétrie) et l'inférence causale (DAG) pour isoler les goulets d'étranglement suprêmes.
 *   **Pourquoi :** Trouver les quelques lycées ou trajets qui constituent les véritables "verrous structurels" du système éducatif national (ceux qui contrôlent toute la mobilité).
@@ -372,7 +372,7 @@ $$
 **Formule :**
 
 $$
-\Large \Pi = \frac{P_{raw}}{C+\epsilon}
+\Huge \Pi = \frac{P_{raw}}{C+\epsilon}
 $$ avec $P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U$ et $C = \sum_{i,j} |d_{ij}^U - E[d^U]|$
 *   **Quoi :** Évaluation de l'équilibre parfait entre la circulation réelle des élèves (mobilité/flux) et le maintien d'une lisibilité du système (hiérarchie).
 *   **Pourquoi :** Démontrer qu'un système idéal n'est ni totalement fermé (ségrégation pure) ni totalement explosé (mixité désorganisée où plus aucune filière ne veut rien dire), mais à un point d'équilibre $\Pi^* = \text{argmax}(\text{mobilité} - \lambda \cdot \text{désordre})$.
@@ -390,7 +390,7 @@ $$ avec $P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U$ et $C = \sum_{i,j} |d_
 **Formule :**
 
 $$
-\Large \text{IFC}_{ij} = \beta_0 + \beta_1 X_{1,ij} + \beta_2 X_{2,ij} + \beta_3 X_{3,ij} + \beta_4 X_{4,ij} + u_j + \epsilon_{ij}
+\Huge \text{IFC}_{ij} = \beta_0 + \beta_1 X_{1,ij} + \beta_2 X_{2,ij} + \beta_3 X_{3,ij} + \beta_4 X_{4,ij} + u_j + \epsilon_{ij}
 $$
 *   **Quoi :** Modèle multiniveau rattaché à un DAG pour désenchevêtrer les causes de la fragmentation scolaire (IFC).
 *   **Pourquoi :** L'IFC n'est pas qu'un symptôme. Il est l'effet de l'IPS ($X_1$), de la sélectivité ($X_2$), de l'offre ($X_3$) et du transport ($X_4$), sous l'effet parapluie du territoire ($u_j$).
@@ -408,7 +408,7 @@ $$
 **Formule :**
 
 $$
-\Large B^* = \text{argmax}(W + T - \lambda D^U)
+\Huge B^* = \text{argmax}(W + T - \lambda D^U)
 $$
 *   **Quoi :** Identification des "continents sociaux" en fusionnant la similarité d'IPS ($W$), la tuyauterie des flux ($T$) et l'éloignement dans l'arbre social ($D^U$).
 *   **Pourquoi :** Dépasser les communes administratives. Trouver les vrais "territoires vécus" par les élèves.
@@ -426,7 +426,7 @@ $$
 **Formule :**
 
 $$
-\Large SP_{ij} = \frac{P_{ij} \cdot C_{ij}^{(bet)} \cdot U_{ij}}{\sum_{k,l} P_{kl}}
+\Huge SP_{ij} = \frac{P_{ij} \cdot C_{ij}^{(bet)} \cdot U_{ij}}{\sum_{k,l} P_{kl}}
 $$
 *   **Quoi :** Détection des arêtes hyper-critiques qui lient non pas deux lycées, mais deux *Mondes* (Blocs).
 *   **Pourquoi :** Trouver le "Golden Gate" de la mobilité scolaire. Ce sont les points névralgiques du système qui, s'ils tombent, scindent la société en deux.
@@ -444,7 +444,7 @@ $$
 **Formule :**
 
 $$
-\Large F_c = \text{Var}_{global}(\text{IPS}_c) - \sum_{i \in c} \text{Var}_{interne}(\text{IPS}_i)
+\Huge F_c = \text{Var}_{global}(\text{IPS}_c) - \sum_{i \in c} \text{Var}_{interne}(\text{IPS}_i)
 $$ et $HS_c = (-F_c) \cdot S_c$
 *   **Quoi :** Détection des communes qui "paraissent" mixtes (bonne moyenne, bonne variance globale) mais qui sont en réalité des archipels d'écoles pures et isolées (variance interne très faible).
 *   **Pourquoi :** Détruire le mythe des "villes mixtes" où le public et le privé cohabitent géographiquement mais s'ignorent scolairement.
@@ -462,7 +462,7 @@ $$ et $HS_c = (-F_c) \cdot S_c$
 **Formule :**
 
 $$
-\Large \Delta T_t = \alpha X_1 + \beta X_2 + \gamma X_3 + \delta T_{t-1} + \eta Z_t
+\Huge \Delta T_t = \alpha X_1 + \beta X_2 + \gamma X_3 + \delta T_{t-1} + \eta Z_t
 $$
 *   **Quoi :** Équation de dynamique modélisant l'évolution de la tuyauterie du système (les flux de transition) au fil du temps.
 *   **Pourquoi :** La ségrégation est path-dependent (dépendante de son passé). Prouver l'inertie $I = \text{corr}(T_t, T_{t+1})$.
@@ -480,7 +480,7 @@ $$
 **Formule :**
 
 $$
-\Large IAS_i = \alpha A_i + \beta S_i + \gamma F_i - \delta C_i
+\Huge IAS_i = \alpha A_i + \beta S_i + \gamma F_i - \delta C_i
 $$
 *   **Quoi :** Modèle structurel distinguant les lycées qui font leur propre loi (Hubs ou Enclaves) de ceux qui subissent la démographie locale.
 *   **Pourquoi :** Dépasser le simple clivage "Public vs Privé".
@@ -498,7 +498,7 @@ $$
 **Formule :**
 
 $$
-\Large Y_i = E_i^{quartier} + E_i^{\text{r\acute{e}seau}} + \epsilon_i
+\Huge Y_i = E_i^{quartier} + E_i^{\text{r\acute{e}seau}} + \epsilon_i
 $$ et l'interaction $E_i^{indirect} = E_i^{quartier} \times E_i^{\text{r\acute{e}seau}}$
 *   **Quoi :** Modèle spatial multiniveau isolant ce qui vient du "sol" (voisinage) et ce qui vient des "câbles" (connexions).
 *   **Pourquoi :** Démontrer que le réseau scolaire peut soit agir comme amortisseur de la fatalité territoriale, soit comme amplificateur de la ségrégation de quartier.
@@ -530,7 +530,7 @@ $$ et l'interaction $E_i^{indirect} = E_i^{quartier} \times E_i^{\text{r\acute{e
 **Formule :**
 
 $$
-\Large Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i
+\Huge Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i
 $$ avec un champ spatial $u(s_i) \sim GP(0, K(s_i,s_j))$.
 *   **Quoi :** Modèle estimant des effets causaux qui varient dans l'espace et de manière non-linéaire (effets seuils), tout en purgeant l'autocorrélation spatiale.
 *   **Pourquoi :** Prouver que le système scolaire n'est pas additif (Monde A linéaire) : l'effet du privé ou de l'IPS n'est pas constant, il "sature" ou a des effets plafonds.
@@ -562,7 +562,7 @@ $$ avec un champ spatial $u(s_i) \sim GP(0, K(s_i,s_j))$.
 **Formule :**
 
 $$
-\Large P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k)
+\Huge P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k)
 $$ avec un modèle mixte $Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i$. Entropie $H_i = \text{entropy}(P(Z_i))$.
 *   **Quoi :** Découverte de variables latentes $Z_i$ révélant la coexistence de différents "Régimes" (Monde élite autonome, concurrentiel, territorial, transition, fragmenté).
 *   **Pourquoi :** Le système n'est pas un continuum social simple ; c'est une superposition de mondes qui ont chacun leurs propres règles de gravité sociale.
@@ -602,7 +602,7 @@ $$ avec un modèle mixte $Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i$. Entropi
 **Formule :**
 
 $$
-\Large \text{Var}(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid}
+\Huge \text{Var}(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid}
 $$ avec un Indice de Structuration Globale $SCI = \text{ICC}_{zone} + \text{ICC}_{school} + \text{ICC}_{spatial}$.
 *   **Quoi :** Isoler précisément d'où vient l'inégalité : du "quartier" (zone), du "lycée" (institution), du "voisinage" (diffusion/contagion spatiale), ou du résidu (le bruit / blind spot).
 *   **Pourquoi :** Répondre définitivement au débat public : "Le problème vient-il du ghetto géographique, du choix de l'école, ou de l'effet de mode du réseau local ?".
@@ -620,7 +620,7 @@ $$ avec un Indice de Structuration Globale $SCI = \text{ICC}_{zone} + \text{ICC}
 **Formule :**
 
 $$
-\Large \sum_{i \notin C_k, j \in C_k} T_{ij} \gg \sum_{i \in C_k, j \notin C_k} T_{ij}
+\Huge \sum_{i \notin C_k, j \in C_k} T_{ij} \gg \sum_{i \in C_k, j \notin C_k} T_{ij}
 $$. Score d'absorption : $A_k = \frac{In_k}{Out_k} + \epsilon$. Centralité propre (Rayon spectral) : $\rho(T_{C_k}) > 1$.
 *   **Quoi :** Détection de groupes d'établissements qui agissent comme des trous noirs dans le réseau de mobilité (attirent massivement, ne laissent pas repartir).
 *   **Pourquoi :** Dépasser le clustering statique pour trouver les "puits structurels" qui déforment tout le système par leur gravité et stabilisent les trajectoires de l'élite.
@@ -638,7 +638,7 @@ $$. Score d'absorption : $A_k = \frac{In_k}{Out_k} + \epsilon$. Centralité prop
 **Formule :**
 
 $$
-\Large P(\tau_i) = \prod_t P(s_{t+1} \mid s_t)
+\Huge P(\tau_i) = \prod_t P(s_{t+1} \mid s_t)
 $$. Score d'anomalie : $A(\tau_i) = -\log P(\tau_i)$. Centralité de transition rare : $O_i = \sum_t \frac{1}{T_{s_t s_{t+1}}}$.
 *   **Quoi :** Repérage des trajectoires d'élèves qui violent les chaînes de Markov standard (ex: sauts longue distance, ascensions impossibles, chutes brutales).
 *   **Pourquoi :** Une trajectoire rare n'est pas une "exception statistique" à ignorer, c'est la signature d'un réseau occulte (contournement institutionnel, réseau privé, filière secrète).
@@ -670,7 +670,7 @@ $$. Score d'anomalie : $A(\tau_i) = -\log P(\tau_i)$. Centralité de transition 
 **Formule :**
 
 $$
-\Large Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t
+\Huge Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t
 $$. Causalité spatiale des ruptures : $\Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta Y_{j,t}$.
 *   **Quoi :** Démêlage économétrique des points de rupture ($\tau^* = \text{argmax}_t \Delta L(t)$) pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
 *   **Pourquoi :** Montrer que certaines politiques prétendument "révolutionnaires" ne font que surfer sur des vagues démographiques, tandis que des réformes invisibles fracturent vraiment le système.
@@ -702,7 +702,7 @@ $$. Causalité spatiale des ruptures : $\Delta Y_{i,t} = \rho \sum_j W_{ij} \Del
 **Formule :**
 
 $$
-\Large \Delta S_{i,t} = S_{i,t} - S_{i,t-1}
+\Huge \Delta S_{i,t} = S_{i,t} - S_{i,t-1}
 $$. Indice de dynamique spatiale : $T_i = \frac{\bar{\Delta S_i}}{\text{Var}(\Delta S_i) + \epsilon}$. Champ $T(s) = f(\bar{\Delta S}, \text{Var}(\Delta S))$.
 *   **Quoi :** Projection spatiale des lycées non plus comme des "niveaux fixes", mais comme des vecteurs de vitesse (qui monte, qui chute, qui vibre).
 *   **Pourquoi :** Les familles choisissent l'école sur son "momentum", pas sur son état présent. Un lycée moyen en ascension est plus attractif qu'un bon lycée en chute libre.
