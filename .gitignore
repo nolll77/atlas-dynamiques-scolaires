@@ -30,7 +30,7 @@ htmlcov/
 # Figures générées
 figures/output/
 
-# Runs expériences
+# Runs
 runs/
 
 # Notebooks

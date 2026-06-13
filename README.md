@@ -15,7 +15,7 @@
 
 ```bash
 # Cloner
-git clone git@github.com:nolll77/atlas-dynamiques-scolaires.git
+git clone git@github.com:nolll/atlas-dynamiques-scolaires.git
 cd atlas-dynamiques-scolaires
 
 # Installer l'environnement

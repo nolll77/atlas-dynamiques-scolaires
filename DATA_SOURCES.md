@@ -10,5 +10,5 @@
 | Accessibilité transport | data.iledefrance-mobilites.fr | GTFS | ODbL | temps_acces_gare |
 | Contours IRIS | geoservices.ign.fr | Shapefile | Licence IGN | geometry |
 
-> ⚠️ **Note révision IPS 2021** : La méthodologie de calcul de l'IPS a été révisée en 2021.
-> Les comparaisons avant/après cette date doivent tenir compte de cette discontinuité.
+⚠️ **Note révision IPS 2021** : La méthodologie de calcul de l'IPS a été révisée en 2021.
+Les comparaisons avant/après cette date doivent tenir compte de cette discontinuité.

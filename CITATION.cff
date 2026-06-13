@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Ching"
     given-names: "Noël"
-repository-code: "https://github.com/nolll77/atlas-dynamiques-scolaires"
-url: "https://nolll77.github.io/atlas-dynamiques-scolaires"
+repository-code: "https://github.com/nolll/atlas-dynamiques-scolaires"
+url: "https://nolll.github.io/atlas-dynamiques-scolaires"
 abstract: >
   Infrastructure ouverte de recherche computationnelle sur les dynamiques
   de ségrégation scolaire en Île-de-France. Analyse de 100 lycées franciliens
@@ -18,4 +18,4 @@ keywords:
   - "science des réseaux"
 license: MIT
 version: 0.1.0
-date-released: "2026-06-12"
+date-released: "2026-06-13"

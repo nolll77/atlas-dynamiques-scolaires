@@ -1,8 +1,8 @@
 site_name: "Atlas des Dynamiques Scolaires"
 site_author: "Noël Ching"
-site_url: "https://nolll77.github.io/atlas-dynamiques-scolaires"
-repo_url: "https://github.com/nolll77/atlas-dynamiques-scolaires"
-repo_name: "nolll77/atlas-dynamiques-scolaires"
+site_url: "https://nolll.github.io/atlas-dynamiques-scolaires"
+repo_url: "https://github.com/nolll/atlas-dynamiques-scolaires"
+repo_name: "nolll/atlas-dynamiques-scolaires"
 
 theme:
   name: material
