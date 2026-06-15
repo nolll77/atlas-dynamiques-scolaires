@@ -1,9 +1,9 @@
-# Guide de Contribution (À lire obligatoirement)
+# Guide de Contribution
 
 Bienvenue dans le dépôt de **l'Atlas des Dynamiques Scolaires**. 
 
 Ce projet open-source est atypique : il se situe à la croisée de la **sociologie quantitative**, de la **géographie spatiale** et du **machine learning**. 
-Pour garantir la rigueur scientifique de l'ouvrage final, nous imposons à tous les contributeurs de lire et de respecter les principes d'architecture et d'épistémologie détaillés ci-dessous.
+Pour garantir la rigueur scientifique de l'ouvrage final, nous invitons tous les contributeurs à lire et à s'approprier les principes d'architecture et d'épistémologie détaillés ci-dessous.
 
 ---
 
@@ -22,11 +22,11 @@ Vous remarquerez que les issues vous demandent parfois de placer votre code dans
 
 ---
 
-## 2. Règle Éthique : Aucune imputation d'intention
+## 2. Cadre Éthique : Neutralité et absence d'imputation d'intention
 
-L'Atlas décrit des **structures mathématiques**, il ne juge pas les comportements humains.
-- Si un algorithme (ex: Louvain ou CAH) isole un groupe de lycées très favorisés, nous le décrivons comme un "cluster statistiquement homogène". 
-- **Interdiction stricte :** Vous ne devez jamais écrire dans vos Pull Requests, vos commentaires de code ou vos analyses que *"tel lycée trie ses élèves"* ou *"telle direction exclut les pauvres"*. Le modèle montre des *résultats*, il ne lit pas dans les pensées des acteurs. L'absence de mixité est traitée comme un phénomène systémique (souvent co-produit par le marché immobilier), et non comme une volonté malveillante locale.
+L'Atlas décrit des **structures mathématiques**, il s'abstient de juger les comportements humains.
+- Si un algorithme (ex: Louvain ou CAH) isole un groupe de lycées très favorisés, nous le décrivons de manière neutre comme un "cluster statistiquement homogène". 
+- **Principe de précaution :** Il est convenu de ne pas prêter d'intentions aux acteurs dans le code, les Pull Requests ou les analyses (par exemple, en évitant d'écrire que *"tel lycée trie ses élèves"* ou *"telle direction exclut les pauvres"*). Le modèle montre des *résultats*, il ne lit pas dans les pensées. L'absence de mixité est donc traitée comme un phénomène systémique (souvent co-produit par le marché immobilier), sans préjuger d'une volonté locale.
 
 ---
 
@@ -38,9 +38,9 @@ Ce dépôt sert à générer le socle mathématique, statistique et visuel d'une
 
 ---
 
-## 4. Standard de Création des Issues (Règles "Anti-Subordination")
+## 4. Standard de Création des Issues (Cadre de Collaboration)
 
-Que ce soit pour ouvrir un ticket sur une nouvelle analyse, un bug, ou une tâche d'infrastructure, **toute nouvelle issue doit obligatoirement respecter ce format standard**. Il garantit le respect de la règle n°3 et évite les malentendus.
+Que ce soit pour ouvrir un ticket sur une nouvelle analyse, un bug, ou une tâche d'infrastructure, **nous vous invitons à suivre ce format standard pour toute nouvelle issue**. Il garantit le respect de la règle n°3 et évite les malentendus.
 
 **1. Le système de Labels croisés**
 Toute issue doit porter deux types d'étiquettes :
@@ -50,23 +50,23 @@ Toute issue doit porter deux types d'étiquettes :
 **2. Le Triptyque de Description (Template)**
 Ne parlez jamais d'"Objectifs" ou d'"Actions" (qui sonnent comme des ordres). Utilisez ce gabarit exact :
 
-- **Contexte Analytique :** *Pourquoi fait-on cette issue ?* Si l'issue fait appel à des concepts complexes (HMM, Variété Riemannienne, CAH), il est obligatoire de les "vulgariser" ici de manière pédagogique pour qu'un développeur comprenne le but sociologique sans être un expert du domaine.
+- **Contexte Analytique :** *Pourquoi fait-on cette issue ?* Si l'issue fait appel à des concepts complexes (HMM, Variété Riemannienne, CAH), il est recommandé de les "vulgariser" ici de manière pédagogique pour que chaque contributeur puisse comprendre le but sociologique sans être un expert du domaine.
 - **Périmètre Technique (Ouvert aux contributions) :** *Que doit faire la machine ?* Lister clairement les packages Python attendus, les datasets croisés (ex: IPS vs DVF) et le dossier cible (`src/` ou `exploratory/`).
 - **Périmètre Éditorial (Réservé à l'Auteur) :** *Que fera l'auteur de ce code ?* Préciser ici la manière dont les résultats seront exploités dans la narration finale, en rappelant les garde-fous éthiques.
 
 ---
 
-## 5. Experiment Tracking (MLflow Obligatoire)
+## 5. Experiment Tracking (Utilisation de MLflow)
 
-Toute issue impliquant la création ou la modification d'un algorithme mathématique (clustering, modèle de Markov, DAG, etc.) doit impérativement utiliser **MLflow** pour enregistrer ses résultats. L'infrastructure est déjà en place (cf. Issue #003).
+Toute issue impliquant la création ou la modification d'un algorithme mathématique (clustering, modèle de Markov, DAG, etc.) s'appuie sur **MLflow** pour enregistrer ses résultats. L'infrastructure est déjà en place (cf. Issue #003).
 
-Dans vos scripts Python, vous devez :
+Dans vos scripts Python, il est d'usage de :
 1. Importer `mlflow`.
 2. Logger les hyperparamètres avec `mlflow.log_param()` (ex: nombre de clusters, hyperparamètres du modèle).
 3. Logger les métriques avec `mlflow.log_metric()` (ex: score de silhouette, modularité).
 
-Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclut une checklist que vous devrez valider avant de soumettre votre code.
+Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclut une checklist indicative pour vous guider avant de soumettre votre code.
 
 ---
 
-Merci d'avance pour votre expertise technique. En respectant ces règles, vous contribuez à faire de ce projet une référence d'honnêteté intellectuelle et de rigueur open-source !
+Merci d'avance pour votre expertise technique. En suivant ces conventions de collaboration, vous contribuez à faire de ce projet une référence d'honnêteté intellectuelle et de rigueur open-source !
