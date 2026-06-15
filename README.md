@@ -4,22 +4,38 @@
 [![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
 [![Onboarding](https://img.shields.io/badge/Parcours-Collaborateur-orange.svg)](PARCOURS_COLLABORATEUR.md)
 
-**NOËL CHING** | Infrastructure ouverte de recherche computationnelle
+**Infrastructure open source de recherche computationnelle sur les dynamiques scolaires.**
 
-> ⚠️ Ce projet mesure des **associations statistiques**. Il ne démontre pas de causalité
-> et ne formule pas de recommandations. Voir [docs/CAUSALITY_LIMITS.md](docs/CAUSALITY_LIMITS.md).
+Ce projet construit des pipelines de données reproductibles pour analyser les inégalités et structures du système éducatif à partir de données statistiques, géographiques et temporelles.
 
-## Structure de la trilogie
+> ⚠️ Les résultats produits sont des analyses statistiques associatives. Ils ne démontrent pas de causalité et ne doivent pas être interprétés comme des recommandations.
 
-- **Tome I** — La Carte et le Territoire : ségrégation spatiale, IPS, géographie scolaire
-- **Tome II** — Les Réseaux et les Mondes : graphes, communautés, mobilité scolaire
-- **Tome III** — Le Temps et la Réforme : dynamiques temporelles, simulations
+## Ce que produit ce projet
+
+L’Atlas génère :
+
+- des indicateurs de ségrégation scolaire (ex : IPS, distributions socio-économiques),
+- des représentations spatiales des dynamiques éducatives,
+- des graphes de relations entre établissements,
+- des analyses temporelles des évolutions du système scolaire,
+- des figures et datasets reproductibles.
+
+## Structure du projet
+
+Le projet est organisé autour de trois axes analytiques :
+
+- **Tome I — Carte et territoire**
+  Analyse spatiale et socio-économique des établissements scolaires.
+- **Tome II — Réseaux et structures**
+  Graphes, communautés et interactions entre établissements.
+- **Tome III — Temps et transformations**
+  Dynamiques temporelles, réformes et évolutions du système.
 
 ## Démarrage rapide
 
 ```bash
-# Cloner
-git clone git@github.com:nolll/atlas-dynamiques-scolaires.git
+# Cloner le dépôt
+git clone git@github.com:nolll77/atlas-dynamiques-scolaires.git
 cd atlas-dynamiques-scolaires
 
 # Installer l'environnement
@@ -32,10 +48,28 @@ make tests
 make figures
 ```
 
-## Citer ce travail
+## Organisation du code
 
-Voir [CITATION.cff](CITATION.cff) ou utiliser le bouton "Cite this repository" sur GitHub.
+- `src/atlas/` → code de production
+- `exploratory/` → analyses expérimentales
+- `config/` → configuration des pipelines
+- `tests/` → tests unitaires et validation
+
+## Citer ce projet
+
+Voir [CITATION.cff](CITATION.cff) ou utiliser la fonctionnalité GitHub “Cite this repository”.
+
+## Contribution
+
+Les contributions sont les bienvenues.
+
+Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour le workflow complet : issues → fork → branche → PR → review. Vous pouvez également suivre notre [Parcours Contributeur pas-à-pas](PARCOURS_COLLABORATEUR.md).
 
 ## Licence
 
-Code : [MIT](LICENSE) | Figures et textes : [CC-BY 4.0](LICENSE_CONTENT)
+Code : [MIT](LICENSE)
+Figures et textes : [CC-BY 4.0](LICENSE_CONTENT)
+
+## Philosophie
+
+Ce projet vise à rendre les structures éducatives observables, reproductibles et analysables à partir de données ouvertes et transparentes.
