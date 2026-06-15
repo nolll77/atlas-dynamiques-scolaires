@@ -14,7 +14,7 @@ En règle générale, aucune contribution logicielle ne sera intégrée à l'Atl
 
 1. Elle initialise l'environnement de test via la bibliothèque `pytest`.
 2. Elle exécute les algorithmes et les formules mathématiques du projet en utilisant des jeux de données fictifs et contrôlés.
-3. Elle vérifie que les résultats générés par le code correspondent *exactement* aux axiomes théoriques définis dans le document fondateur `docs/SOCLE_1_MATHEMATIQUES.md`.
+3. Elle vérifie que les résultats générés par le code correspondent *exactement* aux axiomes théoriques définis dans le document fondateur [docs/SOCLE_1_MATHEMATIQUES.md](../docs/SOCLE_1_MATHEMATIQUES.md).
 
 ## Structure des tests
 
