@@ -17,24 +17,6 @@ Pour les contributions importantes (nouveau pipeline de données, évolution de 
 
 ---
 
-## 🧠 Comprendre notre fonctionnement : La Désynchronisation
-
-On pourrait légitimement se demander : *"Si on a déjà décrit tout ce qu'il faut faire dans les Issues GitHub, à quoi servent ces matrices de couverture et ces fichiers de tests remplis de code vide ou ignoré ?"*
-
-La réponse tient en un concept clé de notre architecture : **La désynchronisation**.
-Dans un projet collaboratif d'envergure, nous devons séparer strictement l'intention sociologique de l'exécution mathématique. Voici la différence fondamentale entre nos trois piliers :
-
-1. **L'Issue GitHub : Le "Quoi" (L'Organisation sociologique)**
-   L'Issue (ex: *#025 — Chapitre 17 : L'indice de dissimilarité spatial*) donne le **contexte sociologique**. Elle indique au contributeur : *"Pour que l'auteur puisse écrire ce chapitre, nous avons besoin de calculer l'Indice de Duncan sur les communes"*. C'est un cahier des charges textuel.
-
-2. **Le Test `SKIPPED` : Le "Comment" (L'Ingénierie du Code)**
-   L'Issue ne dit pas au contributeur *comment* il doit nommer ses fonctions ou structurer ses données. Sans règles, le code deviendrait un chaos où chaque bénévole imposerait son propre style. C'est là qu'intervient le Test unitaire (ex: `test_indice_dissimilarite_duncan`). Il agit comme le **cahier des charges mathématique**. Il force le contributeur à respecter l'architecture globale : *"Ta fonction doit s'appeler exactement comme ça, prendre ces matrices en entrée, et le résultat doit obligatoirement être positif"*.
-
-3. **La Matrice de Couverture : Le Tableau de Bord (Management)**
-   Si un contributeur arrive sur le dépôt dans 6 mois, face à 120 Issues ouvertes, il sera perdu : *"Qu'est-ce qui a déjà été codé par d'autres bénévoles ?"* La Matrice de Couverture (ex: `MATRICE_DE_COUVERTURE_SOCLE_1.md`) est l'unique boussole technique en temps réel. Un statut ⚠️ `Skipped` signifie que l'algorithme manque. Un statut ✅ `Implémenté` indique que la brique est prête et intégrée. Vous pouvez donc avancer en toute autonomie.
-
----
-
 ## Étape 1 : Choisir une Issue
 
 Sur la page **Issues** du dépôt GitHub, vous trouverez la liste des tâches ouvertes.
