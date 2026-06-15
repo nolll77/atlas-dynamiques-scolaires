@@ -150,6 +150,18 @@ Les contributions sont soumises à un pipeline de validation strict :
 - stabilité bootstrap des indices
 - validation MAUP (multi-échelle)
 
+## Organisation du code
+
+- `data/` → données brutes et transformées
+- `src/` → code principal (pipelines, modèles)
+- `exploratory/` → notebooks et analyses expérimentales
+- `figures/` → visualisations et cartes
+- `tests/` → tests de validation
+- `runs/` → suivi des expériences
+- `config/` → paramètres de configuration
+- `docs/` → documentation
+- `paper_arxiv/` → version recherche (papier scientifique)
+
 ## Experiment tracking
 
 Chaque exécution produit un fichier dans `runs/` :
