@@ -1,75 +1,232 @@
-# Vers un Atlas des Dynamiques Scolaires
+# 📘 Atlas des Dynamiques Scolaires
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
 [![Onboarding](https://img.shields.io/badge/Parcours-Collaborateur-orange.svg)](PARCOURS_COLLABORATEUR.md)
 
-**Infrastructure open source de recherche computationnelle sur les dynamiques scolaires.**
+**Un système reproductible d’analyse spatio-temporelle des établissements scolaires en Île-de-France**
 
-Ce projet construit des pipelines de données reproductibles pour analyser les inégalités et structures du système éducatif à partir de données statistiques, géographiques et temporelles.
+## 🧭 Présentation
 
-> ⚠️ Les résultats produits sont des analyses statistiques associatives. Ils ne démontrent pas de causalité et ne doivent pas être interprétés comme des recommandations.
+Ce projet construit un atlas computationnel des dynamiques scolaires, combinant :
 
-## Ce que produit ce projet
+- données socio-économiques (INSEE, IRIS)
+- données scolaires (IPS, résultats bac, IVAL)
+- données immobilières (DVF)
+- données de mobilité (IDF Mobilités)
+- géographie fine des établissements (lat/lon)
 
-L’Atlas génère :
+L’objectif est de produire une représentation multi-dimensionnelle, reproductible et structurée du système scolaire, en combinant :
 
-- des indicateurs de ségrégation scolaire (ex : IPS, distributions socio-économiques),
-- des représentations spatiales des dynamiques éducatives,
-- des graphes de relations entre établissements,
-- des analyses temporelles des évolutions du système scolaire,
-- des figures et datasets reproductibles.
+- statistiques spatiales
+- analyse de réseaux
+- modèles dynamiques
+- décomposition de variance
+- clustering et segmentation temporelle
 
-## Structure du projet
+> ⚠️ **Positionnement scientifique**
+> 
+> Ce projet est :
+> - descriptif et analytique
+> - basé sur des corrélations structurelles
+> - sans interprétation causale directe par défaut
+> - reproductible (pipeline + tests + tracking)
+> 
+> Toute interprétation doit respecter le cadre méthodologique défini dans [docs/CAUSALITY_LIMITS.md](docs/CAUSALITY_LIMITS.md).
 
-Le projet est organisé autour de trois axes analytiques :
+## 🧱 Architecture du dépôt
 
-- **Tome I — Carte et territoire**
-  Analyse spatiale et socio-économique des établissements scolaires.
-- **Tome II — Réseaux et structures**
-  Graphes, communautés et interactions entre établissements.
-- **Tome III — Temps et transformations**
-  Dynamiques temporelles, réformes et évolutions du système.
-
-## Démarrage rapide
-
-```bash
-# Cloner le dépôt
-git clone git@github.com:nolll77/atlas-dynamiques-scolaires.git
-cd atlas-dynamiques-scolaires
-
-# Installer l'environnement
-make setup
-
-# Lancer les tests
-make tests
-
-# Générer les figures
-make figures
+```text
+.
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+│
+├── src/
+│   ├── ingestion/
+│   ├── features/
+│   ├── models/
+│   ├── network/
+│   ├── temporal/
+│   └── utils/
+│
+├── exploratory/
+│   ├── notebooks/
+│   └── experiments/
+│
+├── figures/
+│
+├── tests/
+│
+├── runs/
+│   └── (experiment tracking JSON)
+│
+├── config/
+│   └── analysis.yaml
+│
+├── docs/
+│   ├── CAUSALITY_LIMITS.md
+│   ├── SOCLE_MATHEMATIQUE.md
+│   ├── NETWORK_INTERPRETATION.md
+│   └── GLOSSAIRE.md
+│
+├── manifesto/
+│
+├── paper_arxiv/
+│   └── main.tex
+│
+├── README.md
+└── Makefile
 ```
 
-## Organisation du code
+## 📊 Données utilisées
 
-- `src/atlas/` → code de production
-- `exploratory/` → analyses expérimentales
-- `config/` → configuration des pipelines
-- `tests/` → tests unitaires et validation
+Le dataset maître (`master_dataset.parquet`) est construit à partir de :
 
-## Citer ce projet
+**🏫 Données scolaires**
+- IPS (Indice de Position Sociale)
+- résultats au baccalauréat
+- IVAL (valeur ajoutée)
 
-Voir [CITATION.cff](CITATION.cff) ou utiliser la fonctionnalité GitHub “Cite this repository”.
+**🌍 Données socio-économiques**
+- INSEE IRIS (revenus médians, chômage, CSP)
+- démographie temporelle
 
-## Contribution
+**🏙️ Données spatiales**
+- coordonnées GPS des établissements
+- sectorisation scolaire
 
-Les contributions sont les bienvenues.
+**🏠 Données immobilières**
+- DVF (prix au m², transactions)
 
-Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour le workflow complet : issues → fork → branche → PR → review. Vous pouvez également suivre notre [Parcours Contributeur pas-à-pas](PARCOURS_COLLABORATEUR.md).
+**🚇 Mobilité**
+- accessibilité IDF Mobilités
 
-## Licence
+## 🧪 Pipeline scientifique
 
-Code : [MIT](LICENSE)
-Figures et textes : [CC-BY 4.0](LICENSE_CONTENT)
+Le projet suit une logique reproductible :
 
-## Philosophie
+Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux → Analyse temporelle → Figures → Paper
 
-Ce projet vise à rendre les structures éducatives observables, reproductibles et analysables à partir de données ouvertes et transparentes.
+## 🧠 Modules analytiques
+
+📍 **1. Analyse spatiale**
+- cartographie IPS
+- gradients géographiques
+- corrélations DVF / école
+
+📊 **2. Décomposition statistique**
+- ANOVA multi-facteurs
+- variance expliquée (géographie / statut / revenu)
+- indices de fragmentation (Theil, Gini, Duncan)
+
+🕸️ **3. Réseaux scolaires**
+- graphes de similarité
+- Louvain clustering
+- centralité (eigenvector, betweenness, closeness)
+- multiplex networks
+
+⏳ **4. Dynamique temporelle**
+- trajectoires d’établissements
+- CAH dynamique
+- HMM (régimes cachés)
+- changepoints (PELT)
+
+📉 **5. Ségrégation et fragmentation**
+- Theil dynamique
+- Gini spatial
+- indice global de fragmentation (IFC)
+
+## 🔬 Validation & tests
+
+Les contributions sont soumises à un pipeline de validation strict :
+
+- **Tests obligatoires**
+- décomposition Theil correcte
+- matrices de transition stochastiques
+- symétrie des graphes
+- tests de Moran (spatial autocorrelation)
+- stabilité bootstrap des indices
+- validation MAUP (multi-échelle)
+
+## 📦 Experiment tracking
+
+Chaque exécution produit un fichier dans `runs/` :
+
+```json
+{
+  "git_hash": "abc123",
+  "timestamp": "2026-06-15",
+  "config": {},
+  "metrics": {
+    "theil": 0.42,
+    "gini": 0.31,
+    "modularity": 0.67
+  }
+}
+```
+
+## 🧾 Issues & système de contribution
+
+Chaque issue correspond à un module scientifique autonome :
+
+**Cycle standard**
+Issue → Pull Request → Tests CI → Review → Merge → Dataset enrichi
+
+**Statuts**
+- `open` : en développement
+- `in review` : PR ouverte
+- `merged` : intégré au système
+- `validated` : passe tous les tests
+- `archived` : figé pour publication
+
+## 📚 Production scientifique
+
+Le projet génère :
+
+- 📄 article arXiv (`paper_arxiv/main.tex`)
+- 📊 figures scientifiques (Figures 1–4)
+- 🗺️ cartes spatiales
+- 🕸️ graphes de réseau
+- 📈 analyses statistiques reproductibles
+
+## 🧮 Principaux indicateurs
+- IPS (niveau socio-scolaire)
+- σ IPS (hétérogénéité interne)
+- Theil (entropie)
+- Gini (inégalité)
+- Duncan D (dissimilarité)
+- IFC (fragmentation globale)
+
+## ⚙️ Reproductibilité
+
+```bash
+make setup
+make data
+make features
+make models
+make figures
+make paper
+```
+
+## 📄 Licence
+
+MIT License — usage libre avec citation du projet.
+
+## 🧭 Vision
+
+Ce projet n’est pas un classement.
+
+C’est une structure analytique multi-échelle visant à :
+
+- décrire des organisations spatiales
+- modéliser des dynamiques sociales
+- relier territoire, école et structure urbaine
+- produire des objets scientifiques reproductibles
+
+## 🔗 Structure globale des trois tomes
+
+🗺️ **Tome I** — Carte et territoire (statique)  
+🕸️ **Tome II** — Réseaux et structures  
+⏳ **Tome III** — Temps et dynamiques
