@@ -226,6 +226,7 @@ make paper
 
 Pour toute réutilisation, merci de citer ce projet :
 > Noel Ching, *Atlas des Dynamiques Scolaires*, 2026, GitHub.
+>
 > amaswarm    @    gmail    .    com
 
 ## Licence
