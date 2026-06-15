@@ -4,7 +4,8 @@
 [![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
 [![Onboarding](https://img.shields.io/badge/Parcours-Collaborateur-orange.svg)](PARCOURS_COLLABORATEUR.md)
 
-**Un système reproductible d’analyse spatio-temporelle des établissements scolaires en Île-de-France**
+**Un système reproductible d’analyse spatio-temporelle des établissements scolaires en Île-de-France**  
+*Un projet de recherche dirigé par Noel Ching*
 
 ## Présentation
 
@@ -221,6 +222,11 @@ make models
 make figures
 make paper
 ```
+
+## Citation
+
+Pour toute réutilisation, merci de citer ce projet :
+> Noel Ching, *Atlas des Dynamiques Scolaires*, 2026, GitHub.
 
 ## Licence
 
