@@ -40,44 +40,41 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 
 ```text
 .
+├── archives/
+│
+├── config/
+│   └── analysis.yaml
+│
 ├── data/
 │   ├── raw/
 │   ├── processed/
 │   └── external/
 │
-├── src/
-│   ├── ingestion/
-│   ├── features/
-│   ├── models/
-│   ├── network/
-│   ├── temporal/
-│   └── utils/
+├── docs/
+│   ├── CAUSALITY_LIMITS.md
+│   ├── NETWORK_INTERPRETATION.md
+│   ├── SOCLE_1_MATHEMATIQUES.md
+│   ├── SOCLE_2_DYNAMIQUE.md
+│   └── GLOSSAIRE.md
 │
 ├── exploratory/
-│   ├── notebooks/
-│   └── experiments/
+│   └── notebooks/
 │
 ├── figures/
 │
-├── tests/
+├── paper_arxiv/
 │
 ├── runs/
 │   └── (experiment tracking JSON)
 │
-├── config/
-│   └── analysis.yaml
+├── scripts/
 │
-├── docs/
-│   ├── CAUSALITY_LIMITS.md
-│   ├── SOCLE_MATHEMATIQUE.md
-│   ├── NETWORK_INTERPRETATION.md
-│   └── GLOSSAIRE.md
+├── src/
+│   └── atlas/
 │
-├── manifesto/
+├── tests/
 │
-├── paper_arxiv/
-│   └── main.tex
-│
+├── MANIFESTO.md
 ├── README.md
 └── Makefile
 ```
