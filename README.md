@@ -73,6 +73,9 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 │   └── atlas/
 │
 ├── tests/
+│   ├── README.md
+│   ├── socle_1_mathematiques/
+│   └── socle_2_dynamique/
 │
 ├── MANIFESTO.md
 ├── README.md
@@ -141,6 +144,7 @@ Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux �
 
 Les contributions sont soumises à un pipeline de validation strict basé sur le **Test-Driven Architecture**. Toutes les formules théoriques du projet possèdent un test d'intégrité (actif ou en attente) :
 
+- 👉 **[Lire le document d'explication : Pourquoi les tests sont-ils Ignorés (Jaunes) ?](tests/README.md)**
 - 👉 **[Preuve de Couverture 100% : Socle 1 (Mathématiques)](tests/socle_1_mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)**
 - 👉 **[Preuve de Couverture 100% : Socle 2 (Dynamique)](tests/socle_2_dynamique/MATRICE_DE_COUVERTURE_SOCLE_2.md)**
 
