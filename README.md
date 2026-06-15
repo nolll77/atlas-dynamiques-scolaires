@@ -140,6 +140,8 @@ Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux �
 - Gini spatial
 - indice global de fragmentation (IFC)
 
+👉 **[Lire le document d'Architecture : Approche Machine Learning & Algorithmique (White-Box ML)](docs/APPROCHE_MACHINE_LEARNING.md)**
+
 ## Validation & tests
 
 L'intégration algorithmique repose sur une architecture de validation par les tests (**Test-Driven Architecture**). Toutes les formules théoriques du projet possèdent un test d'intégrité (actif ou en attente) :
