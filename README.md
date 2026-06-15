@@ -253,4 +253,4 @@ C’est une structure analytique multi-échelle visant à :
 Pour toute réutilisation, merci de citer ce projet :
 > Noel Ching, *Atlas des Dynamiques Scolaires*, 2026, GitHub.
 
-amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;gmail&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;com
+amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;&nbsp;mail&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;com
