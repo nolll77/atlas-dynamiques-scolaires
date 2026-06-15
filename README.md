@@ -222,12 +222,6 @@ make figures
 make paper
 ```
 
-## Citation
-
-Pour toute réutilisation, merci de citer ce projet :
-> Noel Ching, *Atlas des Dynamiques Scolaires*, 2026, GitHub.
-
-amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;gmail&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;com
 
 ## Licence
 
@@ -249,3 +243,10 @@ C’est une structure analytique multi-échelle visant à :
 - **Tome I — La Carte et le Territoire** (Géographie et ségrégation statique)
 - **Tome II — Les Réseaux et les Mondes** (Topologie, similarités et communautés)
 - **Tome III — Le Temps et la Réforme** (Dynamiques temporelles et chocs systémiques)
+
+## Citation
+
+Pour toute réutilisation, merci de citer ce projet :
+> Noel Ching, *Atlas des Dynamiques Scolaires*, 2026, GitHub.
+
+amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;gmail&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;com
