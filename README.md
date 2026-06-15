@@ -237,8 +237,8 @@ C’est une structure analytique multi-échelle visant à :
 - relier territoire, école et structure urbaine
 - produire des objets scientifiques reproductibles
 
-## Structure globale des trois tomes
+**Finalité éditoriale** : Le matériau scientifique généré par ce dépôt (données, cartes, algorithmes) a pour vocation d'être interprété et publié sous la forme d'une **trilogie sociologique** :
 
-**Tome I** — Carte et territoire (statique)  
-**Tome II** — Réseaux et structures  
-**Tome III** — Temps et dynamiques
+- **Tome I — La Carte et le Territoire** (Géographie et ségrégation statique)
+- **Tome II — Les Réseaux et les Mondes** (Topologie, similarités et communautés)
+- **Tome III — Le Temps et la Réforme** (Dynamiques temporelles et chocs systémiques)
