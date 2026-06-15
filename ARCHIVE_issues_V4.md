@@ -27,9 +27,9 @@
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-  - [ ] Constitution d'un historique de l'IPS moyen par année (L'architecture mathématique du projet exprime un besoin de profondeur temporelle ; l'intégration jusqu'à 2018 garantit la robustesse des modèles longitudinaux)
+  - [ ] Constitution d'un historique de l'IPS moyen par année (L'architecture mathématique du projet exprime un besoin de remonter dans le temps ; l'intégration jusqu'à l'année 2018 garantit la robustesse des modèles longitudinaux)
   - [ ] Extraction de l'écart-type de l'IPS, nommé `sigma_ips` (L'analyse mathématique de l'hétérogénéité sociale interne exprime le même besoin d'historique sur cette métrique)
-  - [ ] Intégration temporelle des résultats du bac (taux réussite, mentions, IVAL ; l'architecture temporelle du projet exprime un besoin similaire de profondeur sur ces variables)
+  - [ ] Intégration temporelle des résultats du bac (taux réussite, mentions, IVAL ; l'architecture temporelle du projet exprime un besoin similaire de recul historique sur ces variables)
   - [ ] Intégration de la géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
   - [ ] Intégration des coordonnées GPS des établissements (lat/lon)
   - [ ] Intégration des données de sectorisation scolaire
