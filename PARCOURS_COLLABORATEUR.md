@@ -66,26 +66,25 @@ make setup
 
 ---
 
-## Étape 3 : Développer et vérifier
+## Étape 3 : Développer et vérifier (Test-Driven Architecture)
 
-Avant de commencer à coder, prenez le temps de lire le guide de contribution.
+L'Atlas repose sur une architecture pilotée par les tests (Test-Driven Architecture) extrêmement stricte. Avant de commencer à coder, prenez le temps de comprendre comment s'organise la validation :
 
 * Consultez le fichier `CONTRIBUTING.md`.
 * Familiarisez-vous avec l'organisation du projet (notamment la distinction entre `src/` et `exploratory/`).
-* Respectez les principes de qualité, de reproductibilité et de neutralité du projet.
+* Lisez attentivement le **[Laboratoire de Validation (Tests)](tests/README.md)**. Il contient la philosophie de développement et les matrices de couverture.
 
-Développez ensuite votre solution.
+Pour l'implémentation d'une formule algorithmique, le flux de travail est le suivant :
 
-Avant chaque envoi, vérifiez que tout fonctionne correctement :
+1. **Identification** : Choisissez un test marqué `⚠️ Skipped` dans nos matrices de couverture.
+2. **Activation (Rouge ❌)** : Supprimez le tag `@pytest.mark.skip` du test correspondant, puis lancez la commande `make tests`. Le test échouera : c'est le point de départ.
+3. **Développement** : Écrivez l'algorithme dans le dossier source approprié (`src/atlas/features/socle_1_mathematiques/` ou `socle_2_dynamique/`).
+4. **Validation (Vert ✅)** : Relancez `make tests` jusqu'à ce que votre code passe le test avec succès.
 
-```bash
-make tests
-```
-
-Enfin, enregistrez vos modifications avec des messages de commit explicites :
+Enfin, enregistrez vos modifications avec des messages de commit explicites (convention Conventional Commits) :
 
 ```text
-feat: add IPS pipeline
+feat: implémentation de la distance de Mahalanobis
 ```
 
 ---
