@@ -10,6 +10,7 @@ C'est pourquoi **les 32 formules sociologiques du Socle 2 ont déjà été tradu
 
 Actuellement, ces tests sont volontairement désactivés (marqués avec l'étiquette `@pytest.mark.skip`). Ils apparaissent en "jaune" (Ignorés) dans l'intégration continue (CI) de GitHub, agissant comme une feuille de route technique (*To-Do List*) pour les contributeurs.
 
+👉 **[Voir la preuve : Matrice de Couverture à 100% des Formules](MATRICE_DE_COUVERTURE.md)**
 👉 **[Lire le document d'explication : Pourquoi les tests sont-ils Ignorés (Jaunes) ?](EXPLICATION_TESTS_IGNORES.md)**
 
 ## Règle de Contribution
