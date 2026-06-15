@@ -10,5 +10,6 @@ de ses publications académiques ou éditoriales (incluant tout livre physique
 ou numérique dérivé).
 
 Vous conservez le droit d'être reconnu comme contributeur technique de
-l'infrastructure open-source. La signature de cet accord se fait
-automatiquement lors de votre première Pull Request via un commentaire.
+l'infrastructure open-source. Lors de votre première Pull Request, un 
+assistant automatisé (bot) vous invitera à signer cet accord en postant 
+un commentaire d'acceptation spécifique.
