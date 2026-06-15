@@ -209,7 +209,11 @@ Le projet génère :
 - Duncan D (dissimilarité)
 - IFC (fragmentation globale)
 
-## Reproductibilité
+## Reproductibilité Scientifique
+
+L'Atlas repose sur une infrastructure de recherche ouverte et reproductible (DVC, MLflow, uv).
+
+👉 **[Lire le guide de Reproductibilité Scientifique](docs/REPRODUCTIBILITE_SCIENTIFIQUE.md)**
 
 ```bash
 make setup
