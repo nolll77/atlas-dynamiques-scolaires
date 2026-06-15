@@ -215,7 +215,7 @@ Afin de pallier la fragilité historique des environnements analytiques (fichier
 
 - **Ingénierie logicielle (`uv` & `pyproject.toml`)** : L'utilisation de `uv` (100x plus rapide que `pip`) couplé au fichier `uv.lock` gèle l'environnement au bit près. Même cloné dans 5 ans, le système s'installera à l'identique. Les dépendances sont centralisées via le standard PEP 621.
 - **Versionnage des données (DVC)** : DVC fait pour la Data ce que Git fait pour le code. Il relie chaque commit à une version exacte (hachée et décentralisée) des lourdes bases de données utilisées.
-- **Tracking des expérimentations (MLflow)** : Chaque exécution agit comme une "boîte noire", reliant de manière infalsifiable les hyperparamètres initiaux aux scores mathématiques obtenus (Theil, Gini).
+- **Tracking des expérimentations (MLflow)** : Fini les résultats de recherche perdus sur des carnets. MLflow enregistre automatiquement l'historique de chaque exécution : il mémorise quels réglages exacts ont été utilisés pour obtenir tel résultat mathématique (ex: Indice de Theil), rendant chaque découverte transparente et auditable.
 
 👉 **[Lire le guide de Reproductibilité Scientifique](docs/REPRODUCTIBILITE_SCIENTIFIQUE.md)**
 
