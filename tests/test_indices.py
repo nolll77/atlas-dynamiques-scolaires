@@ -21,13 +21,9 @@ def test_gini_range():
 def test_entre_soi_high_ips_low_sigma():
     """Score entre-soi élevé si IPS haut ET sigma faible."""
     score_elite = entre_soi_score(
-        ips=165, sigma=15,
-        ips_mean=150, ips_std=10,
-        sigma_mean=25, sigma_std=5
+        ips=165, sigma=15, ips_mean=150, ips_std=10, sigma_mean=25, sigma_std=5
     )
     score_open = entre_soi_score(
-        ips=145, sigma=35,
-        ips_mean=150, ips_std=10,
-        sigma_mean=25, sigma_std=5
+        ips=145, sigma=35, ips_mean=150, ips_std=10, sigma_mean=25, sigma_std=5
     )
     assert score_elite > score_open

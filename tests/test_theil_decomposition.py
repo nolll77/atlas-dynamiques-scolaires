@@ -23,6 +23,7 @@ def test_theil_non_negative(sample_df):
 def test_theil_perfect_equality():
     """Theil = 0 si toutes les valeurs sont égales."""
     import pandas as pd
+
     df = pd.DataFrame({"zone": ["A"] * 10 + ["B"] * 10, "ips": [150.0] * 20})
     result = theil_index(df, group_col="zone", value_col="ips")
     assert abs(result["total"]) < 1e-8, (

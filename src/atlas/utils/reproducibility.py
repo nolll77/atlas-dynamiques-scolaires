@@ -1,10 +1,13 @@
 """Gestion de la reproductibilité et du tracking des expériences."""
 
 import json
+import random
 import subprocess
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+
+import numpy as np
 
 
 def get_git_hash() -> str:
@@ -44,13 +47,12 @@ def save_run(
 
 def set_all_seeds(seed: int = 42) -> None:
     """Fixe toutes les seeds pour reproductibilité totale."""
-    import numpy as np
-    import random
 
     random.seed(seed)
     np.random.seed(seed)
     try:
         import torch
+
         torch.manual_seed(seed)
     except ImportError:
         pass

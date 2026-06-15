@@ -40,7 +40,10 @@ def theil_index(df: pd.DataFrame, group_col: str, value_col: str) -> dict:
         weight = nk / n
         # Within
         within += (
-            weight * np.sum((group_values / mu_k) * np.log(group_values / mu_k)) / nk
+            weight
+            * (mu_k / mu)
+            * np.sum((group_values / mu_k) * np.log(group_values / mu_k))
+            / nk
         )
         # Between
         between += weight * (mu_k / mu) * np.log(mu_k / mu)
@@ -54,8 +57,9 @@ def theil_index(df: pd.DataFrame, group_col: str, value_col: str) -> dict:
     }
 
 
-def duncan_dissimilarity(df: pd.DataFrame, area_col: str,
-                          group_col: str, value_col: str) -> float:
+def duncan_dissimilarity(
+    df: pd.DataFrame, area_col: str, group_col: str, value_col: str
+) -> float:
     """Indice de dissimilarité de Duncan D."""
     groups = df.groupby([area_col, group_col])[value_col].sum().unstack(fill_value=0)
     if groups.shape[1] < 2:
@@ -66,9 +70,14 @@ def duncan_dissimilarity(df: pd.DataFrame, area_col: str,
     return 0.5 * np.sum(np.abs(groups[col_a] / total_a - groups[col_b] / total_b))
 
 
-def entre_soi_score(ips: float, sigma: float,
-                    ips_mean: float, ips_std: float,
-                    sigma_mean: float, sigma_std: float) -> float:
+def entre_soi_score(
+    ips: float,
+    sigma: float,
+    ips_mean: float,
+    ips_std: float,
+    sigma_mean: float,
+    sigma_std: float,
+) -> float:
     """Score d'entre-soi : IPS élevé + σ faible = entre-soi fort."""
     z_ips = (ips - ips_mean) / ips_std
     z_sigma = (sigma - sigma_mean) / sigma_std
