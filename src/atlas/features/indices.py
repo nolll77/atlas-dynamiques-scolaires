@@ -39,7 +39,9 @@ def theil_index(df: pd.DataFrame, group_col: str, value_col: str) -> dict:
         mu_k = np.mean(group_values)
         weight = nk / n
         # Within
-        within += weight * np.sum((group_values / mu_k) * np.log(group_values / mu_k)) / nk
+        within += (
+            weight * np.sum((group_values / mu_k) * np.log(group_values / mu_k)) / nk
+        )
         # Between
         between += weight * (mu_k / mu) * np.log(mu_k / mu)
 

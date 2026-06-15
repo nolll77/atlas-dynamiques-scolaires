@@ -1,7 +1,5 @@
 """Test critique : Theil_total = Theil_between + Theil_within"""
 
-import numpy as np
-import pytest
 from atlas.features.indices import theil_index
 
 
@@ -27,4 +25,6 @@ def test_theil_perfect_equality():
     import pandas as pd
     df = pd.DataFrame({"zone": ["A"] * 10 + ["B"] * 10, "ips": [150.0] * 20})
     result = theil_index(df, group_col="zone", value_col="ips")
-    assert abs(result["total"]) < 1e-8, f"Theil devrait être 0, obtenu {result['total']}"
+    assert abs(result["total"]) < 1e-8, (
+        f"Theil devrait être 0, obtenu {result['total']}"
+    )

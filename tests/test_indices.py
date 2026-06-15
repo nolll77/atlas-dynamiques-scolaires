@@ -1,8 +1,8 @@
 """Tests pour les indices de ségrégation."""
 
 import numpy as np
-import pytest
-from atlas.features.indices import gini_index, entre_soi_score
+
+from atlas.features.indices import entre_soi_score, gini_index
 
 
 def test_gini_perfect_equality():

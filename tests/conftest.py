@@ -1,8 +1,8 @@
 """Fixtures partagées pour tous les tests."""
 
-import pytest
 import numpy as np
 import pandas as pd
+import pytest
 
 
 @pytest.fixture

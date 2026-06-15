@@ -1,7 +1,8 @@
 """Thème graphique global — Atlas des Dynamiques Scolaires."""
 
-import matplotlib.pyplot as plt
 from pathlib import Path
+
+import matplotlib.pyplot as plt
 
 COLORS = {
     "public": "#1565C0",

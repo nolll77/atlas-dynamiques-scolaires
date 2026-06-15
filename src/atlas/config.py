@@ -1,7 +1,7 @@
 """Configuration centrale — charge params.yaml et variables d'environnement."""
 
-import os
 from pathlib import Path
+
 import yaml
 from dotenv import load_dotenv
 
