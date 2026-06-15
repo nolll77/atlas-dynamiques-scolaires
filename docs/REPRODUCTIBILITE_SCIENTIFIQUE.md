@@ -107,8 +107,8 @@ C'est un tableau de bord (un *dashboard*) automatisé. Chaque fois que le code t
 
 Dans les revues scientifiques prestigieuses (qui exigent de plus en plus de garanties computationnelles pour éviter les fraudes), utiliser l'orchestration DVC/MLflow/uv signifie : **"Mon projet n'est pas un script Python jetable, c'est un coffre-fort mathématique auditable de bout en bout."**
 
-Pour maintenir l'intégrité de cette infrastructure, merci de respecter ces 3 règles d'or lors de vos développements :
+Afin de préserver cette infrastructure de recherche, la communauté s'accorde sur 3 principes de co-développement :
 
-1. **Aucun paramètre en dur.** Si votre algorithme a besoin d'un seuil, d'une graine aléatoire (seed), ou d'une taille d'échantillon, ajoutez ce paramètre dans `params.yaml` et appelez-le dans votre code.
-2. **Ne commitez jamais de données sur Git.** Le dossier `data/` est ignoré par Git. Utilisez DVC si de nouvelles données sont générées de façon permanente.
-3. **Mettez à jour le pipeline.** Si votre code génère un nouvel output intermédiaire (ex: une nouvelle matrice), ajoutez une étape dans `dvc.yaml` pour que le système la prenne en compte.
+1. **Paramétrage centralisé.** Lorsqu'un algorithme requiert un seuil ou une graine aléatoire (seed), la pratique est de l'ajouter dans `params.yaml` afin d'éviter les valeurs écrites en dur dans le code.
+2. **Séparation du code et de la donnée.** Le dossier `data/` étant ignoré par Git, l'ajout de nouvelles données permanentes s'effectue naturellement via DVC.
+3. **Évolution du pipeline.** Lorsqu'une contribution génère un nouvel output intermédiaire (ex: une nouvelle matrice), il suffit d'ajouter l'étape correspondante dans `dvc.yaml` pour que l'ensemble du système l'intègre.
