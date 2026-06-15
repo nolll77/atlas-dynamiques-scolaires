@@ -56,8 +56,28 @@ La géographie n'est pas juste un "fond de carte", c'est une variable active. Le
 
 ---
 
-## Conclusion : Algorithmes sous contraintes causales
+## 5. Le Pont Épistémologique : Machine Learning et Inférence Causale
 
-L'introduction de ces bibliothèques puissantes (`scikit-learn`, `pysal`, `hmmlearn`) au sein de l'Atlas permet de passer de la simple cartographie descriptive à la **modélisation systémique complexe**. 
+C'est la question centrale de l'Atlas : **Le Machine Learning permet-il d'établir une causalité sociologique ?** La réponse est non par défaut, mais il constitue l'étape préparatoire indispensable pour y parvenir. L'Atlas intègre cette dualité de la manière suivante :
 
-Toutefois, la communauté doit veiller à ce que la sortie de ces modèles (clusters, probabilités de Markov, effets spatiaux) ne soit jamais interprétée de manière déterministe. Le respect strict du cadre théorique est impératif : 👉 **[Lire les Limites de la Causalité](CAUSALITY_LIMITS.md)**.
+### A. Le ML comme "Détecteur" (Corrélation Structurale)
+Par nature, les algorithmes de Clustering (CAH, Louvain) ou de Markov sont purement corrélationnels. Si l'algorithme regroupe le Lycée A et le Lycée B dans une même "spirale de déclin", il atteste d'une co-variance forte, mais ne dit pas si A cause B, si B cause A, ou si un facteur externe caché (variable de confusion) cause les deux. Le ML fournit ici une preuve mathématique indéniable de **l'existence d'une structure**, mais s'abstient de l'interpréter.
+
+### B. La Quasi-Expérience et la Preuve de Choc (Ruptures)
+En sciences sociales, l'expérimentation en laboratoire est impossible. Nous nous reposons donc sur des protocoles "quasi-expérimentaux". C'est ici que l'algorithme **PELT** devient une arme causale :
+Si la théorie sociologique postule qu'une réforme de sectorisation de 2021 a bouleversé un territoire, le ML permet de le tester aveuglément. Si PELT détecte un *Changepoint* structurel exactement en 2021 sur les séries temporelles sans qu'on ne lui ait fourni cette date, il offre la base mathématique requise pour lancer une **Régression sur Discontinuité (RDD)** ou une **Différence de Différences (DiD)**. Le ML trouve le point d'inflexion, l'économétrie causale le transforme en preuve.
+
+### C. Le Câblage Causal Explicite (DAGs et Spatial Lag)
+L'Atlas va plus loin en implémentant des modules d'inférence causale pure :
+- **Le modèle SAR (Contagion Spatiale)** : Contrairement à une simple corrélation, le modèle spatial autorégressif teste l'hypothèse de *spillover* (débordement). Il quantifie la causalité de voisinage : "Dans quelle mesure exacte la gentrification du lycée de centre-ville *cause-t-elle* la paupérisation du lycée périphérique par évitement ?"
+- **Les Graphes Orientés Acycliques (DAGs)** : Implémentés dans nos batteries de tests (ex: `test_temporal_dag_causality`), ils s'appuient sur la théorie de l'inférence causale de Judea Pearl. Ils forcent le chercheur à déclarer ses hypothèses sur les variables de confusion (ex: "Le prix au m² cause à la fois l'IPS et le taux de réussite") pour bloquer les "chemins détournés" (Backdoor Criterion) et isoler l'effet causal pur de la variable étudiée.
+
+---
+
+## Conclusion : Des Algorithmes sous Contraintes Causales
+
+L'introduction de ces bibliothèques puissantes (`scikit-learn`, `pysal`, `hmmlearn`, `ruptures`) permet de passer d'une simple cartographie descriptive à une **modélisation systémique et causale complexe**. 
+
+Toutefois, la communauté doit veiller à ce que la sortie brute de ces modèles ne soit jamais prise pour vérité sociologique causale absolue de manière déterministe. Le Machine Learning construit le "squelette" structurel, c'est au chercheur de tisser les liens de causalité rigoureux dans le respect strict du cadre théorique.
+
+👉 **[Lire le Manifeste sur les Limites de la Causalité](CAUSALITY_LIMITS.md)** pour le cadre formel.
