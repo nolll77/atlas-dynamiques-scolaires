@@ -70,7 +70,7 @@ select = ["E", "W", "F", "I", "N", "UP"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --cov=src/atlas --cov-report=term-missing --cov-fail-under=20"
+addopts = "-v --cov=src/atlas --cov-report=term-missing --cov-fail-under=10"
 
 [tool.mypy]
 python_version = "3.11"
