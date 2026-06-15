@@ -69,6 +69,21 @@ Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclu
 
 ---
 
+## 6. L'Infrastructure Intangible : Les Gardiens du Temple
+
+Vous constaterez la présence de nombreux fichiers qui ne contiennent pas directement les algorithmes finaux (tests vides, documents méthodologiques). **Il est impératif de conserver ces fichiers et cette arborescence intacts.** Ils constituent la colonne vertébrale du projet :
+
+1. **Les dossiers de tests (ex: `tests/socle_1_mathematiques/`)** : 
+   Ce sont eux qui bloquent et conditionnent notre Intégration Continue (la CI GitHub). Ils agissent comme les **"gardiens du temple"**. Sans eux, n'importe quel contributeur pourrait pousser un code mathématique erroné, qui s'exécuterait silencieusement et corromprait l'ensemble de l'Atlas. Ces tests vides sont des "serrures" que seul le bon code peut ouvrir.
+
+2. **Les Matrices de Couverture (`MATRICE_DE_COUVERTURE...`)** : 
+   Elles constituent notre **vitrine technique**. Lorsqu'un développeur bénévole décide de s'investir un dimanche soir, il n'a pas besoin d'attendre qu'un mainteneur lui assigne une tâche pour savoir ce qu'il reste à faire. Il consulte simplement ce document, repère immédiatement une fonction en statut ⚠️ `Skipped`, et sait qu'il peut se mettre au travail en toute autonomie pour débloquer la situation.
+
+3. **La documentation épistémologique (`REPRODUCTIBILITE_SCIENTIFIQUE.md`, `APPROCHE_MACHINE_LEARNING.md`, `CAUSALITY_LIMITS.md`)** : 
+   C'est l'âme du projet. Cette documentation est ce qui donne tout le prestige au projet et le différencie d'un simple script Python jetable. C'est la preuve qu'il s'agit d'une **infrastructure de recherche de niveau académique** qui pose des règles strictes sur les limites de la causalité, la reproductibilité, et le *White-Box Machine Learning*.
+
+---
+
 Merci pour votre collaboration !
 
 *En contribuant à ce projet, vous acceptez que vos contributions soient publiées sous licence MIT.*
