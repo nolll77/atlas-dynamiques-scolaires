@@ -1,4 +1,4 @@
-# 📘 Atlas des Dynamiques Scolaires
+# Atlas des Dynamiques Scolaires
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
@@ -6,7 +6,7 @@
 
 **Un système reproductible d’analyse spatio-temporelle des établissements scolaires en Île-de-France**
 
-## 🧭 Présentation
+## Présentation
 
 Ce projet construit un atlas computationnel des dynamiques scolaires, combinant :
 
@@ -24,7 +24,7 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 - décomposition de variance
 - clustering et segmentation temporelle
 
-> ⚠️ **Positionnement scientifique**
+> **Positionnement scientifique**
 > 
 > Ce projet est :
 > - descriptif et analytique
@@ -34,7 +34,7 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 > 
 > Toute interprétation doit respecter le cadre méthodologique défini dans [docs/CAUSALITY_LIMITS.md](docs/CAUSALITY_LIMITS.md).
 
-## 🧱 Architecture du dépôt
+## Architecture du dépôt
 
 ```text
 .
@@ -80,65 +80,65 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 └── Makefile
 ```
 
-## 📊 Données utilisées
+## Données utilisées
 
 Le dataset maître (`master_dataset.parquet`) est construit à partir de :
 
-**🏫 Données scolaires**
+**Données scolaires**
 - IPS (Indice de Position Sociale)
 - résultats au baccalauréat
 - IVAL (valeur ajoutée)
 
-**🌍 Données socio-économiques**
+**Données socio-économiques**
 - INSEE IRIS (revenus médians, chômage, CSP)
 - démographie temporelle
 
-**🏙️ Données spatiales**
+**Données spatiales**
 - coordonnées GPS des établissements
 - sectorisation scolaire
 
-**🏠 Données immobilières**
+**Données immobilières**
 - DVF (prix au m², transactions)
 
-**🚇 Mobilité**
+**Mobilité**
 - accessibilité IDF Mobilités
 
-## 🧪 Pipeline scientifique
+## Pipeline scientifique
 
 Le projet suit une logique reproductible :
 
 Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux → Analyse temporelle → Figures → Paper
 
-## 🧠 Modules analytiques
+## Modules analytiques
 
-📍 **1. Analyse spatiale**
+**1. Analyse spatiale**
 - cartographie IPS
 - gradients géographiques
 - corrélations DVF / école
 
-📊 **2. Décomposition statistique**
+**2. Décomposition statistique**
 - ANOVA multi-facteurs
 - variance expliquée (géographie / statut / revenu)
 - indices de fragmentation (Theil, Gini, Duncan)
 
-🕸️ **3. Réseaux scolaires**
+**3. Réseaux scolaires**
 - graphes de similarité
 - Louvain clustering
 - centralité (eigenvector, betweenness, closeness)
 - multiplex networks
 
-⏳ **4. Dynamique temporelle**
+**4. Dynamique temporelle**
 - trajectoires d’établissements
 - CAH dynamique
 - HMM (régimes cachés)
 - changepoints (PELT)
 
-📉 **5. Ségrégation et fragmentation**
+**5. Ségrégation et fragmentation**
 - Theil dynamique
 - Gini spatial
 - indice global de fragmentation (IFC)
 
-## 🔬 Validation & tests
+## Validation & tests
 
 Les contributions sont soumises à un pipeline de validation strict :
 
@@ -150,7 +150,7 @@ Les contributions sont soumises à un pipeline de validation strict :
 - stabilité bootstrap des indices
 - validation MAUP (multi-échelle)
 
-## 📦 Experiment tracking
+## Experiment tracking
 
 Chaque exécution produit un fichier dans `runs/` :
 
@@ -167,7 +167,7 @@ Chaque exécution produit un fichier dans `runs/` :
 }
 ```
 
-## 🧾 Issues & système de contribution
+## Issues & système de contribution
 
 Chaque issue correspond à un module scientifique autonome :
 
@@ -181,17 +181,17 @@ Issue → Pull Request → Tests CI → Review → Merge → Dataset enrichi
 - `validated` : passe tous les tests
 - `archived` : figé pour publication
 
-## 📚 Production scientifique
+## Production scientifique
 
 Le projet génère :
 
-- 📄 article arXiv (`paper_arxiv/main.tex`)
-- 📊 figures scientifiques (Figures 1–4)
-- 🗺️ cartes spatiales
-- 🕸️ graphes de réseau
-- 📈 analyses statistiques reproductibles
+- article arXiv (`paper_arxiv/main.tex`)
+- figures scientifiques (Figures 1–4)
+- cartes spatiales
+- graphes de réseau
+- analyses statistiques reproductibles
 
-## 🧮 Principaux indicateurs
+## Principaux indicateurs
 - IPS (niveau socio-scolaire)
 - σ IPS (hétérogénéité interne)
 - Theil (entropie)
@@ -199,7 +199,7 @@ Le projet génère :
 - Duncan D (dissimilarité)
 - IFC (fragmentation globale)
 
-## ⚙️ Reproductibilité
+## Reproductibilité
 
 ```bash
 make setup
@@ -210,11 +210,11 @@ make figures
 make paper
 ```
 
-## 📄 Licence
+## Licence
 
 MIT License — usage libre avec citation du projet.
 
-## 🧭 Vision
+## Vision
 
 Ce projet n’est pas un classement.
 
@@ -225,8 +225,8 @@ C’est une structure analytique multi-échelle visant à :
 - relier territoire, école et structure urbaine
 - produire des objets scientifiques reproductibles
 
-## 🔗 Structure globale des trois tomes
+## Structure globale des trois tomes
 
-🗺️ **Tome I** — Carte et territoire (statique)  
-🕸️ **Tome II** — Réseaux et structures  
-⏳ **Tome III** — Temps et dynamiques
+**Tome I** — Carte et territoire (statique)  
+**Tome II** — Réseaux et structures  
+**Tome III** — Temps et dynamiques
