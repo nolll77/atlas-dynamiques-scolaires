@@ -69,4 +69,4 @@ Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclu
 
 ---
 
-Merci d'avance pour votre expertise technique. En suivant ces conventions de collaboration, vous contribuez à faire de ce projet une référence d'honnêteté intellectuelle et de rigueur open-source !
+Merci pour votre collaboration !
