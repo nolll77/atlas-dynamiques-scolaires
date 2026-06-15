@@ -227,7 +227,9 @@ make paper
 
 ## Licence
 
-MIT License — usage libre avec citation du projet.
+Ce projet est publié sous un régime de double licence :
+- **Code et pipeline** : [MIT License](LICENSE) (usage libre, modification et distribution autorisées).
+- **Contenu éditorial et figures** : [CC BY 4.0](LICENSE_CONTENT) (attribution obligatoire à l'auteur original).
 
 ## Vision
 
