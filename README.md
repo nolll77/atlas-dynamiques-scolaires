@@ -184,7 +184,7 @@ Chaque exécution produit un fichier dans `runs/` :
 Chaque issue correspond à un module scientifique autonome :
 
 **Cycle standard**
-Issue → Pull Request → Tests CI → Review → Merge → Dataset enrichi
+Issue → Pull Request → Tests CI → Review → Merge → Artefacts scientifiques générés
 
 **Statuts**
 - `open` : en développement
