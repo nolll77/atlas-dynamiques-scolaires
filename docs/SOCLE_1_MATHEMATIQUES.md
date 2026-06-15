@@ -25,8 +25,8 @@
 > [!NOTE]
 > **VALIDATION ARCHITECTURALE (TDD)**
 > L'intégralité des 31 formules de ce manifeste est verrouillée par des tests informatiques.
-> 👉 **Voir le suivi :** [Matrice de Couverture à 100% des Formules](../tests/mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)
-> 👉 **Documentation technique :** [README du Socle 1](../tests/mathematiques/README.md)
+> 👉 **Voir le suivi :** [Matrice de Couverture à 100% des Formules](../tests/socle_1_mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)
+> 👉 **Documentation technique :** [README du Socle 1](../tests/socle_1_mathematiques/README.md)
 
 ---
 

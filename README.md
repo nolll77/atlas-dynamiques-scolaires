@@ -141,8 +141,8 @@ Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux �
 
 Les contributions sont soumises à un pipeline de validation strict basé sur le **Test-Driven Architecture**. Toutes les formules théoriques du projet possèdent un test d'intégrité (actif ou en attente) :
 
-- 👉 **[Preuve de Couverture 100% : Socle 1 (Mathématiques)](tests/mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)**
-- 👉 **[Preuve de Couverture 100% : Socle 2 (Dynamique)](tests/dynamique/MATRICE_DE_COUVERTURE_SOCLE_2.md)**
+- 👉 **[Preuve de Couverture 100% : Socle 1 (Mathématiques)](tests/socle_1_mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)**
+- 👉 **[Preuve de Couverture 100% : Socle 2 (Dynamique)](tests/socle_2_dynamique/MATRICE_DE_COUVERTURE_SOCLE_2.md)**
 
 - **Tests statistiques obligatoires :**
 - décomposition Theil correcte

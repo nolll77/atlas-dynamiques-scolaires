@@ -6,8 +6,8 @@ Ce répertoire contient l'intégralité des tests informatiques ("barrières de 
 
 L'architecture des tests est divisée en deux grands socles, miroirs parfaits du Manifeste de l'Atlas :
 
-- **[Socle 1 : Mathématiques et Statistiques](mathematiques/README.md)** : Intégrité des 31 formules de base (Indices de Theil, Entre-Soi, Distances, etc.)
-- **[Socle 2 : Dynamiques et Réseaux](dynamique/README.md)** : Intégrité des 32 modèles complexes (Séries temporelles, Graphes, Matrices spatiales, etc.)
+- **[Socle 1 : Mathématiques et Statistiques](socle_1_mathematiques/README.md)** : Intégrité des 31 formules de base (Indices de Theil, Entre-Soi, Distances, etc.)
+- **[Socle 2 : Dynamiques et Réseaux](socle_2_dynamique/README.md)** : Intégrité des 32 modèles complexes (Séries temporelles, Graphes, Matrices spatiales, etc.)
 
 ## Philosophie : Test-Driven Architecture
 

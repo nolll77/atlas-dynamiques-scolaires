@@ -42,6 +42,6 @@ Ce document prouve la traçabilité complète et la couverture à 100% entre les
 Si un contributeur souhaite implémenter l'analyse de l'**Hyper-ségrégation Masquée (F25)** :
 1. Il doit consulter la théorie dans le socle (Formule 25).
 2. Il écrit le code dans le fichier `src/atlas/features/dynamique/systemic.py` (à la place de l'erreur `NotImplementedError`).
-3. Il active et passe avec succès le test `test_detect_masked_hypersegregation` situé dans `tests/dynamique/test_06_systemic.py`.
+3. Il active et passe avec succès le test `test_detect_masked_hypersegregation` situé dans `tests/socle_2_dynamique/test_06_systemic.py`.
 
 La boucle est ainsi parfaitement bouclée entre le monde sociologique et le monde informatique.
