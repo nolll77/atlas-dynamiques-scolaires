@@ -22,46 +22,46 @@ Une telle erreur bloquerait le travail de tous les développeurs et donnerait la
 
 Pour contourner ce problème, nous avons placé l'étiquette `@pytest.mark.skip` sur tous les tests orphelins. Le robot de GitHub comprend ainsi le message : *"Le test existe, il est légitime, mais ne l'exécute pas pour l'instant"*. Le dépôt reste propre, avec une belle validation verte globale ✅, tout en conservant une trace exacte de ce qu'il reste à construire.
 
-## 3. Les "Skipped" sont votre feuille de route (To-Do List)
+## 3. Les statuts "Skipped" tracent la feuille de route
 
-Cette approche transforme notre suite de tests en un véritable **catalogue d'appels à contribution**. Chaque test ignoré (jaune) est une mission qui n'attend qu'un développeur pour lui donner vie.
+Cette approche structure la suite de tests en **catalogue d'implémentation**. Chaque test ignoré cartographie une fonction mathématique restant à coder.
 
-Voici très concrètement comment contribuer à l'Atlas :
+Voici le flux de travail (workflow) standard pour l'implémentation :
 
-1. **Choisissez votre mission** : Consultez nos [Matrices de Couverture](README.md) et repérez une formule mathématique marquée d'un statut `⚠️ Skipped` (par exemple, la *Distance de Mahalanobis*).
-2. **Réveillez le test** : Dans le code du test correspondant, supprimez simplement l'étiquette `@pytest.mark.skip`.
-3. **Observez l'échec (Red)** : Exécutez les tests localement (`make tests`). Le test va logiquement échouer ❌ puisque l'algorithme n'existe pas encore.
-4. **Implémentez (Green)** : Écrivez l'algorithme en Python dans le dossier source approprié (`src/atlas/features/socle_1_mathematiques/` ou `socle_2_dynamique/`) jusqu'à ce que le test valide vos calculs et passe au vert ✅.
-5. **Soumettez (Refactor)** : Ouvrez une *Pull Request*. La Matrice de Couverture gagnera alors un nouveau statut "✅ Implémenté" grâce à vous !
+1. **Identification** : Consulter les [Matrices de Couverture](README.md) et repérer une formule mathématique avec le statut `⚠️ Skipped` (par exemple, la *Distance de Mahalanobis*).
+2. **Activation** : Dans le code du test correspondant, supprimer l'étiquette `@pytest.mark.skip`.
+3. **Validation de l'échec (Red)** : Exécuter les tests localement (`make tests`). Le test échoue logiquement ❌ puisque l'algorithme n'existe pas encore.
+4. **Implémentation (Green)** : Écrire l'algorithme en Python dans le dossier source approprié (`src/atlas/features/socle_1_mathematiques/` ou `socle_2_dynamique/`) jusqu'à ce que la sortie mathématique valide le test (✅).
+5. **Intégration (Refactor)** : Ouvrir une *Pull Request*. La Matrice de Couverture passe au statut "✅ Implémenté".
 
-En suivant ce processus, vous avez la **garantie absolue** que le code que vous intégrez respecte parfaitement la théorie sociologique : le test était là bien avant vous, agissant comme un filet de sécurité intransigeant.
+Ce processus garantit que l'algorithme intégré respecte strictement la théorie sociologique : le test agit comme un filet de sécurité structurel.
 
-## 4. Exemple concret : La Distance de Mahalanobis
+## 4. Exemple de cycle de développement : La Distance de Mahalanobis
 
-Voici très exactement ce que vit un développeur qui s'attaque à une formule de l'Atlas.
+Voici l'application directe de ce flux de travail.
 
-**Étape 1 : Le repérage (Jaune ⚠️)**  
-Dans le fichier `tests/socle_1_mathematiques/test_00_statistiques.py`, le développeur trouve la fonction de test préparée à l'avance :
+**Étape 1 : L'identification (Jaune ⚠️)**  
+Dans le fichier `tests/socle_1_mathematiques/test_00_statistiques.py`, le test est structuré à l'avance :
 ```python
 @pytest.mark.skip(reason="À implémenter")
 def test_distance_mahalanobis():
-    # Le test contient déjà les données factices (inputs) 
+    # Le test contient les données en entrée (inputs) 
     # et le résultat mathématique exact attendu (outputs).
     assert calculer_mahalanobis(x, covariance) == resultat_attendu
 ```
 
-**Étape 2 : Le passage à l'acte (Rouge ❌)**  
-Le développeur efface simplement la ligne `@pytest.mark.skip`. Il tape `make tests` dans son terminal.
-Le système cherche la fonction `calculer_mahalanobis` dans le code source, ne la trouve pas, et fait échouer le test (Red). C'est le signal de départ.
+**Étape 2 : L'activation (Rouge ❌)**  
+La ligne `@pytest.mark.skip` est retirée. La commande `make tests` est exécutée.
+L'algorithme `calculer_mahalanobis` n'existant pas encore dans le code source, le test échoue (Red).
 
-**Étape 3 : Le développement (Le Code Source)**  
-Le développeur se rend dans le dossier `src/atlas/features/socle_1_mathematiques/` et écrit le véritable code algorithmique :
+**Étape 3 : L'implémentation algorithmique (Le Code Source)**  
+L'algorithme est codé dans le dossier `src/atlas/features/socle_1_mathematiques/` :
 ```python
 def calculer_mahalanobis(x, covariance):
     # Implémentation réelle de l'équation avec numpy / scipy
     return resultat
 ```
 
-**Étape 4 : La victoire (Vert ✅)**  
-Il relance `make tests`. Cette fois, son code source produit exactement la valeur validée par la théorie. Le test passe au vert. 
-Il peut fièrement soumettre son code : la rigueur scientifique est sauvée !
+**Étape 4 : La validation (Vert ✅)**  
+L'exécution de `make tests` valide le calcul. L'algorithme produit exactement la valeur théorique attendue. Le test passe au vert. 
+Le code est prêt pour l'intégration via *Pull Request*.
