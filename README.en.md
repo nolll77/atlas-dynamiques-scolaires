@@ -247,4 +247,4 @@ It is a multi-scale analytical structure aimed at:
 For any reuse, please cite this project:
 > Noel Ching, *Atlas of School Dynamics*, 2026, GitHub.
 
-amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;&nbsp;mail&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;o&nbsp;&nbsp;m
+amaswarm&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;&nbsp;&nbsp;g&nbsp;&nbsp;m&nbsp;&nbsp;a&nbsp;&nbsp;i&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;&nbsp;o&nbsp;&nbsp;m
