@@ -215,15 +215,6 @@ L'Atlas repose sur une infrastructure de recherche ouverte et reproductible (DVC
 
 👉 **[Lire le guide de Reproductibilité Scientifique](docs/REPRODUCTIBILITE_SCIENTIFIQUE.md)**
 
-```bash
-make setup
-make data
-make features
-make models
-make figures
-make paper
-```
-
 
 ## Licence
 
