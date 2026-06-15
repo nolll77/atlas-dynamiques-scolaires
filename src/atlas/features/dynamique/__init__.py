@@ -1,1 +1,1 @@
-"""Module Dynamique et Réseaux (Monde B)."""
+"""Module Dynamique et Réseaux (Socle 2)."""

@@ -1,4 +1,4 @@
-"""Générateurs de données de test pour la Dynamique et les Réseaux (Monde B)."""
+"""Générateurs de données de test pour la Dynamique et les Réseaux (Socle 2)."""
 
 import numpy as np
 import pytest

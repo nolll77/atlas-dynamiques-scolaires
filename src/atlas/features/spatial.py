@@ -1,4 +1,4 @@
-"""Fonctions spatiales et dynamiques (Monde B).
+"""Fonctions spatiales et dynamiques (Socle 2).
 
 Ces fonctions sont actuellement des squelettes (stubs) définis par l'Architecte.
 Elles doivent être implémentées par les contributeurs conformément au SOCLE_2_DYNAMIQUE.md.

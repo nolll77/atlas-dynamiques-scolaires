@@ -6,7 +6,7 @@ Sur GitHub, il y a un "robot" (la fameuse intégration continue) qui lance la co
 - Si les tests passent, le robot met une coche verte ✅.
 - Si un test échoue, il met une croix rouge ❌, et le code est bloqué.
 
-Le problème qui s'est posé lors de la conception architecturale de l'Atlas est le suivant : l'Auteur a défini 32 tests très stricts pour vérifier les 32 formules mathématiques complexes du Monde B... mais au démarrage du projet, personne n'a encore programmé le code de ces formules !
+Le problème qui s'est posé lors de la conception architecturale de l'Atlas est le suivant : l'Auteur a défini 32 tests très stricts pour vérifier les 32 formules mathématiques complexes du Socle 2... mais au démarrage du projet, personne n'a encore programmé le code de ces formules !
 
 Si nous avions laissé les tests normaux : 
 Les 32 tests se seraient exécutés, auraient cherché les formules, ne les auraient pas trouvées, et auraient "planté". Le projet afficherait une immense croix rouge ❌ permanente. Cela risque de faire paniquer les contributeurs ("Au secours, tout est cassé !") et empêcherait le robot de valider d'autres travaux.
