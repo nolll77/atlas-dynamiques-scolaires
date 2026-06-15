@@ -114,36 +114,7 @@ Expliquez clairement :
 
 ---
 
-## Étape 5 : Signature du CLA (Accord de contribution)
-
-Lors de votre première Pull Request, un robot automatisé (CLA Assistant) publiera un commentaire vous invitant à signer l'accord de contribution du projet.
-
-La procédure est simple : il vous sera demandé de publier une phrase précise en commentaire, par exemple :
-
-```text
-I have read the CLA Document and I hereby sign the CLA
-```
-
-Une fois ce commentaire publié, le robot validera automatiquement votre accord.
-
-### Pourquoi cet accord ?
-
-Le projet est développé sous licence MIT. Cela signifie que le code source est librement accessible et réutilisable par tous, dans les conditions prévues par cette licence.
-
-Le CLA complète ce cadre en garantissant que les contributions intégrées au projet peuvent être utilisées, maintenues, distribuées et faire l'objet d'évolutions futures sans incertitude juridique.
-
-Concrètement :
-
-* Votre contribution est intégrée à une infrastructure open source accessible à tous.
-* Les utilisateurs du projet peuvent réutiliser ce code conformément à la licence MIT.
-* Les mainteneurs disposent des droits nécessaires pour maintenir et faire évoluer le projet dans la durée.
-* Vous restez identifié comme contributeur via l'historique Git et les mécanismes habituels de reconnaissance des projets open source.
-
-Les contributions intégrées au projet participent à la construction d'une infrastructure open source publiée sous licence MIT. Cette infrastructure peut être librement utilisée et réutilisée par tous, y compris les contributeurs, les mainteneurs, les chercheurs, les associations, les entreprises ou les citoyens, conformément aux conditions de cette licence.
-
----
-
-## Étape 6 : Revue, validation et fusion
+## Étape 5 : Revue, validation et fusion
 
 Après l'ouverture de votre Pull Request, notre système d'intégration continue (CI) exécutera automatiquement les tests du projet.
 
