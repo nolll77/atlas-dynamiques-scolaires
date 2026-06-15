@@ -1,6 +1,6 @@
 # Architecture Collaborative : Philosophie et Infrastructure
 
-## 🧠 Comprendre notre fonctionnement : La Désynchronisation
+## Comprendre notre fonctionnement : La Désynchronisation
 
 On pourrait légitimement se demander : *"Si on a déjà décrit tout ce qu'il faut faire dans les Issues GitHub, à quoi servent ces matrices de couverture et ces fichiers de tests remplis de code vide ou ignoré ?"*
 
@@ -19,7 +19,7 @@ Dans un projet collaboratif d'envergure, nous devons séparer strictement l'inte
 
 ---
 
-## 🏛️ L'Infrastructure Intangible : Les Gardiens du Temple
+## L'Infrastructure Intangible : Les Gardiens du Temple
 
 Vous constaterez la présence de nombreux fichiers qui ne contiennent pas directement les algorithmes finaux (tests vides, documents méthodologiques). **Il est impératif de conserver ces fichiers et cette arborescence intacts.** Ils constituent la colonne vertébrale du projet :
 
