@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install system dependencies (LLVM for numba/llvmlite)
+        run: sudo apt-get update && sudo apt-get install -y llvm-15 llvm-15-dev cmake
       - uses: astral-sh/setup-uv@v2
       - run: uv python install 3.11
       - run: uv sync --extra dev
@@ -26,6 +28,8 @@ jobs:
         python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
+      - name: Install system dependencies (LLVM for numba/llvmlite)
+        run: sudo apt-get update && sudo apt-get install -y llvm-15 llvm-15-dev cmake
       - uses: astral-sh/setup-uv@v2
       - run: uv python install ${{ matrix.python-version }}
       - run: uv sync --extra dev
