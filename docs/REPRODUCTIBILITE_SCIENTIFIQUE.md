@@ -23,19 +23,12 @@ L'Atlas utilise une architecture ultra-moderne basée sur **uv** et le standard 
 
 ## 2. La séparation Code / Données (Git vs DVC)
 
-Git est excellent pour gérer les versions du code texte (`.py`, `.md`), mais il est incapable de gérer efficacement de lourds fichiers de données (les bases CSV de l'INSEE, les shapefiles, les modèles entraînés).
+**Le cauchemar classique** : Dans 95% des laboratoires, les chercheurs s'échangent des fichiers par mail ou sur des clés USB nommés `data_v1.csv`, `data_v2_FINAL.csv`. Quand vient l'heure de publier l'article, personne ne sait *exactement* quel fichier a été utilisé pour générer la Figure 3. Et on ne peut pas mettre 50 Go de données sur GitHub, car Git n'est pas fait pour ça et plante.
 
-C'est ici qu'intervient **DVC**.
-- **Git** versionne l'intelligence (l'algorithme).
-- **DVC** versionne la matière première (la donnée) et les résultats.
+**La révolution DVC** : 
+DVC fait pour la *Data* ce que Git fait pour le *Code*. Au lieu d'uploader les gros fichiers sur GitHub, DVC les envoie discrètement sur un stockage décentralisé "bon marché" (Google Drive, S3). Sur GitHub, DVC ne laisse qu'un minuscule fichier texte contenant un "hachage" (ex: `master_dataset.parquet.dvc`).
 
-DVC agit exactement comme Git, mais pour les données. Il stocke les métadonnées de hachage dans des fichiers minuscules (`.dvc`), que l'on commite sur Git. Les vraies données lourdes, elles, sont stockées sur un *remote* (Google Drive, S3, etc.). 
-
-Si vous clonez le dépôt, vous tapez :
-```bash
-dvc pull
-```
-Et DVC ira chercher la version exacte des données qui correspond au code actuel de votre branche Git. Plus de `donnees_finales_V3_final_pour_de_vrai.csv` !
+**Résultat magique** : Si dans 2 ans vous faites un `git checkout ancienne_branche`, puis tapez `dvc pull`, DVC ira télécharger *exactement* le bon jeu de données qui correspondait à votre code à la seconde près. C'est la garantie absolue de ne jamais "perdre" la donnée qui a justifié une publication.
 
 ---
 
@@ -101,21 +94,18 @@ Pour simplifier la vie des développeurs, la complexité des commandes est masqu
 
 ## 6. Le Suivi Scientifique avec MLflow
 
-Là où DVC gère les "fichiers", **MLflow** gère les "métriques" et les "expériences". 
+**Le cauchemar classique** : Pour trouver le bon seuil de clustering (ex: 5 clusters au lieu de 4), un chercheur lance son algorithme, note le score sur un post-it, change le paramètre, relance, et oublie ce qu'il a fait 3 jours plus tard. *"Comment j'avais fait pour obtenir cette super carte la semaine dernière ?"* $\to$ Perdu à jamais.
 
-Lorsque nous ferons tourner de gros modèles (comme l'optimisation des seuils de distance spatiale ou les modèles de basculement non-linéaires), MLflow enregistrera en direct, pour chaque test :
-1. Les paramètres utilisés (ceux du `params.yaml`).
-2. Les scores obtenus (Indice de Theil, Silhouette Score, etc.).
+**La révolution MLflow** :
+C'est un tableau de bord (un *dashboard*) automatisé. Chaque fois que le code tourne (`make run-all`), MLflow agit comme une "boîte noire d'avion". Il enregistre automatiquement : qui a lancé le code, à quelle heure, avec quel commit Git, **tous** les paramètres exacts du `params.yaml`, et les scores mathématiques en sortie (votre Indice de Theil, votre Gini, etc.).
 
-Vous pouvez visualiser toutes vos expérimentations en tapant :
-```bash
-make mlflow-ui
-```
-Cela permet d'avoir une traçabilité scientifique parfaite : *"Quand j'ai mis le paramètre alpha à 0.05 mardi dernier, quel était l'impact exact sur la ségrégation mesurée ?"*
+**Résultat magique** : Sur l'interface visuelle de MLflow (accessible en tapant `make mlflow-ui`), vous pouvez sélectionner 5 anciennes exécutions, cliquer sur "Comparer", et MLflow vous sort un graphique croisé vous prouvant mathématiquement que *"C'est quand le paramètre Alpha était à 0.05 que le clustering était le plus stable"*. C'est un registre scientifique infalsifiable.
 
 ---
 
-## Conclusion : Règles pour les Contributeurs
+## Conclusion : Le Coffre-Fort Mathématique
+
+Dans les revues scientifiques prestigieuses (qui exigent de plus en plus de garanties computationnelles pour éviter les fraudes), utiliser l'orchestration DVC/MLflow/uv signifie : **"Mon projet n'est pas un script Python jetable, c'est un coffre-fort mathématique auditable de bout en bout."**
 
 Pour maintenir l'intégrité de cette infrastructure, merci de respecter ces 3 règles d'or lors de vos développements :
 
