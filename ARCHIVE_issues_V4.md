@@ -27,13 +27,13 @@
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-  - [ ] Constitution d'un historique de l'IPS moyen par année (L'objectif analytique nécessitant une profondeur temporelle, il serait idéal de remonter jusqu'en 2018 via data.gouv.fr)
-  - [ ] Extraction de l'écart-type de l'IPS, nommé `sigma_ips` (Cette donnée est indispensable pour mesurer l'hétérogénéité sociale interne aux lycées sur la même profondeur historique)
-  - [ ] Intégration temporelle des résultats du bac (taux réussite, mentions, IVAL ; avec une profondeur historique équivalente si possible)
+  - [ ] Constitution d'un historique de l'IPS moyen par année (L'architecture mathématique du projet exprime un besoin de profondeur temporelle ; l'intégration jusqu'à 2018 garantit la robustesse des modèles longitudinaux)
+  - [ ] Extraction de l'écart-type de l'IPS, nommé `sigma_ips` (Donnée mathématique indispensable pour mesurer l'évolution de l'hétérogénéité sociale interne sur la même période)
+  - [ ] Intégration temporelle des résultats du bac (taux réussite, mentions, IVAL ; la même exigence mathématique de profondeur s'applique)
   - [ ] Intégration de la géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
   - [ ] Intégration des coordonnées GPS des établissements (lat/lon)
   - [ ] Intégration des données de sectorisation scolaire
-  - [ ] Constitution d'un historique DVF Etalab (L'analyse de la gentrification requiert un suivi temporel des prix au m² par zone sur plusieurs années)
+  - [ ] Constitution d'un historique DVF Etalab (L'analyse spatio-temporelle de la gentrification exprime le même besoin d'historique robuste sur les prix au m²)
   - [ ] Intégration des données IDF Mobilités (accessibilité transport)
   - [ ] Intégration des données démographiques temporelles INSEE (avec historique)
   - [ ] Consolidation de la table maître : `| uai | nom | annee | ips | sigma_ips | taux_mention | lat | lon | iris | revenu_median | prix_dvf | ... |`
