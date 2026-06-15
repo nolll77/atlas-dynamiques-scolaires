@@ -211,9 +211,11 @@ Le projet génère :
 
 ## Reproductibilité Scientifique
 
-Afin de pallier la fragilité historique des environnements analytiques, l'Atlas adopte les standards d'ingénierie les plus stricts en matière de reproductibilité scientifique, dignes des laboratoires de pointe en Machine Learning. 
+Afin de pallier la fragilité historique des environnements analytiques (fichiers `requirements.txt` obsolètes, données volatiles), l'Atlas adopte les standards d'ingénierie les plus stricts, dignes des laboratoires de pointe en Machine Learning. Ce triptyque garantit une reproductibilité absolue :
 
-L'infrastructure s'appuie sur le triptyque **DVC / MLflow / uv** : une gestion des dépendances ultra-rapide garantissant une reproductibilité au bit près dans le temps (`uv.lock` et standard PEP 621), couplée à un versionnage décentralisé des données (DVC) et un tracking continu des expérimentations (MLflow).
+- **Ingénierie logicielle (`uv` & `pyproject.toml`)** : L'utilisation de `uv` (100x plus rapide que `pip`) couplé au fichier `uv.lock` gèle l'environnement au bit près. Même cloné dans 5 ans, le système s'installera à l'identique. Les dépendances sont centralisées via le standard PEP 621.
+- **Versionnage des données (DVC)** : DVC fait pour la Data ce que Git fait pour le code. Il relie chaque commit à une version exacte (hachée et décentralisée) des lourdes bases de données utilisées.
+- **Tracking des expérimentations (MLflow)** : Chaque exécution agit comme une "boîte noire", reliant de manière infalsifiable les hyperparamètres initiaux aux scores mathématiques obtenus (Theil, Gini).
 
 👉 **[Lire le guide de Reproductibilité Scientifique](docs/REPRODUCTIBILITE_SCIENTIFIQUE.md)**
 
