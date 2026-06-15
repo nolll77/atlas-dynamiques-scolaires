@@ -1,6 +1,8 @@
 # Atlas des Dynamiques Scolaires
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![FR](https://img.shields.io/badge/Lang-FR-blue.svg)](README.md)
+[![EN](https://img.shields.io/badge/Lang-EN-red.svg)](README.en.md)
 [![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
 [![Onboarding](https://img.shields.io/badge/Parcours-Collaborateur-orange.svg)](PARCOURS_COLLABORATEUR.md)
 
