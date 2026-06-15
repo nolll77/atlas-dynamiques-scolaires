@@ -35,3 +35,33 @@ Voici très concrètement comment contribuer à l'Atlas :
 5. **Soumettez (Refactor)** : Ouvrez une *Pull Request*. La Matrice de Couverture gagnera alors un nouveau statut "✅ Implémenté" grâce à vous !
 
 En suivant ce processus, vous avez la **garantie absolue** que le code que vous intégrez respecte parfaitement la théorie sociologique : le test était là bien avant vous, agissant comme un filet de sécurité intransigeant.
+
+## 4. Exemple concret : La Distance de Mahalanobis
+
+Voici très exactement ce que vit un développeur qui s'attaque à une formule de l'Atlas.
+
+**Étape 1 : Le repérage (Jaune ⚠️)**  
+Dans le fichier `tests/socle_1_mathematiques/test_00_statistiques.py`, le développeur trouve la fonction de test préparée à l'avance :
+```python
+@pytest.mark.skip(reason="À implémenter")
+def test_distance_mahalanobis():
+    # Le test contient déjà les données factices (inputs) 
+    # et le résultat mathématique exact attendu (outputs).
+    assert calculer_mahalanobis(x, covariance) == resultat_attendu
+```
+
+**Étape 2 : Le passage à l'acte (Rouge ❌)**  
+Le développeur efface simplement la ligne `@pytest.mark.skip`. Il tape `make tests` dans son terminal.
+Le système cherche la fonction `calculer_mahalanobis` dans le code source, ne la trouve pas, et fait échouer le test (Red). C'est le signal de départ.
+
+**Étape 3 : Le développement (Le Code Source)**  
+Le développeur se rend dans le dossier `src/atlas/features/socle_1_mathematiques/` et écrit le véritable code algorithmique :
+```python
+def calculer_mahalanobis(x, covariance):
+    # Implémentation réelle de l'équation avec numpy / scipy
+    return resultat
+```
+
+**Étape 4 : La victoire (Vert ✅)**  
+Il relance `make tests`. Cette fois, son code source produit exactement la valeur validée par la théorie. Le test passe au vert. 
+Il peut fièrement soumettre son code : la rigueur scientifique est sauvée !
