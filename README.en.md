@@ -135,9 +135,8 @@ The project follows a reproducible logic:
 
 ## Validation & Tests
 
-Contributions are subject to a strict validation pipeline:
+Algorithmic integration relies on a **Test-Driven Architecture**. All theoretical formulas in the project have an integrity test (active or pending):
 
-**Mandatory Tests**
 - correct Theil decomposition
 - stochastic transition matrices
 - graph symmetry

@@ -68,7 +68,7 @@ make setup
 
 ## Étape 3 : Développer et vérifier (Test-Driven Architecture)
 
-L'Atlas repose sur une architecture pilotée par les tests (Test-Driven Architecture) extrêmement stricte. Avant de commencer à coder, prenez le temps de comprendre comment s'organise la validation :
+L'Atlas repose sur une architecture pilotée par les tests (Test-Driven Architecture). Avant de commencer à coder, prenez le temps de comprendre comment s'organise l'intégration :
 
 * Consultez le fichier `CONTRIBUTING.md`.
 * Familiarisez-vous avec l'organisation du projet (notamment la distinction entre `src/` et `exploratory/`).
@@ -89,7 +89,7 @@ feat: implémentation de la distance de Mahalanobis
 
 ---
 
-## Étape 4 : Soumettre votre travail (Pull Request)
+## Étape 4 : Intégrer votre algorithme (Pull Request)
 
 Une fois votre développement terminé :
 

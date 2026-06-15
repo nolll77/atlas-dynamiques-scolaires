@@ -1,6 +1,6 @@
 # Laboratoire de Validation (Tests)
 
-Ce répertoire contient l'intégralité des tests informatiques ("barrières de sécurité") qui garantissent que l'algorithmique développée dans l'Atlas respecte strictement les théories sociologiques du projet.
+Ce répertoire contient l'intégralité des tests informatiques ("barrières de sécurité") qui garantissent que l'algorithmique développée dans l'Atlas est alignée sur les théories sociologiques du projet.
 
 ## Naviguer dans les tests
 
@@ -24,7 +24,7 @@ Ce choix n'est pas une erreur, mais le fondement même de la méthode de dévelo
 Dans un projet scientifique tel que l'Atlas, l'erreur algorithmique n'est pas permise. Pour garantir une fiabilité absolue, les principes de la **Test-Driven Architecture (Architecture pilotée par les tests)** sont appliqués :
 
 * **L'exigence (Le Manifeste)** : Avant d'écrire la moindre ligne de code, l'auteur a formellement défini 63 axiomes et formules sociologiques dans les manifestes théoriques (31 pour le Socle 1, 32 pour le Socle 2).
-* **Le moule (Le Test)** : Chacune de ces formules a ensuite été traduite en un "test unitaire" strict. Ce test définit informatiquement les entrées (données) et la sortie mathématique exacte attendue.
+* **Le moule (Le Test)** : Chacune de ces formules a ensuite été traduite en un "test unitaire". Ce test définit informatiquement les entrées (données) et la sortie mathématique exacte attendue.
 * **Le vide (L'Algorithme)** : À l'heure actuelle, la majorité de ces algorithmes *n'ont pas encore été codés*. L'Atlas dispose de ses tests (les gardes-fous), mais attend ses algorithmes (le moteur). Seules quelques fondations comme l'Indice de Theil ou l'Entre-Soi sont finalisées.
 
 ## 2. Pourquoi "Ignorer" (Skipper) les tests ?
@@ -47,7 +47,7 @@ Voici le flux de travail (workflow) standard pour l'implémentation :
 4. **Implémentation (Green)** : Écrire l'algorithme en Python dans le dossier source approprié (`src/atlas/features/socle_1_mathematiques/` ou `socle_2_dynamique/`) jusqu'à ce que la sortie mathématique valide le test (✅).
 5. **Intégration (Refactor)** : Ouvrir une *Pull Request*. La Matrice de Couverture passe au statut "✅ Implémenté".
 
-Ce processus garantit que l'algorithme intégré respecte strictement la théorie sociologique : le test agit comme un filet de sécurité structurel.
+Ce processus garantit que l'algorithme intégré valide la théorie sociologique : le test agit comme un filet de sécurité structurel.
 
 ## 4. Exemple de cycle de développement : La Distance de Mahalanobis
 

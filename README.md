@@ -142,19 +142,11 @@ Ingestion → Nettoyage → Feature Engineering → Modélisation → Réseaux �
 
 ## Validation & tests
 
-Les contributions sont soumises à un pipeline de validation strict basé sur le **Test-Driven Architecture**. Toutes les formules théoriques du projet possèdent un test d'intégrité (actif ou en attente) :
+L'intégration algorithmique repose sur une architecture de validation par les tests (**Test-Driven Architecture**). Toutes les formules théoriques du projet possèdent un test d'intégrité (actif ou en attente) :
 
 - 👉 **[Lire le document d'explication : Pourquoi les tests sont-ils Ignorés (Jaunes) ?](tests/README.md)**
 - 👉 **[Preuve de Couverture 100% : Socle 1 (Mathématiques)](tests/socle_1_mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)**
 - 👉 **[Preuve de Couverture 100% : Socle 2 (Dynamique)](tests/socle_2_dynamique/MATRICE_DE_COUVERTURE_SOCLE_2.md)**
-
-- **Tests statistiques obligatoires :**
-- décomposition Theil correcte
-- matrices de transition stochastiques
-- symétrie des graphes
-- tests de Moran (spatial autocorrelation)
-- stabilité bootstrap des indices
-- validation MAUP (multi-échelle)
 
 ## Organisation du code
 

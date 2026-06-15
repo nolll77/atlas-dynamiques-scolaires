@@ -15,7 +15,7 @@ Actuellement, ces tests sont volontairement désactivés (marqués avec l'étiqu
 
 ## Règle de Contribution
 
-Pour intégrer une nouvelle brique algorithmique du Socle 2, la procédure est stricte :
+Pour intégrer une nouvelle brique algorithmique du Socle 2, le flux de travail est le suivant :
 
 1. Choisir un test ignoré dans l'un des fichiers de ce répertoire (ex: `test_identify_super_bridges` dans `test_04_networks.py`).
 2. Retirer l'étiquette `@pytest.mark.skip`.
