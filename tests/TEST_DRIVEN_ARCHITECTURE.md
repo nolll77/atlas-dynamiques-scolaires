@@ -26,4 +26,4 @@ C'est en réalité la feuille de route (To-Do List) des futurs contributeurs ! V
 6. Le test passe au vert (✅).
 7. Vous ouvrez une Pull Request, et la Matrice de couverture gagne un nouveau "✅ Implémenté" !
 
-C'est la garantie absolue que le code intégré respecte la théorie : le test est déjà là, agissant comme un "garde-fou", qui n'attend que l'algorithme vienne s'y glisser.
+C'est la garantie absolue que le code intégré respecte la théorie : le test est déjà là, agissant comme un "garde-fou", qui n'attend plus que l'algorithme vienne s'y glisser.
