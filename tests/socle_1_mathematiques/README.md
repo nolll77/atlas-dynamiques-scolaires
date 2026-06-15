@@ -9,7 +9,7 @@ Afin de garantir que l'ensemble des 31 formules théoriques ne soient pas oubli�
 Actuellement, la vaste majorité de ces tests sont volontairement désactivés (marqués avec l'étiquette `@pytest.mark.skip`). Ils apparaissent en "jaune" (Ignorés) dans l'intégration continue (CI) de GitHub, agissant comme une feuille de route technique (*To-Do List*) pour les contributeurs.
 
 - 👉 **Voir la preuve :** [Matrice de Couverture à 100% des Formules](MATRICE_DE_COUVERTURE_SOCLE_1.md)
-- 👉 **Lire le document d'explication :** [Pourquoi les tests sont-ils Ignorés (Jaunes) ?](../TEST_DRIVEN_ARCHITECTURE.md)
+- 👉 **Lire le document d'explication :** [Pourquoi les tests sont-ils Ignorés (Jaunes) ?](../README.md)
 
 ## Organisation des tests
 
