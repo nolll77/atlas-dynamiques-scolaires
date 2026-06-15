@@ -22,6 +22,15 @@
 
 ---
 
+> [!NOTE]
+> **VALIDATION ARCHITECTURALE (TDD)**
+> L'intégralité des 31 formules de ce manifeste est verrouillée par des tests informatiques.
+> 👉 **Voir le suivi :** [Matrice de Couverture à 100% des Formules](../tests/mathematiques/MATRICE_DE_COUVERTURE_SOCLE_1.md)
+> 👉 **Documentation technique :** [README du Socle 1](../tests/mathematiques/README.md)
+
+---
+
+
 ## 0. Fondations Statistiques (Analyse Exploratoire)
 
 ### Normalisation (Z-Score) et Indice d'Entre-Soi

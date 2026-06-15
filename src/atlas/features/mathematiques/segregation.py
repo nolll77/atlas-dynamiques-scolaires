@@ -1,8 +1,8 @@
 """
-Indices de ségrégation scolaire.
-
-⚠️ IMPORTANT : Ces indices mesurent des associations statistiques.
-Ils ne démontrent pas de causalité. Voir docs/CAUSALITY_LIMITS.md
+Bloc 3 : Ségrégation et Inégalités Spatiales.
+Contient les implémentations pour :
+- Indice de Theil (Décomposition de l'Entropie)
+- Pression Ségrégative Locale (PSL)
 """
 
 import numpy as np
@@ -57,28 +57,8 @@ def theil_index(df: pd.DataFrame, group_col: str, value_col: str) -> dict:
     }
 
 
-def duncan_dissimilarity(
-    df: pd.DataFrame, area_col: str, group_col: str, value_col: str
-) -> float:
-    """Indice de dissimilarité de Duncan D."""
-    groups = df.groupby([area_col, group_col])[value_col].sum().unstack(fill_value=0)
-    if groups.shape[1] < 2:
-        return 0.0
-    col_a, col_b = groups.columns[0], groups.columns[1]
-    total_a = groups[col_a].sum()
-    total_b = groups[col_b].sum()
-    return 0.5 * np.sum(np.abs(groups[col_a] / total_a - groups[col_b] / total_b))
-
-
-def entre_soi_score(
-    ips: float,
-    sigma: float,
-    ips_mean: float,
-    ips_std: float,
-    sigma_mean: float,
-    sigma_std: float,
-) -> float:
-    """Score d'entre-soi : IPS élevé + σ faible = entre-soi fort."""
-    z_ips = (ips - ips_mean) / ips_std
-    z_sigma = (sigma - sigma_mean) / sigma_std
-    return z_ips - z_sigma
+def pression_segregative_locale(heterogeneite: float, distance_sociale: float, betweenness: float, diversite: float) -> float:
+    """
+    Pression Ségrégative Locale (PSL).
+    """
+    pass
