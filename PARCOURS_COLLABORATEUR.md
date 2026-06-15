@@ -1,53 +1,168 @@
-# Parcours Collaborateur : Comment contribuer de A à Z ?
+# Parcours Contributeur : Comment contribuer de A à Z ?
 
-Bienvenue ! Vous souhaitez donner un peu de votre temps et de votre expertise technique pour construire l'Atlas des Dynamiques Scolaires ? Ce guide détaille étape par étape le fonctionnement de notre collaboration.
+Bienvenue !
 
-## Étape 1 : Choisir une Issue (Ticket)
+Vous souhaitez consacrer un peu de votre temps et de votre expertise à la construction de l'Atlas des Dynamiques Scolaires ? Ce guide détaille étape par étape le fonctionnement de notre collaboration.
 
-Sur la page **Issues** de GitHub, vous trouverez la liste des tâches ouvertes. Cherchez celles qui n'ont personne d'assigné (les issues "libres").
-* **Attention :** Sur GitHub, vous ne pouvez pas vous assigner une issue vous-même d'un simple clic si vous n'êtes pas administrateur du projet.
-* **Comment faire ?** Ouvrez l'issue qui vous intéresse et postez un commentaire disant par exemple : *"Bonjour, je suis intéressé(e) pour prendre en charge cette issue !"*. L'auteur du projet vous l'assignera officiellement en retour.
+## Avant de commencer
 
-## Étape 2 : Préparer son environnement
+Avant de choisir une issue, nous vous recommandons de :
 
-Une fois l'issue assignée, vous devez créer votre propre copie de travail :
-1. Cliquez sur le bouton **Fork** en haut à droite du dépôt GitHub pour copier le projet sur votre propre compte.
-2. Clonez votre copie sur votre ordinateur :
-   ```bash
-   git clone git@github.com:VOTRE_PSEUDO/atlas-dynamiques-scolaires.git
-   cd atlas-dynamiques-scolaires
-   ```
-3. Créez une branche dédiée à votre issue (ex: `git checkout -b issue-002-pipeline-ips`).
-4. Installez l'environnement avec notre gestionnaire :
-   ```bash
-   make setup
-   ```
+* Lire le README afin de comprendre les objectifs du projet.
+* Parcourir les issues ouvertes pour identifier les sujets sur lesquels vous souhaitez contribuer.
+* Vérifier qu'aucune Pull Request n'est déjà en cours sur le même sujet.
+* Poser vos questions dans les discussions ou directement sur une issue si certains points ne sont pas clairs.
 
-## Étape 3 : Coder et vérifier
+Pour les contributions importantes (nouveau pipeline de données, évolution de l'architecture, ajout d'une nouvelle source de données, etc.), il est préférable d'échanger au préalable afin de valider l'approche retenue.
 
-* Lisez attentivement le [Guide de Contribution (CONTRIBUTING.md)](CONTRIBUTING.md) pour comprendre la philosophie du code (dossiers `src/` vs `exploratory/`) et nos principes de neutralité.
-* Écrivez votre code !
-* Avant de sauvegarder, vérifiez que tout est au vert :
-  ```bash
-  make tests
-  ```
-* Sauvegardez vos changements (Commit) en suivant des messages clairs (ex: `feat: add IPS pipeline`).
+---
 
-## Étape 4 : Soumettre son travail (Pull Request)
+## Étape 1 : Choisir une Issue
 
-1. Poussez votre code sur votre copie GitHub (`git push origin votre-branche`).
-2. Allez sur la page du projet principal et cliquez sur **Compare & pull request**.
-3. Remplissez le formulaire de la Pull Request en expliquant ce que vous avez fait.
+Sur la page **Issues** du dépôt GitHub, vous trouverez la liste des tâches ouvertes.
 
-## Étape 5 : La signature du CLA (Accord de contribution)
+Privilégiez les issues qui ne sont pas encore assignées à un contributeur.
 
-Dès que vous ouvrez votre première Pull Request, un **robot automatisé (CLA Assistant)** va poster un commentaire. Cet accord légal est indispensable pour intégrer votre code à l'infrastructure open-source tout en protégeant le projet.
-* **Que devez-vous faire ?** C'est très simple. Le robot vous demandera de poster un commentaire avec une phrase exacte en anglais, généralement : 
-  `I have read the CLA Document and I hereby sign the CLA`
-* Copiez-collez cette phrase et postez-la en commentaire. Le robot validera instantanément votre accord.
+**Attention :** si vous n'êtes pas mainteneur du projet, GitHub ne vous permet généralement pas de vous assigner vous-même une issue.
 
-## Étape 6 : Validation et Fusion
+**Comment faire ?**
 
-Notre système d'Intégration Continue (CI) va alors tester automatiquement votre code. Si la CI est verte et que la relecture est bonne, votre code sera fusionné dans le projet principal. 
+Ouvrez simplement l'issue qui vous intéresse et laissez un commentaire, par exemple :
 
-**Merci infiniment pour votre temps et vos compétences !**
+> Bonjour, je suis intéressé(e) pour prendre en charge cette issue.
+
+Un mainteneur pourra alors vous l'assigner officiellement.
+
+---
+
+## Étape 2 : Préparer votre environnement
+
+Une fois l'issue assignée, créez votre propre copie de travail du projet.
+
+### 1. Créez un fork
+
+Cliquez sur le bouton **Fork** en haut à droite du dépôt GitHub afin de créer une copie du projet sur votre propre compte.
+
+### 2. Clonez votre fork
+
+```bash
+git clone git@github.com:VOTRE_PSEUDO/atlas-dynamiques-scolaires.git
+cd atlas-dynamiques-scolaires
+```
+
+### 3. Créez une branche dédiée
+
+Créez une branche spécifique à votre contribution :
+
+```bash
+git checkout -b issue-002-pipeline-ips
+```
+
+### 4. Installez l'environnement
+
+```bash
+make setup
+```
+
+---
+
+## Étape 3 : Développer et vérifier
+
+Avant de commencer à coder, prenez le temps de lire le guide de contribution.
+
+* Consultez le fichier `CONTRIBUTING.md`.
+* Familiarisez-vous avec l'organisation du projet (notamment la distinction entre `src/` et `exploratory/`).
+* Respectez les principes de qualité, de reproductibilité et de neutralité du projet.
+
+Développez ensuite votre solution.
+
+Avant chaque envoi, vérifiez que tout fonctionne correctement :
+
+```bash
+make tests
+```
+
+Enfin, enregistrez vos modifications avec des messages de commit explicites :
+
+```text
+feat: add IPS pipeline
+```
+
+---
+
+## Étape 4 : Soumettre votre travail (Pull Request)
+
+Une fois votre développement terminé :
+
+### 1. Poussez votre branche
+
+```bash
+git push origin votre-branche
+```
+
+### 2. Ouvrez une Pull Request
+
+Rendez-vous sur GitHub puis cliquez sur **Compare & pull request**.
+
+### 3. Décrivez votre contribution
+
+Expliquez clairement :
+
+* ce qui a été réalisé ;
+* les choix techniques effectués ;
+* les éventuels points nécessitant une attention particulière.
+
+---
+
+## Étape 5 : Signature du CLA (Accord de contribution)
+
+Lors de votre première Pull Request, un robot automatisé (CLA Assistant) publiera un commentaire vous invitant à signer l'accord de contribution du projet.
+
+La procédure est simple : il vous sera demandé de publier une phrase précise en commentaire, par exemple :
+
+```text
+I have read the CLA Document and I hereby sign the CLA
+```
+
+Une fois ce commentaire publié, le robot validera automatiquement votre accord.
+
+### Pourquoi cet accord ?
+
+Le projet est développé sous licence MIT. Cela signifie que le code source est librement accessible et réutilisable par tous, dans les conditions prévues par cette licence.
+
+Le CLA complète ce cadre en garantissant que les contributions intégrées au projet peuvent être utilisées, maintenues, distribuées et faire l'objet d'évolutions futures sans incertitude juridique.
+
+Concrètement :
+
+* Votre contribution est intégrée à une infrastructure open source accessible à tous.
+* Les utilisateurs du projet peuvent réutiliser ce code conformément à la licence MIT.
+* Les mainteneurs disposent des droits nécessaires pour maintenir et faire évoluer le projet dans la durée.
+* Vous restez identifié comme contributeur via l'historique Git et les mécanismes habituels de reconnaissance des projets open source.
+
+Les contributions intégrées au projet participent à la construction d'une infrastructure open source publiée sous licence MIT. Cette infrastructure peut être librement utilisée et réutilisée par tous, y compris les contributeurs, les mainteneurs, les chercheurs, les associations, les entreprises ou les citoyens, conformément aux conditions de cette licence.
+
+---
+
+## Étape 6 : Revue, validation et fusion
+
+Après l'ouverture de votre Pull Request, notre système d'intégration continue (CI) exécutera automatiquement les tests du projet.
+
+Un mainteneur pourra également effectuer une revue de votre code et vous proposer des ajustements ou demander des précisions.
+
+Ces échanges font partie du processus normal de collaboration open source.
+
+Lorsque :
+
+* les tests sont validés ;
+* la revue est satisfaisante ;
+* les éventuelles remarques ont été traitées ;
+
+votre contribution pourra être fusionnée dans la branche principale du projet.
+
+---
+
+## Merci !
+
+Chaque contribution, même modeste, participe à l'amélioration de l'Atlas des Dynamiques Scolaires.
+
+Merci pour votre temps, votre expertise et votre volonté de contribuer à un projet ouvert, réutilisable et utile à tous.
