@@ -222,9 +222,11 @@ make paper
 
 ## License
 
-This project is published under a dual-license regime:
-- **Code and pipeline**: [MIT License](LICENSE) (free use, modification, and distribution permitted).
-- **Editorial content and figures**: [CC BY 4.0](LICENSE_CONTENT) (mandatory attribution to the original author).
+This project distinguishes three types of content, subject to specific licenses:
+
+- **Source Code** (`src/`, `tests/`, `pipelines/`, `scripts/`): [MIT License](LICENSE) (free use, modification, and distribution permitted).
+- **Data**: Source data comes from public organizations (INSEE, DEPP, Etalab DVF, etc.) and remains subject to their respective original licenses. This project claims no ownership over the source data.
+- **Editorial content and figures** (`docs/`, `figures/`, `paper_arxiv/`): [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE_CONTENT). Any reuse requires attribution to the original author.
 
 ## Vision
 

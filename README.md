@@ -227,9 +227,11 @@ make paper
 
 ## Licence
 
-Ce projet est publié sous un régime de double licence :
-- **Code et pipeline** : [MIT License](LICENSE) (usage libre, modification et distribution autorisées).
-- **Contenu éditorial et figures** : [CC BY 4.0](LICENSE_CONTENT) (attribution obligatoire à l'auteur original).
+Ce projet distingue trois types de contenus, soumis à des licences spécifiques :
+
+- **Code source** (`src/`, `tests/`, `pipelines/`, `scripts/`) : [MIT License](LICENSE) (usage libre, modification et distribution autorisées).
+- **Données** : Les données sources proviennent d'organismes publics (INSEE, DEPP, Etalab DVF, etc.) et restent soumises à leurs licences respectives (Licence Ouverte, ODbL, etc.). Le projet ne revendique aucune propriété sur ces données.
+- **Contenu éditorial et figures** (`docs/`, `figures/`, `paper_arxiv/`) : [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE_CONTENT). Toute réutilisation nécessite l'attribution à l'auteur original.
 
 ## Vision
 
