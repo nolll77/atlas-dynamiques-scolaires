@@ -8,12 +8,16 @@ def compute_spatial_lag(x_vector: np.ndarray, w_matrix: np.ndarray) -> np.ndarra
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def score_propagation_segregation(s_vector: np.ndarray, w_matrix: np.ndarray) -> np.ndarray:
+def score_propagation_segregation(
+    s_vector: np.ndarray, w_matrix: np.ndarray
+) -> np.ndarray:
     """F2: Score de Propagation de Ségrégation (SPS) / Hotspots."""
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def detect_zones_bascule(beta_local: np.ndarray, beta_neighbors: np.ndarray) -> np.ndarray:
+def detect_zones_bascule(
+    beta_local: np.ndarray, beta_neighbors: np.ndarray
+) -> np.ndarray:
     """F3: Zones de Bascule (Effet local non-linéaire)."""
     raise NotImplementedError("À implémenter par les contributeurs.")
 

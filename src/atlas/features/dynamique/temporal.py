@@ -1,7 +1,5 @@
 """Formules 7, 8, 9, 26, 29 : Dynamiques Temporelles et Causales."""
 
-import numpy as np
-
 
 def temporal_dag_causality(y_t, y_t_minus_1, x_t, w_matrix):
     """F7: Graphe Acyclique Dirigé Inter-Temporel (DAG 2010->2026)."""

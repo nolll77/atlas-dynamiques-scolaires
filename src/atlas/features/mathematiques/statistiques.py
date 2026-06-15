@@ -38,14 +38,18 @@ def duncan_dissimilarity(
     return 0.5 * np.sum(np.abs(groups[col_a] / total_a - groups[col_b] / total_b))
 
 
-def distance_mahalanobis(x: np.ndarray, mu: np.ndarray, cov_inv: np.ndarray) -> np.ndarray:
+def distance_mahalanobis(
+    x: np.ndarray, mu: np.ndarray, cov_inv: np.ndarray
+) -> np.ndarray:
     """
     Distance de Mahalanobis.
     """
     pass
 
 
-def indice_fragmentation(betweenness: float, duncan: float, var_contribution: float, rupture: float) -> float:
+def indice_fragmentation(
+    betweenness: float, duncan: float, var_contribution: float, rupture: float
+) -> float:
     """
     Indice de Fragmentation par Établissement (F_i).
     """

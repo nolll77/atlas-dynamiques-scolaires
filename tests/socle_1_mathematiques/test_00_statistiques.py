@@ -1,7 +1,9 @@
 """Tests pour le Bloc 0 : Statistiques Exploratoires."""
+
 import pytest
-import numpy as np
+
 from atlas.features.mathematiques.statistiques import entre_soi_score
+
 
 def test_entre_soi_high_ips_low_sigma():
     """Score entre-soi élevé si IPS haut ET sigma faible."""
@@ -13,20 +15,24 @@ def test_entre_soi_high_ips_low_sigma():
     )
     assert score_elite > score_open
 
+
 @pytest.mark.skip(reason="À implémenter")
 def test_normalisation_z_score():
     """Test de Normalisation (Z-Score)"""
     pass
+
 
 @pytest.mark.skip(reason="À implémenter")
 def test_distance_mahalanobis():
     """Test de Distance de Mahalanobis"""
     pass
 
+
 @pytest.mark.skip(reason="À implémenter")
 def test_indice_dissimilarite_duncan():
     """Test de Indice de Dissimilarité de Duncan"""
     pass
+
 
 @pytest.mark.skip(reason="À implémenter")
 def test_indice_fragmentation():

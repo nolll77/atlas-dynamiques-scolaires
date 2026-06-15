@@ -57,7 +57,12 @@ def theil_index(df: pd.DataFrame, group_col: str, value_col: str) -> dict:
     }
 
 
-def pression_segregative_locale(heterogeneite: float, distance_sociale: float, betweenness: float, diversite: float) -> float:
+def pression_segregative_locale(
+    heterogeneite: float,
+    distance_sociale: float,
+    betweenness: float,
+    diversite: float,
+) -> float:
     """
     Pression Ségrégative Locale (PSL).
     """

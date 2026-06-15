@@ -13,11 +13,17 @@ def compute_social_corridors(transition_matrix: np.ndarray):
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def detect_ultrametric_violations(distance_matrix: np.ndarray, ultrametric_matrix: np.ndarray):
+def detect_ultrametric_violations(
+    distance_matrix: np.ndarray, ultrametric_matrix: np.ndarray
+):
     """F19: Validation Ultramétrique et Ponts Structurels."""
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def identify_super_bridges(flux_matrix: np.ndarray, betweenness: np.ndarray, ultrametric: np.ndarray):
+def identify_super_bridges(
+    flux_matrix: np.ndarray,
+    betweenness: np.ndarray,
+    ultrametric: np.ndarray,
+):
     """F24: Les Super-Ponts Inter-Blocs."""
     raise NotImplementedError("À implémenter par les contributeurs.")

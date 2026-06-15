@@ -1,7 +1,5 @@
 """Formules 11, 16, 20, 21, 22, 25, 27, 31 : Équilibre Systémique."""
 
-import numpy as np
-
 
 def simulate_social_mobility(s_t, x, w, c):
     """F11: Simulation de Mobilité Sociale (La dynamique du lycée)."""

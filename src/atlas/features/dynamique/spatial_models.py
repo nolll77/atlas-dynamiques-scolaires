@@ -18,11 +18,15 @@ def multilevel_sem(micro_data, meso_data, w_matrix):
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def decompose_indirect_effects(y: np.ndarray, w_quartier: np.ndarray, w_reseau: np.ndarray):
+def decompose_indirect_effects(
+    y: np.ndarray, w_quartier: np.ndarray, w_reseau: np.ndarray
+):
     """F28: Décomposition des Effets Indirects (Quartier vs Réseau)."""
     raise NotImplementedError("À implémenter par les contributeurs.")
 
 
-def spatial_gam_nonlinear(y: np.ndarray, x: np.ndarray, coords: np.ndarray, w: np.ndarray):
+def spatial_gam_nonlinear(
+    y: np.ndarray, x: np.ndarray, coords: np.ndarray, w: np.ndarray
+):
     """F30: Modèle Causal Spatial Non-Linéaire (GAM + Spatial RF)."""
     raise NotImplementedError("À implémenter par les contributeurs.")
