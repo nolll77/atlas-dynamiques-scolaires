@@ -70,3 +70,5 @@ Un [Template d'Issue GitHub](.github/ISSUE_TEMPLATE/tache_modelisation.md) inclu
 ---
 
 Merci pour votre collaboration !
+
+*En contribuant à ce projet, vous acceptez que vos contributions soient publiées sous licence MIT.*
