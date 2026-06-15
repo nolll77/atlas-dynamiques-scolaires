@@ -211,7 +211,9 @@ Le projet génère :
 
 ## Reproductibilité Scientifique
 
-L'Atlas repose sur une infrastructure de recherche ouverte et reproductible (DVC, MLflow, uv).
+Afin de pallier la fragilité historique des environnements analytiques, l'Atlas adopte les standards d'ingénierie les plus stricts en matière de reproductibilité scientifique, dignes des laboratoires de pointe en Machine Learning. 
+
+L'infrastructure s'appuie sur le triptyque **DVC / MLflow / uv** : une gestion des dépendances ultra-rapide garantissant une reproductibilité au bit près dans le temps (`uv.lock` et standard PEP 621), couplée à un versionnage décentralisé des données (DVC) et un tracking continu des expérimentations (MLflow).
 
 👉 **[Lire le guide de Reproductibilité Scientifique](docs/REPRODUCTIBILITE_SCIENTIFIQUE.md)**
 
