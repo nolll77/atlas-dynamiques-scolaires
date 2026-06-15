@@ -12,3 +12,9 @@
 
 ⚠️ **Note révision IPS 2021** : La méthodologie de calcul de l'IPS a été révisée en 2021.
 Les comparaisons avant/après cette date doivent tenir compte de cette discontinuité.
+
+## Objectif de profondeur historique
+
+Afin de permettre la viabilité et l'exécution des analyses longitudinales du Tome III (notamment les modèles temporels et la détection de ruptures), l'architecture mathématique du projet exprime un besoin de profondeur historique. 
+
+Pour garantir la robustesse de ces modèles spatio-temporels, la constitution du jeu de données idéal intégrerait l'historique des variables dynamiques (IPS, Valeurs Foncières, Résultats du Bac) en remontant jusqu'à l'année 2018.

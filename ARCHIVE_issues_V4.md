@@ -27,16 +27,17 @@
 - **Artefacts générés** : Pipeline de collecte, table maître (`data/processed/master_dataset.parquet`).
 
 - **Périmètre de cohérence technique (Ouvert aux contributions) :**
-  - [ ] Collecter IPS historiques par année (data.gouv.fr)
-  - [ ] Collecter résultats bac (taux réussite, mentions, valeur ajoutée IVAL)
-  - [ ] Collecter géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
-  - [ ] Collecter coordonnées GPS des établissements (lat/lon)
-  - [ ] Collecter données sectorisation scolaire
-  - [ ] Collecter données DVF Etalab (prix m² par zone)
-  - [ ] Collecter données IDF Mobilités (accessibilité transport)
-  - [ ] Collecter données démographiques temporelles INSEE
-  - [ ] Construire la table maître : `| uai | nom | annee | ips | sigma_ips | taux_mention | lat | lon | iris | revenu_median | prix_dvf | ... |`
-  - [ ] Documenter toutes les sources dans `DATA_SOURCES.md`
+  - [ ] Constitution d'un historique de l'IPS moyen par année (L'objectif analytique nécessitant une profondeur temporelle, il serait idéal de remonter jusqu'en 2018 via data.gouv.fr)
+  - [ ] Extraction de l'écart-type de l'IPS, nommé `sigma_ips` (Cette donnée est indispensable pour mesurer l'hétérogénéité sociale interne aux lycées sur la même profondeur historique)
+  - [ ] Intégration temporelle des résultats du bac (taux réussite, mentions, IVAL ; avec une profondeur historique équivalente si possible)
+  - [ ] Intégration de la géographie IRIS INSEE (revenus médians, CSP, chômage, logement social)
+  - [ ] Intégration des coordonnées GPS des établissements (lat/lon)
+  - [ ] Intégration des données de sectorisation scolaire
+  - [ ] Constitution d'un historique DVF Etalab (L'analyse de la gentrification requiert un suivi temporel des prix au m² par zone sur plusieurs années)
+  - [ ] Intégration des données IDF Mobilités (accessibilité transport)
+  - [ ] Intégration des données démographiques temporelles INSEE (avec historique)
+  - [ ] Consolidation de la table maître : `| uai | nom | annee | ips | sigma_ips | taux_mention | lat | lon | iris | revenu_median | prix_dvf | ... |`
+  - [ ] Documentation technique de l'ensemble des sources dans `DATA_SOURCES.md`
 
 
 
