@@ -1,5 +1,9 @@
 # Vers un Atlas des Dynamiques Scolaires
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Contributing](https://img.shields.io/badge/Guide-Contribution-green.svg)](CONTRIBUTING.md)
+[![Onboarding](https://img.shields.io/badge/Parcours-Collaborateur-orange.svg)](PARCOURS_COLLABORATEUR.md)
+
 **NOËL CHING** | Infrastructure ouverte de recherche computationnelle
 
 > ⚠️ Ce projet mesure des **associations statistiques**. Il ne démontre pas de causalité
