@@ -8,7 +8,20 @@ Ce document explique le rôle de ces outils et comment les utiliser lors de vos 
 
 ---
 
-## 1. La séparation Code / Données (Git vs DVC)
+## 1. Gestion des dépendances (`uv` et `pyproject.toml`)
+
+Dans le monde académique, l'utilisation d'un simple fichier `requirements.txt` pose d'énormes problèmes à long terme (les versions des bibliothèques évoluent et finissent par casser le code des années plus tard).
+
+L'Atlas utilise une architecture ultra-moderne basée sur **uv** et le standard **`pyproject.toml`** :
+
+* **Le fichier `uv.lock` (Garantie temporelle)** : C'est le point le plus crucial pour la science. Le fichier `uv.lock` fige l'empreinte exacte (les *hashs*) de chaque sous-bibliothèque utilisée. Si un chercheur clone le dépôt dans 5 ans, `uv` installera l'environnement mathématique au bit près, tel qu'il était aujourd'hui. Il n'y a plus aucun risque qu'une mise à jour casse la reproductibilité.
+* **La vitesse de `uv`** : Écrit en Rust, `uv` remplace `pip` et `virtualenv` en étant 10 à 100 fois plus rapide pour résoudre et installer les lourdes dépendances du projet (GeoPandas, scikit-learn, etc.).
+* **La centralisation (`pyproject.toml`)** : Toutes les métadonnées, les dépendances et les configurations des outils (Pytest, Ruff, Mypy) sont réunies au même endroit (selon le standard PEP 621), éliminant le chaos des anciens `setup.py` ou `setup.cfg`.
+* **Les "Extras" intelligents (`[dev]` et `[docs]`)** : L'installation est modulaire. Un chercheur souhaitant faire tourner les algorithmes n'a pas besoin d'installer les outils lourds servant à construire le site web ou tester le code.
+
+---
+
+## 2. La séparation Code / Données (Git vs DVC)
 
 Git est excellent pour gérer les versions du code texte (`.py`, `.md`), mais il est incapable de gérer efficacement de lourds fichiers de données (les bases CSV de l'INSEE, les shapefiles, les modèles entraînés).
 
@@ -26,7 +39,7 @@ Et DVC ira chercher la version exacte des données qui correspond au code actuel
 
 ---
 
-## 2. Le Graphe de Dépendance (`dvc.yaml`)
+## 3. Le Graphe de Dépendance (`dvc.yaml`)
 
 Au cœur de notre reproductibilité se trouve le fichier `dvc.yaml`. Il définit notre **Pipeline de Données** (DAG - Directed Acyclic Graph).
 
@@ -51,7 +64,7 @@ stages:
 
 ---
 
-## 3. Le Centre de Commandement : `params.yaml`
+## 4. Le Centre de Commandement : `params.yaml`
 
 La pire erreur en data science est le "hardcoding" (coder des paramètres en dur dans les scripts Python, par exemple : `if ips > 140:`). Cela rend le code illisible, introuvable et impossible à comparer.
 
@@ -75,7 +88,7 @@ DVC comprendra que le paramètre a changé, invalidera le cache des étapes conc
 
 ---
 
-## 4. L'Orchestration avec le `Makefile`
+## 5. L'Orchestration avec le `Makefile`
 
 Pour simplifier la vie des développeurs, la complexité des commandes est masquée derrière notre `Makefile`.
 
@@ -86,7 +99,7 @@ Pour simplifier la vie des développeurs, la complexité des commandes est masqu
 
 ---
 
-## 5. Le Suivi Scientifique avec MLflow
+## 6. Le Suivi Scientifique avec MLflow
 
 Là où DVC gère les "fichiers", **MLflow** gère les "métriques" et les "expériences". 
 
