@@ -201,9 +201,11 @@ $$
 ### Indice de Theil (Décomposition de l'Entropie)
 **Formule :**
 
+
 $$
 \Huge T = \sum_i \frac{x_i}{\mu} \log\left(\frac{x_i}{\mu}\right)
 $$
+
 **Décomposition :** $T = T_{between-zones} + T_{between-lycees} + T_{within-lycees}$
 *   **Quoi :** Découpage chirurgical de la ségrégation pour prouver si l'inégalité vient plutôt des écarts entre les villes, ou des écarts entre les lycées d'une même ville.
 *   **Légende :** $T$ : indice de Theil total, $x_i$ : proportion de la métrique pour l'unité $i$, $\mu$ : moyenne globale.
