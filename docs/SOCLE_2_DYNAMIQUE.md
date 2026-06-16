@@ -450,7 +450,15 @@ $$
 **Formule :**
 
 $$
-\Huge R_{ab} = \frac{T_{ab}}{E_{ab}} \quad \text{et} \quad C_{ab} = R_{ab} \cdot \min(p_a, p_b)
+\Huge R_{ab} = \frac{T_{ab}}{E_{ab}}
+$$
+
+<br>
+
+**Ratio ajusté :**
+
+$$
+\Huge C_{ab} = R_{ab} \cdot \min(p_a, p_b)
 $$
 
 <br>
