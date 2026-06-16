@@ -493,7 +493,15 @@ $$
 **Formule :**
 
 $$
-\Huge I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2} \quad \text{et} \quad F_{territorial} = 1 - I_{Moran}
+\Huge I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2}
+$$
+
+<br>
+
+**Fragmentation territoriale :**
+
+$$
+\Huge F_{territorial} = 1 - I_{Moran}
 $$
 
 <br>
@@ -528,7 +536,15 @@ $$
 **Formule :**
 
 $$
-\Huge H(x) = -\sum_k P_k(x) \log P_k(x) \quad \text{et} \quad F_t = \int H_t(x) dx
+\Huge H(x) = -\sum_k P_k(x) \log P_k(x)
+$$
+
+<br>
+
+**Entropie globale :**
+
+$$
+\Huge F_t = \int H_t(x) dx
 $$
 
 <br>
