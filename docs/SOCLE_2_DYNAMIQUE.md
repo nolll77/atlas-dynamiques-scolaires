@@ -1810,28 +1810,34 @@ $$
 ### 44. Corridors d'Élite vs Déclassement (Gradient Directionnel)
 **Formule :**
 
+**Gradient :**
+
 $$
-\Huge \quad \text{Gradient} \quad \Delta S_{ij} = S_j - S_i
+\Huge \Delta S_{ij} = S_j - S_i
 $$
 
 <br>
 
 **Corridor d'élite :**
 
-<br>
-
 $$
-C^{elite}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} > \theta)
+\Huge C^{elite}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} > \theta)
 $$
 
 <br>
 
 **Déclassement :**
 
+$$
+\Huge C^{down}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} < -\theta)
+$$
+
 <br>
 
+**Efficacité :**
+
 $$
-C^{down}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} < -\theta) \quad \text{. Efficacité} \quad E_{elite} = \frac{\sum C^{elite}}{\sum T}
+\Huge E_{elite} = \frac{\sum C^{elite}}{\sum T}
 $$
 
 <br>
