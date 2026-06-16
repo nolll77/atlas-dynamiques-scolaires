@@ -72,7 +72,12 @@ $$
 \Huge r_i = Y_i - \hat{Y}_i = z_{c(i)} + u_i
 $$
 *   **Quoi :** Utilisation des erreurs prédictives (résidus) pour découvrir des classes sociales "cachées".
-*   **Légende :** $r_i$ : résidu spatial pour $i$, $Y_i$ : vraie valeur, $\hat{Y}_i$ : prédiction du modèle global, $z_{c(i)}$ : effet du cluster latent $c$, $u_i$ : bruit purement aléatoire.
+*   **Légende :** 
+    *   $r_i$ : résidu spatial pour $i$
+    *   $Y_i$ : vraie valeur
+    *   $\hat{Y}_i$ : prédiction du modèle global
+    *   $z_{c(i)}$ : effet du cluster latent $c$
+    *   $u_i$ : bruit purement aléatoire
 *   **Pourquoi :** Traquer la ségrégation invisible. Ce que les modèles classiques n'expliquent pas (le bruit) est souvent le signal des arrangements discrets entre familles (réputations, évitements).
 *   **Inputs :** Vecteur des résidus d'un modèle explicatif ($r_i$).
 *   **Outputs :** Clusters latents spatiaux (Gaussian Mixture Model).
