@@ -20,9 +20,13 @@ $$
 *   **Quoi :** Distinguer la performance intrinsèque d'un lycée de l'influence mécanique exercée par les établissements environnants.
 
 *   **Légende :** 
-    *   $TE$ : Impact total d'une variable *(ex : l'effet total de l'ouverture d'une section internationale sur la mixité du quartier)*.
-    *   $DE$ : Impact direct sur le lycée concerné *(ex : la hausse du niveau scolaire au sein même du lycée)*.
-    *   $IE$ : Impact indirect sur le voisinage *(ex : la fuite des bons élèves des lycées voisins qui viennent s'y inscrire)*.
+    *   $Y_i$ : variable dépendante (ex: IPS) *(ex : l'indice de position sociale global)*.
+    *   $\alpha$ : effet direct intrinsèque *(ex : la force brute des atouts du lycée)*.
+    *   $X_i$ : ressources propres *(ex : la présence de classes bilingues)*.
+    *   $\beta$ : force de contagion *(ex : la porosité avec l'environnement)*.
+    *   $W_{ij}$ : matrice spatiale *(ex : le poids des lycées à moins d'un kilomètre)*.
+    *   $X_j$ : ressources des voisins *(ex : la richesse moyenne des établissements du secteur)*.
+    *   $\varepsilon_i$ : résidu *(ex : la part inexpliquée comme la réputation)*.
 
 
 *   **Pourquoi :** Comprendre si un lycée est un acteur autonome de la ségrégation ou s'il est simplement porté par son écosystème territorial.
@@ -55,9 +59,10 @@ $$
 *   **Quoi :** Évaluer comment la concentration sociale d'un établissement se propage mécaniquement aux quartiers adjacents.
 
 *   **Légende :** 
-    *   $SPS_i$ : Force de contamination du lycée $i$ *(ex : la capacité du lycée Henri IV à vampiriser les bons élèves de toute l'Île-de-France)*.
-    *   $W_{ij}$ : Poids de l'influence kilométrique *(ex : un collège situé à 500m subira une attraction maximale)*.
-    *   $X_j$ : Niveau de ségrégation du lycée voisin *(ex : le lycée voisin est déjà très paupérisé)*.
+    *   $SPS_i$ : score de propagation du lycée $i$ *(ex : la force de contamination du lycée sur son quartier)*.
+    *   $S_i$ : ségrégation propre de $i$ *(ex : le niveau de fermeture sociale du lycée lui-même)*.
+    *   $W_{ij}$ : matrice spatiale *(ex : la proximité géographique des autres établissements)*.
+    *   $S_j$ : ségrégation des voisins $j$ *(ex : le niveau d'entre-soi des collèges voisins)*.
 
 
 *   **Pourquoi :** Identifier les "hotspots", ces lycées qui ne sont pas seulement inégalitaires, mais qui diffusent activement cette ségrégation autour d'eux.
@@ -90,9 +95,9 @@ $$
 *   **Quoi :** Cartographier les lignes de fracture urbaines, ces frontières géographiques où une même caractéristique (ex: ouverture d'une filière) produit des effets sociaux diamétralement opposés.
 
 *   **Légende :** 
-    *   $\gamma_i$ : Sensibilité du lycée $i$ aux changements de son quartier *(ex : un lycée en grande difficulté sera très affecté par la fermeture de la piscine municipale voisine)*.
-    *   $Y_j$ : Le niveau de ségrégation des voisins *(ex : le lycée d'à côté devient un ghetto)*.
-    *   $e^{-\beta d_{ij}}$ : Déclin de l'influence avec la distance *(ex : un événement à 10km n'a presque aucun impact)*.
+    *   $Bascule_i$ : indicateur booléen (1 si rupture) *(ex : le passage d'une dynamique d'intégration à une dynamique de fuite)*.
+    *   $\beta_i$ : effet local de la variable sur $i$ *(ex : l'impact d'une politique au sein même du quartier)*.
+    *   $\bar{\beta}_{voisins(i)}$ : effet moyen sur les voisins géographiques *(ex : l'effet de cette même politique à l'échelle de l'arrondissement)*.
 
 
 *   **Pourquoi :** Repérer les lignes de faille urbaines où "plus de mixité" passe d'un effet intégrateur à un effet destructeur selon le quartier.
@@ -125,9 +130,11 @@ $$
 *   **Quoi :** Révéler les dynamiques locales invisibles : utiliser l'écart entre la théorie mathématique et la réalité du terrain pour mettre en lumière des logiques d'association ou d'évitement qui n'apparaissent pas dans les données officielles.
 
 *   **Légende :** 
-    *   $u_i$ : Facteur caché propre au lycée *(ex : la réputation tenace du "lycée à problèmes" qui perdure malgré les changements de proviseur)*.
-    *   $W$ : Matrice d'adjacence spatiale *(ex : la carte géographique des lycées environnants)*.
-    *   $\epsilon_i$ : Bruit purement aléatoire *(ex : une rumeur ponctuelle sur les réseaux sociaux cette année-là)*.
+    *   $r_i$ : résidu spatial pour $i$ *(ex : la part de ségrégation géographique inexplicable)*.
+    *   $Y_i$ : vraie valeur *(ex : l'IPS tel qu'il est mesuré sur le terrain)*.
+    *   $\hat{Y}_i$ : prédiction du modèle global *(ex : l'IPS théorique que le lycée devrait avoir vu son adresse)*.
+    *   $z_{c(i)}$ : effet du cluster latent $c$ *(ex : l'effet du groupe caché auquel le lycée appartient)*.
+    *   $u_i$ : bruit purement aléatoire *(ex : une anomalie purement aléatoire de l'année)*.
 
 
 *   **Pourquoi :** Traquer la ségrégation invisible. Ce que les modèles classiques n'expliquent pas (le bruit) est souvent le signal des arrangements discrets entre familles (réputations, évitements).
@@ -160,8 +167,11 @@ $$
 *   **Quoi :** Modéliser l'interdépendance des établissements pour observer comment la composition sociale d'un lycée évolue organiquement en fonction de la dynamique de ses voisins.
 
 *   **Légende :** 
-    *   $\eta$ : La dynamique scolaire invisible *(ex : la fuite globale des classes moyennes)*.
-    *   $y, x$ : Les données visibles *(ex : la baisse de l'IPS, la hausse des taux d'échec)*.
+    *   $Y$ : vecteur cible *(ex : le niveau social général du territoire)*.
+    *   $X\beta$ : effets des variables explicatives *(ex : l'impact mécanique des variables connues comme les revenus)*.
+    *   $\rho$ : coefficient de corrélation spatiale *(ex : la force de l'effet de contagion de proche en proche)*.
+    *   $W$ : matrice des poids spatiaux *(ex : la matrice des distances kilométriques)*.
+    *   $\varepsilon$ : terme d'erreur structurel *(ex : le choc structurel non mesurable)*.
 
 
 *   **Pourquoi :** Démontrer que le niveau social d'un lycée est organiquement lié au niveau de ceux qui l'entourent (effet "spillover").
@@ -194,9 +204,11 @@ $$
 *   **Quoi :** Désenchevêtrer les échelles de la répartition scolaire en mesurant le poids respectif de l'élève, de la structure de l'établissement et de la gravité du territoire.
 
 *   **Légende :** 
-    *   $Y_{ij}$ : Résultat pour le lycée $i$ dans la région $j$ *(ex : l'IPS du lycée $i$ dans l'académie de Créteil)*.
-    *   $\mu_j$ : L'effet global de la région *(ex : la pauvreté structurelle historique du département du 93)*.
-    *   $W Y$ : L'effet de voisinage *(ex : la contagion de la réputation du lycée de la rue d'à côté)*.
+    *   $Y_{ijk}$ : score de l'élève $i$ au lycée $j$ en zone $k$ *(ex : le résultat au bac d'un lycéen dans l'académie de Créteil)*.
+    *   $X_{ijk}\beta$ : caractéristiques individuelles *(ex : l'influence de l'âge et de l'origine sociale de l'élève)*.
+    *   $u_{jk}$ : effet aléatoire du lycée *(ex : l'effet spécifique du proviseur et de l'équipe pédagogique)*.
+    *   $v_k$ : effet de la zone territoriale *(ex : l'impact macro-économique du département)*.
+    *   $\rho W v_k$ : influence des zones voisines *(ex : la pression des départements limitrophes)*.
 
 
 *   **Pourquoi :** Prouver que la ségrégation est un mille-feuille où les actions individuelles se heurtent à la structure de l'établissement et à la pesanteur du quartier.
@@ -229,9 +241,10 @@ $$
 *   **Quoi :** Mesurer l'inertie historique d'un territoire pour évaluer la probabilité qu'un établissement conserve la même structure sociale au fil des décennies.
 
 *   **Légende :** 
-    *   $X_{t-1}$ : L'événement passé *(ex : la refonte de la carte scolaire il y a 5 ans)*.
-    *   $Y_t$ : L'impact actuel *(ex : la ségrégation mesurée aujourd'hui)*.
-    *   $U$ : Le facteur inobservable permanent *(ex : la mentalité conservatrice locale)*.
+    *   $Y_t$ : état au temps $t$ *(ex : la ségrégation mesurée aujourd'hui)*.
+    *   $Y_{t-1}$ : état passé (inertie) *(ex : la ségrégation telle qu'elle était il y a 5 ans)*.
+    *   $X_t$ : variables contemporaines *(ex : l'ouverture d'une nouvelle ligne de métro)*.
+    *   $WY_{t-1}$ : état passé des voisins (contagion retardée) *(ex : la réputation historique des quartiers adjacents)*.
 
 
 *   **Pourquoi :** Mesurer l'inertie du système : un lycée ghettoïsé en 2010 a-t-il une chance statistique d'échapper à son destin en 2026 ?
@@ -264,7 +277,9 @@ $$
 *   **Quoi :** Observer la fluidité de la hiérarchie scolaire en quantifiant les transferts et la mobilité des établissements entre différents équilibres sociaux d'une année sur l'autre.
 
 *   **Légende :** 
-    *   $T(C_{t-1} \to C_t)$ : Le volume d'élèves ou de lycées qui changent de profil *(ex : 15 lycées passent du statut "Mixte" au statut "Défavorisé" cette décennie)*.
+    *   $P_{ab}$ : probabilité de transition *(ex : les chances qu'un lycée bourgeois devienne mixte)*.
+    *   $C(t)=a$ : appartenance au monde $a$ en année $t$ *(ex : le statut d'élite en 2020)*.
+    *   $C(t+1)=b$ : atterrissage dans le monde $b$ l'année suivante *(ex : la rétrogradation dans la classe moyenne en 2021)*.
 
 
 *   **Pourquoi :** Visualiser la fluidité du système : l'élite s'élargit-elle ou s'enferme-t-elle ? Les classes moyennes s'effondrent-elles vers le bas ?
@@ -305,7 +320,9 @@ $$
 *   **Quoi :** Repérer les chocs structurels soudains qui reconfigurent brutalement la répartition des élèves sur le territoire.
 
 *   **Légende :** 
-    *   $L(\tau)$ : Preuve mathématique qu'un séisme a eu lieu à l'année $\tau$ *(ex : le décrochage brutal des indicateurs en 2021 suite à la réforme du Bac)*.
+    *   $d_t$ : magnitude de la rupture *(ex : l'intensité du choc sociologique dû à une réforme)*.
+    *   $ARI$ : Adjusted Rand Index comparant les partitions de deux années successives *(ex : le taux de ressemblance des cartes scolaires d'une année sur l'autre)*.
+    *   $D_t$ : distance entre matrices d'embeddings $Z_t$ *(ex : l'éloignement structurel entre les deux époques)*.
 
 
 *   **Pourquoi :** Démontrer que la ségrégation n'évolue pas de manière lisse, mais procède par "chocs" brutaux (ex: une réforme, une crise démographique) qui redessinent la carte scolaire.
@@ -346,8 +363,9 @@ $$
 *   **Quoi :** Cartographier l'évolution de la distance sociale au fil du temps pour observer si les différents groupes d'établissements convergent ou s'isolent davantage.
 
 *   **Légende :** 
-    *   $\Delta d_U$ : Le niveau de destruction de l'ancienne hiérarchie *(ex : l'effondrement de la distance qui protégeait l'élite du reste du système)*.
-    *   $U_t$ : L'arbre hiérarchique à l'année $t$ *(ex : le sommet de la pyramide parisienne en 2010)*.
+    *   $\Delta_t$ : déformation de l'arbre *(ex : la déformation de la hiérarchie sociale)*.
+    *   $d(D_t, D_{t-1})$ : distance entre dendrogrammes successifs *(ex : l'écart entre la pyramide des statuts de 2010 et celle de 2011)*.
+    *   $U$ : indice global de stabilité hiérarchique *(ex : le niveau d'immobilité des strates sociales)*.
 
 
 *   **Pourquoi :** Visualiser l'ossature profonde de la reproduction sociale : à quel point la hiérarchie entre l'élite et le populaire est-elle figée dans le temps ($U \approx 1$) ou mouvante ?
@@ -380,8 +398,11 @@ $$
 *   **Quoi :** Modéliser la trajectoire sociale d'un lycée comme une mécanique de fluides soumise aux pressions conjointes de ses propres ressources et des contraintes de son environnement.
 
 *   **Légende :** 
-    *   $V_i$ : L'indice de brassage du lycée $i$ *(ex : la fluidité avec laquelle un élève boursier peut espérer y faire carrière)*.
-    *   $\Delta S_{ij}$ : L'écart social lors d'une mutation *(ex : un élève passant d'un lycée de banlieue à un grand lycée parisien fait un saut immense)*.
+    *   $S_i(t)$ : prestige latent *(ex : la réputation latente du lycée à l'instant T)*.
+    *   $\alpha X_i$ : atouts internes *(ex : la force d'attraction de ses propres filières)*.
+    *   $\beta W S$ : gravité du voisinage *(ex : l'attraction gravitationnelle des lycées d'élite voisins)*.
+    *   $\gamma C_i$ : contraintes territoriales *(ex : l'effet repoussoir d'un quartier difficile)*.
+    *   $\varepsilon_i$ : chocs externes aléatoires *(ex : le scandale médiatique local imprévisible)*.
 
 
 *   **Pourquoi :** Prouver mathématiquement qu'un établissement n'est pas maître de son destin : sa réussite ($\alpha X$) est freinée par les contraintes territoriales ($\gamma C$) et tiraillée par la concurrence ou la déchéance de ses voisins ($\beta W S$).
@@ -414,8 +435,9 @@ $$
 *   **Quoi :** Identifier les connexions géographiques critiques qui maintiennent la cohésion globale du réseau et empêchent le morcellement du territoire.
 
 *   **Légende :** 
-    *   $B_{ij}$ : La nécessité d'emprunter ce pont *(ex : le bus 42 est la seule ligne reliant les quartiers riches et pauvres)*.
-    *   $C_{ij}$ : La probabilité théorique du pont *(ex : compte tenu de la distance, 50 élèves devraient faire ce trajet)*.
+    *   $F_{ij}$ : score de frontière *(ex : la capacité de cette rue à bloquer la mixité)*.
+    *   $BC_{ij}$ : centralité d'intermédiarité de l'arête *(ex : le caractère incontournable de ce trajet pour les élèves)*.
+    *   $w_{ij}$ : similarité sociale entre $i$ et $j$ *(ex : la ressemblance sociologique des deux écoles)*.
 
 
 *   **Pourquoi :** Cartographier les "lignes de faille" : identifier les liens géographiques qui, s'ils sautent, cassent définitivement la mixité sociale et scindent le territoire en ghettos isolés.
@@ -456,7 +478,10 @@ $$
 *   **Quoi :** Identifier les corridors de mobilité spécifiques par lesquels des flux d'élèves traversent habituellement des frontières sociales étanches.
 
 *   **Légende :** 
-    *   $F(C_A \to C_B)$ : Le débit du corridor *(ex : le flot continu d'élèves excellents fuyant la banlieue ($C_A$) pour le centre privé ($C_B$))*.
+    *   $R_{ab}$ : intensité du corridor *(ex : la puissance du flux d'élèves fuyant la banlieue pour Paris)*.
+    *   $T_{ab}$ : flux réels observés *(ex : le nombre d'élèves mesuré dans les bus et métros)*.
+    *   $E_{ab}$ : flux attendus par hasard absolu *(ex : le volume d'élèves qui feraient le trajet par pur hasard)*.
+    *   $C_{ab}$ : ratio ajusté par les populations marginales $p_a, p_b$ *(ex : la normalisation face à la petite taille d'un quartier)*.
 
 
 *   **Pourquoi :** Identifier les "ascenseurs sociaux" ou "toboggans de déclassement" : ces canaux souterrains par lesquels la mixité transite miraculeusement.
@@ -497,9 +522,10 @@ $$
 *   **Quoi :** Mesurer la concentration géographique continue d'établissements présentant une composition sociale identique.
 
 *   **Légende :** 
-    *   $x_k$ : Indique si le lycée appartient à la strate $k$ *(ex : vaut 1 s'il est "Élite")*.
-    *   $W$ : L'influence de proximité *(ex : les collèges situés à moins d'un kilomètre)*.
-    *   $F_{territorial}$ : La fracture spatiale *(ex : la coupure brutale entre les beaux quartiers de l'Ouest et les quartiers populaires de l'Est)*.
+    *   $I_k$ : Indice de Moran catégoriel *(ex : le niveau de regroupement physique des lycées de même rang)*.
+    *   $x_k$ : indicateur d'appartenance au cluster $k$ *(ex : l'étiquette Élite ou Ghetto du lycée)*.
+    *   $W$ : matrice géographique *(ex : la carte géographique des distances)*.
+    *   $F_{territorial}$ : fragmentation globale *(ex : la fracture totale séparant physiquement les mondes)*.
 
 
 *   **Pourquoi :** Prouver que la ségrégation n'est pas qu'un phénomène abstrait de notes, mais une réalité géographique (des blocs physiques de lycées populaires collés les uns aux autres).
@@ -540,8 +566,8 @@ $$
 *   **Quoi :** Visualiser la répartition scolaire comme un espace continu pour identifier les zones de transition géographique où différents équilibres sociaux se chevauchent.
 
 *   **Légende :** 
-    *   $H(x)$ : L'incertitude sociale du quartier *(ex : un quartier en gentrification où cohabitent CSP+ et logements sociaux)*.
-    *   $P_k(x)$ : La probabilité d'y ouvrir un lycée de caste $k$ *(ex : 80% de chances qu'un nouveau lycée public y devienne immédiatement ultra-favorisé)*.
+    *   $H(x)$ : entropie au point géographique $x$ *(ex : le niveau de mélange urbain au croisement de deux rues)*.
+    *   $P_k(x)$ : probabilité lissée par noyau d'appartenir au cluster $k$ à cet endroit *(ex : la densité de la bourgeoisie lissée sur la carte)*.
 
 
 *   **Pourquoi :** Visualiser la ségrégation comme un nuage de gaz plutôt que comme un mur de briques : traquer les zones "grises" où le système hésite, se mélange, et offre de vraies opportunités de mixité.
@@ -574,8 +600,10 @@ $$
 *   **Quoi :** Évaluer la cohérence structurelle d'un établissement en vérifiant l'alignement entre sa composition sociale, ses résultats académiques et sa capacité d'attraction.
 
 *   **Légende :** 
-    *   $C_i$ : L'alignement du lycée *(ex : ce lycée est pauvre socialement, faible académiquement, et rejeté en attractivité (cohérence totale))*.
-    *   $\tilde{S}_i, \tilde{A}_i, \tilde{F}_i$ : Les scores standardisés (Social, Académique, Flux) *(ex : le classement Z-score national du lycée)*.
+    *   $C_i$ : cohérence du lycée *(ex : l'alignement parfait entre sa réputation et son niveau réel)*.
+    *   $\tilde{S}_i$ : score social standardisé *(ex : le score de richesse des parents)*.
+    *   $\tilde{A}_i$ : score académique *(ex : le niveau de réussite académique au bac)*.
+    *   $\tilde{F}_i$ : score d'attractivité (flux) *(ex : la capacité à attirer des élèves lointains)*.
 
 
 *   **Pourquoi :** Identifier les "anomalies du système" (les lycées paradoxaux qui réussissent sans le bon profil social, ou qui échouent malgré l'entre-soi bourgeois) par rapport aux blocs scolaires cohérents.
@@ -608,8 +636,11 @@ $$
 *   **Quoi :** Éprouver la robustesse de la segmentation territoriale pour dégager une ossature sociale claire, résiliente au bruit statistique.
 
 *   **Légende :** 
-    *   $C(k)$ : La certitude mathématique sur le nombre de mondes scolaires *(ex : l'algorithme confirme qu'il existe 4 "castes" irréconciliables, pas 3)*.
-    *   $S(k), G(k), B(k), S_{stab}$ : Les preuves statistiques indépendantes.
+    *   $C(k)$ : score de consensus pour $k$ classes *(ex : la certitude mathématique qu'il existe exactement 4 mondes scolaires)*.
+    *   $S(k)$ : Silhouette *(ex : la netteté des frontières du monde)*.
+    *   $G(k)$ : Gap Statistic *(ex : la supériorité du modèle face au pur hasard)*.
+    *   $B(k)$ : inertie de coude *(ex : la chute de l'inertie lors de l'ajout d'une strate)*.
+    *   $S_{stab}$ : stabilité bootstrap *(ex : la résilience du modèle face aux perturbations des données)*.
 
 
 *   **Pourquoi :** Éviter de choisir un $k$ arbitraire ou mathématiquement instable. Prouver que la segmentation retenue est la vraie ossature de la société, résiliente aux perturbations.
@@ -650,8 +681,9 @@ $$
 *   **Quoi :** Identifier les établissements au profil hybride, situés à la frontière de plusieurs logiques d'affectation, qui échappent aux catégorisations strictes.
 
 *   **Légende :** 
-    *   $A_i$ : L'incertitude sur l'identité du lycée *(ex : un lycée que la géographie voit comme pauvre, mais dont les excellents résultats le classent dans l'élite selon l'algorithme)*.
-    *   $C_i^{(m)}$ : Le statut selon un point de vue spécifique *(ex : le point de vue purement "flux de transport")*.
+    *   $A_i$ : incertitude d'assignation du lycée $i$ *(ex : le tiraillement du lycée entre son quartier et ses élèves)*.
+    *   $C_i^{(m)}$ : classe prédite par l'algorithme $m$ *(ex : la strate assignée par la logique géographique pure)*.
+    *   $F$ : taux global de désaccord systémique *(ex : le désaccord total entre l'État et la réalité du marché scolaire)*.
 
 
 *   **Pourquoi :** Les divergences entre IA ne sont pas des bugs, ce sont des marqueurs de "zones frontières" ou de "lycées de transition" où plusieurs logiques sociales s'affrontent.
@@ -692,10 +724,10 @@ $$
 *   **Quoi :** Repérer les connexions spatiales inattendues qui relient des établissements que tout oppose dans la hiérarchie sociale théorique.
 
 *   **Légende :** 
-    *   $B_{ij}$ : La force de l'anomalie *(ex : le nombre surprenant de boursiers qui ont réussi à intégrer un lycée d'élite)*.
-    *   $d_{ij}$ : La distance réelle *(ex : la proximité mesurée par le transfert quotidien d'élèves)*.
-    *   $d_{ij}^U$ : La distance imposée par le système *(ex : le mur invisible qui devrait interdire ce transfert)*.
-    *   $V$ : Le taux de transgression *(ex : la part des élèves qui arrivent à déjouer la sectorisation)*.
+    *   $B_{ij}$ : score de pont *(ex : l'intensité de la transgression sociale)*.
+    *   $d_{ij}$ : distance réelle dans le réseau *(ex : la proximité kilométrique réelle sur le terrain)*.
+    *   $d_{ij}^U$ : distance théorique dans l'arbre hiérarchique *(ex : l'interdiction de se croiser selon la sectorisation)*.
+    *   $V$ : taux de violation des inégalités d'arbre *(ex : le taux d'élèves qui piratent la carte scolaire)*.
 
 
 *   **Pourquoi :** Identifier les "exceptions scolaires" : les ponts ultramétriques révèlent quand le système de reproduction en arbre est piraté ou court-circuité par le réseau physique de la ville.
@@ -728,8 +760,8 @@ $$
 *   **Quoi :** L'outil de synthèse global : croiser le temps, l'espace, la hiérarchie et les flux pour identifier les "Super-Goulots", ces points nodaux de la géographie scolaire où la mobilité des élèves se fige mécaniquement.
 
 *   **Légende :** 
-    *   $SG_{ij}$ : Le niveau de criticité du goulot *(ex : la suppression de ce lycée mixte unique ferait s'effondrer toute la diversité de l'arrondissement)*.
-    *   $B_{ij}$ : Les signaux d'alerte issus de l'histoire, des transports, de la hiérarchie et de l'économie.
+    *   $SG_{ij}$ : dangerosité du goulot *(ex : la criticité de l'arrêt de bus qui relie deux mondes)*.
+    *   $B_{ij}$ : scores de pont selon les modèles Temporels (HMM), Réseau (GNN), Hiérarchiques (U) et Causaux (C) *(ex : l'alerte maximale déclenchée par les algorithmes de détection)*.
 
 
 *   **Pourquoi :** Trouver les quelques lycées ou trajets qui constituent les véritables "verrous structurels" du système éducatif national (ceux qui contrôlent toute la mobilité).
@@ -778,9 +810,9 @@ $$
 *   **Quoi :** Mesurer le point d'équilibre systémique entre le volume de mobilité géographique des élèves et le maintien d'une cohérence territoriale lisible.
 
 *   **Légende :** 
-    *   $\Pi$ : Le taux de brassage du système *(ex : la capacité globale de la ville à faire monter ses classes populaires)*.
-    *   $P_{raw}$ : Le nombre brut de transfuges *(ex : le volume total d'élèves changeant de strate)*.
-    *   $C$ : Le coût politique de la fracture *(ex : le niveau de tension sociale perçue par les familles)*.
+    *   $\Pi$ : perméabilité globale *(ex : le point d'équilibre parfait entre ghettoïsation et chaos)*.
+    *   $P_{raw}$ : intensité brute des flux transgressant la hiérarchie *(ex : le volume total d'élèves transfuges de classe)*.
+    *   $C$ : coût du chaos ou désordre perçu *(ex : la douleur sociale perçue face au désordre)*.
 
 
 *   **Pourquoi :** Démontrer qu'un système idéal n'est ni totalement fermé (ségrégation pure) ni totalement explosé (mixité désorganisée où plus aucune filière ne veut rien dire), mais à un point d'équilibre $\Pi^* = argmax(\text{mobilité} - \lambda \cdot \text{désordre})$.
@@ -813,8 +845,11 @@ $$
 *   **Quoi :** Isoler précisément les leviers de la fragmentation territoriale en distinguant l'impact des résultats, de l'offre locale et de l'accessibilité géographique.
 
 *   **Légende :** 
-    *   $IFC_{ij}$ : Le niveau d'imperméabilité locale *(ex : l'impossibilité de passer du lycée public de quartier au lycée privé prestigieux situé en face)*.
-    *   $\beta_k X_k$ : Les freins mesurables *(ex : le coût d'inscription, l'absence de bus, le filtrage sur dossier)*.
+    *   $IFC_{ij}$ : fragmentation locale *(ex : le degré d'imperméabilité du secteur)*.
+    *   $\beta_k$ : effets causaux directs *(ex : le poids causal d'une politique publique)*.
+    *   $X_k$ : variables de sélectivité/transport *(ex : le temps de trajet en transports en commun)*.
+    *   $u_j$ : effet aléatoire de l'académie *(ex : l'effet parapluie du département ou de l'académie)*.
+    *   $\epsilon_{ij}$ : résidu individuel *(ex : le parcours individuel inexplicable)*.
 
 
 *   **Pourquoi :** L'IFC n'est pas qu'un symptôme. Il est l'effet :
@@ -852,9 +887,11 @@ $$
 *   **Quoi :** Dépasser les frontières administratives pour cartographier les véritables bassins de vie scolaires, définis par les habitudes réelles de déplacement et de similarité.
 
 *   **Légende :** 
-    *   $B^*$ : La cartographie ultime des mondes scolaires *(ex : le découpage officiel de la région en 5 castes)*.
-    *   $W, T, D^U$ : La richesse, les mouvements réels, et le rang officiel.
-    *   $\lambda$ : Le dogmatisme de l'État face à la liberté des familles.
+    *   $B^*$ : partition optimale *(ex : le redécoupage de la carte scolaire optimale)*.
+    *   $W$ : similarité d'IPS *(ex : la ressemblance des niveaux d'IPS)*.
+    *   $T$ : matrice des flux réels *(ex : les trajets quotidiens des métros)*.
+    *   $D^U$ : distance hiérarchique *(ex : le respect de la pyramide des élites)*.
+    *   $\lambda$ : poids accordé à l'ordre hiérarchique *(ex : le poids du pouvoir institutionnel)*.
 
 
 *   **Pourquoi :** Dépasser les communes administratives. Trouver les vrais "territoires vécus" par les élèves.
@@ -887,8 +924,10 @@ $$
 *   **Quoi :** Mettre en évidence les trajets exceptionnels qui agissent comme des passerelles structurelles essentielles entre des zones territoriales distinctes.
 
 *   **Légende :** 
-    *   $SP_{ij}$ : L'importance stratégique du lycée-passerelle *(ex : le seul lycée technologique qui permet à des élèves de ZEP d'atteindre des filières d'excellence)*.
-    *   $P_{ij}, C_{ij}^{(bet)}, U_{ij}$ : Le flux réel, le monopole géographique, et l'audace de l'ascension.
+    *   $SP_{ij}$ : criticité du super-pont *(ex : la rareté et l'importance de ce transfert social)*.
+    *   $P_{ij}$ : flux réels d'élèves *(ex : les quelques boursiers qui font le trajet)*.
+    *   $C_{ij}^{(bet)}$ : centralité Betweenness *(ex : le caractère incontournable de la trajectoire)*.
+    *   $U_{ij}$ : saut ultramétrique (audace sociale du pont) *(ex : la taille du gouffre social franchi)*.
 
 
 *   **Pourquoi :** Trouver le "Golden Gate" de la mobilité scolaire. Ce sont les points névralgiques du système qui, s'ils tombent, scindent la société en deux.
@@ -929,9 +968,10 @@ $$
 *   **Quoi :** Déceler les illusions statistiques de mixité : identifier les territoires présentant une diversité globale, mais dont chaque établissement interne reste strictement homogène.
 
 *   **Légende :** 
-    *   $F_c$ : Le niveau de mensonge statistique *(ex : une ville très diverse globalement, mais dont chaque lycée est un ghetto monochrome)*.
-    *   $Var_{global}, Var_{interne}$ : La mixité de la ville vs la mixité au sein des classes.
-    *   $HS_c$ : La ségrégation réelle.
+    *   $F_c$ : fausse mixité *(ex : l'illusion de mixité de la ville de Paris)*.
+    *   $Var_{global}$ : hétérogénéité apparente de la ville *(ex : la diversité sociale mesurée dans la rue)*.
+    *   $Var_{interne}$ : (absence de) mixité au sein des lycées *(ex : la stricte séparation des élèves une fois dans les murs du lycée)*.
+    *   $HS_c$ : hyper-ségrégation totale *(ex : la ségrégation institutionnelle absolue cachée par la rue)*.
 
 
 *   **Pourquoi :** Détruire le mythe des "villes mixtes" où le public et le privé cohabitent géographiquement mais s'ignorent scolairement.
@@ -964,8 +1004,10 @@ $$
 *   **Quoi :** Observer comment les canaux de mobilité des élèves se reconfigurent lentement au fil des années ou réagissent aux chocs exogènes.
 
 *   **Légende :** 
-    *   $\Delta T_t$ : Le changement des habitudes de fuite *(ex : l'abandon soudain d'une filière publique au profit du privé à la rentrée 2024)*.
-    *   $X_k, T_{t-1}, Z_t$ : Les causes (nouveau transport, habitudes familiales, scandale local).
+    *   $\Delta T_t$ : changement de tuyauterie d'une année à l'autre *(ex : la reconfiguration lente de la sectorisation au fil des ans)*.
+    *   $X_k$ : variables macro *(ex : l'inflation économique du quartier)*.
+    *   $T_{t-1}$ : inertie des flux *(ex : la résistance culturelle des familles)*.
+    *   $Z_t$ : chocs exogènes (ex: nouvelle ligne de métro) *(ex : la fermeture brutale d'un pont urbain)*.
 
 
 *   **Pourquoi :** La ségrégation est path-dependent (dépendante de son passé). Prouver l'inertie $I = \text{corr}(T_t, T_{t+1})$.
@@ -998,8 +1040,11 @@ $$
 *   **Quoi :** Évaluer la capacité d'un établissement à s'affranchir de son environnement géographique immédiat par l'attraction de flux extérieurs.
 
 *   **Légende :** 
-    *   $IAS_i$ : La capacité d'un lycée à choisir ses élèves *(ex : le pouvoir d'un grand lycée privé de trier ses candidatures à l'échelle nationale)*.
-    *   $A_i, S_i, F_i, C_i$ : Le rayonnement lointain, la stabilité de la richesse, le tri, et le poids (faible) de la sectorisation.
+    *   $IAS_i$ : capacité d'affranchissement *(ex : la capacité d'un établissement à dicter ses propres règles)*.
+    *   $A_i$ : attractivité lointaine *(ex : le magnétisme exercé sur les autres académies)*.
+    *   $S_i$ : constance de l'IPS *(ex : le maintien du rang d'excellence sur 10 ans)*.
+    *   $F_i$ : sélectivité *(ex : le taux de rejet des dossiers scolaires)*.
+    *   $C_i$ : poids du recrutement sectorisé imposé *(ex : le poids des élèves assignés d'office par la mairie)*.
 
 
 *   **Pourquoi :** Dépasser le simple clivage "Public vs Privé".
@@ -1040,9 +1085,10 @@ $$
 *   **Quoi :** Distinguer l'influence purement kilométrique d'un quartier de l'influence apportée par les lignes de transport et le réseau de mobilité globale.
 
 *   **Légende :** 
-    *   $Y_i$ : La ségrégation du lycée *(ex : son niveau IPS de 130)*.
-    *   $E_i^{quartier}$ : La part due au prix de l'immobilier du quartier *(ex : l'avenue Foch)*.
-    *   $E_i^{\text{reseau}}$ : La part due aux stratégies de transports et de contournement *(ex : les élèves des autres villes qui viennent via le RER)*.
+    *   $Y_i$ : position du lycée *(ex : le niveau de ségrégation mesuré au lycée)*.
+    *   $E_i^{quartier}$ : composante purement kilométrique *(ex : l'influence stricte des riverains)*.
+    *   $E_i^{\text{reseau}}$ : composante via les transports/filières *(ex : l'influence des élèves importés par le RER)*.
+    *   $\epsilon_i$ : non-expliqué *(ex : la part du miracle pédagogique)*.
 
 
 *   **Pourquoi :** Démontrer que le réseau scolaire peut soit agir comme amortisseur de la fatalité territoriale, soit comme amplificateur de la ségrégation de quartier.
@@ -1103,9 +1149,9 @@ $$
 *   **Quoi :** Identifier le sens de la propagation : un établissement isolé modifie-t-il la composition de son quartier, ou subit-il passivement une dynamique territoriale plus vaste ?
 
 *   **Légende :** 
-    *   $H_{i,t}$ : L'intensité de la crise dans ce lycée *(ex : l'explosion des incidents et de la fuite des profs)*.
-    *   $C_i^{out}$ : Sa capacité à faire fuir ses élèves vers les autres lycées (contagion).
-    *   $C_i^{in}$ : Sa malchance de devoir absorber les problèmes des autres (vulnérabilité).
+    *   $H_{i,t}$ : tension du hotspot $i$ *(ex : le niveau de crispation sociale du quartier)*.
+    *   $C_i^{out}$ : capacité de $i$ à contaminer le reste du réseau *(ex : l'effet domino déclenché par ce seul établissement)*.
+    *   $C_i^{in}$ : vulnérabilité de $i$ face aux crises des autres *(ex : l'éponge sociale qui absorbe les crises des autres)*.
 
 
 *   **Pourquoi :** Sortir du constat descriptif (Monde A) pour prouver qu'il existe des "lycées structurants" (qui imposent leur loi, $C_i > 0$) et des "territoires captifs" (qui subissent la loi des autres, $C_i < 0$).
@@ -1146,9 +1192,9 @@ $$
 *   **Quoi :** Observer comment l'impact d'une variable (ex: l'ouverture d'une section) évolue géographiquement et atteint des plafonds mécaniques d'efficacité.
 
 *   **Légende :** 
-    *   $s_k$ : L'effet essoufflé d'une variable *(ex : verser plus d'argent aide au début, puis l'impact stagne)*.
-    *   $\rho W Y$ : L'effet domino *(ex : la déchéance d'un lycée entraîne son voisin dans l'abîme)*.
-    *   $u(s_i)$ : Le fatalisme local *(ex : l'étiquette indélébile "lycée de quartier nord")*.
+    *   $s_k$ : fonction de lissage (spline) permettant les effets non-linéaires *(ex : le plafond de verre limitant l'impact des subventions)*.
+    *   $\rho W Y$ : contagion spatiale *(ex : la tache d'huile de la ségrégation)*.
+    *   $u(s_i)$ : processus gaussien captant le bruit géolocalisé *(ex : le bruit statistique purement local)*.
 
 
 *   **Pourquoi :** Prouver que le système scolaire n'est pas additif (Monde A linéaire) : l'effet du privé ou de l'IPS n'est pas constant, il "sature" ou a des effets plafonds.
@@ -1191,9 +1237,9 @@ $$
 *   **Quoi :** Identifier les "Points de Rupture" territoriaux : le seuil exact à partir duquel la composition d'un secteur bascule, entraînant une réallocation massive et soudaine des choix d'orientation des familles.
 
 *   **Légende :** 
-    *   $\nabla Y_i$ : La vitesse de chute *(ex : la vitesse à laquelle les familles retirent leurs enfants)*.
-    *   $\Delta sign$ : Le point de non-retour *(ex : au-delà de 20% d'élèves en échec, les classes moyennes abandonnent définitivement le navire)*.
-    *   $\rho \lambda_{max}(W)$ : La résonance du système (la rumeur se propage-t-elle à toute la ville ?).
+    *   $\nabla Y_i$ : gradient (pente) de l'effet d'une variable *(ex : la vitesse de dégradation de la mixité)*.
+    *   $\Delta sign$ : point de basculement *(ex : l'instant précis où les familles fuient le quartier)*.
+    *   $\rho \lambda_{max}(W)$ : condition spectrale de résonance du réseau *(ex : le seuil d'effondrement global du système francilien)*.
 
 
 *   **Pourquoi :** Identifier les "zones de rupture" où de très petites variations (une réforme mineure) vont déclencher des changements d'état massifs par effet de propagation.
@@ -1242,8 +1288,9 @@ $$
 *   **Quoi :** Identifier les différents régimes de gravité scolaire qui régissent le territoire, révélant la coexistence de logiques locales totalement distinctes.
 
 *   **Légende :** 
-    *   $P(Y_i|X_i)$ : Les lois sociologiques occultes *(ex : dans le "Monde 2", ouvrir une cantine bio augmente l'attractivité, dans le "Monde 4", cela n'a aucun effet)*.
-    *   $Z_i=k$ : Le rattachement secret du lycée à ce "Monde" $k$.
+    *   $P(Y_i|X_i)$ : probabilité du profil du lycée *(ex : la chance que ce lycée appartienne à l'hyper-élite)*.
+    *   $Z_i=k$ : assignation au \"Monde caché\" $k$ *(ex : le rattachement à la caste sociale masquée)*.
+    *   $\beta_{Z_i}$ : règles sociologiques spécifiques au monde $k$ *(ex : les codes culturels exigés par cette caste)*.
 
 
 *   **Pourquoi :** Le système n'est pas un continuum social simple ; c'est une superposition de mondes qui ont chacun leurs propres règles de gravité sociale.
@@ -1292,8 +1339,9 @@ $$
 *   **Quoi :** Traquer les zones d'incertitude du modèle : analyser les secteurs géographiques où la répartition des élèves défie systématiquement toute explication théorique.
 
 *   **Légende :** 
-    *   $BS_i$ : Le niveau d'incompréhension de l'algorithme face à ce lycée *(ex : le modèle le voit riche, la réalité le voit pauvre, pourquoi ?)*.
-    *   $R_i, B_{ij}$ : L'erreur de calcul et la ligne de fracture invisible.
+    *   $BS_i$ : anomalie du lycée $i$ *(ex : la zone aveugle échappant au contrôle de l'État)*.
+    *   $R_i$ : résidu du modèle *(ex : la marge d'erreur inexpliquée)*.
+    *   $B_{ij}$ : intensité de la frontière occulte entre $i$ et $j$ *(ex : le mur invisible entre deux écoles voisines)*.
 
 
 *   **Pourquoi :** Traiter les anomalies mathématiques comme des preuves sociologiques. Un modèle qui se trompe fortement *et* de manière spatialement corrélée révèle la présence d'une force occulte (ex: contournement de carte invisible).
@@ -1348,9 +1396,9 @@ $$
 *   **Quoi :** Décomposer mécaniquement la variance de la concentration sociale pour attribuer sa juste part au découpage géographique, à l'effet d'établissement et à la diffusion spatiale.
 
 *   **Légende :** 
-    *   $\sigma^2_{zone}$ : Le destin du territoire *(ex : "De toute façon, c'est la banlieue nord")*.
-    *   $\sigma^2_{school}$ : Le pouvoir du proviseur *(ex : "Ce lycée tient bon grâce à sa direction exceptionnelle")*.
-    *   $\sigma^2_{spatial}$ : L'effet de loupe du voisinage *(ex : "Tous les collèges autour envoient leurs problèmes ici")*.
+    *   $\sigma^2_{zone}$ : fatalité du quartier *(ex : la fatalité imposée par le code postal)*.
+    *   $\sigma^2_{school}$ : responsabilité propre du proviseur/lycée *(ex : la marge de manœuvre du chef d'établissement)*.
+    *   $\sigma^2_{spatial}$ : effet de meute (voisinage) *(ex : l'effet d'entraînement des lycées mitoyens)*.
 
 
 *   **Pourquoi :** Répondre définitivement au débat public : "Le problème vient-il du ghetto géographique, du choix de l'école, ou de l'effet de mode du réseau local ?".
@@ -1403,9 +1451,10 @@ $$
 *   **Quoi :** Identifier les pôles d'attraction terminale : ces concentrations d'établissements qui absorbent massivement les flux d'élèves sans générer de mobilité sortante.
 
 *   **Légende :** 
-    *   $A_k$ : La force d'aspiration de la caste *(ex : le "trou noir" des grands lycées parisiens qui attire irrémédiablement la bourgeoisie de banlieue)*.
-    *   $In_k, Out_k$ : Les arrivées et les (rares) départs de ce trou noir.
-    *   $\rho(T)$ : La fatalité mathématique (est-ce que ce système finira par figer 100% de l'élite au même endroit ?).
+    *   $A_k$ : force gravitationnelle du cluster $k$ *(ex : le pouvoir gravitationnel de la caste bourgeoise)*.
+    *   $In_k$ : flux entrant depuis d'autres mondes *(ex : les transfuges de classe qui y parviennent)*.
+    *   $Out_k$ : flux fuyant vers d'autres mondes *(ex : les relégués qui sont éjectés du système)*.
+    *   $\rho(T)$ : rayon spectral de stabilité *(ex : le seuil de verrouillage du monde)*.
 
 
 *   **Pourquoi :** Dépasser le clustering statique pour trouver les "puits structurels" qui déforment tout le système par leur gravité et stabilisent les trajectoires de l'élite.
@@ -1458,8 +1507,8 @@ $$
 *   **Quoi :** Cartographier les parcours de mobilité statistiquement atypiques, mettant en lumière les sauts structurels imprévus dans le réseau scolaire.
 
 *   **Légende :** 
-    *   $P(\tau_i)$ : La rareté d'un parcours *(ex : un élève de Louis-le-Grand qui finit dans un lycée pro rural a une probabilité quasi-nulle)*.
-    *   $A(\tau)$ : Le niveau de transgression sociale (l'anomalie absolue).
+    *   $P(\tau_i)$ : probabilité qu'un élève suive cette trajectoire $\tau$ *(ex : les chances qu'un étudiant réussisse ce parcours du combattant)*.
+    *   $A(\tau)$ : étrangeté absolue du parcours (souvent lié à l'évitement scolaire) *(ex : le niveau de transgression des codes sociaux)*.
 
 
 *   **Pourquoi :** Une trajectoire rare n'est pas une "exception statistique" à ignorer, c'est la signature d'un réseau occulte (contournement institutionnel, réseau privé, filière secrète).
@@ -1512,9 +1561,9 @@ $$
 *   **Quoi :** Mesurer la distorsion entre la distance kilométrique et les choix réels d'affectation, illustrant l'ampleur mécanique des contournements géographiques.
 
 *   **Légende :** 
-    *   $\tilde{T}_{ij}$ : Le contournement géographique *(ex : l'élève qui fait 1h de métro chaque matin pour éviter le lycée en bas de chez lui)*.
-    *   $\lambda$ : La pénibilité des transports.
-    *   $D$ : L'hypocrisie de la carte scolaire (la différence entre la règle et la réalité).
+    *   $\tilde{T}_{ij}$ : flux d'élèves pénalisé par la distance *(ex : le transfert pénalisé par l'absence de transports)*.
+    *   $\lambda$ : friction kilométrique *(ex : le coût temporel des embouteillages)*.
+    *   $D$ : indice de distorsion montrant si les flux violent la géographie *(ex : l'indice de déformation de la carte scolaire)*.
 
 
 *   **Pourquoi :** Prouver l'existence d'une géométrie "déformée" de la ségrégation : un $D$ élevé prouve que le marché scolaire est déconnecté de la carte locale, régi par la hiérarchie pure.
@@ -1557,9 +1606,12 @@ $$
 *   **Quoi :** Distinguer la cause originelle d'une rupture systémique locale : s'agit-il de l'impact direct d'une décision de gestion (ex: révision de la carte scolaire) ou de l'accumulation progressive de mouvements démographiques naturels ?
 
 *   **Légende :** 
-    *   $Y_t$ : La ségrégation à l'année $t$.
-    *   $R_t, D_t, P_t$ : Les causes possibles *(ex : la construction de 1000 logements sociaux ($D_t$) vs la création d'une section européenne ($R_t$))*.
-    *   $\tau^*$ : L'année précise où la rupture du système a commencé *(ex : "Tout a changé en 2018")*.
+    *   $Y_t$ : état de ségrégation du système à l'instant $t$ *(ex : l'état de la mixité à l'année T)*.
+    *   $R_t, D_t, P_t$ : vecteurs des chocs (Réformes politiques, chocs Démographiques, croissance du Privé) *(ex : les chocs d'ouverture de filières privées)*.
+    *   $\alpha, \beta, \gamma, \delta$ : poids causaux réels de chaque force *(ex : le poids respectif de l'économie et de la loi)*.
+    *   $\rho$ : coefficient de contagion spatiale (effet domino) *(ex : la réaction en chaîne sur les quartiers voisins)*.
+    *   $W_{ij}$ : matrice d'influence géographique entre les lycées $i$ et $j$ *(ex : la carte des alliances territoriales)*.
+    *   $\tau^*$ : instant optimal de la rupture systémique détectée *(ex : l'année précise où la ségrégation a explosé)*.
 
 
 *   **Pourquoi :** Montrer que certaines politiques prétendument "révolutionnaires" ne font que surfer sur des vagues démographiques, tandis que des réformes invisibles fracturent vraiment le système.
@@ -1606,9 +1658,12 @@ $$
 *   **Quoi :** Observer comment les réorganisations de la hiérarchie se propagent dans le réseau : lorsqu'un groupe d'établissements modifie sa structure d'accueil, cela génère mécaniquement une onde de choc qui reconfigure l'équilibre des lycées environnants.
 
 *   **Légende :** 
-    *   $R_t$ : Le bouleversement de la hiérarchie *(ex : un lycée qui passe de la base de la pyramide directement au sommet suite à une fusion)*.
-    *   $U_t$ : La cartographie des castes temporelles.
-    *   $d$ : La distance entre la pyramide de 2020 et celle de 2025.
+    *   $R_t$ : intensité de la rupture hiérarchique *(ex : la magnitude du séisme dans le classement des lycées)*.
+    *   $U_t$ : structure ultramétrique (dendrogramme) de l'élite à l'instant $t$ *(ex : l'arbre généalogique des alliances d'élites)*.
+    *   $d$ : distance entre deux structures hiérarchiques (arbres) *(ex : la distance mathématique entre l'ancien et le nouveau monde)*.
+    *   $Y_{t+1}$ : état du système (ex: ségrégation) au temps suivant *(ex : le niveau d'inégalité l'année suivante)*.
+    *   $X_t, W_t$ : variables de contrôle locales et effets réseaux *(ex : la politique de la ville)*.
+    *   $\epsilon$ : chocs aléatoires exogènes *(ex : le scandale imprévisible)*.
 
 
 *   **Pourquoi :** Prouver que la structure invisible de l'élite contrôle l'évolution de la masse : quand l'élite resserre son entre-soi (fusion/fragmentation ultramétrique), cela déclenche une onde de choc causale sur tous les autres.
@@ -1659,8 +1714,9 @@ $$
 *   **Quoi :** Cartographier la dynamique du système en visualisant la trajectoire d'évolution de chaque établissement plutôt que son état statique à un instant T.
 
 *   **Légende :** 
-    *   $\vec{V}(x,y)$ : Le courant sociologique *(ex : le vent d'embourgeoisement qui souffle sur l'Est parisien et pousse les lycées à monter en gamme)*.
-    *   $\nabla S, \nabla A$ : La force d'ascension sociale et le pouvoir d'attraction de ce "courant".
+    *   $\vec{V}(x,y)$ : vecteur de force au point $x,y$ *(ex : la force d'attraction poussant vers le centre-ville)*.
+    *   $\nabla S$ : pente de déclassement social *(ex : l'inclinaison de la pente de paupérisation)*.
+    *   $\nabla A$ : pente d'attractivité *(ex : la puissance de l'effet de mode)*.
 
 
 *   **Pourquoi :** Les familles choisissent l'école sur son "momentum", pas sur son état présent. Un lycée moyen en ascension est plus attractif qu'un bon lycée en chute libre.
@@ -1717,7 +1773,7 @@ $$
 *   **Quoi :** Modéliser le système non pas comme une dérive continue, mais comme une structure sous tension susceptible de subir de soudains changements d'état territoriaux.
 
 *   **Légende :** 
-    *   $\lambda_{max}$ : Le point de rupture du système *(ex : la tension est si forte qu'une seule grève dans un lycée déclenchera la fuite globale des classes moyennes de tout le département)*.
+    *   $\lambda_{max}$ : plus grande valeur propre de la matrice jacobienne du réseau, dictant si une crise locale reste locale ou embrase toute la région *(ex : le niveau critique à partir duquel une rumeur locale embrase toute l'académie)*.
 
 
 *   **Pourquoi :** Démontrer que la stabilité apparente d'une carte scolaire est souvent une illusion avant l'effondrement (phase transition), marqué par une variance explosive et une séparation brutale en blocs fermés.
@@ -1774,8 +1830,9 @@ $$
 *   **Quoi :** Observer l'asymétrie des trajectoires scolaires pour distinguer les canaux de mobilité ascendante des flux de réaffectation par défaut.
 
 *   **Légende :** 
-    *   $Asym_{ab}$ : Le taux d'injustice de l'échange *(ex : 100 élèves quittent le lycée $A$ pour aller au lycée $B$, mais aucun ne fait l'inverse)*.
-    *   $T_{ab}, T_{ba}$ : L'ascenseur social vs le déclassement.
+    *   $Asym_{ab}$ : ratio d'inégalité des échanges *(ex : le caractère déséquilibré de l'échange entre la banlieue et Paris)*.
+    *   $T_{ab}$ : ceux qui montent *(ex : le nombre d'élèves brillants aspirés par le centre)*.
+    *   $T_{ba}$ : ceux qui descendent (ou inversement) *(ex : les élèves renvoyés vers la périphérie)*.
 
 
 *   **Pourquoi :** Montrer que le système est asymétrique : les "ascenseurs" connectent des mondes éloignés pour une minorité, tandis que les "filtres" relèguent massivement les élèves vers la périphérie.
@@ -1834,8 +1891,8 @@ $$
 *   **Quoi :** Quantifier la balance macro-structurelle entre les dynamiques de concentration élitiste et les mécanismes de relégation territoriale.
 
 *   **Légende :** 
-    *   $Grad_{ab}$ : La brutalité de la chute ou de l'ascension *(ex : un élève quittant Henri IV pour un lycée rural perd 40 points d'IPS d'un coup)*.
-    *   $S_a, S_b$ : La noblesse du point de départ et d'arrivée.
+    *   $Grad_{ab}$ : pente sociologique du transfert *(ex : l'effort social colossal demandé pour gravir cet échelon)*.
+    *   $S_a, S_b$ : richesses respectives des mondes de départ et d'arrivée *(ex : la différence de capital financier et culturel)*.
 
 
 *   **Pourquoi :** Mesurer si le système global est ouvert (forte mobilité ascendante structurée) ou fermé (domination des corridors de déclassement et reproduction locale).
@@ -1894,9 +1951,9 @@ $$
 *   **Quoi :** Mettre en lumière les établissements dont la trajectoire s'écarte du déterminisme statistique : ceux qui génèrent une plus-value inattendue avec un public fragile, et ceux dont la performance reste en deçà de ce que leur composition sociale laisserait présager.
 
 *   **Légende :** 
-    *   $Dev_i$ : L'injustice du statut *(ex : un lycée qui a d'excellents résultats académiques mais que tout le monde fuit quand même à cause de la réputation de son quartier)*.
-    *   $S_i$ : Sa richesse théorique.
-    *   $f(A_i, F_i)$ : Ce que son niveau réel devrait lui offrir.
+    *   $Dev_i$ : degré d'anomalie du lycée $i$ *(ex : le caractère OVNI du lycée)*.
+    *   $S_i$ : statut social réel *(ex : son IPS officiel)*.
+    *   $f(A_i, F_i)$ : statut théorique calculé d'après sa sélection et son attractivité *(ex : le niveau d'IPS qu'il devrait avoir théoriquement)*.
 
 
 *   **Pourquoi :** Montrer que le système possède des failles et des "ascenseurs locaux" invisibles dans les moyennes globales, mais aussi des rentes de situation inefficaces.
@@ -1947,7 +2004,7 @@ $$
 *   **Quoi :** Synthétiser la performance, le niveau social et l'attractivité géographique en un champ de forces unifié traversant tout le territoire.
 
 *   **Légende :** 
-    *   $\Phi_i$ : La pression globale pesant sur le lycée *(ex : la "cocotte-minute" d'un établissement tiraillé entre la loi sectorielle, son quartier défavorisé et son envie de s'élever)*.
+    *   $\Phi_i$ : potentiel énergétique total du lycée $i$ dans le système, intégrant sa tension réseau $T_i$ et son anomalie institutionnelle $Dev_i$ *(ex : la pression systémique totale pesant sur les épaules du proviseur)*.
 
 
 *   **Pourquoi :** Démontrer que la "déviation" d'un lycée n'a d'impact systémique que si elle est propagée par le réseau ($\tau \cdot H$). Un lycée paradoxal isolé ne change rien au système.
