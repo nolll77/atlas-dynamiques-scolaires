@@ -296,17 +296,7 @@ $$
 **Formule :**
 
 $$
-d_t = 1 - \text{ARI}(C_t, C_{t-1})
-$$
-
-<br>
-
-**Ou :**
-
-<br>
-
-$$
-D_t = \|Z_t - Z_{t-1}\|
+\Huge d_t = 1 - \text{ARI}(C_t, C_{t-1}) \quad \text{ou} \quad D_t = \|Z_t - Z_{t-1}\|
 $$
 
 <br>
@@ -340,17 +330,7 @@ $$
 **Formule :**
 
 $$
-\Delta_t = d(D_t, D_{t-1})
-$$
-
-<br>
-
-**Et l'Indice Global :**
-
-<br>
-
-$$
-U = 1 - \frac{1}{T}\sum_t \Delta_t
+\Huge \Delta_t = d(D_t, D_{t-1}) \quad \text{et l'Indice Global} \quad U = 1 - \frac{1}{T}\sum_t \Delta_t
 $$
 
 <br>
@@ -454,17 +434,7 @@ $$
 **Formule :**
 
 $$
-R_{ab} = \frac{T_{ab}}{E_{ab}}
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-C_{ab} = R_{ab} \cdot \min(p_a, p_b)
+\Huge R_{ab} = \frac{T_{ab}}{E_{ab}} \quad \text{et} \quad C_{ab} = R_{ab} \cdot \min(p_a, p_b)
 $$
 
 <br>
@@ -499,17 +469,7 @@ $$
 **Formule :**
 
 $$
-I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2}
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-F_{territorial} = 1 - I_{Moran}
+\Huge I_k = \frac{(x_k - \bar{x})^T W (x_k - \bar{x})}{\sum (x_k - \bar{x})^2} \quad \text{et} \quad F_{territorial} = 1 - I_{Moran}
 $$
 
 <br>
@@ -544,17 +504,7 @@ $$
 **Formule :**
 
 $$
-H(x) = -\sum_k P_k(x) \log P_k(x)
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-F_t = \int H_t(x) dx
+\Huge H(x) = -\sum_k P_k(x) \log P_k(x) \quad \text{et} \quad F_t = \int H_t(x) dx
 $$
 
 <br>
@@ -658,17 +608,7 @@ $$
 **Formule :**
 
 $$
-A_i = \text{Entropie}(\{C_i^{(m)}\}_m)
-$$
-
-<br>
-
-**Et Indice Global :**
-
-<br>
-
-$$
-F = 1 - \frac{1}{N}\sum A_i
+\Huge A_i = \text{Entropie}(\{C_i^{(m)}\}_m) \quad \text{et Indice Global} \quad F = 1 - \frac{1}{N}\sum A_i
 $$
 
 <br>
@@ -702,17 +642,7 @@ $$
 **Formule :**
 
 $$
-B_{ij} = d_{ij} - d_{ij}^U
-$$
-
-<br>
-
-**Et Violation :**
-
-<br>
-
-$$
-V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))
+\Huge B_{ij} = d_{ij} - d_{ij}^U \quad \text{et Violation} \quad V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))
 $$
 
 <br>
@@ -747,27 +677,7 @@ $$
 **Formule :**
 
 $$
-SG_{ij} = \alpha B_{ij}^{
-$$
-
-<br>
-
-**HMM :**
-
-<br>
-
-$$
-} + \beta B_{ij}^{
-$$
-
-<br>
-
-**GNN :**
-
-<br>
-
-$$
-} + \gamma B_{ij}^{U} + \delta B_{ij}^{C}
+\Huge SG_{ij} = \alpha B_{ij}^{\text{HMM}} + \beta B_{ij}^{\text{GNN}} + \gamma B_{ij}^{U} + \delta B_{ij}^{C}
 $$
 
 <br>
@@ -800,27 +710,7 @@ $$
 **Formule :**
 
 $$
-\Pi = \frac{P_{raw}}{C+\epsilon}
-$$
-
-<br>
-
-**Avec :**
-
-<br>
-
-$$
-P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-C = \sum_{i,j} |d_{ij}^U - E[d^U]|
+\Huge \Pi = \frac{P_{raw}}{C+\epsilon} \quad \text{avec} \quad P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U \quad \text{et} \quad C = \sum_{i,j} |d_{ij}^U - E[d^U]|
 $$
 
 <br>
@@ -853,12 +743,8 @@ $$
 ### 22. Modèle Causal de l'Indice de Fragmentation (IFC)
 **Formule :**
 
-
-
-<br>
-
-**IFC :**$$
-_{ij} = \beta_0 + \beta_1 X_{1,ij} + \beta_2 X_{2,ij} + \beta_3 X_{3,ij} + \beta_4 X_{4,ij} + u_j + \epsilon_{ij}
+$$
+\Huge \text{IFC}_{ij} = \beta_0 + \beta_1 X_{1,ij} + \beta_2 X_{2,ij} + \beta_3 X_{3,ij} + \beta_4 X_{4,ij} + u_j + \epsilon_{ij}
 $$
 
 <br>
@@ -970,17 +856,7 @@ $$
 **Formule :**
 
 $$
-F_c = Var_{global}(IPS_c) - \sum_{i \in c} Var_{interne}(IPS_i)
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-HS_c = (-F_c) \cdot S_c
+\Huge F_c = Var_{global}(IPS_c) - \sum_{i \in c} Var_{interne}(IPS_i) \quad \text{et} \quad HS_c = (-F_c) \cdot S_c
 $$
 
 <br>
@@ -1086,17 +962,7 @@ $$
 **Formule :**
 
 $$
-Y_i = E_i^{quartier} + E_i^{\text{reseau}} + \epsilon_i
-$$
-
-<br>
-
-**Et l'interaction :**
-
-<br>
-
-$$
-E_i^{indirect} = E_i^{quartier} \times E_i^{\text{reseau}}
+\Huge Y_i = E_i^{quartier} + E_i^{\text{reseau}} + \epsilon_i \quad \text{et l'interaction} \quad E_i^{indirect} = E_i^{quartier} \times E_i^{\text{reseau}}
 $$
 
 <br>
@@ -1130,12 +996,8 @@ $$
 ### 29. Causalité des Hotspots (Asymétrie Causale : Cause vs Effet)
 **Formule :**
 
-
-
-<br>
-
-**Équation de panel :**$$
-H_{i,t+1} = \alpha H_{i,t} + \beta \sum_j W_{ij} H_{j,t} + \gamma X_{i,t} + \epsilon_{i,t}
+$$
+\Huge \quad \text{Équation de panel :} \quad H_{i,t+1} = \alpha H_{i,t} + \beta \sum_j W_{ij} H_{j,t} + \gamma X_{i,t} + \epsilon_{i,t}
 $$
 
 <br>
@@ -1145,27 +1007,7 @@ $$
 <br>
 
 $$
-C_i = C_i^{out} - C_i^{in}
-$$
-
-<br>
-
-**Avec :**
-
-<br>
-
-$$
-C_i^{out} = \sum_j \frac{\partial Y_j}{\partial H_i}
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-C_i^{in} = \sum_j \frac{\partial H_i}{\partial Y_j}
+C_i = C_i^{out} - C_i^{in} \quad \text{avec} \quad C_i^{out} = \sum_j \frac{\partial Y_j}{\partial H_i} \quad \text{et} \quad C_i^{in} = \sum_j \frac{\partial H_i}{\partial Y_j}
 $$
 
 <br>
@@ -1199,17 +1041,7 @@ $$
 **Formule :**
 
 $$
-Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i
-$$
-
-<br>
-
-**Avec un champ spatial :**
-
-<br>
-
-$$
-u(s_i) \sim GP(0, K(s_i,s_j))
+\Huge Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i \quad \text{avec un champ spatial} \quad u(s_i) \sim GP(0, K(s_i,s_j)) \quad \text{.} \quad
 $$
 
 <br>
@@ -1242,22 +1074,8 @@ $$
 ### 31. Tipping Points et Instabilité Structurelle
 **Formule :**
 
-
-
-<br>
-
-**Changement de signe :**$$
-\Delta sign(\nabla Y_i)
 $$
-
-<br>
-
-**Avec :**
-
-<br>
-
-$$
-\nabla Y_i = \frac{\partial Y_i}{\partial IPS_i}
+\Huge \quad \text{Changement de signe} \quad \Delta sign(\nabla Y_i) \quad \text{avec} \quad \nabla Y_i = \frac{\partial Y_i}{\partial IPS_i}
 $$
 
 <br>
@@ -1301,27 +1119,7 @@ $$
 **Formule :**
 
 $$
-P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k)
-$$
-
-<br>
-
-**Avec un modèle mixte :**
-
-<br>
-
-$$
-Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i
-$$
-
-<br>
-
-**Entropie :**
-
-<br>
-
-$$
-H_i = \text{entropy}(P(Z_i))
+\Huge P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k) \quad \text{avec un modèle mixte} \quad Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i \quad \text{. Entropie} \quad H_i = \text{entropy}(P(Z_i)) \quad \text{.} \quad
 $$
 
 <br>
@@ -1354,32 +1152,8 @@ $$
 ### 33. Blind Spots et Frontières Non-Modélisées
 **Formule :**
 
-
-
-<br>
-
-**Index :**$$
-BS_i = |R_i| \cdot \sum_j W_{ij} |R_j|
 $$
-
-<br>
-
-**Et indice de frontière invisible :**
-
-<br>
-
-$$
-B_{ij} = |R_i - R_j| \cdot W_{ij}
-$$
-
-<br>
-
-**Autocorrélation via Indice de Moran :**
-
-<br>
-
-$$
-I_R
+\Huge \quad \text{Index} \quad BS_i = |R_i| \cdot \sum_j W_{ij} |R_j| \quad \text{et indice de frontière invisible} \quad B_{ij} = |R_i - R_j| \cdot W_{ij} \quad \text{. Autocorrélation via Indice de Moran} \quad I_R \quad \text{.} \quad
 $$
 
 <br>
@@ -1427,17 +1201,7 @@ $$
 **Formule :**
 
 $$
-Var(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid}
-$$
-
-<br>
-
-**Avec un Indice de Structuration Globale :**
-
-<br>
-
-$$
-SCI = ICC_{zone} + ICC_{school} + ICC_{spatial}
+\Huge Var(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid} \quad \text{avec un Indice de Structuration Globale} \quad SCI = ICC_{zone} + ICC_{school} + ICC_{spatial}
 $$
 
 <br>
@@ -1578,12 +1342,8 @@ $$
 ### 38. Distorsion Spatiale des Flux (Sankey Géographique)
 **Formule :**
 
-
-
-<br>
-
-**Flux spatialisé :**$$
-\tilde{T}_{ij} = T_{ij} \cdot e^{-\lambda d_{ij}}
+$$
+\Huge \quad \text{Flux spatialisé :} \quad \tilde{T}_{ij} = T_{ij} \cdot e^{-\lambda d_{ij}}
 $$
 
 <br>
@@ -1745,17 +1505,7 @@ $$
 <br>
 
 $$
-T_i = \frac{\bar{\Delta S_i}}{Var(\Delta S_i) + \epsilon}
-$$
-
-<br>
-
-**Champ :**
-
-<br>
-
-$$
-T(s) = f(\bar{\Delta S}, Var(\Delta S))
+T_i = \frac{\bar{\Delta S_i}}{Var(\Delta S_i) + \epsilon} \quad \text{. Champ} \quad T(s) = f(\bar{\Delta S}, Var(\Delta S))
 $$
 
 <br>
@@ -1788,52 +1538,8 @@ $$
 ### 42. Transition de Phase (Seuil Critique et Effondrement)
 **Formule :**
 
-
-
-<br>
-
-**Pression :**$$
-\Pi_t = \alpha \text{Inej}_t + \beta \text{Seg}_t + \gamma \text{Dem}_t + \delta \text{Priv}_t
 $$
-
-<br>
-
-**Bascule :**
-
-<br>
-
-$$
-S_{t+1} = S_t + f(\Pi_t)
-$$
-
-<br>
-
-**Avec :**
-
-<br>
-
-$$
-f(\Pi) = \frac{1}{1 + e^{-k(\Pi - \Pi_c)}}
-$$
-
-<br>
-
-**Effondrement :**
-
-<br>
-
-$$
-P(Z_{t+1}=\text{effondré} \mid \Pi_t) = \sigma(\Pi_t - \Pi_c)
-$$
-
-<br>
-
-**Condition réseau :**
-
-<br>
-
-$$
-\rho \lambda_{max}(W) \ge 1
+\Huge \quad \text{Pression} \quad \Pi_t = \alpha \text{Inej}_t + \beta \text{Seg}_t + \gamma \text{Dem}_t + \delta \text{Priv}_t \quad \text{. Bascule} \quad S_{t+1} = S_t + f(\Pi_t) \quad \text{avec} \quad f(\Pi) = \frac{1}{1 + e^{-k(\Pi - \Pi_c)}} \quad \text{. Effondrement} \quad P(Z_{t+1}=\text{effondré} \mid \Pi_t) = \sigma(\Pi_t - \Pi_c) \quad \text{. Condition réseau} \quad \rho \lambda_{max}(W) \ge 1 \quad \text{.} \quad
 $$
 
 <br>
@@ -1864,32 +1570,18 @@ $$
 ### 43. Analyse des Corridors Asymétriques (Ascenseurs vs Filtres)
 **Formule :**
 
-
-
-<br>
-
-**Asymétrie :**$$
-A_{ij} = T_{ij} - T_{ji}
+$$
+\Huge \quad \text{Asymétrie} \quad A_{ij} = T_{ij} - T_{ji}
 $$
 
 <br>
 
-**Indice :**\n\n<br>\n\n$$\n\Gamma_{ij} = \frac{T_{ij} - T_{ji}}{T_{ij} + T_{ji} + \epsilon}\n$$\n\n<br>\n\n**Ascenseur social :**
+**Indice} \quad \Gamma_{ij} = \frac{T_{ij} - T_{ji}}{T_{ij} + T_{ji} + \epsilon} \quad \text{. Ascenseur social :**
 
 <br>
 
 $$
-\Gamma_{ij} > \theta
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-S_j - S_i > 0
+\Gamma_{ij} > \theta \text{ et } S_j - S_i > 0
 $$
 
 <br>
@@ -1899,17 +1591,7 @@ $$
 <br>
 
 $$
-\Gamma_{ij} < -\theta
-$$
-
-<br>
-
-**Et :**
-
-<br>
-
-$$
-S_j - S_i < 0
+\Gamma_{ij} < -\theta \text{ et } S_j - S_i < 0
 $$
 
 <br>
@@ -1942,12 +1624,8 @@ $$
 ### 44. Corridors d'Élite vs Déclassement (Gradient Directionnel)
 **Formule :**
 
-
-
-<br>
-
-**Gradient :**$$
-\Delta S_{ij} = S_j - S_i
+$$
+\Huge \quad \text{Gradient} \quad \Delta S_{ij} = S_j - S_i
 $$
 
 <br>
@@ -1967,17 +1645,7 @@ $$
 <br>
 
 $$
-C^{down}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} < -\theta)
-$$
-
-<br>
-
-**Efficacité :**
-
-<br>
-
-$$
-E_{elite} = \frac{\sum C^{elite}}{\sum T}
+C^{down}_{ij} = T_{ij} \cdot \mathbf{1}(\Delta S_{ij} < -\theta) \quad \text{. Efficacité} \quad E_{elite} = \frac{\sum C^{elite}}{\sum T}
 $$
 
 <br>
@@ -2009,42 +1677,8 @@ $$
 ### 45. Détection des Lycées Paradoxaux (Déviations Résiduelles)
 **Formule :**
 
-
-
-<br>
-
-**Performance attendue :**$$
-\hat{R}(S_i)
 $$
-
-<br>
-
-**Résidu :**
-
-<br>
-
-$$
-\epsilon_i = R_i - \hat{R}(S_i)
-$$
-
-<br>
-
-**Score paradoxal standardisé :**
-
-<br>
-
-$$
-P_i = Z_i^R - Z_i^S
-$$
-
-<br>
-
-**Tension systémique :**
-
-<br>
-
-$$
-\tau_{i,t} = R_{i,t} - E[R \mid S_{i,t}]
+\Huge \quad \text{Performance attendue} \quad \hat{R}(S_i) \quad \text{. Résidu} \quad \epsilon_i = R_i - \hat{R}(S_i) \quad \text{. Score paradoxal standardisé} \quad P_i = Z_i^R - Z_i^S \quad \text{. Tension systémique} \quad \tau_{i,t} = R_{i,t} - E[R \mid S_{i,t}] \quad \text{.} \quad
 $$
 
 <br>
@@ -2077,32 +1711,8 @@ $$
 ### 46. Champ Dynamique Unifié (Tensions et Déviations)
 **Formule :**
 
-
-
-<br>
-
-**Champ latent :**$$
-\Phi_{i,t} = \alpha S_{i,t} + \beta R_{i,t} + \gamma H_{i,t}
 $$
-
-<br>
-
-**Déviation connectée :**
-
-<br>
-
-$$
-D_{i,t} = \tau_{i,t} \cdot H_{i,t}
-$$
-
-<br>
-
-**Évolution :**
-
-<br>
-
-$$
-\Phi_{i,t+1} = \Phi_{i,t} + f(D_{i,t}) + \rho \sum W_{ij} \Phi_{j,t}
+\Huge \quad \text{Champ latent} \quad \Phi_{i,t} = \alpha S_{i,t} + \beta R_{i,t} + \gamma H_{i,t} \quad \text{. Déviation connectée} \quad D_{i,t} = \tau_{i,t} \cdot H_{i,t} \quad \text{. Évolution} \quad \Phi_{i,t+1} = \Phi_{i,t} + f(D_{i,t}) + \rho \sum W_{ij} \Phi_{j,t} \quad \text{.} \quad
 $$
 
 <br>
@@ -2133,97 +1743,9 @@ $$
 ### 47. L'Atlas Analytique Multi-Couches
 **Formule :**
 
-
-
-<br>
-
-**Superposition des 9 tensors d'état :**$$
-S_i
 $$
-
-<br>
-
-**(Fondation), :**
-
-<br>
-
+\Huge \quad \text{Superposition des 9 tensors d'état :} \quad S_i \quad \text{(Fondation),} \quad R_i \quad \text{(Éducatif),} \quad T_{ij} \quad \text{(Flux),} \quad \tau_i \quad \text{(Déviations),} \quad \Gamma_{ij} \quad \text{(Asymétrie),} \quad d_U(i,j) \quad \text{(Ultramétrie),} \quad t \quad \text{(Dynamique),} \quad \Phi_i \quad \text{(Tensions),} \quad \Pi_t \quad \text{(Transitions).} \quad
 $$
-R_i
-$$
-
-<br>
-
-**(Éducatif), :**
-
-<br>
-
-$$
-T_{ij}
-$$
-
-<br>
-
-**(Flux), :**
-
-<br>
-
-$$
-\tau_i
-$$
-
-<br>
-
-**(Déviations), :**
-
-<br>
-
-$$
-\Gamma_{ij}
-$$
-
-<br>
-
-**(Asymétrie), :**
-
-<br>
-
-$$
-d_U(i,j)
-$$
-
-<br>
-
-**(Ultramétrie), :**
-
-<br>
-
-$$
-t
-$$
-
-<br>
-
-**(Dynamique), :**
-
-<br>
-
-$$
-\Phi_i
-$$
-
-<br>
-
-**(Tensions), :**
-
-<br>
-
-$$
-\Pi_t
-$$
-
-<br>
-
-**(Transitions). :**
 
 <br>
 
@@ -2250,52 +1772,8 @@ $$
 ### 48. Géométrie Riemannienne Sociale (Espace non-Euclidien)
 **Formule :**
 
-
-
-<br>
-
-**Vecteur :**$$
-x_i = (S_i, R_i, H_i)
 $$
-
-<br>
-
-**Métrique tensorielle :**
-
-<br>
-
-$$
-d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j)
-$$
-
-<br>
-
-**Tenseur métrique :**
-
-<br>
-
-$$
-G_t = f(\text{Seg}_t, \text{Flux}_t)
-$$
-
-<br>
-
-**Courbure :**
-
-<br>
-
-$$
-K_t = \nabla G_t
-$$
-
-<br>
-
-**Géodésique :**
-
-<br>
-
-$$
-\gamma_i = argmin \int d_{ij}(t)
+\Huge \quad \text{Vecteur} \quad x_i = (S_i, R_i, H_i) \quad \text{. Métrique tensorielle} \quad d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j) \quad \text{. Tenseur métrique} \quad G_t = f(\text{Seg}_t, \text{Flux}_t) \quad \text{. Courbure} \quad K_t = \nabla G_t \quad \text{. Géodésique} \quad \gamma_i = argmin \int d_{ij}(t) \quad \text{.} \quad
 $$
 
 <br>
