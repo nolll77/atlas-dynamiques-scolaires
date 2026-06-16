@@ -928,7 +928,15 @@ $$
 **Formule :**
 
 $$
-\Huge F_c = Var_{global}(IPS_c) - \sum_{i \in c} Var_{interne}(IPS_i) \quad \text{et} \quad HS_c = (-F_c) \cdot S_c
+\Huge F_c = Var_{global}(IPS_c) - \sum_{i \in c} Var_{interne}(IPS_i)
+$$
+
+<br>
+
+**Et :**
+
+$$
+\Huge HS_c = (-F_c) \cdot S_c
 $$
 
 <br>
@@ -1034,7 +1042,15 @@ $$
 **Formule :**
 
 $$
-\Huge Y_i = E_i^{quartier} + E_i^{\text{reseau}} + \epsilon_i \quad \text{et l'interaction} \quad E_i^{indirect} = E_i^{quartier} \times E_i^{\text{reseau}}
+\Huge Y_i = E_i^{quartier} + E_i^{reseau} + \epsilon_i
+$$
+
+<br>
+
+**Interaction :**
+
+$$
+\Huge E_i^{indirect} = E_i^{quartier} \times E_i^{reseau}
 $$
 
 <br>
@@ -1068,8 +1084,10 @@ $$
 ### 29. Causalité des Hotspots (Asymétrie Causale : Cause vs Effet)
 **Formule :**
 
+**Équation de panel :**
+
 $$
-\Huge \quad \text{Équation de panel :} \quad H_{i,t+1} = \alpha H_{i,t} + \beta \sum_j W_{ij} H_{j,t} + \gamma X_{i,t} + \epsilon_{i,t}
+\Huge H_{i,t+1} = \alpha H_{i,t} + \beta \sum_j W_{ij} H_{j,t} + \gamma X_{i,t} + \epsilon_{i,t}
 $$
 
 <br>
@@ -1079,7 +1097,23 @@ $$
 <br>
 
 $$
-C_i = C_i^{out} - C_i^{in} \quad \text{avec} \quad C_i^{out} = \sum_j \frac{\partial Y_j}{\partial H_i} \quad \text{et} \quad C_i^{in} = \sum_j \frac{\partial H_i}{\partial Y_j}
+\Huge C_i = C_i^{out} - C_i^{in}
+$$
+
+<br>
+
+**Avec :**
+
+$$
+\Huge C_i^{out} = \sum_j \frac{\partial Y_j}{\partial H_i}
+$$
+
+<br>
+
+**Et :**
+
+$$
+\Huge C_i^{in} = \sum_j \frac{\partial H_i}{\partial Y_j}
 $$
 
 <br>
@@ -1113,7 +1147,15 @@ $$
 **Formule :**
 
 $$
-\Huge Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i \quad \text{avec un champ spatial} \quad u(s_i) \sim GP(0, K(s_i,s_j)) \quad \text{.} \quad
+\Huge Y_i = \sum_k s_k(X_{ik}) + \rho \sum_j W_{ij} Y_j + u(s_i) + \epsilon_i
+$$
+
+<br>
+
+**Champ spatial :**
+
+$$
+\Huge u(s_i) \sim GP(0, K(s_i,s_j))
 $$
 
 <br>
