@@ -677,7 +677,7 @@ $$
 **Formule :**
 
 $$
-\Huge T_c = \sum_{s \in \text{classes\_IPS}} \frac{n_{c,s}}{n_c} \log\left(\frac{n_{c,s}/n_c}{p_s}\right)
+\Huge T_c = \sum_{s \in \text{classes}_{IPS}} \frac{n_{c,s}}{n_c} \log\left(\frac{n_{c,s}/n_c}{p_s}\right)
 $$
 *   **Quoi :** Scan territorial révélant quelles communes sont des "monopoles sociaux" (100% de riches ou 100% de pauvres) face à la moyenne francilienne.
 *   **Légende :** $T_c$ : indice de Theil pour la commune $c$, $T_{c, inter}$ : ségrégation entre les lycées de la commune, $T_{c, intra}$ : ségrégation à l'intérieur des classes des lycées de la commune.
