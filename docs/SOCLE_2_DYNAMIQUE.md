@@ -432,9 +432,9 @@ $$
     *   du transport ($X_4$)
     *   sous l'effet parapluie du territoire ($u_j$).
 *   **Inputs :** Données croisées lycées / zones académiques.
-*   **Outputs :** Coefficients causaux directs $\partial \text{IFC} / \partial X_k$ et effet structurel territorial $\text{Var}(u_j)$.
+*   **Outputs :** Coefficients causaux directs $\partial IFC / \partial X_k$ et effet structurel territorial $Var(u_j)$.
 *   **Dépendance Amont :** Graphe causal dirigé (DAG) avec `dowhy`.
-*   **Dépendance Aval :** Simulation contrefactuelle (ex: $\text{do}(X_2 = x')$).
+*   **Dépendance Aval :** Simulation contrefactuelle (ex: $do(X_2 = x')$).
 *   **Complexité Algorithmique :** Lourde, régression mixte (`statsmodels.mixedlm`).
 *   **Contraintes & Hypothèses :** On suppose le "Backdoor criterion" vérifié, c'est-à-dire l'absence de variables confondantes non observées majeures au niveau du quartier.
 *   **Limites / Biais :** La colinéarité extrême entre IPS ($X_1$) et Sélectivité ($X_2$) rend difficile l'isolation pure de la "sélectivité".
