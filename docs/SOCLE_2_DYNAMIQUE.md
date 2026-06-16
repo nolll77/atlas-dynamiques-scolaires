@@ -1772,8 +1772,52 @@ $$
 ### 48. Géométrie Riemannienne Sociale (Espace non-Euclidien)
 **Formule :**
 
+**Vecteur :**
+
+<br>
+
 $$
-\Huge \quad \text{Vecteur} \quad x_i = (S_i, R_i, H_i) \quad \text{. Métrique tensorielle} \quad d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j) \quad \text{. Tenseur métrique} \quad G_t = f(\text{Seg}_t, \text{Flux}_t) \quad \text{. Courbure} \quad K_t = \nabla G_t \quad \text{. Géodésique} \quad \gamma_i = argmin \int d_{ij}(t) \quad \text{.} \quad
+x_i = (S_i, R_i, H_i)
+$$
+
+<br>
+
+**Métrique tensorielle :**
+
+<br>
+
+$$
+d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j)
+$$
+
+<br>
+
+**Tenseur métrique :**
+
+<br>
+
+$$
+G_t = f(Seg_t, Flux_t)
+$$
+
+<br>
+
+**Courbure :**
+
+<br>
+
+$$
+K_t = \nabla G_t
+$$
+
+<br>
+
+**Géodésique :**
+
+<br>
+
+$$
+\gamma_i = argmin \int d_{ij}(t)
 $$
 
 <br>
