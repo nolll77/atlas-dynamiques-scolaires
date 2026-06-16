@@ -251,10 +251,11 @@ $$
 
 *   **Légende :** 
     *   $Q$ : score de modularité
-    *   $m$ : masse totale des arêtes du graphe
-    *   $A_{ij}$ : poids de l'arête entre $i$ et $j$
-    *   $k_i, k_j$ : somme des poids (degrés) des nœuds $i$ et $j$
-    *   $\delta(c_i, c_j)$ : vaut 1 si $i$ et $j$ sont dans le même cluster, 0 sinon.
+    *   $m$ : masse totale des flux et interactions dans le système scolaire local *(ex : l'ensemble des mobilités d'élèves à l'échelle d'une académie)*.
+    *   $A_{ij}$ : intensité de la proximité (ou des flux) entre le lycée $i$ et le lycée $j$ *(ex : le nombre d'élèves issus du même collège qui se répartissent entre ces deux lycées)*.
+    *   $k_i, k_j$ : somme des interactions (masse sociale) des lycées $i$ et $j$ *(ex : un lycée très prestigieux aura une masse d'attractivité énorme par rapport à un petit établissement de quartier)*.
+    *   $\delta(c_i, c_j)$ : vaut 1 si les lycées appartiennent à la même strate sociale, 0 sinon *(ex : vaut 1 si les deux lycées sont classés dans la strate "Élite")*.
+
 
 *   **Pourquoi :** Détecter endogènement les "mondes scolaires" (sans imposer le nombre de clusters à l'avance).
 
@@ -502,10 +503,11 @@ $$
 *   **Quoi :** Preuve mathématique fixant objectivement le moment précis où un écart d'IPS devient une véritable "fracture de classe" infranchissable.
 
 *   **Légende :** 
-    *   $h_k$ : hauteur du $k$-ième nœud dans le dendrogramme
-    *   $\bar{h}$ : hauteur moyenne de tous les nœuds
-    *   $\sigma_h$ : écart-type des hauteurs
+    *   $h_k$ : écart de distance sociale au moment de la fusion d'un groupe de lycées ($k$) avec un autre *(ex : le fossé séparant la fusion des lycées "Moyens" avec le bloc très fermé de l'"Élite")*.
+    *   $\bar{h}$ : écart de distance sociale moyen entre tous les groupes *(ex : le niveau de ségrégation ordinaire ou "bruit de fond" de la ville)*.
+    *   $\sigma_h$ : écart-type des distances de rupture
     *   $\beta$ : constante de sévérité.
+
 
 *   **Pourquoi :** Éviter de choisir le nombre de clusters au doigt mouillé, et prouver mathématiquement l'existence de "plafonds de verre" sociaux abrupts.
 
@@ -605,7 +607,8 @@ $$
 
 *   **Légende :** 
     *   $H_i$ : entropie de trajectoire pour le lycée $i$
-    *   $p_{ik}$ : probabilité historique que le lycée $i$ transite vers le cluster $k$.
+    *   $p_{ik}$ : probabilité historique que le lycée $i$ bascule d'une strate sociale vers la strate $k$ *(ex : 80% de chances qu'un lycée en cours de paupérisation finisse dans la strate "Ghettoïsation absolue" l'année suivante)*.
+
 
 *   **Pourquoi :** Distinguer l'élite stable et prévisible (entropie zéro) des zones de déclassement ou d'ascension chaotique (forte incertitude).
 
@@ -664,8 +667,9 @@ $$
 *   **Quoi :** Cartographie des "zones grises" où la frontière entre l'élite scolaire et les classes populaires devient floue et perméable dans la rue.
 
 *   **Légende :** 
-    *   $O_{ij}$ : aire de chevauchement entre clusters $i$ et $j$
-    *   $f_i(x)$ : fonction de densité (KDE) du cluster $i$ en un point $x$ de la carte.
+    *   $O_{ij}$ : zone d'intersection sociologique entre la strate $i$ et la strate $j$ *(ex : les quelques lycées mixtes qui accueillent à la fois des classes moyennes et des CSP-)*.
+    *   $f_i(x)$ : intensité de la présence de la strate sociale $i$ en un point géographique $x$ *(ex : concentration maximale de la caste privilégiée dans les arrondissements du centre-ville)*.
+
 
 *   **Pourquoi :** Passer d'une vision de "groupes distincts" rigides à une cartographie continue des tensions, révélant les "frontières scolaires floues".
 
@@ -699,9 +703,10 @@ $$
 *   **Quoi :** Vérification mathématique pour savoir si les "bulles sociales" découvertes sont vraiment étanches, ou si les élèves naviguent en réalité entre elles.
 
 *   **Légende :** 
-    *   $s(i)$ : score de silhouette du point $i$
-    *   $a(i)$ : distance moyenne de $i$ aux autres points de son propre cluster
-    *   $b(i)$ : distance moyenne de $i$ aux points du cluster voisin le plus proche.
+    *   $s(i)$ : qualité de l'assignation du lycée $i$ à sa strate sociale *(ex : ce lycée est-il vraiment à sa place au cœur de la strate "Classe moyenne", ou est-il en réalité assis sur la frontière avec l'élite ?)*.
+    *   $a(i)$ : distance sociale moyenne entre le lycée $i$ et les autres lycées de sa propre strate *(ex : à quel point ce lycée ressemble-t-il aux autres lycées moyens ?)*.
+    *   $b(i)$ : distance sociale moyenne entre le lycée $i$ et les lycées de la strate sociale la plus proche *(ex : à quel point ce lycée se rapproche-t-il des caractéristiques de l'élite ?)*.
+
 
 *   **Pourquoi :** Valider rigoureusement à quel point les "mondes scolaires" sont bien séparés les uns des autres (frontières étanches ou poreuses).
 
@@ -731,9 +736,10 @@ $$
 *   **Quoi :** Ultime démonstration algorithmique prouvant que la hiérarchie des lycées (riches, moyens, pauvres) existe réellement et n'est pas une illusion statistique.
 
 *   **Légende :** 
-    *   $Gap(k)$ : statistique de Gap pour $k$ clusters
-    *   $E[\log(W_k^*)]$ : log-dispersion attendue sous simulation aléatoire uniforme
-    *   $\log(W_k)$ : log-dispersion réelle observée.
+    *   $Gap(k)$ : niveau de validité de la division du système en $k$ strates sociales distinctes *(ex : mathématiquement, est-il plus pertinent de diviser les lycées d'une ville en 3 ou en 5 castes étanches ?)*.
+    *   $E[\log(W_k^*)]$ : fragmentation théorique si les élèves étaient répartis de façon purement aléatoire et égalitaire *(ex : le scénario utopique d'une mixité parfaite)*.
+    *   $\log(W_k)$ : fragmentation (log-dispersion) réelle observée.
+
 
 *   **Pourquoi :** Fournir la preuve algorithmique absolue que la stratification sociale observée (en $k$ classes) n'est pas un simple artéfact mathématique.
 
@@ -804,8 +810,9 @@ $$
 *   **Quoi :** Modélisation des trajectoires de "déclassement" ou "d'ascension" : quelle est la probabilité statistique qu'un lycée pauvre rejoigne l'élite dans 5 ans ?
 
 *   **Légende :** 
-    *   $P_{ij}$ : probabilité de passer de l'état $i$ à l'état $j$
-    *   $C_t$ : état (cluster) au temps $t$.
+    *   $P_{ij}$ : probabilité pour un lycée de basculer du profil social $i$ au profil social $j$ *(ex : 5% de chance de passer de "Défavorisé" à "Mixte" en une décennie)*.
+    *   $C_t$ : profil (ou strate) dans lequel se trouve le lycée à l'année $t$ *(ex : statut "Élite" en 2023)*.
+
 
 *   **Pourquoi :** Démontrer que le système scolaire n'est pas figé statiquement mais est un espace de circulation macroscopique.
 
@@ -867,9 +874,10 @@ $$
 *   **Quoi :** Identification des "grandes gares de tri" scolaires : les mondes sociaux qui aspirent et recrachent massivement les élèves du système.
 
 *   **Légende :** 
-    *   $F_i$ : masse de flux impliquant l'état $i$
+    *   $F_i$ : volume total des dynamiques de déclassement/ascension impliquant la strate sociale $i$ *(ex : la strate "Défavorisée" subit-elle une fuite massive de ses meilleurs éléments vers le haut, ou est-elle devenue un cul-de-sac totalement immobile ?)*.
     *   $P_{ij}$ : flux sortant de $i$ vers $j$
     *   $P_{ji}$ : flux entrant dans $i$ depuis $j$.
+
 
 *   **Pourquoi :** Classer sociologiquement les zones du système en grandes gares de tri : "attracteurs" (aimants sociaux), "émetteurs" (zones de fuite) ou "passerelles transitoires".
 
@@ -899,8 +907,9 @@ $$
 *   **Quoi :** Évaluation du niveau de fatalité : prouver si les élèves d'un quartier donné ont une chance de s'échapper vers de multiples horizons ou si leur destin est verrouillé.
 
 *   **Légende :** 
-    *   $H_i$ : score d'incertitude de fuite depuis l'état $i$
+    *   $H_i$ : niveau d'imprévisibilité de l'avenir d'un lycée situé dans la strate $i$ *(ex : un lycée de banlieue dont la population change très vite au gré des réformes urbaines a une forte entropie)*.
     *   $P_{ij}$ : probabilité conditionnelle d'aller de $i$ vers $j$.
+
 
 *   **Pourquoi :** Quantifier le niveau de "déterminisme" d'un cluster : un $H_i$ proche de 0 signifie que le parcours futur est tracé et inévitable pour ceux qui s'y trouvent.
 
@@ -1095,10 +1104,11 @@ $$
 *   **Légende :** 
     *   $Q_{multi}$ : modularité multi-couches
     *   $\alpha$ : indice de la couche
-    *   $A_{ij}^\alpha$ : poids arête dans couche $\alpha$
+    *   $A_{ij}^\alpha$ : intensité du lien entre le lycée $i$ et le lycée $j$ à travers la dimension institutionnelle $\alpha$ *(ex : forte affinité parce qu'ils appartiennent tous deux au réseau de l'enseignement catholique)*.
     *   $\gamma^\alpha$ : résolution
     *   $P_{ij}^\alpha$ : modèle aléatoire nul
-    *   $\delta(c_i, c_j)$ : identité de cluster.
+    *   $\delta(c_i, c_j)$ : vaut 1 si les lycées appartiennent à la même caste sociale globale, 0 sinon *(ex : vaut 1 si c'est un regroupement de lycées privés prestigieux)*.
+
 
 *   **Pourquoi :** Découvrir les "Super-Communautés hybrides" qui transcendent l'opposition binaire institutionnelle et prouver l'existence d'alliances invisibles ou de bassins de vie partagés entre le privé et le public.
 
@@ -1128,10 +1138,11 @@ $$
 *   **Quoi :** Calcul du niveau de "repli sur soi" d'un bloc de lycées, évaluant s'ils vivent en totale autarcie par rapport au reste de la région.
 
 *   **Légende :** 
-    *   $C_k$ : cohésion du cluster $k$
-    *   $E_{in}(k)$ : somme des liens internes à $k$
+    *   $C_k$ : étanchéité de la super-strate $k$ *(ex : la forteresse que représente le bloc de l'élite parisienne)*.
+    *   $E_{in}(k)$ : volume des flux/interactions confinés à l'intérieur de cette super-strate *(ex : les excellents élèves qui naviguent uniquement entre Louis-le-Grand et Henri IV sans jamais en sortir)*.
     *   $E_{out}(k)$ : somme des liens fuyant $k$
     *   $\lambda$ : pénalité de taille.
+
 
 *   **Pourquoi :** Contrôler si l'agrégation pyramidale de l'algorithme (qui a fusionné des micro-mondes scolaires) ne vient pas de forcer artificiellement la création d'alliances politiquement bancales et instables au sommet de l'arbre.
 
@@ -1167,8 +1178,9 @@ $$
 *   **Légende :** 
     *   $FS_{ij}$ : score de frontière entre points géographiques $i$ et $j$
     *   $D_{ij}$ : distance sociale pure
-    *   $\Delta C_{ij}$ : rupture de cluster (0 ou 1)
+    *   $\Delta C_{ij}$ : indique si les deux lycées géographiquement voisins appartiennent à des strates sociales différentes (vaut 1) ou identiques (vaut 0) *(ex : deux lycées sont séparés par une simple rue, mais l'un est "Élite" et l'autre "Défavorisé")*.
     *   $\beta$ : poids.
+
 
 *   **Pourquoi :** Permettre de cartographier au GPS les véritables "murs de Berlin invisibles", c'est-à-dire les zones de tension extrêmes où deux lycées pourtant physiquement voisins n'ont aucune chance statistique de se mélanger.
 
