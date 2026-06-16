@@ -634,7 +634,7 @@ $$
 
 *   **Outputs :** Score de bascule $T_i$ et cartographie des "Tipping points" scolaires.
 
-*   **Dépendance Amont :** Calcul des valeurs propres de la matrice réseau ($\lambda_{max}(W)$).
+*   **Dépendance Amont :** Calcul des valeurs propres de la matrice réseau, notamment $\lambda_{max}(W)$.
 
 *   **Dépendance Aval :** Simulation de "réformes critiques" vs "réformes neutres".
 
