@@ -7,8 +7,8 @@
 > 
 > **Le Standard des 9 Tags (Le DAG d'Ingénierie Ultime) :**
 > Chaque formule doit pouvoir être lue et implémentée comme une fonction autonome et sécurisée grâce à ces 9 clés :
-> 1. **Quoi :** La définition mécanique (ce que la formule calcule).
-> 2. **Pourquoi :** L'objectif sociologique ou interprétatif (à quoi ça sert dans le système).
+> 1. **Quoi :** La traduction sociologique et concrète de l'équation (interdiction de froideur mathématique).
+> 2. **Pourquoi :** L'objectif politique ou interprétatif (à quoi ça sert dans le système).
 > 3. **Inputs (Entrées) :** Les données brutes, vecteurs ou matrices nécessaires au calcul.
 > 4. **Outputs (Sorties) :** Le format mathématique du résultat retourné.
 > 5. **Dépendance Amont :** Prérequis. Quelle autre formule doit obligatoirement être calculée *avant*.
@@ -18,7 +18,7 @@
 > 9. **Limites / Biais (Edge Cases) :** Les situations extrêmes de la vraie vie (géographie, politique locale) où la formule "craque" ou donne des résultats absurdes.
 >
 > **LA LOI DE L'ANCRAGE TERRAIN :**
-> Pour les tags 7, 8 et 9, la "vulgarisation" poétique (ex: "poupées russes", "trous noirs") ou le jargon académique ("variance", "loi normale") sont **strictement interdits**. La contrainte mathématique doit être traduite exclusivement en utilisant **les objets réels du terrain étudié** (ici : l'IPS, les élèves, les lycées, la distance kilométrique, le public/privé). La description doit toujours "situer l'action" dans son environnement natif.
+> Cette loi s'applique de manière totalitaire à **tous** les tags explicatifs (en particulier le *Quoi* et le *Pourquoi*). La froideur mathématique désincarnée, la "vulgarisation" poétique abstraite ou le jargon purement académique sont **strictement interdits**. Toute abstraction mathématique doit être immédiatement traduite en utilisant exclusivement **les objets réels du terrain étudié** (l'IPS, les élèves, les lycées, la ségrégation, les ghettos, le public/privé). La description doit toujours "situer l'action" dans la réalité physique et sociale du système éducatif.
 
 ---
 
