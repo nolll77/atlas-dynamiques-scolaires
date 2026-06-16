@@ -2015,7 +2015,7 @@ $$
 <br>
 
 $$
-x_i = (S_i, R_i, H_i)
+\Huge x_i = (S_i, R_i, H_i)
 $$
 
 <br>
@@ -2025,7 +2025,7 @@ $$
 <br>
 
 $$
-d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j)
+\Huge d_{ij}^2 = (x_i - x_j)^T G_t (x_i - x_j)
 $$
 
 <br>
@@ -2035,7 +2035,7 @@ $$
 <br>
 
 $$
-G_t = f(Seg_t, Flux_t)
+\Huge G_t = f(Seg_t, Flux_t)
 $$
 
 <br>
@@ -2045,7 +2045,7 @@ $$
 <br>
 
 $$
-K_t = \nabla G_t
+\Huge K_t = \nabla G_t
 $$
 
 <br>
