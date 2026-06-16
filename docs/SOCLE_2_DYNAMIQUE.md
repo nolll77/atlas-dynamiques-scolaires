@@ -440,7 +440,7 @@ $$
 
 *   **Dépendance Amont :** Graphe causal dirigé (DAG) avec `dowhy`.
 
-*   **Dépendance Aval :** Simulation contrefactuelle (ex: $do(X_2 = x^{\prime})$).
+*   **Dépendance Aval :** Simulation contrefactuelle, par exemple $do(X_2 = x)$.
 
 *   **Complexité Algorithmique :** Lourde, régression mixte (`statsmodels.mixedlm`).
 
