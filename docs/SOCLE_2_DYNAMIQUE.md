@@ -1347,7 +1347,15 @@ $$
 **Formule :**
 
 $$
-\Huge Var(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid} \quad \text{avec un Indice de Structuration Globale} \quad SCI = ICC_{zone} + ICC_{school} + ICC_{spatial}
+\Huge Var(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid}
+$$
+
+<br>
+
+**Indice de Structuration Globale :**
+
+$$
+\Huge SCI = ICC_{zone} + ICC_{school} + ICC_{spatial}
 $$
 
 <br>
