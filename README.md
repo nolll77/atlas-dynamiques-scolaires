@@ -65,7 +65,7 @@ L’objectif est de produire une représentation multi-dimensionnelle, reproduct
 ├── paper_arxiv/
 │
 ├── runs/
-│   └── (experiment tracking MLflow - généré localement, ignoré par git)
+│   └── (experiment tracking JSON - généré localement, ignoré par git)
 │
 ├── scripts/
 │
