@@ -330,7 +330,15 @@ $$
 **Formule :**
 
 $$
-\Huge \Delta_t = d(D_t, D_{t-1}) \quad \text{et l'Indice Global} \quad U = 1 - \frac{1}{T}\sum_t \Delta_t
+\Huge \Delta_t = d(D_t, D_{t-1})
+$$
+
+<br>
+
+**Indice Global :**
+
+$$
+\Huge U = 1 - \frac{1}{T}\sum_t \Delta_t
 $$
 
 <br>
