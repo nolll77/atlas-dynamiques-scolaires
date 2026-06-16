@@ -788,7 +788,11 @@ $$
 \Huge Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t
 $$
 
+<br>
+
 **Causalité spatiale des ruptures :**
+
+<br>
 
 $$
 \Huge \Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta Y_{j,t}
