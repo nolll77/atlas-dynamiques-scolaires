@@ -124,7 +124,7 @@ $$
 
 <br>
 
-*   **Quoi :** Utilisation des erreurs prédictives (résidus) pour découvrir des classes sociales "cachées".
+*   **Quoi :** Révéler les dynamiques locales invisibles : utiliser l'écart entre la théorie mathématique et la réalité du terrain pour mettre en lumière des logiques d'association ou d'évitement qui n'apparaissent pas dans les données officielles.
 
 *   **Légende :** 
     *   $r_i$ : résidu spatial pour $i$
@@ -682,7 +682,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle génératif colossal fusionnant le temps (Hidden Markov Model), le réseau (GNN), la hiérarchie (Ultramétrie) et l'inférence causale (DAG) pour isoler les goulets d'étranglement suprêmes.
+*   **Quoi :** L'outil de synthèse global : croiser le temps, l'espace, la hiérarchie et les flux pour identifier les "Super-Goulots", ces points nodaux de la géographie scolaire où la mobilité des élèves se fige mécaniquement.
 
 *   **Légende :** 
     *   $SG_{ij}$ : dangerosité du goulot
@@ -1090,7 +1090,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection des "zones de bascule", les points d'inflexion exacts où le gradient s'inverse (ex: où un point d'IPS supplémentaire ne protège plus, mais accélère la fuite).
+*   **Quoi :** Identifier les "Points de Rupture" territoriaux : le seuil exact à partir duquel la composition d'un secteur bascule, entraînant une réallocation massive et soudaine des choix d'orientation des familles.
 
 *   **Légende :** 
     *   $\nabla Y_i$ : gradient (pente) de l'effet d'une variable
@@ -1412,7 +1412,7 @@ $$
 
 <br>
 
-*   **Quoi :** Démêlage économétrique des points de rupture, par exemple $\tau^* = argmax_t \Delta L(t)$, pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
+*   **Quoi :** Distinguer la cause originelle d'une rupture systémique locale : s'agit-il de l'impact direct d'une décision de gestion (ex: révision de la carte scolaire) ou de l'accumulation progressive de mouvements démographiques naturels ?
 
 *   **Légende :** 
     *   $Y_t$ : état de ségrégation du système à l'instant $t$
@@ -1463,7 +1463,7 @@ $$
 
 <br>
 
-*   **Quoi :** Introduction de la hiérarchie latente ($U_t$) comme véritable nœud causal. Un changement de dendrogramme n'est pas qu'un symptôme, c'est un agent infectieux qui se propage : $\Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta U_t$.
+*   **Quoi :** Observer comment les réorganisations de la hiérarchie se propagent dans le réseau : lorsqu'un groupe d'établissements modifie sa structure d'accueil, cela génère mécaniquement une onde de choc qui reconfigure l'équilibre des lycées environnants.
 
 *   **Légende :** 
     *   $R_t$ : intensité de la rupture hiérarchique
@@ -1683,7 +1683,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle isolant les lycées qui brisent le déterminisme : ceux qui sur-performent avec un public défavorisé (paradoxe ascendant) et ceux qui sous-performent avec un public d'élite (paradoxe inversé).
+*   **Quoi :** Mettre en lumière les établissements dont la trajectoire s'écarte du déterminisme statistique : ceux qui génèrent une plus-value inattendue avec un public fragile, et ceux dont la performance reste en deçà de ce que leur composition sociale laisserait présager.
 
 *   **Légende :** 
     *   $Dev_i$ : degré d'anomalie du lycée $i$
@@ -1778,7 +1778,7 @@ $$
 
 <br>
 
-*   **Quoi :** Le stade ultime de la conceptualisation "Monde B" : modéliser le système scolaire exactement comme la Relativité Générale d'Einstein. La masse (les inégalités) déforme l'espace (la carte scolaire), créant une courbure (la ségrégation) qui dicte les orbites (les trajectoires de mobilité).
+*   **Quoi :** L'hypothèse unificatrice du projet : modéliser le système scolaire selon la Relativité Générale d'Einstein. La concentration sociale agit comme une masse qui déforme le "tissu" de la carte scolaire, courbant mécaniquement les trajectoires de mobilité et d'attractivité de tous les établissements situés dans son champ de gravité.
 
 *   **Pourquoi :** Prouver mathématiquement que la "distance" entre un lycée REP de banlieue et Henri IV à Paris n'est pas de 5 kilomètres (espace euclidien plat), mais s'apparente à une distance intersidérale due à la courbure infinie de l'espace social à cet endroit.
 
