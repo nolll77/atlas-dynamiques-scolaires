@@ -296,7 +296,15 @@ $$
 **Formule :**
 
 $$
-\Huge d_t = 1 - \text{ARI}(C_t, C_{t-1}) \quad \text{ou} \quad D_t = \|Z_t - Z_{t-1}\|
+\Huge d_t = 1 - ARI(C_t, C_{t-1})
+$$
+
+<br>
+
+**Ou alternativement :**
+
+$$
+\Huge D_t = \|Z_t - Z_{t-1}\|
 $$
 
 <br>
