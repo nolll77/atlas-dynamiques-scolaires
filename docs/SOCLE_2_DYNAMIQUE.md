@@ -800,7 +800,13 @@ $$
 
 *   **Quoi :** Démêlage économétrique des points de rupture, par exemple $\tau^* = argmax_t \Delta L(t)$, pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
 
-*   **Légende :** $\tau_k$ : probabilité que la rupture soit due à la réforme $k$, $Z$ : variables inobservées (bruit macro-économique).
+*   **Légende :** 
+    *   $Y_t$ : état de ségrégation du système à l'instant $t$
+    *   $R_t, D_t, P_t$ : vecteurs des chocs (Réformes politiques, chocs Démographiques, croissance du Privé)
+    *   $\alpha, \beta, \gamma, \delta$ : poids causaux réels de chaque force
+    *   $\rho$ : coefficient de contagion spatiale (effet domino)
+    *   $W_{ij}$ : matrice d'influence géographique entre les lycées $i$ et $j$
+    *   $\tau^*$ : instant optimal de la rupture systémique détectée.
 
 *   **Pourquoi :** Montrer que certaines politiques prétendument "révolutionnaires" ne font que surfer sur des vagues démographiques, tandis que des réformes invisibles fracturent vraiment le système.
 
