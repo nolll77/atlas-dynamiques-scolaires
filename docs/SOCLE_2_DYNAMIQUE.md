@@ -419,24 +419,33 @@ $$
 \Huge \text{IFC}_{ij} = \beta_0 + \beta_1 X_{1,ij} + \beta_2 X_{2,ij} + \beta_3 X_{3,ij} + \beta_4 X_{4,ij} + u_j + \epsilon_{ij}
 $$
 *   **Quoi :** Modèle multiniveau rattaché à un DAG pour désenchevêtrer les causes de la fragmentation scolaire (IFC).
+
 *   **Légende :** 
     *   $IFC_{ij}$ : fragmentation locale
     *   $\beta_k$ : effets causaux directs
     *   $X_k$ : variables de sélectivité/transport
     *   $u_j$ : effet aléatoire de l'académie
     *   $\epsilon_{ij}$ : résidu individuel.
+
 *   **Pourquoi :** L'IFC n'est pas qu'un symptôme. Il est l'effet :
     *   de l'IPS ($X_1$)
     *   de la sélectivité ($X_2$)
     *   de l'offre ($X_3$)
     *   du transport ($X_4$)
     *   sous l'effet parapluie du territoire ($u_j$).
+
 *   **Inputs :** Données croisées lycées / zones académiques.
+
 *   **Outputs :** Coefficients causaux directs $\partial IFC / \partial X_k$ et effet structurel territorial $Var(u_j)$.
+
 *   **Dépendance Amont :** Graphe causal dirigé (DAG) avec `dowhy`.
+
 *   **Dépendance Aval :** Simulation contrefactuelle (ex: $do(X_2 = x^{\prime})$).
+
 *   **Complexité Algorithmique :** Lourde, régression mixte (`statsmodels.mixedlm`).
+
 *   **Contraintes & Hypothèses :** On suppose le "Backdoor criterion" vérifié, c'est-à-dire l'absence de variables confondantes non observées majeures au niveau du quartier.
+
 *   **Limites / Biais :** La colinéarité extrême entre IPS ($X_1$) et Sélectivité ($X_2$) rend difficile l'isolation pure de la "sélectivité".
 
 ---
