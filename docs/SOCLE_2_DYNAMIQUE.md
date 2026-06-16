@@ -1283,7 +1283,23 @@ $$
 **Formule :**
 
 $$
-\Huge \quad \text{Index} \quad BS_i = |R_i| \cdot \sum_j W_{ij} |R_j| \quad \text{et indice de frontière invisible} \quad B_{ij} = |R_i - R_j| \cdot W_{ij} \quad \text{. Autocorrélation via Indice de Moran} \quad I_R \quad \text{.} \quad
+\Huge BS_i = |R_i| \cdot \sum_j W_{ij} |R_j|
+$$
+
+<br>
+
+**Et indice de frontière invisible :**
+
+$$
+\Huge B_{ij} = |R_i - R_j| \cdot W_{ij}
+$$
+
+<br>
+
+**Autocorrélation via Indice de Moran :**
+
+$$
+\Huge I_R
 $$
 
 <br>
