@@ -787,15 +787,25 @@ $$
 $$
 \Huge Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t \quad \text{. Causalité spatiale des ruptures :} \quad \Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta Y_{j,t} \quad \text{.} \quad
 $$
-*   **Quoi :** Démêlage économétrique des points de rupture ($\tau^* = \text{argmax}_t \Delta L(t)$) pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
+
+*   **Quoi :** Démêlage économétrique des points de rupture, par exemple $\tau^* = argmax_t \Delta L(t)$, pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
+
 *   **Légende :** $\tau_k$ : probabilité que la rupture soit due à la réforme $k$, $Z$ : variables inobservées (bruit macro-économique).
+
 *   **Pourquoi :** Montrer que certaines politiques prétendument "révolutionnaires" ne font que surfer sur des vagues démographiques, tandis que des réformes invisibles fracturent vraiment le système.
+
 *   **Inputs :** Vecteurs temporels $R_t$ (réformes), $D_t$ (démographie), $P_t$ (privé).
-*   **Outputs :** Test causal $C_t = \text{Var}(\Delta Y_t)_{post} - \text{Var}(\Delta Y_t)_{pre}$.
+
+*   **Outputs :** Test causal $C_t = Var(\Delta Y_t)_{post} - Var(\Delta Y_t)_{pre}$.
+
 *   **Dépendance Amont :** Détection des changepoints (PELT, Modèle 9).
+
 *   **Dépendance Aval :** Cartographie des ruptures causales.
+
 *   **Complexité Algorithmique :** Estimation de panels dynamiques.
+
 *   **Contraintes & Hypothèses :** Suppose que les réformes sont des chocs "Dirac" (impulsions) et la démographie une onde lente.
+
 *   **Limites / Biais :** La croissance du privé agit souvent comme une conséquence des réformes publiques (effet de fuite), ce qui crée une forte endogénéité entre $R_t$ et $P_t$.
 
 ---
