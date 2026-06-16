@@ -622,14 +622,26 @@ $$
 \Huge \quad \text{Changement de signe} \quad \Delta sign(\nabla Y_i) \quad \text{avec} \quad \nabla Y_i = \frac{\partial Y_i}{\partial IPS_i} \quad \text{. Condition critique d'instabilité :} \quad \rho \lambda_{max}(W) \ge 1 \quad \text{.} \quad
 $$
 *   **Quoi :** Détection des "zones de bascule", les points d'inflexion exacts où le gradient s'inverse (ex: où un point d'IPS supplémentaire ne protège plus, mais accélère la fuite).
-*   **Légende :** $\nabla Y_i$ : gradient (pente) de l'effet d'une variable, $\Delta sign$ : point de basculement, $\rho \lambda_{max}(W)$ : condition spectrale de résonance du réseau.
+
+*   **Légende :** 
+    *   $\nabla Y_i$ : gradient (pente) de l'effet d'une variable
+    *   $\Delta sign$ : point de basculement
+    *   $\rho \lambda_{max}(W)$ : condition spectrale de résonance du réseau.
+
 *   **Pourquoi :** Identifier les "zones de rupture" où de très petites variations (une réforme mineure) vont déclencher des changements d'état massifs par effet de propagation.
+
 *   **Inputs :** Dérivées du modèle GAM spatial (Modèle 30).
+
 *   **Outputs :** Score de bascule $T_i$ et cartographie des "Tipping points" scolaires.
+
 *   **Dépendance Amont :** Calcul des valeurs propres de la matrice réseau ($\lambda_{max}(W)$).
+
 *   **Dépendance Aval :** Simulation de "réformes critiques" vs "réformes neutres".
+
 *   **Complexité Algorithmique :** Complexe (calcul analytique des dérivées spatiales).
+
 *   **Contraintes & Hypothèses :** Suppose que le basculement local déclenche une onde de choc à travers tout le réseau via le multiplicateur $(I - \rho W)^{-1}$.
+
 *   **Limites / Biais :** Le seuil de basculement est ultra-sensible au calibrage mathématique de la matrice $W$.
 
 ---
