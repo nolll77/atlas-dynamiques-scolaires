@@ -2061,7 +2061,7 @@ $$
 <br>
 
 $$
-\gamma_i = argmin \int d_{ij}(t)
+\Huge \gamma_i = argmin \int d_{ij}(t)
 $$
 
 <br>
