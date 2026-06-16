@@ -1233,7 +1233,23 @@ $$
 **Formule :**
 
 $$
-\Huge P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k) \quad \text{avec un modèle mixte} \quad Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i \quad \text{. Entropie} \quad H_i = \text{entropy}(P(Z_i)) \quad \text{.} \quad
+\Huge P(Y_i | X_i) = \sum_{k=1}^K P(Z_i=k) P(Y_i | X_i, Z_i=k)
+$$
+
+<br>
+
+**Modèle mixte :**
+
+$$
+\Huge Y_i = \beta_{Z_i} X_i + u_{Z_i} + \epsilon_i
+$$
+
+<br>
+
+**Entropie :**
+
+$$
+\Huge H_i = entropy(P(Z_i))
 $$
 
 <br>
