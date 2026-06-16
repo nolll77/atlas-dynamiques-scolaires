@@ -796,7 +796,11 @@ $$
 
 *   **Inputs :** Vecteurs temporels $R_t$ (réformes), $D_t$ (démographie), $P_t$ (privé).
 
-*   **Outputs :** Test causal $C_t = Var(\Delta Y_t)_{post} - Var(\Delta Y_t)_{pre}$.
+*   **Outputs :** Test causal :
+
+    $$
+    C_t = Var(\Delta Y_t)_{post} - Var(\Delta Y_t)_{pre}
+    $$
 
 *   **Dépendance Amont :** Détection des changepoints (PELT, Modèle 9).
 
