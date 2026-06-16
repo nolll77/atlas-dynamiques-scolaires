@@ -696,17 +696,30 @@ $$
 **Formule :**
 
 $$
-\Huge \text{Var}(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid} \quad \text{avec un Indice de Structuration Globale} \quad SCI = \text{ICC}_{zone} + \text{ICC}_{school} + \text{ICC}_{spatial} \quad \text{.} \quad
+\Huge Var(Y) = \sigma^2_{zone} + \sigma^2_{school} + \sigma^2_{spatial} + \sigma^2_{resid} \quad \text{avec un Indice de Structuration Globale} \quad SCI = ICC_{zone} + ICC_{school} + ICC_{spatial}
 $$
+
 *   **Quoi :** Isoler précisément d'où vient l'inégalité : du "quartier" (zone), du "lycée" (institution), du "voisinage" (diffusion/contagion spatiale), ou du résidu (le bruit / blind spot).
-*   **Légende :** $\sigma^2_{zone}$ : fatalité du quartier, $\sigma^2_{school}$ : responsabilité propre du proviseur/lycée, $\sigma^2_{spatial}$ : effet de meute (voisinage).
+
+*   **Légende :** 
+    *   $\sigma^2_{zone}$ : fatalité du quartier
+    *   $\sigma^2_{school}$ : responsabilité propre du proviseur/lycée
+    *   $\sigma^2_{spatial}$ : effet de meute (voisinage).
+
 *   **Pourquoi :** Répondre définitivement au débat public : "Le problème vient-il du ghetto géographique, du choix de l'école, ou de l'effet de mode du réseau local ?".
+
 *   **Inputs :** Modèle hiérarchique complet avec processus gaussien spatial.
+
 *   **Outputs :** Ratios de corrélation intra-classe (ICC) stricts.
+
 *   **Dépendance Amont :** ANOVA spatiale multiniveau.
+
 *   **Dépendance Aval :** Typologie des systèmes (Territorial vs Hiérarchique vs Réseau).
+
 *   **Complexité Algorithmique :** Modérée (estimation de variance MCMC ou REML).
-*   **Contraintes & Hypothèses :** Supposer une additivité des variances (bien qu'il y ait interaction via $\text{Cov}(u_{zone}, v_{school})$).
+
+*   **Contraintes & Hypothèses :** Supposer une additivité des variances, bien qu'il y ait interaction via la covariance $Cov(u_{zone}, v_{school})$.
+
 *   **Limites / Biais :** Très sensible à la définition de la "zone" (MAUP : Modifiable Areal Unit Problem).
 
 ---
