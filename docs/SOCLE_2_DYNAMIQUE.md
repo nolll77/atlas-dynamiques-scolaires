@@ -785,7 +785,13 @@ $$
 **Formule :**
 
 $$
-\Huge Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t \quad \text{. Causalité spatiale des ruptures :} \quad \Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta Y_{j,t} \quad \text{.} \quad
+\Huge Y_t = \alpha Y_{t-1} + \beta R_t + \gamma D_t + \delta P_t + \epsilon_t
+$$
+
+**Causalité spatiale des ruptures :**
+
+$$
+\Huge \Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta Y_{j,t}
 $$
 
 *   **Quoi :** Démêlage économétrique des points de rupture, par exemple $\tau^* = argmax_t \Delta L(t)$, pour isoler le vrai choc exogène (Réforme) de la dérive endogène (Démographie) ou de la réallocation (Privé).
