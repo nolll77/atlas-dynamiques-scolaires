@@ -492,16 +492,29 @@ $$
 **Formule :**
 
 $$
-\Huge F_c = \text{Var}_{global}(\text{IPS}_c) - \sum_{i \in c} \text{Var}_{interne}(\text{IPS}_i) \quad \text{et} \quad HS_c = (-F_c) \cdot S_c
+\Huge F_c = Var_{global}(IPS_c) - \sum_{i \in c} Var_{interne}(IPS_i) \quad \text{et} \quad HS_c = (-F_c) \cdot S_c
 $$
+
 *   **Quoi :** Détection des communes qui "paraissent" mixtes (bonne moyenne, bonne variance globale) mais qui sont en réalité des archipels d'écoles pures et isolées (variance interne très faible).
-*   **Légende :** $F_c$ : fausse mixité, $\text{Var}_{global}$ : hétérogénéité apparente de la ville, $\text{Var}_{interne}$ : (absence de) mixité au sein des lycées, $HS_c$ : hyper-ségrégation totale.
+
+*   **Légende :** 
+    *   $F_c$ : fausse mixité
+    *   $Var_{global}$ : hétérogénéité apparente de la ville
+    *   $Var_{interne}$ : (absence de) mixité au sein des lycées
+    *   $HS_c$ : hyper-ségrégation totale.
+
 *   **Pourquoi :** Détruire le mythe des "villes mixtes" où le public et le privé cohabitent géographiquement mais s'ignorent scolairement.
+
 *   **Inputs :** IPS des élèves par établissement et par commune.
+
 *   **Outputs :** Score d'Hyper-Ségrégation cachée $HS_c$.
+
 *   **Dépendance Amont :** Agrégation micro-données élèves.
+
 *   **Dépendance Aval :** Cartographie géospatiale de l'illusion statistique.
+
 *   **Complexité Algorithmique :** O(N), GroupBy très rapide.
+
 *   **Contraintes & Hypothèses :** On suppose que la vraie mixité se vit dans les murs du lycée, pas dans les rues de la commune.
 *   **Limites / Biais :** Si la commune ne possède qu'un seul grand lycée polyvalent, l'équation s'effondre mathématiquement (elle ne peut pas avoir de fausse mixité inter-établissements).
 
