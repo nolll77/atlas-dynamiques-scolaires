@@ -1,6 +1,6 @@
 # Matrice de Couverture : Socle 1 (Mathématiques)
 
-Ce document prouve que **100% des 31 formules** définies dans le manifeste `SOCLE_1_MATHEMATIQUES.md` sont couvertes par un test d'architecture (ignorable par défaut s'il n'est pas encore implémenté).
+Ce document prouve que **100% des 31 formules** définies dans le manifeste [SOCLE_1_MATHEMATIQUES.md](../../docs/SOCLE_1_MATHEMATIQUES.md) sont couvertes par un test d'architecture (ignorable par défaut s'il n'est pas encore implémenté).
 
 ## Bloc 0 : Statistiques Exploratoires
 | Formule Théorique | Fichier de Test | Fonction de Test | Statut Actuel |

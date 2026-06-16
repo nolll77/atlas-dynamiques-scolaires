@@ -1,6 +1,6 @@
 # Matrice de Couverture : Socle 2 Dynamique
 
-Ce document prouve la traçabilité complète et la couverture à 100% entre les exigences théoriques de l'Atlas et leur implémentation informatique. Chaque formule du `SOCLE_2_DYNAMIQUE.md` possède son "Test Architectural" dédié, interdisant toute déviation par rapport à la théorie.
+Ce document prouve la traçabilité complète et la couverture à 100% entre les exigences théoriques de l'Atlas et leur implémentation informatique. Chaque formule du [SOCLE_2_DYNAMIQUE.md](../../docs/SOCLE_2_DYNAMIQUE.md) possède son "Test Architectural" dédié, interdisant toute déviation par rapport à la théorie.
 
 | N° | Formule Sociologique (Socle 2) | Fichier Source (Squelette) | Test Architectural (Validation) | Statut Actuel |
 |:---|:---|:---|:---|:---|
