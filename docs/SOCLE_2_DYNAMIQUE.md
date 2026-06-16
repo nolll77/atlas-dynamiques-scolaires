@@ -648,7 +648,15 @@ $$
 **Formule :**
 
 $$
-\Huge A_i = \text{Entropie}(\{C_i^{(m)}\}_m) \quad \text{et Indice Global} \quad F = 1 - \frac{1}{N}\sum A_i
+\Huge A_i = Entropie(\{C_i^{(m)}\}_m)
+$$
+
+<br>
+
+**Indice Global :**
+
+$$
+\Huge F = 1 - \frac{1}{N}\sum A_i
 $$
 
 <br>
@@ -682,7 +690,15 @@ $$
 **Formule :**
 
 $$
-\Huge B_{ij} = d_{ij} - d_{ij}^U \quad \text{et Violation} \quad V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))
+\Huge B_{ij} = d_{ij} - d_{ij}^U
+$$
+
+<br>
+
+**Violation :**
+
+$$
+\Huge V = \sum \max(0, d_{ij} - \max(d_{ik}, d_{kj}))
 $$
 
 <br>
