@@ -1981,15 +1981,15 @@ $$
 
 **Superposition des 9 tensors d'état :**
 
-*   $S_i$ : Fondation
-*   $R_i$ : Éducatif
-*   $T_{ij}$ : Flux
-*   $\tau_i$ : Déviations
-*   $\Gamma_{ij}$ : Asymétrie
-*   $d_U(i,j)$ : Ultramétrie
-*   $t$ : Dynamique
-*   $\Phi_i$ : Tensions
-*   $\Pi_t$ : Transitions
+*   $\Huge S_i$ : Fondation
+*   $\Huge R_i$ : Éducatif
+*   $\Huge T_{ij}$ : Flux
+*   $\Huge \tau_i$ : Déviations
+*   $\Huge \Gamma_{ij}$ : Asymétrie
+*   $\Huge d_U(i,j)$ : Ultramétrie
+*   $\Huge t$ : Dynamique
+*   $\Huge \Phi_i$ : Tensions
+*   $\Huge \Pi_t$ : Transitions
 
 <br>
 
