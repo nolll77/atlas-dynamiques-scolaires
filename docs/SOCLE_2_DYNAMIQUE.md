@@ -766,7 +766,23 @@ $$
 **Formule :**
 
 $$
-\Huge \Pi = \frac{P_{raw}}{C+\epsilon} \quad \text{avec} \quad P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U \quad \text{et} \quad C = \sum_{i,j} |d_{ij}^U - E[d^U]|
+\Huge \Pi = \frac{P_{raw}}{C+\epsilon}
+$$
+
+<br>
+
+**Avec :**
+
+$$
+\Huge P_{raw} = \sum_{i \neq j} T_{ij} \cdot d_{ij}^U
+$$
+
+<br>
+
+**Et :**
+
+$$
+\Huge C = \sum_{i,j} |d_{ij}^U - E[d^U]|
 $$
 
 <br>
