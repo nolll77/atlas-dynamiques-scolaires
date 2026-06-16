@@ -1659,7 +1659,15 @@ $$
 <br>
 
 $$
-T_i = \frac{\bar{\Delta S_i}}{Var(\Delta S_i) + \epsilon} \quad \text{. Champ} \quad T(s) = f(\bar{\Delta S}, Var(\Delta S))
+\Huge T_i = \frac{\bar{\Delta S_i}}{Var(\Delta S_i) + \epsilon}
+$$
+
+<br>
+
+**Champ :**
+
+$$
+\Huge T(s) = f(\bar{\Delta S}, Var(\Delta S))
 $$
 
 <br>
@@ -1693,7 +1701,31 @@ $$
 **Formule :**
 
 $$
-\Huge \quad \text{Pression} \quad \Pi_t = \alpha \text{Inej}_t + \beta \text{Seg}_t + \gamma \text{Dem}_t + \delta \text{Priv}_t \quad \text{. Bascule} \quad S_{t+1} = S_t + f(\Pi_t) \quad \text{avec} \quad f(\Pi) = \frac{1}{1 + e^{-k(\Pi - \Pi_c)}} \quad \text{. Effondrement} \quad P(Z_{t+1}=\text{effondré} \mid \Pi_t) = \sigma(\Pi_t - \Pi_c) \quad \text{. Condition réseau} \quad \rho \lambda_{max}(W) \ge 1 \quad \text{.} \quad
+\Huge \Pi_t = \alpha Inej_t + \beta Seg_t + \gamma Dem_t + \delta Priv_t
+$$
+
+<br>
+
+**Bascule :**
+
+$$
+\Huge S_{t+1} = S_t + f(\Pi_t) \quad avec \quad f(\Pi) = \frac{1}{1 + e^{-k(\Pi - \Pi_c)}}
+$$
+
+<br>
+
+**Effondrement :**
+
+$$
+\Huge P(Z_{t+1}=effondr\acute{e} \mid \Pi_t) = \sigma(\Pi_t - \Pi_c)
+$$
+
+<br>
+
+**Condition réseau :**
+
+$$
+\Huge \rho \lambda_{max}(W) \ge 1
 $$
 
 <br>
