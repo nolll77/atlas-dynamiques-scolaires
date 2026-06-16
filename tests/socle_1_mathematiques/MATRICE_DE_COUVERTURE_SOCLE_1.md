@@ -6,7 +6,7 @@ Ce document prouve que **100% des 31 formules** définies dans le manifeste [SOC
 | Formule Théorique | Fichier de Test | Fonction de Test | Statut Actuel |
 | :--- | :--- | :--- | :--- |
 | Normalisation (Z-Score) | `test_00_statistiques.py` | `test_normalisation_z_score` | ⚠️ Skipped |
-| Indice d'Entre-Soi | `test_00_statistiques.py` | `test_entre_soi_high_ips_low_sigma` | ✅ Implémenté |
+| Indice d'Entre-Soi | `test_00_statistiques.py` | `test_entre_soi_high_ips_low_sigma` | ⚠️ Skipped |
 | Distance de Mahalanobis | `test_00_statistiques.py` | `test_distance_mahalanobis` | ⚠️ Skipped |
 | Indice de Duncan | `test_00_statistiques.py` | `test_indice_dissimilarite_duncan` | ⚠️ Skipped |
 | Fragmentation par Établissement | `test_00_statistiques.py` | `test_indice_fragmentation` | ⚠️ Skipped |
@@ -27,7 +27,7 @@ Ce document prouve que **100% des 31 formules** définies dans le manifeste [SOC
 ## Bloc 3 : Ségrégation et Inégalités Spatiales
 | Formule Théorique | Fichier de Test | Fonction de Test | Statut Actuel |
 | :--- | :--- | :--- | :--- |
-| Indice de Theil | `test_03_segregation.py` | `test_theil_decomposition_additivity` | ✅ Implémenté |
+| Indice de Theil | `test_03_segregation.py` | `test_theil_decomposition_additivity` | ⚠️ Skipped |
 | Pression Ségrégative (PSL) | `test_03_segregation.py` | `test_pression_segregative_locale` | ⚠️ Skipped |
 
 ## Bloc 4 : Modèles Causaux Spatiaux
