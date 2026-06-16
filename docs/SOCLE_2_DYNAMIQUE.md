@@ -17,7 +17,7 @@ $$
 
 <br>
 
-*   **Quoi :** Séparation statistique entre ce que le lycée "produit" seul (effet direct $\alpha$) et ce qu'il "subit" de ses voisins (effet indirect $\beta$).
+*   **Quoi :** Distinguer la performance intrinsèque d'un lycée de l'influence mécanique exercée par les établissements environnants.
 
 *   **Légende :** 
     *   $Y_i$ : variable dépendante (ex: IPS)
@@ -55,7 +55,7 @@ $$
 
 <br>
 
-*   **Quoi :** Mesure de la "contagion" ségrégative d'un lieu vers ses voisins.
+*   **Quoi :** Évaluer comment la concentration sociale d'un établissement se propage mécaniquement aux quartiers adjacents.
 
 *   **Légende :** 
     *   $SPS_i$ : score de propagation du lycée $i$
@@ -90,7 +90,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection spatiale des ruptures de régime (où l'impact d'une variable s'inverse par rapport aux voisins).
+*   **Quoi :** Cartographier les lignes de fracture urbaines, ces frontières géographiques où une même caractéristique (ex: ouverture d'une filière) produit des effets sociaux diamétralement opposés.
 
 *   **Légende :** 
     *   $Bascule_i$ : indicateur booléen (1 si rupture)
@@ -160,7 +160,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modélisation simultanée des causes internes et de la contagion par le voisinage.
+*   **Quoi :** Modéliser l'interdépendance des établissements pour observer comment la composition sociale d'un lycée évolue organiquement en fonction de la dynamique de ses voisins.
 
 *   **Légende :** 
     *   $Y$ : vecteur cible
@@ -196,7 +196,7 @@ $$
 
 <br>
 
-*   **Quoi :** Emboîtement causal à 3 échelles : la classe sociale de l'élève, la politique du lycée, et le territoire environnant.
+*   **Quoi :** Désenchevêtrer les échelles de la répartition scolaire en mesurant le poids respectif de l'élève, de la structure de l'établissement et de la gravité du territoire.
 
 *   **Légende :** 
     *   $Y_{ijk}$ : score de l'élève $i$ au lycée $j$ en zone $k$
@@ -232,7 +232,7 @@ $$
 
 <br>
 
-*   **Quoi :** Chaînage causal chronologique pour analyser la ségrégation comme une trajectoire historique.
+*   **Quoi :** Mesurer l'inertie historique d'un territoire pour évaluer la probabilité qu'un établissement conserve la même structure sociale au fil des décennies.
 
 *   **Légende :** 
     *   $Y_t$ : état au temps $t$
@@ -267,7 +267,7 @@ $$
 
 <br>
 
-*   **Quoi :** Matrice de transition mesurant la probabilité pour un lycée de changer de "monde social" d'une époque à l'autre.
+*   **Quoi :** Observer la fluidité de la hiérarchie scolaire en quantifiant les transferts et la mobilité des établissements entre différents équilibres sociaux d'une année sur l'autre.
 
 *   **Légende :** 
     *   $P_{ab}$ : probabilité de transition
@@ -301,7 +301,7 @@ $$
 
 <br>
 
-*   **Quoi :** Algorithme mesurant les "séismes" dans la composition du système éducatif.
+*   **Quoi :** Repérer les chocs structurels soudains qui reconfigurent brutalement la répartition des élèves sur le territoire.
 
 *   **Légende :** 
     *   $d_t$ : magnitude de la rupture
@@ -335,7 +335,7 @@ $$
 
 <br>
 
-*   **Quoi :** Empilement de dendrogrammes (arbres de classification) année par année pour filmer le mouvement de la "distance sociale" entre les lycées.
+*   **Quoi :** Cartographier l'évolution de la distance sociale au fil du temps pour observer si les différents groupes d'établissements convergent ou s'isolent davantage.
 
 *   **Légende :** 
     *   $\Delta_t$ : déformation de l'arbre
@@ -369,7 +369,7 @@ $$
 
 <br>
 
-*   **Quoi :** Équation de mouvement où un lycée "grimpe" ou "chute" dans le prestige scolaire comme une particule dans un champ de forces.
+*   **Quoi :** Modéliser la trajectoire sociale d'un lycée comme une mécanique de fluides soumise aux pressions conjointes de ses propres ressources et des contraintes de son environnement.
 
 *   **Légende :** 
     *   $S_i(t)$ : prestige latent
@@ -405,7 +405,7 @@ $$
 
 <br>
 
-*   **Quoi :** Algorithme de détection des "ponts de fragilité" dans le réseau scolaire.
+*   **Quoi :** Identifier les connexions géographiques critiques qui maintiennent la cohésion globale du réseau et empêchent le morcellement du territoire.
 
 *   **Légende :** 
     *   $F_{ij}$ : score de frontière
@@ -439,7 +439,7 @@ $$
 
 <br>
 
-*   **Quoi :** Matrice isolant les flux d'élèves ou les transferts de similarité anormalement élevés entre deux "mondes sociaux" différents.
+*   **Quoi :** Identifier les corridors de mobilité spécifiques par lesquels des flux d'élèves traversent habituellement des frontières sociales étanches.
 
 *   **Légende :** 
     *   $R_{ab}$ : intensité du corridor
@@ -474,7 +474,7 @@ $$
 
 <br>
 
-*   **Quoi :** Mesure de la "ghettoïsation spatiale" des clusters sociaux.
+*   **Quoi :** Mesurer la concentration géographique continue d'établissements présentant une composition sociale identique.
 
 *   **Légende :** 
     *   $I_k$ : Indice de Moran catégoriel
@@ -509,7 +509,7 @@ $$
 
 <br>
 
-*   **Quoi :** Carte d'entropie qui remplace la ligne de fracture "pure et dure" par des "zones d'incertitude et de mélange" via l'estimation par noyau KDE.
+*   **Quoi :** Visualiser la répartition scolaire comme un espace continu pour identifier les zones de transition géographique où différents équilibres sociaux se chevauchent.
 
 *   **Légende :** 
     *   $H(x)$ : entropie au point géographique $x$
@@ -542,7 +542,7 @@ $$
 
 <br>
 
-*   **Quoi :** Mesure de l'alignement entre le niveau social ($S$), la performance ($A$) et l'attractivité ($F$) d'un lycée.
+*   **Quoi :** Évaluer la cohérence structurelle d'un établissement en vérifiant l'alignement entre sa composition sociale, ses résultats académiques et sa capacité d'attraction.
 
 *   **Légende :** 
     *   $C_i$ : cohérence du lycée
@@ -577,7 +577,7 @@ $$
 
 <br>
 
-*   **Quoi :** Vote multi-critères (Silhouette, Gap Statistic, Inertie, Bootstrap) pour choisir le nombre "réaliste" de classes sociales.
+*   **Quoi :** Éprouver la robustesse de la segmentation territoriale pour dégager une ossature sociale claire, résiliente au bruit statistique.
 
 *   **Légende :** 
     *   $C(k)$ : score de consensus pour $k$ classes
@@ -613,7 +613,7 @@ $$
 
 <br>
 
-*   **Quoi :** Repérage des établissements qui sont classés différemment selon qu'on utilise KMeans, CAH, Louvain ou GMM.
+*   **Quoi :** Identifier les établissements au profil hybride, situés à la frontière de plusieurs logiques d'affectation, qui échappent aux catégorisations strictes.
 
 *   **Légende :** 
     *   $A_i$ : incertitude d'assignation du lycée $i$
@@ -647,7 +647,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection des "arêtes" géographiques qui relient deux lycées censés être séparés par un gouffre dans le dendrogramme social.
+*   **Quoi :** Repérer les connexions spatiales inattendues qui relient des établissements que tout oppose dans la hiérarchie sociale théorique.
 
 *   **Légende :** 
     *   $B_{ij}$ : score de pont
@@ -715,7 +715,7 @@ $$
 
 <br>
 
-*   **Quoi :** Évaluation de l'équilibre parfait entre la circulation réelle des élèves (mobilité/flux) et le maintien d'une lisibilité du système (hiérarchie).
+*   **Quoi :** Mesurer le point d'équilibre systémique entre le volume de mobilité géographique des élèves et le maintien d'une cohérence territoriale lisible.
 
 *   **Légende :** 
     *   $\Pi$ : perméabilité globale
@@ -749,7 +749,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle multiniveau rattaché à un DAG pour désenchevêtrer les causes de la fragmentation scolaire (IFC).
+*   **Quoi :** Isoler précisément les leviers de la fragmentation territoriale en distinguant l'impact des résultats, de l'offre locale et de l'accessibilité géographique.
 
 *   **Légende :** 
     *   $IFC_{ij}$ : fragmentation locale
@@ -790,7 +790,7 @@ $$
 
 <br>
 
-*   **Quoi :** Identification des "continents sociaux" en fusionnant la similarité d'IPS ($W$), la tuyauterie des flux ($T$) et l'éloignement dans l'arbre social ($D^U$).
+*   **Quoi :** Dépasser les frontières administratives pour cartographier les véritables bassins de vie scolaires, définis par les habitudes réelles de déplacement et de similarité.
 
 *   **Légende :** 
     *   $B^*$ : partition optimale
@@ -826,7 +826,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection des arêtes hyper-critiques qui lient non pas deux lycées, mais deux *Mondes* (Blocs).
+*   **Quoi :** Mettre en évidence les trajets exceptionnels qui agissent comme des passerelles structurelles essentielles entre des zones territoriales distinctes.
 
 *   **Légende :** 
     *   $SP_{ij}$ : criticité du super-pont
@@ -861,7 +861,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection des communes qui "paraissent" mixtes (bonne moyenne, bonne variance globale) mais qui sont en réalité des archipels d'écoles pures et isolées (variance interne très faible).
+*   **Quoi :** Déceler les illusions statistiques de mixité : identifier les territoires présentant une diversité globale, mais dont chaque établissement interne reste strictement homogène.
 
 *   **Légende :** 
     *   $F_c$ : fausse mixité
@@ -896,7 +896,7 @@ $$
 
 <br>
 
-*   **Quoi :** Équation de dynamique modélisant l'évolution de la tuyauterie du système (les flux de transition) au fil du temps.
+*   **Quoi :** Observer comment les canaux de mobilité des élèves se reconfigurent lentement au fil des années ou réagissent aux chocs exogènes.
 
 *   **Légende :** 
     *   $\Delta T_t$ : changement de tuyauterie d'une année à l'autre
@@ -931,7 +931,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle structurel distinguant les lycées qui font leur propre loi (Hubs ou Enclaves) de ceux qui subissent la démographie locale.
+*   **Quoi :** Évaluer la capacité d'un établissement à s'affranchir de son environnement géographique immédiat par l'attraction de flux extérieurs.
 
 *   **Légende :** 
     *   $IAS_i$ : capacité d'affranchissement
@@ -967,7 +967,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle spatial multiniveau isolant ce qui vient du "sol" (voisinage) et ce qui vient des "câbles" (connexions).
+*   **Quoi :** Distinguer l'influence purement kilométrique d'un quartier de l'influence apportée par les lignes de transport et le réseau de mobilité globale.
 
 *   **Légende :** 
     *   $Y_i$ : position du lycée
@@ -1012,7 +1012,7 @@ $$
 
 <br>
 
-*   **Quoi :** Test de temporalité et de pouvoir prédictif pour déterminer si un hotspot ségrégué est la *source* de l'inégalité environnante ou le *produit* d'une dégradation de son voisinage.
+*   **Quoi :** Identifier le sens de la propagation : un établissement isolé modifie-t-il la composition de son quartier, ou subit-il passivement une dynamique territoriale plus vaste ?
 
 *   **Légende :** 
     *   $H_{i,t}$ : tension du hotspot $i$
@@ -1046,7 +1046,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle estimant des effets causaux qui varient dans l'espace et de manière non-linéaire (effets seuils), tout en purgeant l'autocorrélation spatiale.
+*   **Quoi :** Observer comment l'impact d'une variable (ex: l'ouverture d'une section) évolue géographiquement et atteint des plafonds mécaniques d'efficacité.
 
 *   **Légende :** 
     *   $s_k$ : fonction de lissage (spline) permettant les effets non-linéaires
@@ -1124,7 +1124,7 @@ $$
 
 <br>
 
-*   **Quoi :** Découverte de variables latentes $Z_i$ révélant la coexistence de différents "Régimes" (Monde élite autonome, concurrentiel, territorial, transition, fragmenté).
+*   **Quoi :** Identifier les différents régimes de gravité scolaire qui régissent le territoire, révélant la coexistence de logiques locales totalement distinctes.
 
 *   **Légende :** 
     *   $P(Y_i|X_i)$ : probabilité du profil du lycée
@@ -1158,7 +1158,7 @@ $$
 
 <br>
 
-*   **Quoi :** Analyse spatiale des "échecs" systématiques des modèles prédictifs (les résidus structurés).
+*   **Quoi :** Traquer les zones d'incertitude du modèle : analyser les secteurs géographiques où la répartition des élèves défie systématiquement toute explication théorique.
 
 *   **Légende :** 
     *   $BS_i$ : anomalie du lycée $i$
@@ -1187,7 +1187,7 @@ $$
 
 <br>
 
-*   **Quoi :** Superposition conceptuelle liant : Les Mondes Latents (Régimes) $\rightarrow$ Les Blocs (Structure) $\rightarrow$ Les Blind Spots (Inconnu structuré) $\rightarrow$ Les Frontières et Super-Ponts (Réseau).
+*   **Quoi :** Intégration systémique de toutes les forces observées (blocs, ponts, régimes et zones d'ombre) en une mécanique territoriale globale.
 
 *   **Pourquoi :** Fournir le diagnostic structurel complet et l'explication unifiée du système scolaire francilien (c'est l'architecture logicielle finale de l'Atlas).
 
@@ -1206,7 +1206,7 @@ $$
 
 <br>
 
-*   **Quoi :** Isoler précisément d'où vient l'inégalité : du "quartier" (zone), du "lycée" (institution), du "voisinage" (diffusion/contagion spatiale), ou du résidu (le bruit / blind spot).
+*   **Quoi :** Décomposer mécaniquement la variance de la concentration sociale pour attribuer sa juste part au découpage géographique, à l'effet d'établissement et à la diffusion spatiale.
 
 *   **Légende :** 
     *   $\sigma^2_{zone}$ : fatalité du quartier
@@ -1260,7 +1260,7 @@ $$
 
 <br>
 
-*   **Quoi :** Détection de groupes d'établissements qui agissent comme des trous noirs dans le réseau de mobilité (attirent massivement, ne laissent pas repartir).
+*   **Quoi :** Identifier les pôles d'attraction terminale : ces concentrations d'établissements qui absorbent massivement les flux d'élèves sans générer de mobilité sortante.
 
 *   **Légende :** 
     *   $A_k$ : force gravitationnelle du cluster $k$
@@ -1315,7 +1315,7 @@ $$
 
 <br>
 
-*   **Quoi :** Repérage des trajectoires d'élèves qui violent les chaînes de Markov standard (ex: sauts longue distance, ascensions impossibles, chutes brutales).
+*   **Quoi :** Cartographier les parcours de mobilité statistiquement atypiques, mettant en lumière les sauts structurels imprévus dans le réseau scolaire.
 
 *   **Légende :** 
     *   $P(\tau_i)$ : probabilité qu'un élève suive cette trajectoire $\tau$
@@ -1368,7 +1368,7 @@ $$
 
 <br>
 
-*   **Quoi :** Superposition du réseau de flux (Sankey) sur la géographie physique pour mesurer à quel point les élèves ignorent la proximité pour s'inscrire loin.
+*   **Quoi :** Mesurer la distorsion entre la distance kilométrique et les choix réels d'affectation, illustrant l'ampleur mécanique des contournements géographiques.
 
 *   **Légende :** 
     *   $\tilde{T}_{ij}$ : flux d'élèves pénalisé par la distance
@@ -1510,7 +1510,7 @@ $$
 
 <br>
 
-*   **Quoi :** Projection spatiale des lycées non plus comme des "niveaux fixes", mais comme des vecteurs de vitesse (qui monte, qui chute, qui vibre).
+*   **Quoi :** Cartographier la dynamique du système en visualisant la trajectoire d'évolution de chaque établissement plutôt que son état statique à un instant T.
 
 *   **Légende :** 
     *   $\vec{V}(x,y)$ : vecteur de force au point $x,y$
@@ -1544,7 +1544,7 @@ $$
 
 <br>
 
-*   **Quoi :** Modèle de physique statistique prouvant que le système éducatif ne dérive pas lentement, mais "craque" d'un coup lorsqu'un seuil critique de pression ($\Pi_c$) est dépassé.
+*   **Quoi :** Modéliser le système non pas comme une dérive continue, mais comme une structure sous tension susceptible de subir de soudains changements d'état territoriaux.
 
 *   **Légende :** 
     *   $\lambda_{max}$ : plus grande valeur propre de la matrice jacobienne du réseau, dictant si une crise locale reste locale ou embrase toute la région.
@@ -1596,7 +1596,7 @@ $$
 
 <br>
 
-*   **Quoi :** Classification directionnelle des flux pour prouver que la mobilité scolaire n'est pas un libre-échange neutre, mais une "tuyauterie" polarisée (certains tubes montent, d'autres descendent).
+*   **Quoi :** Observer l'asymétrie des trajectoires scolaires pour distinguer les canaux de mobilité ascendante des flux de réaffectation par défaut.
 
 *   **Légende :** 
     *   $Asym_{ab}$ : ratio d'inégalité des échanges
@@ -1650,7 +1650,7 @@ $$
 
 <br>
 
-*   **Quoi :** Filtrage macro-structurel du système pour peser précisément le volume de l'élitisme face au volume du déclassement.
+*   **Quoi :** Quantifier la balance macro-structurelle entre les dynamiques de concentration élitiste et les mécanismes de relégation territoriale.
 
 *   **Légende :** 
     *   $Grad_{ab}$ : pente sociologique du transfert
@@ -1717,7 +1717,7 @@ $$
 
 <br>
 
-*   **Quoi :** Fusion des trois forces du système (Structure Sociale, Performance, Réseau) en un seul champ de forces continu.
+*   **Quoi :** Synthétiser la performance, le niveau social et l'attractivité géographique en un champ de forces unifié traversant tout le territoire.
 
 *   **Légende :** 
     *   $\Phi_i$ : potentiel énergétique total du lycée $i$ dans le système, intégrant sa tension réseau $T_i$ et son anomalie institutionnelle $Dev_i$.
@@ -1749,7 +1749,7 @@ $$
 
 <br>
 
-*   **Quoi :** Le "SIG" (Système d'Information Géographique) théorique du projet, superposant toutes les métriques en un seul cube de données conceptuel.
+*   **Quoi :** L'outil de restitution cartographique ultime : un atlas interactif superposant l'ensemble des modélisations pour radiographier n'importe quel segment du système scolaire.
 
 *   **Pourquoi :** Montrer visuellement qu'un lycée n'est pas un point sur une carte, mais un vecteur traversé par 9 dimensions causales interagissant entre elles.
 
