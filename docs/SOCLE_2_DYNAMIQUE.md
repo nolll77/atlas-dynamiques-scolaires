@@ -829,18 +829,48 @@ $$
 ### 40. Ruptures Ultramétriques Causales (DAG Temporel)
 **Formule :**
 
+**Intensité de rupture :**
+
+<br>
+
 $$
-\Huge \quad \text{Intensité de rupture :} \quad R_t = d(U_t, U_{t-1}) \quad \text{. DAG temporel :} \quad Y_{t+1} = f(Y_t, X_t, U_t, W_t) + \epsilon \quad \text{.} \quad
+\Huge R_t = d(U_t, U_{t-1})
 $$
+
+<br>
+
+**DAG temporel :**
+
+<br>
+
+$$
+\Huge Y_{t+1} = f(Y_t, X_t, U_t, W_t) + \epsilon
+$$
+
 *   **Quoi :** Introduction de la hiérarchie latente ($U_t$) comme véritable nœud causal. Un changement de dendrogramme n'est pas qu'un symptôme, c'est un agent infectieux qui se propage : $\Delta Y_{i,t} = \rho \sum_j W_{ij} \Delta U_t$.
-*   **Légende :** $\Delta_{ij}(t)$ : changement de distance hiérarchique entre $i$ et $j$ au temps $t$, $P_{ij}$ : choc de flux, $X_{ij}$ : dégradation relative d'attractivité.
+
+*   **Légende :** 
+    *   $R_t$ : intensité de la rupture hiérarchique
+    *   $U_t$ : structure ultramétrique (dendrogramme) de l'élite à l'instant $t$
+    *   $d$ : distance entre deux structures hiérarchiques (arbres)
+    *   $Y_{t+1}$ : état du système (ex: ségrégation) au temps suivant
+    *   $X_t, W_t$ : variables de contrôle locales et effets réseaux
+    *   $\epsilon$ : chocs aléatoires exogènes.
+
 *   **Pourquoi :** Prouver que la structure invisible de l'élite contrôle l'évolution de la masse : quand l'élite resserre son entre-soi (fusion/fragmentation ultramétrique), cela déclenche une onde de choc causale sur tous les autres.
+
 *   **Inputs :** Matrices ultramétriques historiques $U_t$.
+
 *   **Outputs :** Typologie des séismes : Fragmentation, Fusion, Re-ranking, Reconfiguration réseau.
+
 *   **Dépendance Amont :** Indice global d'ultramétrie (Modèle 10).
-*   **Dépendance Aval :** Preuve d'intervention $P(Y_{t+1} \mid \text{do}(R_t)) \neq P(Y_{t+1})$.
+
+*   **Dépendance Aval :** Preuve d'intervention, vérifiant $P(Y(t+1) \mid do(R(t))) \neq P(Y(t+1))$.
+
 *   **Complexité Algorithmique :** Très lourde (calcul de distances entre arbres sur séries longues).
+
 *   **Contraintes & Hypothèses :** On part du principe que l'information hiérarchique ruisselle de haut en bas et dicte les anticipations des parents.
+
 *   **Limites / Biais :** L'instabilité algorithmique naturelle des arbres CAH d'une année sur l'autre générera énormément de bruit, imitant des "séismes" là où il n'y a que de la variance d'échantillonnage.
 
 ---
