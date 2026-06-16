@@ -1863,8 +1863,34 @@ $$
 ### 45. Détection des Lycées Paradoxaux (Déviations Résiduelles)
 **Formule :**
 
+**Performance attendue :**
+
 $$
-\Huge \quad \text{Performance attendue} \quad \hat{R}(S_i) \quad \text{. Résidu} \quad \epsilon_i = R_i - \hat{R}(S_i) \quad \text{. Score paradoxal standardisé} \quad P_i = Z_i^R - Z_i^S \quad \text{. Tension systémique} \quad \tau_{i,t} = R_{i,t} - E[R \mid S_{i,t}] \quad \text{.} \quad
+\Huge \hat{R}(S_i)
+$$
+
+<br>
+
+**Résidu :**
+
+$$
+\Huge \epsilon_i = R_i - \hat{R}(S_i)
+$$
+
+<br>
+
+**Score paradoxal standardisé :**
+
+$$
+\Huge P_i = Z_i^R - Z_i^S
+$$
+
+<br>
+
+**Tension systémique :**
+
+$$
+\Huge \tau_{i,t} = R_{i,t} - E[R \mid S_{i,t}]
 $$
 
 <br>
@@ -1897,8 +1923,26 @@ $$
 ### 46. Champ Dynamique Unifié (Tensions et Déviations)
 **Formule :**
 
+**Champ latent :**
+
 $$
-\Huge \quad \text{Champ latent} \quad \Phi_{i,t} = \alpha S_{i,t} + \beta R_{i,t} + \gamma H_{i,t} \quad \text{. Déviation connectée} \quad D_{i,t} = \tau_{i,t} \cdot H_{i,t} \quad \text{. Évolution} \quad \Phi_{i,t+1} = \Phi_{i,t} + f(D_{i,t}) + \rho \sum W_{ij} \Phi_{j,t} \quad \text{.} \quad
+\Huge \Phi_{i,t} = \alpha S_{i,t} + \beta R_{i,t} + \gamma H_{i,t}
+$$
+
+<br>
+
+**Déviation connectée :**
+
+$$
+\Huge D_{i,t} = \tau_{i,t} \cdot H_{i,t}
+$$
+
+<br>
+
+**Évolution :**
+
+$$
+\Huge \Phi_{i,t+1} = \Phi_{i,t} + f(D_{i,t}) + \rho \sum W_{ij} \Phi_{j,t}
 $$
 
 <br>
@@ -1929,9 +1973,17 @@ $$
 ### 47. L'Atlas Analytique Multi-Couches
 **Formule :**
 
-$$
-\Huge \quad \text{Superposition des 9 tensors d'état :} \quad S_i \quad \text{(Fondation),} \quad R_i \quad \text{(Éducatif),} \quad T_{ij} \quad \text{(Flux),} \quad \tau_i \quad \text{(Déviations),} \quad \Gamma_{ij} \quad \text{(Asymétrie),} \quad d_U(i,j) \quad \text{(Ultramétrie),} \quad t \quad \text{(Dynamique),} \quad \Phi_i \quad \text{(Tensions),} \quad \Pi_t \quad \text{(Transitions).} \quad
-$$
+**Superposition des 9 tensors d'état :**
+
+*   $S_i$ : Fondation
+*   $R_i$ : Éducatif
+*   $T_{ij}$ : Flux
+*   $\tau_i$ : Déviations
+*   $\Gamma_{ij}$ : Asymétrie
+*   $d_U(i,j)$ : Ultramétrie
+*   $t$ : Dynamique
+*   $\Phi_i$ : Tensions
+*   $\Pi_t$ : Transitions
 
 <br>
 
