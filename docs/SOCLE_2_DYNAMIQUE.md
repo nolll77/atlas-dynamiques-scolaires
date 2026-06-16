@@ -1754,30 +1754,34 @@ $$
 ---
 
 ### 43. Analyse des Corridors Asymétriques (Ascenseurs vs Filtres)
-**Formule :**
+**Asymétrie :**
 
 $$
-\Huge \quad \text{Asymétrie} \quad A_{ij} = T_{ij} - T_{ji}
+\Huge A_{ij} = T_{ij} - T_{ji}
 $$
 
 <br>
 
-**Indice} \quad \Gamma_{ij} = \frac{T_{ij} - T_{ji}}{T_{ij} + T_{ji} + \epsilon} \quad \text{. Ascenseur social :**
+**Indice :**
+
+$$
+\Huge \Gamma_{ij} = \frac{T_{ij} - T_{ji}}{T_{ij} + T_{ji} + \epsilon}
+$$
 
 <br>
 
+**Ascenseur social :**
+
 $$
-\Gamma_{ij} > \theta \text{ et } S_j - S_i > 0
+\Huge \Gamma_{ij} > \theta \quad et \quad S_j - S_i > 0
 $$
 
 <br>
 
 **Filtre social :**
 
-<br>
-
 $$
-\Gamma_{ij} < -\theta \text{ et } S_j - S_i < 0
+\Huge \Gamma_{ij} < -\theta \quad et \quad S_j - S_i < 0
 $$
 
 <br>
