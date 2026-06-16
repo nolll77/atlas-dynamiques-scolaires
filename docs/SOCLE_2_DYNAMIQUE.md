@@ -525,13 +525,13 @@ $$
 **Formule :**
 
 $$
-\Huge Y_i = E_i^{quartier} + E_i^{\text{r\acute{e}seau}} + \epsilon_i \quad \text{et l'interaction} \quad E_i^{indirect} = E_i^{quartier} \times E_i^{\text{r\acute{e}seau}}
+\Huge Y_i = E_i^{quartier} + E_i^{\text{reseau}} + \epsilon_i \quad \text{et l'interaction} \quad E_i^{indirect} = E_i^{quartier} \times E_i^{\text{reseau}}
 $$
 *   **Quoi :** Modèle spatial multiniveau isolant ce qui vient du "sol" (voisinage) et ce qui vient des "câbles" (connexions).
-*   **Légende :** $Y_i$ : position du lycée, $E_i^{quartier}$ : composante purement kilométrique, $E_i^{\text{r\acute{e}seau}}$ : composante via les transports/filières, $\epsilon_i$ : non-expliqué.
+*   **Légende :** $Y_i$ : position du lycée, $E_i^{quartier}$ : composante purement kilométrique, $E_i^{\text{reseau}}$ : composante via les transports/filières, $\epsilon_i$ : non-expliqué.
 *   **Pourquoi :** Démontrer que le réseau scolaire peut soit agir comme amortisseur de la fatalité territoriale, soit comme amplificateur de la ségrégation de quartier.
 *   **Inputs :** Matrice géographique vs Matrice de flux/graphe.
-*   **Outputs :** Ratios de variance expliquée ($R^2_{quartier}$ vs $R^2_{\text{r\acute{e}seau}}$).
+*   **Outputs :** Ratios de variance expliquée ($R^2_{quartier}$ vs $R^2_{\text{reseau}}$).
 *   **Dépendance Amont :** Modèle spatial autorégressif (SAR) double.
 *   **Dépendance Aval :** Cartographie conceptuelle des dominations (Paris=Réseau, Grande Couronne=Quartier).
 *   **Complexité Algorithmique :** Modérée à lourde.
